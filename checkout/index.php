@@ -11,7 +11,7 @@
   <body>
     <a href='#'><img src='../img/logo.png' class='logo'></a>
     <div class='afterLogo'>
-    <h2>Užsakymass</h2>
+    <h2>Užsakymas git duhas</h2>
 
     <div class="field is-grouped is-grouped-centered">
 <p class="control has-icons-left">
