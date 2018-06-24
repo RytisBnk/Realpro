@@ -5,12 +5,14 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Order;
 use Auth;
+use App\Http\Requests\FormValidationRequest;
+use App\Image;
 
 class OrderController extends Controller
 {
     public function create()
     {
-        return view('checkout');
+        return view('testupload');
     }
 
     public function showAll()
@@ -28,7 +30,7 @@ class OrderController extends Controller
         return view('order.edit', array('order' => Order::find($id)));
     }
 
-    public function store(Request $request)
+    public function store(FormValidationRequest $request)
     {
         $order = new Order;
         $order->user_id = Auth::id();
@@ -56,7 +58,17 @@ class OrderController extends Controller
         $order->komentaras = $request->input('komentaras');
         $order->save();
 
-        return redirect()->route('payMotherfuckerPay');
+        $images = $request->images;
+        foreach($images as $image)
+        {
+            $filename = $image->store('files');
+            $file = new Image;
+            $file->order_id = $order->id;
+            $file->filename = $filename;
+            $file->save();
+        }
+
+        return redirect()->route('home');
     }
 
     public function update(Request $request, $id)

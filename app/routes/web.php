@@ -30,16 +30,6 @@ Route::get('/orders/list', 'OrderController@showAll')->name('order.list');
 Route::get('/order/{id}', 'OrderController@show');
 Route::get('/order/{id}/edit', 'OrderController@edit');
 
-Route::post('/order/store', 'OrderController@store');
+Route::post('/order', 'OrderController@store');
 Route::post('/order/update', 'OrderController@update');
 Route::post('/order/delete', 'OrderController@destroy');
-
-// administrative routes
-
-Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
-
-Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
