@@ -12,7 +12,7 @@ class OrderController extends Controller
 {
     public function create()
     {
-        return view('testupload');
+        return view('checkout');
     }
 
     public function showAll()
@@ -104,6 +104,13 @@ class OrderController extends Controller
     public function destroy($id)
     {
         Order::find($id)->delete();
+        $images = Image::where('order_id', $id)->get();
+        foreach($images as $image)
+        {
+            Storage::delete($image->filename);
+            $image->delete();
+        }
+
         return redirect('order.list');
     }
 }
