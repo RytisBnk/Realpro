@@ -136,6 +136,7 @@ $('#ourPrice').val('299').addClass("show");
 else {
 $('#ourPrice').val('0').addClass("show");
 }
+return false;
 });
 $( ".product" ).click(function() {
 $(".product").removeClass('activep');
