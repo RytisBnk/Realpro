@@ -17,6 +17,6 @@ Adresas:
 Kaina:
 <br />
 {!! Form::text('kaina', old('kaina')) !!}
-<input type="file" name="images" multiple />
+<input type="file" name="images[]" multiple />
 {!! Form::submit('Saugoti') !!}
 {!! Form::close() !!}

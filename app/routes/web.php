@@ -25,11 +25,13 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 // ordering routes
 
-Route::get('/checkout', 'OrderController@create')->name('checkout');
-Route::get('/orders/list', 'OrderController@showAll')->name('order.list');
-Route::get('/order/{id}', 'OrderController@show');
-Route::get('/order/{id}/edit', 'OrderController@edit');
+Route::middleware(['auth'])->group(function(){
+    Route::get('/checkout', 'OrderController@create')->name('checkout');
+    Route::get('/orders/list', 'OrderController@showAll')->name('order.list');
+    Route::get('/order/{id}', 'OrderController@show');
+    Route::get('/order/{id}/edit', 'OrderController@edit');
 
-Route::post('/order', 'OrderController@store');
-Route::post('/order/update', 'OrderController@update');
-Route::post('/order/delete', 'OrderController@destroy');
+    Route::post('/order', 'OrderController@store');
+    Route::put('/order/update', 'OrderController@update');
+    Route::delete('/order/delete', 'OrderController@destroy');
+});

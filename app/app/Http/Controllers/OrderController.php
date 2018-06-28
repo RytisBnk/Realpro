@@ -7,6 +7,7 @@ use App\Order;
 use Auth;
 use App\Http\Requests\FormValidationRequest;
 use App\Image;
+use Symfony\Component\HttpFoundation\File\UploadedFile;
 
 class OrderController extends Controller
 {
@@ -22,7 +23,8 @@ class OrderController extends Controller
 
     public function show($id)
     {
-        return view('order.show', array('order' => Order::find($id)));
+
+        return redirect()->route('login');
     }
 
     public function edit($id)
@@ -34,7 +36,8 @@ class OrderController extends Controller
     {
         $order = new Order;
         $order->user_id = Auth::id();
-        $order->tipas = $request->input('tipas');
+        $order->nuosavybes_tipas = $request->input('nuosavybes_tipas');
+        $order->pardavimo_tipas = $request->input('pardavimo_tipas');
         $order->adresas = $request->input('adresas');
         $order->plotas = $request->input('plotas');
         $order->sklypo_plotas = $request->input('sklypo_plotas');
@@ -59,13 +62,15 @@ class OrderController extends Controller
         $order->save();
 
         $images = $request->images;
+        $counter = 1;
         foreach($images as $image)
         {
-            $filename = $image->store('files');
+            $filename = $image->storeAs('files', $order->id. '_'. $counter. '.jpg');
             $file = new Image;
             $file->order_id = $order->id;
             $file->filename = $filename;
             $file->save();
+            $counter++;
         }
 
         return redirect()->route('home');
@@ -74,7 +79,8 @@ class OrderController extends Controller
     public function update(Request $request, $id)
     {
         $order = Order::find($id);
-        $order->tipas = $request->input('tipas');
+        $order->nuosavybes_tipas = $request->input('nuosavybes_tipas');
+        $order->pardavimo_tipas = $request->input('pardavimo_tipas');
         $order->adresas = $request->input('adresas');
         $order->plotas = $request->input('plotas');
         $order->sklypo_plotas = $request->input('sklypo_plotas');
