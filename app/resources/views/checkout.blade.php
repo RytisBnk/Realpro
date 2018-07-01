@@ -83,6 +83,12 @@
   <input class="input" type="number" placeholder="Aukštų sk." name='aukstu_skaicius'>
 </div>
 </div>
+<div class='field'>
+<label class="label">Statybos metai</label>
+<div class="control">
+  <input class="input" type="number" placeholder="Statybos metai" name='statybos_metai'>
+</div>
+</div>
 <div class="field">
   <input class="is-checkradio is-block is-success" id="exampleCheckbox" type="checkbox" name="renovuotas">
   <label for="exampleCheckbox">Butas renovuotas</label>
