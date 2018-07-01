@@ -41,6 +41,18 @@
     <input class="input" type="text" placeholder="Vardas" name='vardas'>
   </div>
 </div>
+<div class="field">
+  <label class="label">Tel. nr.</label>
+  <div class="control">
+    <input class="input" type="tel" placeholder="Tel. nr." name='tel'>
+  </div>
+</div>
+<div class="field">
+  <label class="label">Gimimo data</label>
+  <div class="control">
+    <input class="input" type="date" placeholder="Pvz. 1990-10-07" name='gimimas'>
+  </div>
+</div>
   <div class='field'>
   <label class="label">Pilnas objekto adresas</label>
   <div class="control">
@@ -71,16 +83,108 @@
   <input class="input" type="number" placeholder="Aukštų sk." name='aukstu_skaicius'>
 </div>
 </div>
+<div class="field">
+  <input class="is-checkradio is-block is-success" id="exampleCheckbox" type="checkbox" name="renovuotas">
+  <label for="exampleCheckbox">Butas renovuotas</label>
+</div>
+<hr>
 <div class='field'>
-<label class="label">Statybos metai</label>
+<label class="label">Pastato tipas</label>
+<div class="control is-expanded">
+  <div class="select is-fullwidth">
+    <select name='pastato_tipas'>
+      <option selected value='murinis'>Mūrinis</option>
+      <option value='blokinis'>Blokinis</option>
+      <option value='monolitinis'>Monolitinis</option>
+      <option value='medinis'>Medinis</option>
+      <option value='karkasinis'>Karkasinis</option>
+      <option value='rastinis'>Rąstinis</option>
+    </select>
+  </div>
+</div>
+</div>
+
+<div class='field'>
+<label class="label">Įrengimas</label>
+<div class="control is-expanded">
+  <div class="select is-fullwidth">
+    <select name='irengimas'>
+      <option selected value='irengtas'>Įrengtas</option>
+      <option value='dalineApdaila'>Dalinė apdaila</option>
+      <option value='neirengtas'>Neįrengtas</option>
+      <option value='nebaigtas'>Nebaigtas statyti</option>
+      <option value='pamatai'>Pamatai</option>
+      <option value='kita'>Kita</option>
+    </select>
+  </div>
+</div>
+</div>
+<hr>
+<div class='field leftAlign'>
+<label class="label">Šildymas</label>
+<div class='columns'>
+  <div class='column'>
+<div class='field'>
+  <input class="is-checkradio is-block is-success" id="centrinisSildymas" type="checkbox" name="centrinis">
+  <label for="centrinisSildymas">Centrinis</label>
+</div>
+<div class='field'>
+  <input class="is-checkradio is-block is-success" id="centrinisKol" type="checkbox" name="centrinisKol">
+  <label for="centrinisKol">Centrinis Kolektorius</label>
+</div>
+<div class='field'>
+  <input class="is-checkradio is-block is-success" id="dujinis" type="checkbox" name="dujinis">
+  <label for="dujinis">Dujinis</label>
+</div>
+</div>
+<div class='column'>
+  <div class='field'>
+    <input class="is-checkradio is-block is-success" id="elektra" type="checkbox" name="elektra">
+    <label for="elektra">Elektra</label>
+  </div>
+  <div class='field'>
+    <input class="is-checkradio is-block is-success" id="geoterminis" type="checkbox" name="geoterminis">
+    <label for="geoterminis">Geoterminis</label>
+  </div>
+  <div class='field'>
+    <input class="is-checkradio is-block is-success" id="kietasKuras" type="checkbox" name="kietasKuras">
+    <label for="kietasKuras">Kietu kuru</label>
+  </div>
+</div>
+<div class='column'>
+  <div class='field'>
+    <input class="is-checkradio is-block is-success" id="skystasKuras" type="checkbox" name="skystasKuras">
+    <label for="skystasKuras">Skystu kuru</label>
+  </div>
+  <div class='field'>
+    <input class="is-checkradio is-block is-success" id="kita" type="checkbox" name="kita">
+    <label for="kita">Kita</label>
+  </div>
+</div>
+</div>
+</div>
+<hr>
+<div class='field'>
+<label class="label">Ypatybės</label>
 <div class="control">
-  <input class="input" type="number" placeholder="Statybos metai" name="statybos_metai">
-  <label class="checkbox">
-    <input type="checkbox" name='renovuotas'>
-    Namas renovuotas
-  </label>
+  <textarea class="textarea" placeholder="Pvz. Ypatybės, papildomos patalpos, papildoma įranga, apsauga" name='ypatybes'></textarea>
 </div>
 </div>
+<hr>
+<div class='field'>
+<label class="label">Komentaras</label>
+<div class="control">
+  <textarea class="textarea" placeholder="Komentaras" name='komentaras'></textarea>
+</div>
+</div>
+<hr>
+<div class='field'>
+<label class="label">Kaina &euro;</label>
+<div class="control">
+  <input type='number' class='input' name='komentaras'>
+</div>
+</div>
+<button type='submit' class='button4'>Užsisakyti</button>
 </div>
 </form>
   </body>
