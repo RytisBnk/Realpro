@@ -188,13 +188,22 @@
 <hr>
 <div class="field">
   <label class="label">Nuotraukos</label>
-  <form method="post" action="uploadImages.php" name ='photo' id='imageuploadform' enctype="multipart/form-data">
-        <input hidden="true" id="fileupload" type="file" name="image[]" multiple >
-
-        <div id ="divleft">
-            <button id="btnupload"></button>
-
-        </div>
+  <form method="post" id='imageuploadform' enctype="multipart/form-data">
+    <div class="field">
+<div class="file is-primary">
+<label class="file-label">
+  <input class="file-input" type="file" name="images[]" multiple>
+  <span class="file-cta">
+    <span class="file-icon">
+      <i class="fas fa-upload"></i>
+    </span>
+    <span class="file-label">
+      Nuotraukos
+    </span>
+  </span>
+</label>
+</div>
+</div>
 
     </form>
 <hr>
@@ -209,28 +218,15 @@
 </form>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
 <script>
-$("#btnupload").click(function(e) {
+$("input[type='file']").change(function() { $('#imageuploadform').form.submit(); });
 
-    $("#fileupload").click();
-    e.preventDefault();
-
-});
-
-
-$('#fileupload').change(function (e) {
-
-    $("#imageuploadform").submit();
-    e.preventDefault();
-
-});
-
-$('#imageuploadform').submit(function(e) {
+$('#imageuploadform').on('submit', function(e) {
 
     var formData = new FormData(this);
 
     $.ajax({
         type:'POST',
-        url: 'ajax/uploadImages',
+        url: '/upload',
         data:formData,
         xhr: function() {
                 var myXhr = $.ajaxSettings.xhr();

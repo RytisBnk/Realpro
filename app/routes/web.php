@@ -22,11 +22,11 @@ Route::get('/test', function(){
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/checkout', 'OrderController@create')->name('checkout');
 
 // ordering routes
 
-Route::middleware(['auth'])->group(function(){
-    Route::get('/checkout', 'OrderController@create')->name('checkout');
+
     Route::get('/orders/list', 'OrderController@showAll')->name('order.list');
     Route::get('/order/{id}', 'OrderController@show');
     Route::get('/order/{id}/edit', 'OrderController@edit');
@@ -34,4 +34,6 @@ Route::middleware(['auth'])->group(function(){
     Route::post('/order', 'OrderController@store');
     Route::put('/order/update', 'OrderController@update');
     Route::delete('/order/delete', 'OrderController@destroy');
-});
+
+
+Route::post('/upload', 'ImageController@upload');
