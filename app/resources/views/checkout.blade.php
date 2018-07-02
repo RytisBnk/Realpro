@@ -189,6 +189,7 @@
 <div class="field">
   <label class="label">Nuotraukos</label>
   <form method="post" id='myForm' enctype="multipart/form-data">
+    @csrf
     <div class="field">
 <div class="file is-primary">
 <label class="file-label">
@@ -228,7 +229,7 @@
 $('#images').on("change",function(){
     var options = {
         type:"post",
-        url: "http://realpro.test/app/upload",
+        url: "{{ route('upload') }}",
         beforeSend: function()
         {
             $("#progress").show();

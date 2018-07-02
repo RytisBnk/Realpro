@@ -36,4 +36,4 @@ Route::get('/checkout', 'OrderController@create')->name('checkout');
     Route::delete('/order/delete', 'OrderController@destroy');
 
 
-Route::post('/upload', 'ImageController@upload');
+Route::post('/upload', ['as' => 'upload', 'uses' => 'ImageController@upload']);
