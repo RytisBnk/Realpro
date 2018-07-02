@@ -188,11 +188,11 @@
 <hr>
 <div class="field">
   <label class="label">Nuotraukos</label>
-  <form method="post" id='imageuploadform' enctype="multipart/form-data">
+  <form method="post" id='myForm' enctype="multipart/form-data">
     <div class="field">
 <div class="file is-primary">
 <label class="file-label">
-  <input class="file-input" type="file" name="images[]" multiple>
+  <input class="file-input" type="file" name='images' id='images'>
   <span class="file-cta">
     <span class="file-icon">
       <i class="fas fa-upload"></i>
@@ -204,8 +204,13 @@
 </label>
 </div>
 </div>
-
-    </form>
+</form>
+<div id="progress">
+    <div id="bar"></div>
+    <div id="percent">0%</div >
+</div>
+<div id="message"></div>
+</div>
 <hr>
 <div class='field'>
 <label class="label">Kaina &euro;</label>
@@ -217,61 +222,44 @@
 </div>
 </form>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.form/4.2.2/jquery.form.min.js"></script>
+
 <script>
-$("input[type='file']").change(function() { $('#imageuploadform').form.submit(); });
-
-$('#imageuploadform').on('submit', function(e) {
-
-    var formData = new FormData(this);
-
-    $.ajax({
-        type:'POST',
-        url: '/upload',
-        data:formData,
-        xhr: function() {
-                var myXhr = $.ajaxSettings.xhr();
-                if(myXhr.upload){
-                    myXhr.upload.addEventListener('progress',progress, false);
-                }
-                return myXhr;
-        },
-        cache:false,
-        contentType: false,
-        processData: false,
-
-        success:function(data){
-            console.log(data);
-
-          alert('data returned successfully');
-
-        },
-
-        error: function(data){
-            console.log(data);
-        }
-    });
-
-    e.preventDefault();
-
-});
-
-
-function progress(e){
-
-    if(e.lengthComputable){
-        var max = e.total;
-        var current = e.loaded;
-
-        var Percentage = (current * 100)/max;
-        console.log(Percentage);
-
-
-        if(Percentage >= 100)
+$('#images').on("change",function(){
+    var options = {
+        type:"post",
+        url: "http://realpro.test/app/upload",
+        beforeSend: function()
         {
-           // process completed
+            $("#progress").show();
+            //clear everything
+            $("#bar").width('0%');
+            $("#message").html("");
+            $("#percent").html("0%");
+        },
+        uploadProgress: function(event, position, total, percentComplete)
+        {
+            $("#bar").width(percentComplete+'%');
+            $("#percent").html(percentComplete+'%');
+        },
+        success: function()
+        {
+            $("#bar").width('100%');
+            $("#percent").html('100%');
+
+        },
+        complete: function(response)
+        {
+            $("#message").html("<font color='green'>"+response.responseText+"</font>");
+        },
+        error: function()
+        {
+            $("#message").html("<font color='red'> ERROR: unable to upload files</font>");
         }
-    }
- }
+    };
+
+    $("#myForm").ajaxSubmit(options);
+});
 </script>
   </body>
 </html>
