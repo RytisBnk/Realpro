@@ -17,8 +17,8 @@
 <p class="control has-icons-left">
   <span class="select">
     <select name='tipas'>
-      <option selected value='namas'>Namas</option>
-      <option value="butas">Butas</option>
+      <option selected value='butas'>Butas</option>
+      <option value="namas">Namas</option>
       <option value="sklypas">Sklypas</option>
     </select>
   </span>
@@ -53,6 +53,7 @@
     <input class="input" type="date" placeholder="Pvz. 1990-10-07" name='gimimas'>
   </div>
 </div>
+<hr>
   <div class='field'>
   <label class="label">Pilnas objekto adresas</label>
   <div class="control">
@@ -184,6 +185,18 @@
 </div>
 </div>
 <hr>
+<div class="field">
+  <label class="label">Nuotraukos</label>
+  <form method="post" action="uploadImages.php" name ='photo' id='imageuploadform' enctype="multipart/form-data">
+        <input hidden="true" id="fileupload" type="file" name="image[]" multiple >
+
+        <div id ="divleft">
+            <button id="btnupload"></button>
+
+        </div>
+
+    </form>
+<hr>
 <div class='field'>
 <label class="label">Kaina &euro;</label>
 <div class="control">
@@ -193,5 +206,75 @@
 <button type='submit' class='button4'>Užsisakyti</button>
 </div>
 </form>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+<script>
+$("#btnupload").click(function(e) {
+
+    $("#fileupload").click();
+    e.preventDefault();
+
+});
+
+
+$('#fileupload').change(function (e) {
+
+    $("#imageuploadform").submit();
+    e.preventDefault();
+
+});
+
+$('#imageuploadform').submit(function(e) {
+
+    var formData = new FormData(this);
+
+    $.ajax({
+        type:'POST',
+        url: 'ajax/uploadImages',
+        data:formData,
+        xhr: function() {
+                var myXhr = $.ajaxSettings.xhr();
+                if(myXhr.upload){
+                    myXhr.upload.addEventListener('progress',progress, false);
+                }
+                return myXhr;
+        },
+        cache:false,
+        contentType: false,
+        processData: false,
+
+        success:function(data){
+            console.log(data);
+
+          alert('data returned successfully');
+
+        },
+
+        error: function(data){
+            console.log(data);
+        }
+    });
+
+    e.preventDefault();
+
+});
+
+
+function progress(e){
+
+    if(e.lengthComputable){
+        var max = e.total;
+        var current = e.loaded;
+
+        var Percentage = (current * 100)/max;
+        console.log(Percentage);
+
+
+        if(Percentage >= 100)
+        {
+           // process completed
+        }
+    }
+ }
+</script>
   </body>
 </html>
