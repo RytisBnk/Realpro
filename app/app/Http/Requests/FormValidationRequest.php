@@ -14,7 +14,7 @@ class FormValidationRequest extends FormRequest
      */
     public function authorize()
     {
-        true;
+        return true;
     }
 
     /**
@@ -25,7 +25,6 @@ class FormValidationRequest extends FormRequest
     public function rules()
     {
         $rules = [
-            'tipas' => 'required',
             'adresas' => 'required',
             'kaina' => 'required'
         ];

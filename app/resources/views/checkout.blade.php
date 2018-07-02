@@ -12,11 +12,12 @@
     <a href='#'><img src='../img/logo.png' class='logo'></a>
     <div class='afterLogo'>
     <h2>Užsakymas</h2>
-    <form method="POST" action='/order'>
+    <form method="POST" action='/realpro/app/order'>
+      @csrf
     <div class="field is-grouped is-grouped-centered">
 <p class="control has-icons-left">
   <span class="select">
-    <select name='tipas'>
+    <select name='nuosavybes_tipas'>
       <option selected value='namas'>Namas</option>
       <option value="butas">Butas</option>
       <option value="sklypas">Sklypas</option>
@@ -28,7 +29,7 @@
 </p>
 <p class="control">
   <span class="select">
-    <select name='arParduoti'>
+    <select name='pardavimo_tipas'>
       <option selected value='parduoti'>Parduoti</option>
       <option value='nuomuoti'>Nuomuoti</option>
     </select>
@@ -187,7 +188,7 @@
 <div class='field'>
 <label class="label">Kaina &euro;</label>
 <div class="control">
-  <input type='number' class='input' name='komentaras'>
+  <input type='number' class='input' name='kaina'>
 </div>
 </div>
 <button type='submit' class='button4'>Užsisakyti</button>
