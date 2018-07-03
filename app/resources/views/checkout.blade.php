@@ -229,7 +229,7 @@
     <div class="field">
 <div class="file is-primary">
 <label class="file-label">
-  <input class="file-input" size='60' type="file" name='images' id='images'>
+  <input class="file-input" size='60' type="file" multiple name='images[]' id='images'>
   <span class="file-cta">
     <span class="file-icon">
       <i class="fas fa-upload"></i>

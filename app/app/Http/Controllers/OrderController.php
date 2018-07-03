@@ -89,21 +89,6 @@ class OrderController extends Controller
         $user->gimimo_data = $request->input('gimimas');
         $user->save();
 
-        $images = $request->images;
-        if (isset($images))
-        {
-            $counter = 1;
-            foreach($images as $image)
-            {
-                $filename = $image->storeAs('files', $order->id. '_'. $counter. '.jpg');
-                $file = new Image;
-                $file->order_id = $order->id;
-                $file->filename = $filename;
-                $file->save();
-                $counter++;
-            }
-        }
-
         foreach ($request->except('_token') as $key => $value)
         {
             echo $key . '  ' . $value;
