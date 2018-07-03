@@ -14,6 +14,7 @@
     <h2>Užsakymas</h2>
     <form method="POST" action='/realpro/app/order'>
       @csrf
+      <h4>Pasirinkite NT objekto tipą bei pardavimo būdą:</h4>
     <div class="field is-grouped is-grouped-centered">
 <p class="control has-icons-left">
   <span class="select">
