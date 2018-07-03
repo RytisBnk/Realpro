@@ -51,7 +51,6 @@
 @import "../bulma/sass/components/navbar";
 @import "../bulma/sass/elements/form";
 @import "../bulma/sass/elements/bulma-checkradio";
-@import "../bulma/sass/elements/progress";
 html, body {
   overflow-x:hidden;
 }
@@ -553,17 +552,16 @@ input[type="file"] {
   background: white;
   color: black;
 }
-.progress {
-  margin: 10px 0;
-  display: none;
-}
-#progress { position:relative; width:400px; border: 1px solid #ddd; padding: 1px; border-radius: 3px; }
-#bar { background-color: #B4F5B4; width:0%; height:20px; border-radius: 3px; }
-#percent { position:absolute; display:inline-block; top:3px; left:48%; }
+#progress3 { position:relative; background-color: #eeeeee; max-width:400px; padding: 1px; border-radius: 5000px; display: none; margin-top: 20px; }
+#bar3 { background-color: #12ce57; width:0%; height:20px; border-radius: 5000px; }
+#percent3 { position:absolute; display:inline-block; top:3px; left:48%; }
 
 .ajax {
-  //margin-top: -360px;
+  margin-top: -370px;
 }
 .ajax-hidden {
   visibility: hidden;
+}
+#message3 {
+  margin-bottom: 100px;
 }

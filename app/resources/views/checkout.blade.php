@@ -242,15 +242,14 @@
 </div>
 </div>
 </form>
-<div id="progress">
-    <div id="bar"></div>
-    <div id="percent">0%</div>
+<div id="progress3">
+    <div id="bar3"></div>
+    <div id="percent3">0%</div>
 </div>
-<div id="message"></div>
+<div id="message3"></div>
 </div>
-<hr>
 </div>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/1.7.2/jquery.min.js'></script>
+<script   src="https://code.jquery.com/jquery-3.3.1.min.js"   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="   crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.form/4.2.2/jquery.form.min.js"></script>
 
 <script>
@@ -260,30 +259,30 @@ $('#images').on("change",function(){
         url: "{{ route('upload') }}",
         beforeSend: function()
         {
-            $("#progress").show();
+            $("#progress3").show();
             //clear everything
-            $("#bar").width('0%');
-            $("#message").html("");
-            $("#percent").html("0%");
+            $("#bar3").width('0%');
+            $("#message3").html("");
+            $("#percent3").html("0%");
         },
         uploadProgress: function(event, position, total, percentComplete)
         {
-            $("#bar").width(percentComplete+'%');
-            $("#percent").html(percentComplete+'%');
+            $("#bar3").width(percentComplete+'%');
+            $("#percent3").html(percentComplete+'%');
         },
         success: function()
         {
-            $("#bar").width('100%');
-            $("#percent").html('100%');
+            $("#bar3").width('100%');
+            $("#percent3").html('100%');
 
         },
         complete: function(response)
         {
-            $("#message").html("<font color='green'>"+response.responseText+"</font>");
+            $("#message3").html("<span style='color: green;'>"+'Įkelta sėkmingai!'+"</span>");
         },
         error: function()
         {
-            $("#message").html("<font color='red'> ERROR: unable to upload files</font>");
+            $("#message3").html("<span style='color: red;'> ERROR: unable to upload files</span>");
         }
     };
 
