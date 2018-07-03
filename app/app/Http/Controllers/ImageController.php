@@ -1,10 +1,10 @@
 <?php
-
+namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Image;
 use Symfony\Component\HttpFoundation\File\UploadedFile;
 
-class ImageController extends Controllers
+class ImageController extends Controller
 {
     public function upload(Request $request)
     {
