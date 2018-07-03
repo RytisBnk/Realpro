@@ -3804,4 +3804,10 @@ input[type="file"], [type="file"].lower {
   top: 3px;
   left: 48%; }
 
+.ajax {
+  margin-top: -360px; }
+
+.ajax-hidden {
+  visibility: hidden; }
+
 /*# sourceMappingURL=scss.css.map */

@@ -186,6 +186,42 @@
 </div>
 </div>
 <hr>
+<div class='ajax-hidden'>
+<div class="field">
+  <label class="label">Nuotraukos</label>
+    <div class="field">
+<div class="file is-primary">
+<label class="file-label">
+  <input class="file-input" size='60' type="file">
+  <span class="file-cta">
+    <span class="file-icon">
+      <i class="fas fa-upload"></i>
+    </span>
+    <span class="file-label">
+      Nuotraukos
+    </span>
+  </span>
+</label>
+</div>
+</div>
+<div id="progress">
+    <div id="bar"></div>
+    <div id="percent">0%</div>
+</div>
+<div id="message"></div>
+</div>
+<hr>
+</div>
+<div class='field'>
+<label class="label">Kaina &euro;</label>
+<div class="control">
+  <input type='number' class='input' name='kaina'>
+</div>
+</div>
+<button type='submit' class='button4'>Užsisakyti</button>
+</div>
+</form>
+<div class='ajax'>
 <div class="field">
   <label class="label">Nuotraukos</label>
   <form method="post" id='myForm' enctype="multipart/form-data">
@@ -193,7 +229,7 @@
     <div class="field">
 <div class="file is-primary">
 <label class="file-label">
-  <input class="file-input" type="file" name='images' id='images'>
+  <input class="file-input" size='60' type="file" name='images' id='images'>
   <span class="file-cta">
     <span class="file-icon">
       <i class="fas fa-upload"></i>
@@ -208,21 +244,13 @@
 </form>
 <div id="progress">
     <div id="bar"></div>
-    <div id="percent">0%</div >
+    <div id="percent">0%</div>
 </div>
 <div id="message"></div>
 </div>
 <hr>
-<div class='field'>
-<label class="label">Kaina &euro;</label>
-<div class="control">
-  <input type='number' class='input' name='kaina'>
 </div>
-</div>
-<button type='submit' class='button4'>Užsisakyti</button>
-</div>
-</form>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/1.7.2/jquery.min.js'></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.form/4.2.2/jquery.form.min.js"></script>
 
 <script>
