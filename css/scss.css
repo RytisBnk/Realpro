@@ -3789,8 +3789,7 @@ input[type="file"], [type="file"].lower {
   width: 400px;
   border: 1px solid #ddd;
   padding: 1px;
-  border-radius: 3px;
-  display: none; }
+  border-radius: 3px; }
 
 #bar {
   background-color: #B4F5B4;
@@ -3803,9 +3802,6 @@ input[type="file"], [type="file"].lower {
   display: inline-block;
   top: 3px;
   left: 48%; }
-
-.ajax {
-  margin-top: -360px; }
 
 .ajax-hidden {
   visibility: hidden; }

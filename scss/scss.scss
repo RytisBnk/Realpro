@@ -557,12 +557,12 @@ input[type="file"] {
   margin: 10px 0;
   display: none;
 }
-#progress { position:relative; width:400px; border: 1px solid #ddd; padding: 1px; border-radius: 3px; display: none; }
+#progress { position:relative; width:400px; border: 1px solid #ddd; padding: 1px; border-radius: 3px; }
 #bar { background-color: #B4F5B4; width:0%; height:20px; border-radius: 3px; }
 #percent { position:absolute; display:inline-block; top:3px; left:48%; }
 
 .ajax {
-  margin-top: -360px;
+  //margin-top: -360px;
 }
 .ajax-hidden {
   visibility: hidden;
