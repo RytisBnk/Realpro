@@ -492,6 +492,22 @@ top:15px;}
 .select.is-fullwidth {
   min-width: 620px;
 }
+@media screen and (max-width: 620px) {
+  .select.is-fullwidth {
+    min-width: 100%;
+  }
+}
+@media screen and (max-width: 680px) {
+  .field {
+    padding-left: 10px;
+    padding-right: 30px;
+  }
+  .full-width {
+    display: block !important;
+    width: 400px !important;
+  }
+}
+
 .leftAlign {
   text-align: left;
 }
@@ -530,27 +546,9 @@ hr {
 input[type="file"] {
   display: block;
 }
-.imageThumb {
-  max-height: 75px;
-  border: 2px solid;
-  padding: 1px;
-  cursor: pointer;
-}
 .pip {
   display: inline-block;
   margin: 10px 10px 0 0;
-}
-.remove {
-  display: block;
-  background: #444;
-  border: 1px solid black;
-  color: white;
-  text-align: center;
-  cursor: pointer;
-}
-.remove:hover {
-  background: white;
-  color: black;
 }
 #progress3 { position:relative; background-color: #eeeeee; max-width:400px; padding: 1px; border-radius: 5000px; display: none; margin-top: 20px; }
 #bar3 { background-color: #12ce57; width:0%; height:20px; border-radius: 5000px; }

@@ -65,7 +65,7 @@
   </div>
 </div>
 <div class='field' id='plotas'>
-<label class="label">Plotas m<sup>2</sup></label>
+<label class="label">Plotas, m<sup>2</sup></label>
 <div class="control">
   <input class="input" type="number" placeholder="Plotas" name='plotas'>
 </div>
@@ -172,7 +172,7 @@
 <hr>
 <div class='field leftAlign' id='sildymas'>
 <label class="label">Šildymas</label>
-<div class='columns'>
+<div class='columns is-multiline'>
   <div class='column'>
 <div class='field'>
   <input class="is-checkradio is-block is-success" id="centrinisSildymas" type="checkbox" name="centrinis">
@@ -201,7 +201,7 @@
     <label for="kietasKuras">Kietu kuru</label>
   </div>
 </div>
-<div class='column'>
+<div class='column full-width'>
   <div class='field'>
     <input class="is-checkradio is-block is-success" id="skystasKuras" type="checkbox" name="skystasKuras">
     <label for="skystasKuras">Skystu kuru</label>
