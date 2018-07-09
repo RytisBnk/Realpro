@@ -18,10 +18,12 @@
     <div class="field is-grouped is-grouped-centered">
 <p class="control has-icons-left">
   <span class="select">
-    <select name='nuosavybes_tipas'>
+    <select name='nuosavybes_tipas' id='tipas'>
       <option selected value='butas'>Butas</option>
       <option value="namas">Namas</option>
       <option value="sklypas">Sklypas</option>
+      <option value="patalpos">Patalpos</option>
+      <option value="garazas">Garažas</option>
     </select>
   </span>
   <span class="icon is-small is-left">
@@ -62,42 +64,62 @@
     <input class="input" type="text" placeholder="Pvz. Vilniaus g. 20-55, Vilnius, Lietuva" name='adresas'>
   </div>
 </div>
-<div class='field'>
+<div class='field' id='plotas'>
 <label class="label">Plotas m<sup>2</sup></label>
 <div class="control">
   <input class="input" type="number" placeholder="Plotas" name='plotas'>
 </div>
 </div>
-<div class='field'>
+<div class='field' id='kambariu_skaicius'>
 <label class="label">Kambarių sk.</label>
 <div class="control">
   <input class="input" type="number" placeholder="Kambarių sk." name='kambariu_skaicius'>
 </div>
 </div>
-<div class='field'>
+<div class='field' id='aukstas'>
 <label class="label">Aukštas</label>
 <div class="control">
   <input class="input" type="number" placeholder="Aukštas" name='aukstas'>
 </div>
 </div>
-<div class='field'>
+<div class='field' id='sklypas'>
+<label class="label">Sklypo plotas (a)</label>
+<div class="control">
+  <input class="input" type="number" placeholder="Bendras sklypo plotas (a)" name='sklypo_plotas'>
+</div>
+</div>
+<div class='field' id='aukstu_skaicius'>
 <label class="label">Aukštų sk.</label>
 <div class="control">
   <input class="input" type="number" placeholder="Aukštų sk." name='aukstu_skaicius'>
 </div>
 </div>
-<div class='field'>
+<div class='field' id='statybos_metai'>
 <label class="label">Statybos metai</label>
 <div class="control">
   <input class="input" type="number" placeholder="Statybos metai" name='statybos_metai'>
 </div>
 </div>
-<div class="field">
+<div class="field" id='renovacija'>
   <input class="is-checkradio is-block is-success" id="exampleCheckbox" type="checkbox" name="renovuotas">
-  <label for="exampleCheckbox">Butas renovuotas</label>
+  <label for="exampleCheckbox" id='renovuotas'>Butas renovuotas</label>
 </div>
-<hr>
-<div class='field'>
+<hr id='sklypo_hr'>
+<div class='field' id='namo_tipas'>
+<label class="label">Namo Tipas</label>
+<div class="control is-expanded">
+  <div class="select is-fullwidth">
+    <select name='namo_tipas'>
+      <option selected value='namasGyv'>Namas (gyvenamasis)</option>
+      <option value='namo_dalis'>Namo dalis</option>
+      <option value='sodo_namas'>Sodo namas</option>
+      <option value='sublokuotas'>Sublokuotas namas</option>
+      <option value='sodyba'>Sodyba</option>
+    </select>
+  </div>
+</div>
+</div>
+<div class='field' id='pastato_tipas'>
 <label class="label">Pastato tipas</label>
 <div class="control is-expanded">
   <div class="select is-fullwidth">
@@ -113,7 +135,7 @@
 </div>
 </div>
 
-<div class='field'>
+<div class='field' id='irengimas'>
 <label class="label">Įrengimas</label>
 <div class="control is-expanded">
   <div class="select is-fullwidth">
@@ -129,7 +151,7 @@
 </div>
 </div>
 <hr>
-<div class='field leftAlign'>
+<div class='field leftAlign' id='sildymas'>
 <label class="label">Šildymas</label>
 <div class='columns'>
   <div class='column'>
@@ -168,6 +190,57 @@
   <div class='field'>
     <input class="is-checkradio is-block is-success" id="kita" type="checkbox" name="kita">
     <label for="kita">Kita</label>
+  </div>
+</div>
+</div>
+</div>
+<div class='field leftAlign' id='paskirtis'>
+<label class="label">Paskirtis</label>
+<div class='columns'>
+  <div class='column'>
+<div class='field'>
+  <input class="is-checkradio is-block is-success" id="namuValda" type="checkbox" name="namu_valda">
+  <label for="namuValda">Namų valda</label>
+</div>
+<div class='field'>
+  <input class="is-checkradio is-block is-success" id="sklypasSoduose" type="checkbox" name="sklypas_soduose">
+  <label for="sklypasSoduose">Sklypas soduose</label>
+</div>
+<div class='field'>
+  <input class="is-checkradio is-block is-success" id="sandeliavimo" type="checkbox" name="sandeliavimo">
+  <label for="sandeliavimo">Sandėliavimo</label>
+</div>
+<div class='field'>
+  <input class="is-checkradio is-block is-success" id="kitas" type="checkbox" name="kita">
+  <label for="kitas">Kita</label>
+</div>
+</div>
+<div class='column'>
+  <div class='field'>
+    <input class="is-checkradio is-block is-success" id="daugiabucioStatyba" type="checkbox" name="daugiabuciu_statyba">
+    <label for="daugiabucioStatyba">Daugiabučių statyba</label>
+  </div>
+  <div class='field'>
+    <input class="is-checkradio is-block is-success" id="miskoUkio" type="checkbox" name="misko_ukio">
+    <label for="miskoUkio">Miško ūkio</label>
+  </div>
+  <div class='field'>
+    <input class="is-checkradio is-block is-success" id="komercine" type="checkbox" name="komercine">
+    <label for="komercine">Komercinė</label>
+  </div>
+</div>
+<div class='column'>
+  <div class='field'>
+    <input class="is-checkradio is-block is-success" id="zemesUkio" type="checkbox" name="zemes_ukio">
+    <label for="zemesUkio">Žemės ūkio</label>
+  </div>
+  <div class='field'>
+    <input class="is-checkradio is-block is-success" id="pramones" type="checkbox" name="pramones">
+    <label for="pramones">Pramonės</label>
+  </div>
+  <div class='field'>
+    <input class="is-checkradio is-block is-success" id="rekreacine" type="checkbox" name="rekreacine">
+    <label for="rekreacine">Rekreacinė</label>
   </div>
 </div>
 </div>
@@ -254,6 +327,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.form/4.2.2/jquery.form.min.js"></script>
 
 <script>
+$(document).ready(function () {
 $('#images').on("change",function(){
     var options = {
         type:"post",
@@ -288,6 +362,34 @@ $('#images').on("change",function(){
     };
 
     $("#myForm").ajaxSubmit(options);
+});
+
+  $('#tipas').on('change', function () {
+    var tipas = $(this).val();
+
+    if (tipas == 'namas') {
+      $('#aukstas').hide();
+      $('#sklypas').show();
+      $('#renovuotas').html('Namas renovuotas');
+      $('#namo_tipas').show();
+    }
+    else if (tipas == 'sklypas') {
+      $('#aukstu_skaicius').fadeOut();
+      $('#kambariu_skaicius').fadeOut();
+      $('#aukstas').fadeOut();
+      $('#renovacija').fadeOut();
+      $('#statybos_metai').fadeOut();
+      $('#pastato_tipas').fadeOut();
+      $('#sklypas').hide();
+      $('#namo_tipas').hide();
+      $('#irengimas').hide();
+      $('#sklypo_hr').hide();
+      $('#sildymas').fadeOut(function () {
+        $('#paskirtis').fadeIn();
+      });
+    }
+  });
+
 });
 </script>
   </body>

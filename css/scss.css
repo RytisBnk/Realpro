@@ -3721,4 +3721,7 @@ input[type="file"], [type="file"].lower {
 #message3 {
   margin-bottom: 100px; }
 
+#sklypas, #namo_tipas, #paskirtis {
+  display: none; }
+
 /*# sourceMappingURL=scss.css.map */
