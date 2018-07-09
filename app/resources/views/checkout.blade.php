@@ -14,7 +14,7 @@
     <h2>Užsakymas</h2>
     <form method="POST" action='/realpro/app/order'>
       @csrf
-      <h4>Pasirinkite NT objekto tipą bei pardavimo būdą:</h4>
+      <h4>Pasirinkite NT objekto tipą bei pasiūlymo būdą:</h4>
     <div class="field is-grouped is-grouped-centered">
 <p class="control has-icons-left">
   <span class="select">
@@ -32,7 +32,7 @@
 </p>
 <p class="control">
   <span class="select">
-    <select name='pardavimo_tipas'>
+    <select name='pardavimo_tipas' id='pardavimo_tipas'>
       <option selected value='parduoti'>Parduoti</option>
       <option value='nuomuoti'>Nuomuoti</option>
     </select>
@@ -100,6 +100,12 @@
   <input class="input" type="number" placeholder="Statybos metai" name='statybos_metai'>
 </div>
 </div>
+<div class='field' id='talpa'>
+<label class="label">Telpa automobilių</label>
+<div class="control">
+  <input class="input" type="number" placeholder="Telpa automobilių" name='talpa'>
+</div>
+</div>
 <div class="field" id='renovacija'>
   <input class="is-checkradio is-block is-success" id="exampleCheckbox" type="checkbox" name="renovuotas">
   <label for="exampleCheckbox" id='renovuotas'>Butas renovuotas</label>
@@ -115,6 +121,19 @@
       <option value='sodo_namas'>Sodo namas</option>
       <option value='sublokuotas'>Sublokuotas namas</option>
       <option value='sodyba'>Sodyba</option>
+    </select>
+  </div>
+</div>
+</div>
+<div class='field' id='garazo_tipas'>
+<label class="label">Tipas</label>
+<div class="control is-expanded">
+  <div class="select is-fullwidth">
+    <select name='garazo_tipas'>
+      <option selected value='murinis'>Mūrinis</option>
+      <option value='namo_dalis'>Geležinis</option>
+      <option value='pozeminis'>Požeminis</option>
+      <option value='daugiaaukstis'>Daugiaaukštis</option>
     </select>
   </div>
 </div>
@@ -245,7 +264,50 @@
 </div>
 </div>
 </div>
-<hr>
+<div class='field leftAlign' id='paskirtis_kom'>
+<label class="label">Paskirtis</label>
+<div class='columns'>
+  <div class='column'>
+<div class='field'>
+  <input class="is-checkradio is-block is-success" id="administracine" type="checkbox" name="administracine">
+  <label for="administracine">Administracinė</label>
+</div>
+<div class='field'>
+  <input class="is-checkradio is-block is-success" id="paslaugu" type="checkbox" name="paslaugu">
+  <label for="paslaugu">Paslaugų</label>
+</div>
+<div class='field'>
+  <input class="is-checkradio is-block is-success" id="maitinimo" type="checkbox" name="maitinimo">
+  <label for="maitinimo">Maitinimo</label>
+</div>
+</div>
+<div class='column'>
+  <div class='field'>
+    <input class="is-checkradio is-block is-success" id="prekybos" type="checkbox" name="prekybos">
+    <label for="prekybos">Prekybos</label>
+  </div>
+  <div class='field'>
+    <input class="is-checkradio is-block is-success" id="sandeliavimo_kom" type="checkbox" name="sandeliavimo_kom">
+    <label for="sandeliavimo_kom">Sandėliavimo</label>
+  </div>
+  <div class='field'>
+    <input class="is-checkradio is-block is-success" id="kita_kom" type="checkbox" name="kita_kom">
+    <label for="kita_kom">Kita</label>
+  </div>
+</div>
+<div class='column'>
+  <div class='field'>
+    <input class="is-checkradio is-block is-success" id="viesbuciu" type="checkbox" name="viesbuciu">
+    <label for="viesbuciu">Viešbučių</label>
+  </div>
+  <div class='field'>
+    <input class="is-checkradio is-block is-success" id="gamybos" type="checkbox" name="gamybos">
+    <label for="gamybos" style='font-size: 12px;'>Gamybos ir pramonės</label>
+  </div>
+</div>
+</div>
+</div>
+<hr id='garazas_hr'>
 <div class='field'>
 <label class="label">Ypatybės</label>
 <div class="control">
@@ -287,7 +349,7 @@
 <hr>
 </div>
 <div class='field'>
-<label class="label">Kaina &euro;</label>
+<label class="label" id='kaina'>Kaina, &euro;</label>
 <div class="control">
   <input type='number' class='input' name='kaina'>
 </div>
@@ -370,8 +432,19 @@ $('#images').on("change",function(){
     if (tipas == 'namas') {
       $('#aukstas').hide();
       $('#sklypas').show();
+      $('#renovacija').fadeIn();
       $('#renovuotas').html('Namas renovuotas');
       $('#namo_tipas').show();
+      $('#aukstu_skaicius').fadeIn();
+      $('#kambariu_skaicius').fadeIn();
+      $('#statybos_metai').fadeIn();
+      $('#pastato_tipas').fadeIn();
+      $('#irengimas').show();
+      $('#sklypo_hr').show();
+      $('#paskirtis').fadeOut(function () {
+        $('#sildymas').fadeIn();
+      });
+      $('#garazas_hr').show();
     }
     else if (tipas == 'sklypas') {
       $('#aukstu_skaicius').fadeOut();
@@ -384,12 +457,80 @@ $('#images').on("change",function(){
       $('#namo_tipas').hide();
       $('#irengimas').hide();
       $('#sklypo_hr').hide();
+      $('#paskirtis_kom').hide();
       $('#sildymas').fadeOut(function () {
         $('#paskirtis').fadeIn();
       });
+      $('#talpa').hide();
+      $('#garazo_tipas').hide();
+      $('#garazas_hr').show();
+    }
+     else if (tipas == 'patalpos') {
+      $('#aukstu_skaicius').fadeOut();
+      $('#kambariu_skaicius').fadeOut();
+      $('#aukstas').fadeIn();
+      $('#renovacija').fadeOut();
+      $('#statybos_metai').fadeOut();
+      $('#pastato_tipas').fadeOut();
+      $('#sklypas').hide();
+      $('#namo_tipas').hide();
+      $('#irengimas').show();
+      $('#sklypo_hr').hide();
+      $('#sildymas').hide();
+      $('#paskirtis').hide();
+      $('#paskirtis_kom').show();
+      $('#talpa').hide();
+      $('#garazo_tipas').hide();
+      $('#garazas_hr').show();
+    }
+    else if (tipas == 'garazas') {
+     $('#aukstu_skaicius').fadeOut();
+     $('#kambariu_skaicius').fadeOut();
+     $('#aukstas').hide();
+     $('#renovacija').fadeOut();
+     $('#statybos_metai').fadeOut();
+     $('#pastato_tipas').fadeOut();
+     $('#sklypas').hide();
+     $('#namo_tipas').hide();
+     $('#irengimas').hide();
+     $('#sklypo_hr').hide();
+     $('#sildymas').hide();
+     $('#paskirtis').hide();
+     $('#paskirtis_kom').hide();
+     $('#talpa').show();
+     $('#garazo_tipas').show();
+     $('#garazas_hr').hide();
+   }
+   else if (tipas == 'butas') {
+    $('#aukstu_skaicius').show();
+    $('#kambariu_skaicius').show();
+    $('#aukstas').show();
+    $('#renovacija').show();
+    $('#statybos_metai').show();
+    $('#pastato_tipas').show();
+    $('#sklypas').hide();
+    $('#namo_tipas').hide();
+    $('#irengimas').show();
+    $('#sklypo_hr').show();
+    $('#sildymas').show();
+    $('#renovuotas').html('Butas renovuotas');
+    $('#paskirtis').hide();
+    $('#paskirtis_kom').hide();
+    $('#talpa').hide();
+    $('#garazo_tipas').hide();
+    $('#garazas_hr').show();
+  }
+  });
+  $('#pardavimo_tipas').on('change', function () {
+    var pasiulymas = $(this).val();
+
+    if (pasiulymas == 'nuomuoti') {
+      $('#kaina').html('Kaina, &euro; per mėn.');
+    }
+    else {
+      $('#kaina').html('Kaina, &euro;');
     }
   });
-
 });
 </script>
   </body>
