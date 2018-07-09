@@ -201,7 +201,7 @@
     <label for="kietasKuras">Kietu kuru</label>
   </div>
 </div>
-<div class='column full-width'>
+<div class='column'>
   <div class='field'>
     <input class="is-checkradio is-block is-success" id="skystasKuras" type="checkbox" name="skystasKuras">
     <label for="skystasKuras">Skystu kuru</label>
@@ -215,7 +215,7 @@
 </div>
 <div class='field leftAlign' id='paskirtis'>
 <label class="label">Paskirtis</label>
-<div class='columns'>
+<div class='columns is-multiline'>
   <div class='column'>
 <div class='field'>
   <input class="is-checkradio is-block is-success" id="namuValda" type="checkbox" name="namu_valda">
@@ -266,7 +266,7 @@
 </div>
 <div class='field leftAlign' id='paskirtis_kom'>
 <label class="label">Paskirtis</label>
-<div class='columns'>
+<div class='columns is-multiline'>
   <div class='column'>
 <div class='field'>
   <input class="is-checkradio is-block is-success" id="administracine" type="checkbox" name="administracine">

@@ -3639,11 +3639,7 @@ input.show, .show.lower {
 @media screen and (max-width: 680px) {
   .field {
     padding-left: 10px;
-    padding-right: 30px; }
-
-  .full-width {
-    display: block !important;
-    width: 400px !important; } }
+    padding-right: 30px; } }
 .leftAlign {
   text-align: left; }
 
