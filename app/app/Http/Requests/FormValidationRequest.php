@@ -3,7 +3,6 @@
 namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
-use Auth;
 
 class FormValidationRequest extends FormRequest
 {
@@ -25,15 +24,41 @@ class FormValidationRequest extends FormRequest
     public function rules()
     {
         $rules = [
-            'adresas' => 'required',
-            'kaina' => 'required'
+            'adresas' => 'required|max:255',
+            'kaina' => 'required|min:1',
+            'vardas' => 'required|max:100',
+            'tel' => 'required|regex:/\+370[0-9]{8}/',
+            'gimimas' => 'required|date',
+            'plotas' => 'required|integer'
+            // more to be added when form pages are done
         ];
-        $files = $this->allFiles();
-        $images = count($files);
-        foreach (range(0, $images) as $index)
+
+        switch($this->input('nuosavybes_tipas'))
         {
-            $rules['images.'.$index] = 'image|mimes:jpeg,jpg,bmp,png|max:2000';
+            case 'butas':
+                $rules['kambariu_skaicius'] =  'required|integer|min:1';
+                $rules['aukstas'] = 'required|integer|min:1';
+                $rules['aukstu_skaicius'] = 'required|integer|min:1';
+                break;
+
+            case 'namas':
+                $rules['kambariu_skaicius'] = 'required|integer|min:1';
+                $rules['sklypo_plotas'] = 'required|integer';
+                $rules['aukstu_skaicius'] = 'required|integer|min:1';
+                break;
+
+            case 'patalpos':
+                $rules['aukstas'] = 'required|integer|min:0';
+                break;
+
+            case 'garazas':
+                $rules['talpa'] = 'required|integer|min:0';
+                break;
+
+            default:
+                break;
         }
+
         return $rules;
     }
 }

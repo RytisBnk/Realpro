@@ -22,6 +22,7 @@ class CreateOrdersTable extends Migration
             $table->integer('plotas')->nullable();
             $table->integer('sklypo_plotas')->nullable();
             $table->integer('kambariu_skaicius')->nullable();
+            $table->integer('automobiliu_skaicius')->nullable();
             $table->integer('aukstas')->nullable();
             $table->integer('aukstu_skaicius')->nullable();
             $table->integer('statybos_metai')->nullable();
@@ -31,6 +32,7 @@ class CreateOrdersTable extends Migration
             $table->string('sildymas', 100)->nullable();
             $table->string('ypatybes', 100)->nullable();
             $table->string('komentaras', 255)->nullable();
+            $table->string('namo_tipas', 50)->nullable();
             $table->integer('kaina');
             $table->boolean('renovuotas')->nullable();
             $table->timestamps();

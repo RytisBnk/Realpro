@@ -27,7 +27,7 @@ Route::get('/checkout', 'OrderController@create')->name('checkout');
 // ordering routes
 
 
-    Route::get('/orders/list', 'OrderController@showAll')->name('order.list');
+    Route::get('/order/list', 'OrderController@showAll')->name('order.list');
     Route::get('/order/{id}', 'OrderController@show');
     Route::get('/order/{id}/edit', 'OrderController@edit');
 

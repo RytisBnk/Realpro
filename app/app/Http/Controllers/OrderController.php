@@ -22,6 +22,30 @@ class OrderController extends Controller
           'skystasKuras'
     ];
 
+    private $paskirtysSklypui = [
+          'namu_valda',
+          'sklypas_soduose',
+          'sandeliavimo',
+          'kita',
+          'daugiabuciu_statyba',
+          'misko_ukio',
+          'komercine',
+          'zemes_ukio',
+          'pramones',
+          'rekreacine'
+    ];
+
+    private $paskirtysPatalpoms = [
+          'administracine',
+          'paslaugu',
+          'maitinimo',
+          'prekybos',
+          'sandeliavimo_kom',
+          'kita_kom',
+          'viesbuciu',
+          'gamybos'
+    ];
+
     public function create()
     {
         return view('checkout');
@@ -42,6 +66,33 @@ class OrderController extends Controller
         return view('order.edit', array('order' => Order::find($id)));
     }
 
+    private function getCheckboxesInfo(FormValidationRequest $request, Order $order)
+    {
+        foreach ($this->sildymoTipai as $value)
+        {
+            if ($request->exists($value))
+            {
+                $order->sildymas .= $value . '|';
+            }
+        }
+
+        $paskirtys = array_merge($this->paskirtysSklypui, $this->paskirtysPatalpoms);
+        foreach ($paskirtys as $value)
+        {
+            if ($request->exists($value))
+            {
+                $order->paskirtis .= $value . '|';
+            }
+        }
+
+        if ($request->exists('renovuotas'))
+        {
+            $order->renovuotas = true;
+        }
+
+        return $order;
+    }
+
     private function getOrderInformation(FormValidationRequest $request, Order $order)
     {
         $order->nuosavybes_tipas = $request->input('nuosavybes_tipas');
@@ -59,19 +110,10 @@ class OrderController extends Controller
         $order->ypatybes = $request->input('ypatybes');
         $order->kaina = $request->input('kaina');
         $order->komentaras = $request->input('komentaras');
+        $order->namo_tipas = $request->input('namo_tipas');
+        $order->automobiliu_skaicius = $request->input('talpa');
 
-        foreach ($this->sildymoTipai as $tipas)
-        {
-            if ($request->exists($tipas))
-            {
-                $order->sildymas = $order->sildymas . '|' . $tipas;
-            }
-        }
-
-        if ($request->exists('renovuotas'))
-        {
-            $request->renovuotas = true;
-        }
+        $order = $this->getCheckboxesInfo($request, $order);
 
         return $order;
     }
@@ -89,11 +131,7 @@ class OrderController extends Controller
         $user->gimimo_data = $request->input('gimimas');
         $user->save();
 
-        foreach ($request->except('_token') as $key => $value)
-        {
-            echo $key . '  ' . $value;
-            echo '<br/>';
-        }
+        return redirect()->route('home'); // TO be changed to actual checkout page
     }
 
     public function update(FormValidationRequest $request, $id)
@@ -102,7 +140,7 @@ class OrderController extends Controller
 
         if (Auth::id() != $order->user_id)
         {
-            return redirect()->route('login');
+            return redirect()->route('order.list');
         }
 
         $order = getOrderInformation($request, $order);
@@ -113,7 +151,11 @@ class OrderController extends Controller
 
     public function destroy($id)
     {
-        Order::find($id)->delete();
+        $order = Order::find($id);
+        if (Auth::id() != $order->user_id)
+        {
+            return redirect()->route('order.list');
+        }
         return redirect()->route('order.list');
     }
 }

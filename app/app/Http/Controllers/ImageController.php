@@ -1,6 +1,8 @@
 <?php
 namespace App\Http\Controllers;
+
 use Illuminate\Http\Request;
+use App\Http\Requests\UploadSubmissionRequest;
 use App\Image;
 use Auth;
 use Symfony\Component\HttpFoundation\File\UploadedFile;
@@ -9,7 +11,7 @@ class ImageController extends Controller
 {
     private $storagePath = 'files';
 
-    public function upload(Request $request)
+    public function upload(UploadSubmissionRequest $request)
     {
         $images = $request->images;
         if (isset($images))
