@@ -20,6 +20,7 @@ class CreateOrdersTable extends Migration
             $table->string('pardavimo_tipas');
             $table->string('adresas', 255);
             $table->integer('plotas')->nullable();
+            $table->string('planas', 50);
             $table->integer('sklypo_plotas')->nullable();
             $table->integer('kambariu_skaicius')->nullable();
             $table->integer('automobiliu_skaicius')->nullable();

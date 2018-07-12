@@ -37,7 +37,11 @@
         </div>
         <div class="navbar-item" style="margin-left: -20px;"><a class='nav-item'  data-ripple="rgba(0,0,0, 0.3)" href="#apie">Apie Mus</a>
         </div>
-        <div class="navbar-item" style="margin-right: -60px;"><a data-ripple="rgba(0,0,0, 0.3)" class="button" href="#">Prisijungti</a>
+        @guest
+        <div class="navbar-item" style="margin-right: -60px;"><a data-ripple="rgba(0,0,0, 0.3)" class="button" href="{{ route('login') }}" id="login">Prisijungti</a>
+        @else
+        <div class="navbar-item" style="margin-right: -60px;"><a data-ripple="rgba(0,0,0, 0.3)" class="button" href="{{ route('order.list') }}" id="orders">Užsakymai</a>
+        @endguest
         </div>
       </div>
     </div>
@@ -118,7 +122,7 @@
       <div style="color: #0b0146; font-size: 40px; padding-bottom: 20px;">Kainos</div>
       <div class="par">Su Realpro.lt parduokite savo namą ar būtą be jokių tarpininkų ir papildomų paslėptų mokesčių.</div>
       <div class="par">Sutaupyk daugiau nei 1500 eurų.</div>
-      <div class="columns is-centered is-multiline" style="padding-top: 70px; text-align: left;">
+      <div class="columns is-centered is-multiline" style="padding-top: 70px; text-align: left;" id="columns">
 
         <div class="column is-narrow is-half-mobile">
           <div class="product">
@@ -164,7 +168,8 @@
           </div>
         </div>
         </div>
-      <div style="margin-top: 40px;"><a class="button3 btn" data-ripple href="#">Rinktis paslaugų paketą</a></div>
+      <div style="margin-top: 40px;" id="select_plan"><a class="button3 btn" data-ripple href="#" id="select_plan" onClick="redirectToForm()">Rinktis paslaugų paketą</a></div>
+
     </div>
     <div class="container-2" id='duk'>
       <div style="color: #0b0146; font-size: 40px; padding-bottom: 20px;">Dažniausiai užduodami klausimai</div>
@@ -289,5 +294,19 @@
     <script src='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js'></script>
   <script src='js.js'>
 </script>
+<script>
+    function redirectToForm(){
+        var selectedPlan = document.getElementsByClassName("activep")[0].getElementsByClassName("top")[0].innerHTML;
+        var data = { plan: selectedPlan, _token: '{{csrf_token()}}' };
+
+        var baseUrl = window.location.href;
+        var url = baseUrl.concat("plan");
+
+        $.post(url, data, function(response){
+            window.location.replace(baseUrl.concat("register"));
+        });                
+        }
+</script>
+
   </body>
 </html>

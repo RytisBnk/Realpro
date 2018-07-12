@@ -12,7 +12,7 @@
     <a href='#'><img src='img/logo.png' class='logo'></a>
     <div class='afterLogo'>
     <h2>Užsakymas</h2>
-    <form method="POST" action='/realpro/app/order'>
+    <form method="POST" action='/realpro/order'>
       @csrf
       <h4>Pasirinkite NT objekto tipą bei pasiūlymo būdą:</h4>
     <div class="field is-grouped is-grouped-centered">
