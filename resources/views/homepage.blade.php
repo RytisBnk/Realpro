@@ -300,6 +300,9 @@
         var data = { plan: selectedPlan, _token: '{{csrf_token()}}' };
 
         var baseUrl = window.location.href;
+        if (baseUrl.includes("#")){
+            baseUrl = baseUrl.substring(0, baseUrl.length - 1);
+        }
         var url = baseUrl.concat("plan");
 
         $.post(url, data, function(response){
