@@ -13,12 +13,12 @@ This guide is relevant for windows users, using [Xampp](https://www.apachefriend
 [Xampp](https://www.apachefriends.org/index.html) for hosting the website. Apache, MySql and PHP are included in the instalation and don't
 have to be installed separately.
 
-[Composer](https://getcomposer.org/download/) for managing dependencies. I recomend download the installer and not bother with the command 
-line installation method.
+[Composer](https://getcomposer.org/download/) for managing dependencies. I recommend to download the installer and not bother with the 
+command line installation method.
 
 **Handy, but not necessarily needed:** <br/>
-[Github desktop](https://desktop.github.com/) - a conveniant tool for collaboration with git. Provides a graphical user interface for git, 
-so work can be done without using the git bash.
+[Github desktop](https://desktop.github.com/) - a conveniant tool for collaboration with git. Provides a graphical user interface for 
+git, so work can be done without using the git bash.
 
 ### Cloning the repository
 
@@ -27,11 +27,12 @@ be found [here](https://services.github.com/on-demand/github-desktop/clone-repos
 
 ### Downloading required libraries
 
-Since we're using Laravel framework our code in dependent on external libraries. To download those libraries follow these steps: <br/>
+Since we're using Laravel framework our code is dependent on external libraries. To download those libraries follow these steps: <br/>
 
 1. Run windows command prompt as an aministrator.
-2. Navigate to realpro/app directory (with cmd).
+2. Navigate to /realpro directory (with cmd).
 3. Run the following command:
+
     ```shell
     composer install
     ```
@@ -39,9 +40,9 @@ All of the required libs should be installed now without the need to do anything
 
 ### Setting application encryption key
 
-Laravel framework requires an encryption key in an .env file. This file should be located in realpro/app folder along with .env.example. 
+Laravel framework requires an encryption key and an .env file. This file should be located in \realpro folder along with .env.example. 
 If it's not there (which it will likely be, if you cloned the repo), you need to create it and copy .env.example file content into it.
-This can be easily done by simply running this command in cmd (make sure you are in realpro/app directory).
+This can be easily done by simply running this command in cmd (make sure you are in \realpro directory).
 ```shell
 copy .env.example .env
 ```
@@ -52,7 +53,7 @@ php artisan key:generate
 
 ### Creating storage folders
 
-Navigate to realpro/app directory and run the following commands into cmd:
+Navigate to \realpro directory and run the following commands into cmd:
 ```shell
 mkdir storage
 cd storage
@@ -74,13 +75,13 @@ First you need to create the database itself and setup a user account for that d
 can be found [Here](http://webvaultwiki.com.au/Create-Mysql-Database-User-Phpmyadmin.ashx). Don't create any tables yet, that will
 be done through migrations. <br/>
 
-Once that is done, open up the .env file (located in realpro/app) and change DB_DATABASE, DB_USERNAME and DB_PASSWORD to match the values that you chose during database creation process. </br>
+Once that is done, open up the .env file (located in \realpro) and change DB_DATABASE, DB_USERNAME and DB_PASSWORD to match the values that you chose during database creation process. </br>
 
-To check if the database is connected open your browser and type http://localhost/realpro/app (link may differ depending on your 
-repository folder name). If no error appears and you see the basic laravel page, it means the database was connected succesfully. If you
+To check if the database is connected open your browser and type http://localhost/realpro/ (link may differ depending on your 
+repository folder name). If no error appears and you see the home page, it means the database was connected succesfully. If you
 see an error, check your .env file.
 
-Once the database is connected, navigate to realpro/app folder with cmd and run the following command:
+Once the database is connected, navigate to \realpro folder with cmd and run the following command:
 ```shell
 php artisan migrate
 ```

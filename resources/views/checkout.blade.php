@@ -6,13 +6,13 @@
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,500" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
     <title>Apmokejimas</title>
-    <link rel="stylesheet" href="../css/scss.css">
+    <link rel="stylesheet" href="css/scss.css">
   </head>
   <body>
-    <a href='#'><img src='../img/logo.png' class='logo'></a>
+    <a href='#'><img src='img/logo.png' class='logo'></a>
     <div class='afterLogo'>
     <h2>Užsakymas</h2>
-    <form method="POST" action='/realpro/app/order'>
+    <form method="POST" action='/realpro/order'>
       @csrf
       <h4>Pasirinkite NT objekto tipą bei pasiūlymo būdą:</h4>
     <div class="field is-grouped is-grouped-centered">

@@ -12,11 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
-});
-
-Route::get('/test', function(){
-    return view('test');
+    return view('homepage');
 });
 
 Auth::routes();
@@ -26,7 +22,6 @@ Route::get('/checkout', 'OrderController@create')->name('checkout');
 
 // ordering routes
 
-
     Route::get('/order/list', 'OrderController@showAll')->name('order.list');
     Route::get('/order/{id}', 'OrderController@show');
     Route::get('/order/{id}/edit', 'OrderController@edit');
@@ -35,5 +30,5 @@ Route::get('/checkout', 'OrderController@create')->name('checkout');
     Route::put('/order/update', 'OrderController@update');
     Route::delete('/order/delete', 'OrderController@destroy');
 
-
 Route::post('/upload', ['as' => 'upload', 'uses' => 'ImageController@upload']);
+Route::post('/plan', 'OrderController@storeSelectedPlan')->name('plan');

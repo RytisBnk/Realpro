@@ -46,6 +46,12 @@ class OrderController extends Controller
           'gamybos'
     ];
 
+    public function storeSelectedPlan(Request $request)
+    {
+        session(['selectedPlan' => $request->input('plan')]);
+        return;
+    }
+
     public function create()
     {
         return view('checkout');
@@ -123,6 +129,7 @@ class OrderController extends Controller
         $order = new Order;
         $order->user_id = Auth::id();
         $order = $this->getOrderInformation($request, $order);
+        $order->planas = session('selectedPlan');
         $order->save();
 
         $user = User::find(Auth::id());
