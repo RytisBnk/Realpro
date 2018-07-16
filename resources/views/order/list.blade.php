@@ -4,7 +4,7 @@
 @endsection
 
 @section('content')
-<div class="container" style='padding-top: 100px;'>
+<div class="container" style='padding-top: 60px;'>
   <button type='button' class='btn btn-info btn-lg float-right' id='betterPlan'>Užsakyti kitą planą</button>
     <div class="row justify-content-center">
         <div class="col-md-12">
