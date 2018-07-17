@@ -37,9 +37,9 @@
 </table>
 <h4>Nuotraukos</h4>
 <div class="row">
-  <div class="col-md-3 col-sm-6 col-xs-12">
-          <a href="../storage/app/files/2_1.jpg">
-              <img alt="AltText" src="https://placehold.it/300" class="img-responsive image">
+          <div class="col-md-3 col-sm-6 col-xs-12">
+          <a href="{{ route('image.retrieve', ['filename' => '2_2.jpg']) }}">
+              <img alt="AltText" src="{{ route('image.retrieve', ['filename' => '2_2.jpg']) }}" class="img-responsive image">
           </a>
           </div>
 
@@ -64,5 +64,5 @@
                 </div>
             </div>
     </div>
-  </div>
+</div>
 @endsection

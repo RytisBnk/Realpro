@@ -35,7 +35,7 @@ class ImageController extends Controller
         return 'Successful upload';
     }
 
-    public function retrieve($filename = "2_1.jpg")
+    public function retrieve($filename)
     {
         $path = storage_path('app/files/' . $filename);
 
