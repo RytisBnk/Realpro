@@ -167,7 +167,7 @@
           </div>
         </div>
         </div>
-      <div style="margin-top: 40px;" id="select_plan"><a class="button3 btn" data-ripple href="#" id="select_plan" onClick="redirectToForm()">Rinktis paslaugų paketą</a></div>
+      <div style="margin-top: 40px;" id="select_plan"><a class="button3 btn" data-ripple href="#" id="select_plan" onClick="redirect()">Rinktis paslaugų paketą</a></div>
 
     </div>
     <div class="container-2" id='duk'>
@@ -294,7 +294,7 @@
   <script src='js.js'>
 </script>
 <script>
-    function redirectToForm(){
+    function redirect(){
         var selectedPlan = document.getElementsByClassName("activep")[0].getElementsByClassName("top")[0].innerHTML;
         var data = { plan: selectedPlan, _token: '{{csrf_token()}}' };
 
@@ -305,7 +305,7 @@
         var url = baseUrl.concat("plan");
 
         $.post(url, data, function(response){
-            window.location.replace(baseUrl.concat("register"));
+            window.location.href = response;
         });                
     }
 </script>

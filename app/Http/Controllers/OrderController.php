@@ -50,7 +50,15 @@ class OrderController extends Controller
     {
         session(['selectedPlan' => $request->input('plan'),
                 'redirectRoute' => 'checkout']);
-        return;
+        if (!Auth::check())
+        {
+            return route('register');
+        }
+        else if (Order::where('user_id', Auth::id())->count() > 0)
+        {
+            return route('order.list');
+        }
+        else return route('checkout');
     }
 
     public function create()
@@ -60,9 +68,11 @@ class OrderController extends Controller
 
     public function showAll()
     {
+        $orders = Order::where('user_id', Auth::id())->get();
+        $user = User::find(Auth::id());
         return view('order.list', array(
-            'orders' => Order::where('user_id', Auth::id())->get(), 
-            'user' => User::find(Auth::id())
+            'orders' => $orders,
+            'user' => $user
         ));
     }
 
