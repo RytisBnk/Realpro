@@ -371,7 +371,7 @@
       <i class="fas fa-upload"></i>
     </span>
     <span class="file-label">
-      Įkelti nuotraukas...
+      Įkelti nuotraukas
     </span>
   </span>
 </label>

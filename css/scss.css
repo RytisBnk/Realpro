@@ -3697,7 +3697,8 @@ input[type="file"], [type="file"].lower {
   position: absolute;
   display: inline-block;
   top: 3px;
-  left: 48%; }
+  left: 48%;
+  color: #fff; }
 
 .ajax {
   margin-top: -370px; }
