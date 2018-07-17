@@ -26,7 +26,7 @@ Route::get('/checkout', 'OrderController@create')->name('checkout');
     Route::get('/order/{id}', 'OrderController@show');
     Route::get('/order/{id}/edit', 'OrderController@edit');
 
-    Route::post('/order', 'OrderController@store');
+    Route::post('/order', 'OrderController@store')->name('order.store');
     Route::put('/order/update', 'OrderController@update');
     Route::delete('/order/delete', 'OrderController@destroy');
 
