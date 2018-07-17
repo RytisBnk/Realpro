@@ -47,7 +47,6 @@
     </div>
   </nav>
 
-
     <div class="after-nav">
       <span class="header">Parduok savo būstą<br>
       be gailesčio</span>
@@ -308,7 +307,7 @@
         $.post(url, data, function(response){
             window.location.replace(baseUrl.concat("register"));
         });                
-        }
+    }
 </script>
 
   </body>

@@ -59,7 +59,8 @@ class OrderController extends Controller
 
     public function showAll()
     {
-        return view('order.list', array('orders' => Order::where('user_id', Auth::id())->get()));
+        return view('order.list', array('orders' => Order::where('user_id', Auth::id())->get(), 
+                                        'user' => User::find(Auth::id())));
     }
 
     public function show($id)

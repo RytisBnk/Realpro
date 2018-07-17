@@ -21,14 +21,18 @@
   </tr>
 </thead>
 <tbody>
+  @if (!empty($orders))
+  @foreach ($orders as $order)
   <tr>
     <th scope="row">1</th>
-    <td>Marius Loxevicius</td>
-    <td>Garazas</td>
-    <td>Pavilniu g. 20-66</td>
-    <td>Pardavimas</td>
-    <td>Optimalus (99&euro;)</td>
+    <td>{{ $user->name }}</td>
+    <td>{{ $order->nuosavybes_tipas }}</td>
+    <td>{{ $order->adresas }}</td>
+    <td>{{ $order->pardavimo_tipas }}</td>
+    <td>{{ $order->planas }} (99&euro;)</td>
   </tr>
+  @endforeach
+  @endif
 </tbody>
 </table>
 <h4>Nuotraukos</h4>
