@@ -32,3 +32,5 @@ Route::get('/checkout', 'OrderController@create')->name('checkout');
 
 Route::post('/upload', ['as' => 'upload', 'uses' => 'ImageController@upload']);
 Route::post('/plan', 'OrderController@storeSelectedPlan')->name('plan');
+
+Route::get('/images/{filename}', 'ImageController@retrieve');

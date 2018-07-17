@@ -38,7 +38,7 @@
 <h4>Nuotraukos</h4>
 <div class="row">
   <div class="col-md-3 col-sm-6 col-xs-12">
-          <a href="LinkT">
+          <a href="../storage/app/files/2_1.jpg">
               <img alt="AltText" src="https://placehold.it/300" class="img-responsive image">
           </a>
           </div>

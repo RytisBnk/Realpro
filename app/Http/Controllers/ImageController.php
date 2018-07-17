@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Http\Requests\UploadSubmissionRequest;
 use App\Image;
+use Intervention\Image\Facades\Image as InterventionImage;
 use Auth;
 use Symfony\Component\HttpFoundation\File\UploadedFile;
 
@@ -32,5 +33,12 @@ class ImageController extends Controller
         }
 
         return 'Successful upload';
+    }
+
+    public function retrieve($filename = "2_1.jpg")
+    {
+        $path = storage_path('app/files/' . $filename);
+
+        return InterventionImage::make($path)->response();
     }
 }
