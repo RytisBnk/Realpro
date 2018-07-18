@@ -27,11 +27,11 @@
 <p class="control has-icons-left">
   <span class="select">
     <select name='nuosavybes_tipas' id='tipas'>
-      <option selected value="Butas">Butas</option>
-      <option value="Namas">Namas</option>
-      <option value="Sklypas">Sklypas</option>
-      <option value="Patalpos">Patalpos</option>
-      <option value="Garažas">Garažas</option>
+      <option selected value="butas">Butas</option>
+      <option value="namas">Namas</option>
+      <option value="sklypas">Sklypas</option>
+      <option value="patalpos">Patalpos</option>
+      <option value="garazas">Garažas</option>
     </select>
   </span>
   <span class="icon is-small is-left">
@@ -41,8 +41,8 @@
 <p class="control">
   <span class="select">
     <select name='pardavimo_tipas' id='pardavimo_tipas'>
-      <option selected value='Pardavimas'>Parduoti</option>
-      <option value='Nuoma'>Nuomuoti</option>
+      <option selected value='pardavimas'>Parduoti</option>
+      <option value='nuoma'>Nuomuoti</option>
     </select>
   </span>
 </p>
