@@ -36,6 +36,24 @@
 </tbody>
 </table>
 <h4>Nuotraukos</h4>
+@if (!empty($images))
+    @foreach ($images as $image)
+        @if ($loop->first)
+            <div class ="row">
+        @endif
+
+        @if (!$loop->first && $loop->iteration % 4 == 0)
+            </div>
+            <div class "row">
+        @endif
+
+        <div class="col-md-3 col-sm-6 col-xs-12">
+            <a href="{{ route('image.retrieve', ['filename' => $image->filename]) }}">
+                <img alt="AltText" src="{{ route('image.retrieve', ['filename' => $image->filename]) }}" class="img-responsive image">
+            </a>
+        </div>
+    @endforeach
+@endif
 <div class="row">
           <div class="col-md-3 col-sm-6 col-xs-12">
           <a href="{{ route('image.retrieve', ['filename' => '2_2.jpg']) }}">

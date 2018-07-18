@@ -70,9 +70,12 @@ class OrderController extends Controller
     {
         $orders = Order::where('user_id', Auth::id())->get();
         $user = User::find(Auth::id());
+        $images = Image::where('user_id', Auth::id());
         return view('order.list', array(
             'orders' => $orders,
-            'user' => $user
+            'user' => $user,
+            'images' => $images->get(),
+            'imageCount' => $images->count()
         ));
     }
 
