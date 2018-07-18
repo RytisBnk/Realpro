@@ -70,12 +70,15 @@ class OrderController extends Controller
     {
         $orders = Order::where('user_id', Auth::id())->get();
         $user = User::find(Auth::id());
-        $images = Image::where('user_id', Auth::id());
+        $images = Image::where('user_id', Auth::id())->get();
+        foreach($images as $image)
+        {
+            $image->filename = str_replace('files/', '', $image->filename);
+        }
         return view('order.list', array(
             'orders' => $orders,
             'user' => $user,
-            'images' => $images->get(),
-            'imageCount' => $images->count()
+            'images' => $images
         ));
     }
 

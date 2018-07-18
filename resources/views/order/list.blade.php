@@ -42,9 +42,9 @@
             <div class ="row">
         @endif
 
-        @if (!$loop->first && $loop->iteration % 4 == 0)
+        @if (!$loop->first && $loop->iteration % 5 == 0)
             </div>
-            <div class "row">
+            <div class ="row">
         @endif
 
         <div class="col-md-3 col-sm-6 col-xs-12">
@@ -54,33 +54,6 @@
         </div>
     @endforeach
 @endif
-<div class="row">
-          <div class="col-md-3 col-sm-6 col-xs-12">
-          <a href="{{ route('image.retrieve', ['filename' => '2_2.jpg']) }}">
-              <img alt="AltText" src="{{ route('image.retrieve', ['filename' => '2_2.jpg']) }}" class="img-responsive image">
-          </a>
-          </div>
 
-          <div class="col-md-3 col-sm-6 col-xs-12">
-          <a href="LinkToImage">
-              <img  alt="AltText" src="https://placehold.it/300" class="img-responsive image">
-          </a>
-          </div>
 
-          <div class="col-md-3 col-sm-6 col-xs-12">
-          <a href="LinkToImage">
-              <img src="https://placehold.it/300" alt="AltText" class="img-responsive image">
-          </a>
-          </div>
-
-          <div class="col-md-3 col-sm-6 col-xs-12">
-          <a href="LinkToImage">
-              <img alt="AltText" src="https://placehold.it/300" class="img-responsive image">
-          </a>
-          </div>
-
-                </div>
-            </div>
-    </div>
-</div>
 @endsection
