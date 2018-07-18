@@ -7,13 +7,16 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
     <title>Apmokejimas</title>
     <link rel="stylesheet" href="css/scss.css">
+    <script type="text/javascript">
+	 	    var uploadUri = "{{ route('upload') }}";
+    </script>
   </head>
   <body>
     <a href='#'><img src='img/logo.png' class='logo'></a>
     <div class='afterLogo'>
     <h2>Užsakymas</h2>
+    <form method="POST" action="{{ route('order.store') }}">
     <h3>Pasirinktas planas: <span style='color: rgb(63,	115, 213);'><?php echo session('selectedPlan'); ?></span> <a href='/' class='change'>Keisti</a></h3>
-    <form method="POST" action='/realpro/order'>
       @csrf
       <h4>Pasirinkite NT objekto tipą bei pasiūlymo būdą:</h4>
     <div class="field is-grouped is-grouped-centered">
@@ -386,9 +389,8 @@
 <div id="message3"></div>
 </div>
 </div>
-<script   src="https://code.jquery.com/jquery-3.3.1.min.js"   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="   crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="   crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.form/4.2.2/jquery.form.min.js"></script>
-
 <script src='js/checkout.js'>
 </script>
   </body>

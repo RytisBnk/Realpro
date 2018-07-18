@@ -2,7 +2,7 @@ $(document).ready(function () {
 $('#images').on("change",function(){
     var options = {
         type:"post",
-        url: "/upload",
+        url: uploadUri,
         beforeSend: function()
         {
             $("#progress3").show();

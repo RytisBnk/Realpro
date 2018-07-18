@@ -21,45 +21,40 @@
   </tr>
 </thead>
 <tbody>
+  @if (!empty($orders))
+  @foreach ($orders as $order)
   <tr>
     <th scope="row">1</th>
-    <td>Marius Loxevicius</td>
-    <td>Garazas</td>
-    <td>Pavilniu g. 20-66</td>
-    <td>Pardavimas</td>
-    <td>Optimalus (99&euro;)</td>
+    <td>{{ $user->name }}</td>
+    <td>{{ $order->nuosavybes_tipas }}</td>
+    <td>{{ $order->adresas }}</td>
+    <td>{{ $order->pardavimo_tipas }}</td>
+    <td>{{ $order->planas }} (99&euro;)</td>
   </tr>
+  @endforeach
+  @endif
 </tbody>
 </table>
 </div>
 <h4>Nuotraukos</h4>
-<div class="row">
-  <div class="col-md-3 col-sm-6 col-xs-12">
-          <a href="LinkT">
-              <img alt="AltText" src="https://placehold.it/300" class="img-responsive image">
-          </a>
-          </div>
+@if (!empty($images))
+    @foreach ($images as $image)
+        @if ($loop->first)
+            <div class ="row">
+        @endif
 
-          <div class="col-md-3 col-sm-6 col-xs-12">
-          <a href="LinkToImage">
-              <img  alt="AltText" src="https://placehold.it/300" class="img-responsive image">
-          </a>
-          </div>
-
-          <div class="col-md-3 col-sm-6 col-xs-12">
-          <a href="LinkToImage">
-              <img src="https://placehold.it/300" alt="AltText" class="img-responsive image">
-          </a>
-          </div>
-
-          <div class="col-md-3 col-sm-6 col-xs-12">
-          <a href="LinkToImage">
-              <img alt="AltText" src="https://placehold.it/300" class="img-responsive image">
-          </a>
-          </div>
-
-                </div>
+        @if (!$loop->first && $loop->iteration % 5 == 0)
             </div>
-    </div>
-  </div>
+            <div class ="row">
+        @endif
+
+        <div class="col-md-3 col-sm-6 col-xs-12">
+            <a href="{{ route('image.retrieve', ['filename' => $image->filename]) }}">
+                <img alt="AltText" src="{{ route('image.retrieve', ['filename' => $image->filename]) }}" class="img-responsive image">
+            </a>
+        </div>
+    @endforeach
+@endif
+
+
 @endsection

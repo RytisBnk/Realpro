@@ -48,8 +48,17 @@ class OrderController extends Controller
 
     public function storeSelectedPlan(Request $request)
     {
-        session(['selectedPlan' => $request->input('plan')]);
-        return;
+        session(['selectedPlan' => $request->input('plan'),
+                'redirectRoute' => 'checkout']);
+        if (!Auth::check())
+        {
+            return route('register');
+        }
+        else if (Order::where('user_id', Auth::id())->count() > 0)
+        {
+            return route('order.list');
+        }
+        else return route('checkout');
     }
 
     public function create()
@@ -59,7 +68,18 @@ class OrderController extends Controller
 
     public function showAll()
     {
-        return view('order.list', array('orders' => Order::where('user_id', Auth::id())->get()));
+        $orders = Order::where('user_id', Auth::id())->get();
+        $user = User::find(Auth::id());
+        $images = Image::where('user_id', Auth::id())->get();
+        foreach($images as $image)
+        {
+            $image->filename = str_replace('files/', '', $image->filename);
+        }
+        return view('order.list', array(
+            'orders' => $orders,
+            'user' => $user,
+            'images' => $images
+        ));
     }
 
     public function show($id)
@@ -138,7 +158,7 @@ class OrderController extends Controller
         $user->gimimo_data = $request->input('gimimas');
         $user->save();
 
-        return redirect()->route('home'); // TO be changed to actual checkout page
+        return redirect()->route('index'); // TO be changed to actual checkout page
     }
 
     public function update(FormValidationRequest $request, $id)
