@@ -43,7 +43,7 @@
 </p>
 </div>
 <div class="field">
-  <label class="label">Vardas</label>
+  <label class="label">Pilnas vardas</label>
   <div class="control">
     <input class="input" type="text" placeholder="Vardas" name='vardas'>
   </div>

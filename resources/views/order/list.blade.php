@@ -7,8 +7,8 @@
 <div class="container" style='padding-top: 60px;'>
   <button type='button' class='btn btn-info btn-lg float-right' id='betterPlan'>Užsakyti kitą planą</button>
     <div class="row justify-content-center">
-        <div class="col-md-12">
-
+        <div class="col-lg-12">
+          <div class="table-responsive">
                   <table class="table table-hover">
 <thead class="thead-light">
   <tr>
@@ -35,6 +35,7 @@
   @endif
 </tbody>
 </table>
+</div>
 <h4>Nuotraukos</h4>
 @if (!empty($images))
     @foreach ($images as $image)
