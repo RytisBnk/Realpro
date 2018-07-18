@@ -5,7 +5,9 @@
 
 @section('content')
 <div class="container" style='padding-top: 60px;'>
+<a href="{{ route('index') }}">
   <button type='button' class='btn btn-info btn-lg float-right' id='betterPlan'>Užsakyti kitą planą</button>
+</a>
     <div class="row justify-content-center">
         <div class="col-lg-12">
           <div class="table-responsive">
@@ -29,7 +31,7 @@
     <td>{{ $order->nuosavybes_tipas }}</td>
     <td>{{ $order->adresas }}</td>
     <td>{{ $order->pardavimo_tipas }}</td>
-    <td>{{ $order->planas }} (99&euro;)</td>
+    <td>{{ $order->planas }} ({{ $prices[$order->id] }}&euro;)</td>
   </tr>
   @endforeach
   @endif
