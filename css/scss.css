@@ -3712,4 +3712,10 @@ input[type="file"], [type="file"].lower {
 #sklypas, #namo_tipas, #paskirtis, #paskirtis_kom, #talpa, #garazo_tipas {
   display: none; }
 
+.change {
+  text-decoration: underline;
+  font-size: 15px;
+  padding-left: 20px;
+  color: grey; }
+
 /*# sourceMappingURL=scss.css.map */

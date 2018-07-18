@@ -16,6 +16,7 @@
     <div class='afterLogo'>
     <h2>Užsakymas</h2>
     <form method="POST" action="{{ route('order.store') }}">
+    <h3>Pasirinktas planas: <span style='color: rgb(63,	115, 213);'><?php echo session('selectedPlan'); ?></span> <a href='/' class='change'>Keisti</a></h3>
       @csrf
       <h4>Pasirinkite NT objekto tipą bei pasiūlymo būdą:</h4>
     <div class="field is-grouped is-grouped-centered">
