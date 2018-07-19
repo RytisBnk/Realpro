@@ -13,7 +13,7 @@
 
 @section('content')
 <div class="container" style='padding-top: 60px;'>
-<a href="{{ route('index') }}">
+<a href="{{ route('plans') }}">
   <button type='button' class='btn btn-info btn-lg float-right' id='betterPlan'>Užsakyti kitą planą</button>
 </a>
     <div class="row justify-content-center">

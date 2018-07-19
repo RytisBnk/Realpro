@@ -43,3 +43,9 @@ Route::post('/upload', ['as' => 'upload', 'uses' => 'ImageController@upload']);
 Route::get('/plan/{id}', 'OrderController@storeSelectedPlan')->name('plan');
 
 Route::get('/images/{filename}', 'ImageController@retrieve')->name('image.retrieve');
+Route::get('/terms', function(){
+    return view('terms');
+})->name('terms');
+Route::get('/privacy', function(){
+    return view('privacy');
+})->name('privacy');

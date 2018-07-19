@@ -6,7 +6,7 @@
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,500" rel="stylesheet">
     <link rel="stylesheet" href="css/fontello.css">
     <link rel="stylesheet" href="css/scss.css">
-    <title>Planai | Realpro.lt</title>
+    <title>Planai | RealPro</title>
   </head>
   <body class='plans has-navbar-fixed-top'>
     <nav class="navbar is-fixed-top my-navbar">
