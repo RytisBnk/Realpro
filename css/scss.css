@@ -29,7 +29,7 @@
   .columns:not(.is-desktop) {
     display: flex; } }
 .table.is-bordered tr:last-child th {
-  border-bottom-width: 5px !important; }
+  border-bottom-width: 4px !important; }
 
 @media screen and (max-width: 1087px) {
   .navbar-menu .navbar-item {
@@ -3788,7 +3788,7 @@ hr {
 
 .button4 {
   margin: 40px 0;
-  border: 2px solid #070343;
+  border: 2px solid #3f73d5;
   color: #070343;
   background-color: transparent;
   padding: 15px 50px;
@@ -3799,8 +3799,8 @@ hr {
   border-radius: 3px; }
 
 .button4:hover {
-  color: #ffe89d;
-  background-color: #070343; }
+  color: #fff;
+  background-color: #3f73d5; }
 
 input[type="file"], [type="file"].lower {
   display: block; }
@@ -3859,7 +3859,8 @@ input[type="file"], [type="file"].lower {
 .plans {
   background-color: #f7f7f7; }
   .plans h2, .plans h4 {
-    text-align: center; }
+    text-align: center;
+    padding: 20px 0; }
   .plans table {
     border-collapse: collapse;
     border-spacing: 0;
@@ -3874,15 +3875,29 @@ input[type="file"], [type="file"].lower {
       text-align: center;
       padding: 20px 0; }
     .plans table .optimalus {
-      border-bottom: 5px solid blue; }
+      border-bottom: 5px solid #00d195; }
     .plans table .popular {
-      border-bottom: 5px solid green; }
+      border-bottom: 5px solid #127a07; }
     .plans table .praktik {
-      border-bottom: 5px solid red; }
+      border-bottom: 5px solid #010ec1; }
     .plans table .ypatingas {
-      border-bottom: 5px solid lightblue; }
+      border-bottom: 5px solid #9900bc; }
     .plans table .komercinis {
-      border-bottom: 10px solid black; }
+      border-bottom: 5px solid black; }
+    .plans table .pasirinkti {
+      border: 0;
+      font-size: 15px;
+      padding: 10px 20px;
+      background-color: #3f73d5;
+      color: #fff;
+      border-radius: 15px;
+      cursor: pointer;
+      -webkit-box-shadow: 0px 3px 8px 3px rgba(0, 0, 0, 0.2);
+      -moz-box-shadow: 0px 3px 8px 3px rgba(0, 0, 0, 0.2);
+      box-shadow: 0px 3px 8px 3px rgba(0, 0, 0, 0.2);
+      transition: 0.5s linear; }
+    .plans table .pasirinkti:hover {
+      background-color: #3063b5; }
   .plans .icon-ok-circled {
     color: #00cc1e;
     text-shadow: 1px 1px 7px rgba(8, 206, 38, 0.6);
@@ -3897,6 +3912,7 @@ input[type="file"], [type="file"].lower {
 
 .container {
   width: 80%;
-  margin: 0 auto; }
+  margin: 0 auto;
+  padding-bottom: 100px; }
 
 /*# sourceMappingURL=scss.css.map */

@@ -118,7 +118,6 @@ $('<div/>', {
 });
 
 });
-});
 $('#calculate').click(function () {
 var val = $('#sum').val();
 var percent = parseFloat(val*0.030).toFixed(2);
@@ -141,4 +140,5 @@ return false;
 $( ".product" ).click(function() {
 $(".product").removeClass('activep');
 $(this).addClass('activep');
+});
 });

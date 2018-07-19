@@ -6,7 +6,7 @@
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,500" rel="stylesheet">
     <link rel="stylesheet" href="css/fontello.css">
     <link rel="stylesheet" href="css/scss.css">
-    <title></title>
+    <title>Planai | Realpro.lt</title>
   </head>
   <body class='plans'>
     <a href='#'><img src='img/logo.png' class='logo'></a>
@@ -19,11 +19,11 @@
         <thead>
           <tr>
             <th style='border-bottom: 0;'></th>
-            <th class='optimalus'>Optimalus<br>Planas<br>99&euro;</th>
-            <th class='popular'>Populiariausias<br>Planas<br>199&euro;</th>
-            <th class='praktik'>Praktiškiausias<br>Planas<br>299&euro;</th>
-            <th class='ypatingas'>Ypatingas<br>Planas<br>399&euro;</th>
-            <th class='komercinis'>Komercinis<br>Planas<br>399&euro;</th>
+            <th class='optimalus'>OPTIMALUS<br>Planas<br>99&euro;</th>
+            <th class='popular'>POPULIARIAUSIAS<br>Planas<br>199&euro;</th>
+            <th class='praktik'>PRAKTIŠKIAUSIAS<br>Planas<br>299&euro;</th>
+            <th class='ypatingas'>YPATINGAS<br>Planas<br>399&euro;</th>
+            <th class='komercinis'>KOMERCINIS<br>Planas<br>399&euro;</th>
           </tr>
         </thead>
         <tbody>
@@ -78,16 +78,86 @@
         </tbody>
         <tfoot>
           <tr>
-            <td class='leftAlign'>Nemokamas NT objekto įvertinimas</td>
-            <td><i class="icon-ok-circled"></td>
-            <td><i class="icon-ok-circled"></td>
-            <td><i class="icon-ok-circled"></td>
-            <td><i class="icon-ok-circled"></td>
-            <td><i class="icon-ok-circled"></td>
+            <td></td>
+            <td><button type='button' class='pasirinkti' data-ripple>PASIRINKTI</button></td>
+            <td><button type='button' class='pasirinkti' data-ripple>PASIRINKTI</button></td>
+            <td><button type='button' class='pasirinkti' data-ripple>PASIRINKTI</button></td>
+            <td><button type='button' class='pasirinkti' data-ripple>PASIRINKTI</button></td>
+            <td><button type='button' class='pasirinkti' data-ripple>PASIRINKTI</button></td>
           </tr>
         </tfoot>
       </table>
     </div>
     </div>
+    <div class="container-3">
+      <div class="columns is-desktop">
+        <div class="column is-3" style="padding-top: 40px; justify-content: center;">
+          <img src="img/logo.png" style="width: 200px;">
+        </div>
+        <div class="column is-2">
+          <div class="footerTxt">Apie Mus</div>
+          <div class="links"><a href="#">Paslaugos</a></div>
+          <div class="links"><a href="#">Kaip tai veikia</a></div>
+          <div class="links"><a href="#">Kainos</a></div>
+          <div class="links"><a href="#">DUK</a></div>
+          <div class="links"><a href="#">Užsisakyti</a></div>
+        </div>
+        <div class="column is-2">
+          <div class="footerTxt">Klientams</div>
+          <div class="links"><a href="#">Taisyklės ir sąlygos</a></div>
+          <div class="links"><a href="#">Privatumo politika</a></div>
+        </div>
+        <div class="column is-2">
+          <div class="footerTxt">Kontaktai</div>
+          <div class="links">info@realpro.lt</div>
+          <div class="links">+370 612 66 668</div>
+        </div>
+        <div class="column is-auto">
+        </div>
+      </div>
+    </div>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.slim.min.js'></script>
+    <script>
+    $(document).on("mousedown", "[data-ripple]", function(e) {
+
+    var $self = $(this);
+
+    if($self.is(".btn-disabled")) {
+      return;
+    }
+    if($self.closest("[data-ripple]")) {
+      e.stopPropagation();
+    }
+
+    var initPos = $self.css("position"),
+        offs = $self.offset(),
+        x = e.pageX - offs.left,
+        y = e.pageY - offs.top,
+        dia = Math.min(this.offsetHeight, this.offsetWidth, 100), // start diameter
+        $ripple = $('<div/>', {class : "ripple",appendTo : $self });
+
+    if(!initPos || initPos==="static") {
+      $self.css({position:"relative"});
+    }
+
+    $('<div/>', {
+      class : "rippleWave",
+      css : {
+        background: $self.data("ripple"),
+        width: dia,
+        height: dia,
+        left: x - (dia/2),
+        top: y - (dia/2),
+      },
+      appendTo : $ripple,
+      one : {
+        animationend : function(){
+          $ripple.remove();
+        }
+      }
+    });
+
+    });
+  </script>
   </body>
 </html>
