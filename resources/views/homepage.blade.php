@@ -167,7 +167,7 @@
           </div>
         </div>
         </div>
-      <div style="margin-top: 40px;" id="select_plan"><a class="button3 btn" data-ripple href="{{ route('plans') }}" id="select_plan">Rinktis paslaugų paketą</a></div>
+      <div style="margin-top: 40px;" id="select_plan"><a class="button3 btn" data-ripple href="{{ route('plans') }}" id="select_plan">Daugiau planų</a></div>
     </div>
     <div class="container-2" id='duk'>
       <div style="color: #0b0146; font-size: 40px; padding-bottom: 20px;">Dažniausiai užduodami klausimai</div>
