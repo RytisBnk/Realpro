@@ -1,6 +1,6 @@
 @extends('layouts.app', ['title' => 'Jūsų užsakymai'])
 @section('assets')
-    <link rel="stylesheet" href="../css/scss.css">
+    <link rel="stylesheet" href="../css/orders.css">
 @endsection
 
 @section('content')
