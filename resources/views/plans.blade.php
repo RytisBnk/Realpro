@@ -126,11 +126,11 @@
         </tbody>
         <tfoot>
           <td></td>
-          <td><button type='button' class='pasirinkti' data-ripple>PASIRINKTI</button></td>
-          <td><button type='button' class='pasirinkti' data-ripple>PASIRINKTI</button></td>
-          <td><button type='button' class='pasirinkti' data-ripple>PASIRINKTI</button></td>
-          <td><button type='button' class='pasirinkti' data-ripple>PASIRINKTI</button></td>
-          <td><button type='button' class='pasirinkti' data-ripple>PASIRINKTI</button></td>
+          <td><a href="{{ route('plan', ['planID' => 1]) }}"><button type='button' class='pasirinkti' data-ripple>PASIRINKTI</button></a></td>
+          <td><a href="{{ route('plan', ['planID' => 2]) }}"><button type='button' class='pasirinkti' data-ripple>PASIRINKTI</button></a></td>
+          <td><a href="{{ route('plan', ['planID' => 3]) }}"><button type='button' class='pasirinkti' data-ripple>PASIRINKTI</button></a></td>
+          <td><a href="{{ route('plan', ['planID' => 4]) }}"><button type='button' class='pasirinkti' data-ripple>PASIRINKTI</button></a></td>
+          <td><a href="{{ route('plan', ['planID' => 5]) }}"><button type='button' class='pasirinkti' data-ripple>PASIRINKTI</button></a></td>
         </tfoot>
       </table>
     </div>

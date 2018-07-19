@@ -18,9 +18,9 @@
     <form method="POST" action="{{ route('order.store') }}">
     @csrf
     @if (session('selectedPlan') !== null)
-    <h3>Pasirinktas planas: <span style='color: rgb(63,	115, 213);'><?php echo session('selectedPlan'); ?></span> <a href='/' class='change'>Keisti</a></h3>
+    <h3>Pasirinktas planas: <span style='color: rgb(63,	115, 213);'><?php echo session('selectedPlan'); ?></span> <a href="{{ route('plans') }}" class='change'>Keisti</a></h3>
     @else 
-    <h3>Planas nepasirinktas <span style='color: rgb(63,	115, 213);'><?php echo session('selectedPlan'); ?></span> <a href='/' class='change'>Pasirinkti</a></h3>
+    <h3>Planas nepasirinktas <span style='color: rgb(63,	115, 213);'><?php echo session('selectedPlan'); ?></span> <a href="{{ route('plans') }}" class='change'>Pasirinkti</a></h3>
     @endif
       <h4>Pasirinkite NT objekto tipą bei pasiūlymo būdą:</h4>
     <div class="field is-grouped is-grouped-centered">

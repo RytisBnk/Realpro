@@ -20,8 +20,7 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/plans', function(){
     return view('plans');
-});
-
+})->name('plans');
 
 // ordering routes
 Route::middleware(['auth'])->group(function(){
@@ -37,6 +36,6 @@ Route::middleware(['auth'])->group(function(){
 });
 
 Route::post('/upload', ['as' => 'upload', 'uses' => 'ImageController@upload']);
-Route::post('/plan', 'OrderController@storeSelectedPlan')->name('plan');
+Route::get('/plan/{id}', 'OrderController@storeSelectedPlan')->name('plan');
 
 Route::get('/images/{filename}', 'ImageController@retrieve')->name('image.retrieve');
