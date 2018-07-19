@@ -16,14 +16,18 @@
     <div class='afterLogo'>
     <h2>Užsakymas</h2>
     <form method="POST" action="{{ route('order.store') }}">
+    @csrf
+    @if (session('selectedPlan') !== null)
     <h3>Pasirinktas planas: <span style='color: rgb(63,	115, 213);'><?php echo session('selectedPlan'); ?></span> <a href='/' class='change'>Keisti</a></h3>
-      @csrf
+    @else 
+    <h3>Planas nepasirinktas <span style='color: rgb(63,	115, 213);'><?php echo session('selectedPlan'); ?></span> <a href='/' class='change'>Pasirinkti</a></h3>
+    @endif
       <h4>Pasirinkite NT objekto tipą bei pasiūlymo būdą:</h4>
     <div class="field is-grouped is-grouped-centered">
 <p class="control has-icons-left">
   <span class="select">
     <select name='nuosavybes_tipas' id='tipas'>
-      <option selected value='butas'>Butas</option>
+      <option selected value="butas">Butas</option>
       <option value="namas">Namas</option>
       <option value="sklypas">Sklypas</option>
       <option value="patalpos">Patalpos</option>
@@ -37,8 +41,8 @@
 <p class="control">
   <span class="select">
     <select name='pardavimo_tipas' id='pardavimo_tipas'>
-      <option selected value='parduoti'>Parduoti</option>
-      <option value='nuomuoti'>Nuomuoti</option>
+      <option selected value='pardavimas'>Parduoti</option>
+      <option value='nuoma'>Nuomuoti</option>
     </select>
   </span>
 </p>

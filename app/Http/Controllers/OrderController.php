@@ -46,6 +46,12 @@ class OrderController extends Controller
           'gamybos'
     ];
 
+    private $planuKainos = [
+        'Optimalus' => 99,
+        'Populiariausias' => 199,
+        'Praktiškiausias' => 299
+    ];
+
     public function storeSelectedPlan(Request $request)
     {
         session(['selectedPlan' => $request->input('plan'),
@@ -71,6 +77,11 @@ class OrderController extends Controller
         $orders = Order::where('user_id', Auth::id())->get();
         $user = User::find(Auth::id());
         $images = Image::where('user_id', Auth::id())->get();
+        $prices = array();
+        foreach ($orders as $order)
+        {
+            $prices[$order->id] = $this->planuKainos[$order->planas];
+        }
         foreach($images as $image)
         {
             $image->filename = str_replace('files/', '', $image->filename);
@@ -78,7 +89,8 @@ class OrderController extends Controller
         return view('order.list', array(
             'orders' => $orders,
             'user' => $user,
-            'images' => $images
+            'images' => $images,
+            'prices' => $prices
         ));
     }
 

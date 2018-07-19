@@ -5,7 +5,9 @@
 
 @section('content')
 <div class="container" style='padding-top: 60px;'>
+<a href="{{ route('index') }}">
   <button type='button' class='btn btn-info btn-lg float-right' id='betterPlan'>Užsakyti kitą planą</button>
+</a>
     <div class="row justify-content-center">
         <div class="col-lg-12">
           <div class="table-responsive">
@@ -25,19 +27,19 @@
   @foreach ($orders as $order)
   <tr>
     <th scope="row">1</th>
-    <td>{{ $user->name }}</td>
-    <td>{{ $order->nuosavybes_tipas }}</td>
+    <td>{{ ucwords($user->name) }}</td>
+    <td>{{ ucfirst($order->nuosavybes_tipas) }}</td>
     <td>{{ $order->adresas }}</td>
-    <td>{{ $order->pardavimo_tipas }}</td>
-    <td>{{ $order->planas }} (99&euro;)</td>
+    <td>{{ ucfirst($order->pardavimo_tipas) }}</td>
+    <td>{{ $order->planas }} ({{ $prices[$order->id] }}&euro;)</td>
   </tr>
   @endforeach
   @endif
 </tbody>
 </table>
 </div>
+@if (count($images) > 0)
 <h4>Nuotraukos</h4>
-@if (!empty($images))
     @foreach ($images as $image)
         @if ($loop->first)
             <div class ="row">
@@ -49,7 +51,7 @@
         @endif
 
         <div class="col-md-3 col-sm-6 col-xs-12">
-            <a href="{{ route('image.retrieve', ['filename' => $image->filename]) }}">
+            <a href="{{ route('image.retrieve', ['filename' => $image->filename]) }}" target="_blank">
                 <img alt="AltText" src="{{ route('image.retrieve', ['filename' => $image->filename]) }}" class="img-responsive image">
             </a>
         </div>
