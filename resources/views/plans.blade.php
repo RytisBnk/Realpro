@@ -92,7 +92,6 @@
             <td><i class="icon-ok-circled"></td>
           </tr>
           <tr>
-            <td></td>
             <td class='leftAlign'>Premium skelbimai portaluose</td>
             <td><i class="icon-cancel-circled"></td>
             <td><i class="icon-cancel-circled"></td>
