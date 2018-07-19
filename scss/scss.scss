@@ -578,20 +578,15 @@ input[type="file"] {
   padding-left: 20px;
   color: grey;
 }
-.image {
-  width: 200px;
-  padding-bottom: 40px;
-}
-#betterPlan {
-  margin: 20px 0;
-}
 .plans {
+  .search-table-outter { overflow-x: scroll; }
   background-color: #f7f7f7;
-  h2, h4 {
+  h1, h4 {
     text-align: center;
     padding: 20px 0;
   }
   table {
+    overflow-y:scroll;
     border-collapse: collapse;
     border-spacing: 0;
     -webkit-box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.3);
@@ -662,4 +657,21 @@ transition: 0.5s linear;
   width: 80%;
   margin: 0 auto;
   padding-bottom: 100px;
+}
+.terms {
+  .container {
+    padding-top: 100px;
+    width: 80%;
+    margin: 0 auto;
+    line-height: 2;
+  }
+  h1, h4 {
+  color: #0b0146;}
+
+  h1 {
+  text-align: center;}
+
+  p {
+  padding: 0px 0px 0px 25px;
+  font-size: 15px;}
 }

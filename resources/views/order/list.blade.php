@@ -1,6 +1,14 @@
 @extends('layouts.app', ['title' => 'Jūsų užsakymai'])
 @section('assets')
-    <link rel="stylesheet" href="../css/scss.css">
+    <style>
+    .image {
+      width: 200px;
+      padding-bottom: 40px;
+    }
+    #betterPlan {
+      margin: 20px 0;
+    }
+    </style>
 @endsection
 
 @section('content')

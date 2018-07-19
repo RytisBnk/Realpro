@@ -22,6 +22,9 @@ Route::get('/plans', function(){
     return view('plans');
 });
 
+Route::get('/terms', function(){
+    return view('terms');
+});
 
 // ordering routes
 Route::middleware(['auth'])->group(function(){

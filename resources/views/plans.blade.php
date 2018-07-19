@@ -8,13 +8,45 @@
     <link rel="stylesheet" href="css/scss.css">
     <title>Planai | Realpro.lt</title>
   </head>
-  <body class='plans'>
-    <a href='#'><img src='img/logo.png' class='logo'></a>
-    <h2>Detalūs planai</h2>
+  <body class='plans has-navbar-fixed-top'>
+    <nav class="navbar is-fixed-top my-navbar">
+  <div class="navbar-brand">
+    <div class="navbar-burger burger" data-target="my-navbar-menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+  <div id="my-navbar-menu" class="navbar-menu">
+    <div class="navbar-start">
+      <div class="navbar-item" style="margin-right: -80px;"><a href="http://realpro.test/#paslaugos" style='z-index: 999999;' class='nav-item' data-ripple="rgba(0,0,0, 0.3)">Paslaugos</a>
+      </div>
+      <div class="navbar-item" style="margin-right: -120px;"><a class='nav-item' style='z-index: 999999;' data-ripple="rgba(0,0,0, 0.3)" href="#kainos">Kainos</a>
+      </div>
+    </div>
+    <div class="my-navbar-center">
+      <div class="navbar-item"><a href='#'><img src="img/logo.png" alt="Realpro NT agentura" style="padding-top: 20px; width: 150px;"></a>
+      </div>
+    </div>
+    <div class="navbar-end">
+      <div class="navbar-item" style="margin-left: -80px;"><a class='nav-item'  data-ripple="rgba(0,0,0, 0.3)" href="#duk">DUK</a>
+      </div>
+      <div class="navbar-item" style="margin-left: -20px;"><a class='nav-item'  data-ripple="rgba(0,0,0, 0.3)" href="#apie">Apie Mus</a>
+      </div>
+      @guest
+      <div class="navbar-item" style="margin-right: -60px;"><a data-ripple="rgba(0,0,0, 0.3)" class="button" href="{{ route('login') }}" id="login">Prisijungti</a>
+      @else
+      <div class="navbar-item" style="margin-right: -60px;"><a data-ripple="rgba(0,0,0, 0.3)" class="button" href="{{ route('order.list') }}" id="orders">Užsakymai</a>
+      @endguest
+      </div>
+    </div>
+  </div>
+</nav>
+    <h1 style='padding-top: 40px;'>Detalūs planai</h1>
     <h4>Išsirinkite sau tinkamiausią planą:</h4>
 
     <div class='container'>
-      <div>
+      <div class='search-table-outter'>
       <table class='table is-bordered is-fullwidth'>
         <thead>
           <tr>
@@ -32,8 +64,8 @@
             <td><i class="icon-ok-circled"></td>
             <td><i class="icon-ok-circled"></td>
             <td><i class="icon-ok-circled"></td>
-            <td><i class="icon-cancel-circled"></td>
-            <td><i class="icon-cancel-circled"></td>
+            <td><i class="icon-ok-circled"></td>
+            <td><i class="icon-ok-circled"></td>
           </tr>
           <tr>
             <td class='leftAlign'>Pardavimo progresas ir derybos</td>
