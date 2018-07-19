@@ -1,0 +1,36 @@
+h1, h4 {
+color: #0b0146;}
+
+div {
+display: inline-block;
+position: relative;
+height: 40px;}
+
+div.home {
+width: 40px;}
+
+div.logo {
+position: absolute;
+left: 50%;
+transform: translateX(-50%);}
+
+body {
+margin: 15px 50px 35px 40px;
+line-height: 1.4;
+text-align: justify;
+font-family: 'Raleway';
+background-color: #fff;}
+
+h1 {
+text-align: center;}
+
+p {
+padding: 0px 0px 0px 25px;
+font-size: 15px;}
+
+img.home {
+height: 40px;}
+
+img.logo {
+height: 34px;
+padding: 3px 0;}
