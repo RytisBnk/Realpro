@@ -51,7 +51,7 @@
         @endif
 
         <div class="col-md-3 col-sm-6 col-xs-12">
-            <a href="{{ route('image.retrieve', ['filename' => $image->filename]) }}" target="blank">
+            <a href="{{ route('image.retrieve', ['filename' => $image->filename]) }}" target="_blank">
                 <img alt="AltText" src="{{ route('image.retrieve', ['filename' => $image->filename]) }}" class="img-responsive image">
             </a>
         </div>
