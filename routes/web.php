@@ -18,6 +18,9 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/plans', function(){
+    return view('plans');
+});
 
 
 // ordering routes
@@ -32,7 +35,7 @@ Route::middleware(['auth'])->group(function(){
     Route::put('/order/update', 'OrderController@update');
     Route::delete('/order/delete', 'OrderController@destroy');
 });
-    
+
 Route::post('/upload', ['as' => 'upload', 'uses' => 'ImageController@upload']);
 Route::post('/plan', 'OrderController@storeSelectedPlan')->name('plan');
 

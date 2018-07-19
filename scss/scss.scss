@@ -5,6 +5,11 @@
   .my-navbar .navbar-brand {
     display: none;
   }
+  .my-navbar {
+    -webkit-box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.75);
+  }
   #my-navbar-menu {
     width: 1050px;
     margin: 0 auto;
@@ -28,6 +33,9 @@
     display: flex;
   }
 }
+.table.is-bordered tr:last-child th {
+border-bottom-width: 5px !important;
+}
 @media screen and (max-width: 1087px) {
   .navbar-menu .navbar-item {
     width: 100%;
@@ -46,10 +54,13 @@
     height: 80px;
   }
 }
+
+
 @import "../bulma/sass/utilities/_all";
 @import "../bulma/sass/grid/columns";
 @import "../bulma/sass/components/navbar";
 @import "../bulma/sass/elements/form";
+@import "../bulma/sass/elements/table";
 @import "../bulma/sass/elements/bulma-checkradio";
 body {
   font-family: 'Raleway', sans-serif;
@@ -565,4 +576,71 @@ input[type="file"] {
   font-size: 15px;
   padding-left: 20px;
   color: grey;
+}
+.image {
+  width: 200px;
+  padding-bottom: 40px;
+}
+#betterPlan {
+  margin: 20px 0;
+}
+.plans {
+  background-color: #f7f7f7;
+  h2, h4 {
+    text-align: center;
+  }
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    -webkit-box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.3);
+    -moz-box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.3);
+    box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.3);
+    thead {
+      tr {
+        th {
+          padding: 20px 0;
+          text-align: center;
+          line-height: 2;
+        }
+      }
+    }
+    td {
+      text-align: center;
+      padding: 20px 0;
+    }
+    .optimalus {
+      border-bottom: 5px solid blue;
+    }
+    .popular {
+      border-bottom: 5px solid green;
+    }
+    .praktik {
+      border-bottom: 5px solid red;
+    }
+    .ypatingas {
+      border-bottom: 5px solid lightblue;
+    }
+    .komercinis {
+      border-bottom: 10px solid black;
+    }
+  }
+
+  .icon-ok-circled {
+    color: #00cc1e;
+    text-shadow: 1px 1px 7px rgba(8, 206, 38, 0.6);
+    font-size: 18px;
+  }
+  .icon-cancel-circled {
+    font-size: 18px;
+    color: rgb(181, 3, 30);
+    text-shadow: 1px 1px 7px rgba(181, 3, 30, 0.4);
+  }
+  .leftAlign {
+    text-align: left;
+    padding-left: 20px;
+  }
+}
+.container {
+  width: 80%;
+  margin: 0 auto;
 }
