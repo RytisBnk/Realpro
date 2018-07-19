@@ -36,7 +36,7 @@
             <td><i class="icon-cancel-circled"></td>
           </tr>
           <tr>
-            <td class='leftAlign'>Nemokamas NT objekto įvertinimas</td>
+            <td class='leftAlign'>Pardavimo progresas ir derybos</td>
             <td><i class="icon-ok-circled"></td>
             <td><i class="icon-ok-circled"></td>
             <td><i class="icon-ok-circled"></td>
@@ -44,7 +44,7 @@
             <td><i class="icon-ok-circled"></td>
           </tr>
           <tr>
-            <td class='leftAlign'>Nemokamas NT objekto įvertinimas</td>
+            <td class='leftAlign'>Jūsų NT rodomas tūkstančiams pirkėjų</td>
             <td><i class="icon-ok-circled"></td>
             <td><i class="icon-ok-circled"></td>
             <td><i class="icon-ok-circled"></td>
@@ -52,7 +52,7 @@
             <td><i class="icon-ok-circled"></td>
           </tr>
           <tr>
-            <td class='leftAlign'>Nemokamas NT objekto įvertinimas</td>
+            <td class='leftAlign'>Savaitinės atąskaitos esant poreikiui</td>
             <td><i class="icon-ok-circled"></td>
             <td><i class="icon-ok-circled"></td>
             <td><i class="icon-ok-circled"></td>
@@ -60,31 +60,72 @@
             <td><i class="icon-ok-circled"></td>
           </tr>
           <tr>
-            <td class='leftAlign'>Nemokamas NT objekto įvertinimas</td>
-            <td><i class="icon-ok-circled"></td>
+            <td class='leftAlign'>Profesionalaus fotografo nuotraukos</td>
+            <td><i class="icon-cancel-circled"></td>
             <td><i class="icon-ok-circled"></td>
             <td><i class="icon-ok-circled"></td>
             <td><i class="icon-ok-circled"></td>
             <td><i class="icon-ok-circled"></td>
           </tr>
           <tr>
-            <td class='leftAlign'>Nemokamas NT objekto įvertinimas</td>
+            <td class='leftAlign'>Detalus 2D aukšto planas</td>
+            <td><i class="icon-cancel-circled"></td>
             <td><i class="icon-ok-circled"></td>
             <td><i class="icon-ok-circled"></td>
             <td><i class="icon-ok-circled"></td>
+            <td><i class="icon-ok-circled"></td>
+          </tr>
+          <tr>
+            <td class='leftAlign'>Iškelti/išryškinti NT skelbimai</td>
+            <td><i class="icon-cancel-circled"></td>
+            <td><i class="icon-ok-circled"></td>
+            <td><i class="icon-ok-circled"></td>
+            <td><i class="icon-ok-circled"></td>
+            <td><i class="icon-ok-circled"></td>
+          </tr>
+          <tr>
+            <td class='leftAlign'>Pardavimo ženklasant pastato</td>
+            <td><i class="icon-cancel-circled"></td>
+            <td><i class="icon-cancel-circled"></td>
+            <td><i class="icon-ok-circled"></td>
+            <td><i class="icon-ok-circled"></td>
+            <td><i class="icon-ok-circled"></td>
+          </tr>
+          <tr>
+            <td class='leftAlign'>Premium skelbimai portaluose</td>
+            <td><i class="icon-cancel-circled"></td>
+            <td><i class="icon-cancel-circled"></td>
+            <td><i class="icon-ok-circled"></td>
+            <td><i class="icon-ok-circled"></td>
+            <td><i class="icon-ok-circled"></td>
+          </tr>
+          <tr>
+            <td class='leftAlign'>Pilnas NT objekto aprašymas</td>
+            <td><i class="icon-cancel-circled"></td>
+            <td><i class="icon-cancel-circled"></td>
+            <td><i class="icon-ok-circled"></td>
+            <td><i class="icon-ok-circled"></td>
+            <td><i class="icon-ok-circled"></td>
+          </tr>
+          <tr>
+            <td class='leftAlign'>Patalpos aprodymas pirkėjams</td>
+            <td><i class="icon-cancel-circled"></td>
+            <td><i class="icon-cancel-circled"></td>
+            <td><i class="icon-cancel-circled"></td>
+            <td><i class="icon-ok-circled"></td>
+            <td><i class="icon-ok-circled"></td>
+          </tr>
+          <tr>
+            <td class='leftAlign'>3D šablono paruošimas</td>
+            <td><i class="icon-cancel-circled"></td>
+            <td><i class="icon-cancel-circled"></td>
+            <td><i class="icon-cancel-circled"></td>
             <td><i class="icon-ok-circled"></td>
             <td><i class="icon-ok-circled"></td>
           </tr>
         </tbody>
         <tfoot>
-          <tr>
-            <td class='leftAlign'>Nemokamas NT objekto įvertinimas</td>
-            <td><i class="icon-ok-circled"></td>
-            <td><i class="icon-ok-circled"></td>
-            <td><i class="icon-ok-circled"></td>
-            <td><i class="icon-ok-circled"></td>
-            <td><i class="icon-ok-circled"></td>
-          </tr>
+          
         </tfoot>
       </table>
     </div>
