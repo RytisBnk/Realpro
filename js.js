@@ -58,18 +58,18 @@ $('.slider').on('afterChange', function(event, slick, currentSlide){
   $('.slick-slide[data-slick-index="'+currentSlide+'"]').children().children().addClass('current');
 });
 
-$('a[href*="#"]').click(function() {
-if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-  var target = $(this.hash);
-  target = target.length ? target : $('[name="' + this.hash.slice(1) +'"]');
-  if (target.length) {
-    $('html,body').animate({
-      scrollTop: target.offset().top-50
-    }, 500);
-    return false;
-  }
-}
-});
+var speed = 700;
+
+    // check for hash and if div exist... scroll to div
+    var hash = window.location.hash;
+    if($(hash).length) scrollToID(hash, speed);
+
+    // scroll to div on nav click
+    $('.nav-item').click(function (e) {
+        var id = $(this).attr('href');
+        if($(id).length) scrollToID(id, speed);
+        return false;
+    });
 $('.questionNumberIcon').click(function () {
 $('.questionNumberIcon').removeClass('active');
 $(this).addClass('active');
@@ -118,7 +118,6 @@ $('<div/>', {
 });
 
 });
-});
 $('#calculate').click(function () {
 var val = $('#sum').val();
 var percent = parseFloat(val*0.030).toFixed(2);
@@ -142,3 +141,10 @@ $( ".product" ).click(function() {
 $(".product").removeClass('activep');
 $(this).addClass('activep');
 });
+})
+function scrollToID(id, speed) {
+    var offSet = 50;
+    var obj = $(id).offset();
+    var targetOffset = obj.top - offSet;
+    $('html,body').animate({ scrollTop: targetOffset }, speed);
+}

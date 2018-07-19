@@ -18,7 +18,13 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/plans', function(){
+    return view('plans');
+})->name('plans');;
 
+Route::get('/terms', function(){
+    return view('terms');
+});
 
 // ordering routes
 Route::middleware(['auth'])->group(function(){
@@ -32,8 +38,14 @@ Route::middleware(['auth'])->group(function(){
     Route::put('/order/update', 'OrderController@update');
     Route::delete('/order/delete', 'OrderController@destroy');
 });
-    
+
 Route::post('/upload', ['as' => 'upload', 'uses' => 'ImageController@upload']);
-Route::post('/plan', 'OrderController@storeSelectedPlan')->name('plan');
+Route::get('/plan/{id}', 'OrderController@storeSelectedPlan')->name('plan');
 
 Route::get('/images/{filename}', 'ImageController@retrieve')->name('image.retrieve');
+Route::get('/terms', function(){
+    return view('terms');
+})->name('terms');
+Route::get('/privacy', function(){
+    return view('privacy');
+})->name('privacy');
