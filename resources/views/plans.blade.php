@@ -20,28 +20,29 @@
   </div>
   <div id="my-navbar-menu" class="navbar-menu">
     <div class="navbar-start">
-      <div class="navbar-item" style="margin-right: -80px;"><a href="http://realpro.test/#paslaugos" style='z-index: 999999;' class='nav-item' data-ripple="rgba(0,0,0, 0.3)">Paslaugos</a>
+      <div class="navbar-item" style="margin-right: -80px;"><a href="http://realpro.lt/#paslaugos" style='z-index: 999999;' class='nav-item' data-ripple="rgba(0,0,0, 0.3)">Paslaugos</a>
       </div>
-      <div class="navbar-item" style="margin-right: -120px;"><a class='nav-item' style='z-index: 999999;' data-ripple="rgba(0,0,0, 0.3)" href="#kainos">Kainos</a>
+      <div class="navbar-item" style="margin-right: -120px;"><a class='nav-item' style='z-index: 999999;' data-ripple="rgba(0,0,0, 0.3)" href="http://realpro.lt/#kainos">Kainos</a>
       </div>
     </div>
     <div class="my-navbar-center">
-      <div class="navbar-item"><a href='#'><img src="img/logo.png" alt="Realpro NT agentura" style="padding-top: 20px; width: 150px;"></a>
+      <div class="navbar-item"><a href='http://realpro.lt/'><img src="img/logo.png" alt="Realpro NT agentura" style="padding-top: 20px; width: 150px;"></a>
       </div>
     </div>
     <div class="navbar-end">
-      <div class="navbar-item" style="margin-left: -80px;"><a class='nav-item'  data-ripple="rgba(0,0,0, 0.3)" href="#duk">DUK</a>
+      <div class="navbar-item" style="margin-left: -80px;"><a class='nav-item'  data-ripple="rgba(0,0,0, 0.3)" href="http://realpro.lt/#duk">DUK</a>
       </div>
-      <div class="navbar-item" style="margin-left: -20px;"><a class='nav-item'  data-ripple="rgba(0,0,0, 0.3)" href="#apie">Apie Mus</a>
+      <div class="navbar-item" style="margin-left: -20px;"><a class='nav-item'  data-ripple="rgba(0,0,0, 0.3)" href="http://realpro.lt/#apie">Apie Mus</a>
       </div>
       @guest
       <div class="navbar-item" style="margin-right: -60px;"><a data-ripple="rgba(0,0,0, 0.3)" class="button" href="{{ route('login') }}" id="login">Prisijungti</a>
+      </div>
       @else
       <div class="navbar-item" style="margin-right: -60px;"><a data-ripple="rgba(0,0,0, 0.3)" class="button" href="{{ route('order.list') }}" id="orders">Užsakymai</a>
+      </div>
       @endguest
       </div>
     </div>
-  </div>
 </nav>
     <h1 style='padding-top: 40px;'>DETALŪS PLANAI</h1>
     <h4>Išsirinkite sau tinkamiausią planą:</h4>
@@ -175,16 +176,16 @@
         </div>
         <div class="column is-2">
           <div class="footerTxt">Apie Mus</div>
-          <div class="links"><a href="#">Paslaugos</a></div>
-          <div class="links"><a href="#">Kaip tai veikia</a></div>
-          <div class="links"><a href="#">Kainos</a></div>
-          <div class="links"><a href="#">DUK</a></div>
-          <div class="links"><a href="#">Užsisakyti</a></div>
+          <div class="links"><a href="http://realpro.lt/#paslaugos" class='footerLinks'>Paslaugos</a></div>
+          <div class="links"><a href="http://realpro.lt/#apie" class='footerLinks'>Kaip tai veikia</a></div>
+          <div class="links"><a href="http://realpro.lt/#kainos" class='footerLinks'>Kainos</a></div>
+          <div class="links"><a href="http://realpro.lt/#duk" class='footerLinks'>DUK</a></div>
+          <div class="links"><a href="{{ route('plans') }}">Užsisakyti</a></div>
         </div>
         <div class="column is-2">
           <div class="footerTxt">Klientams</div>
-          <div class="links"><a href="#">Taisyklės ir sąlygos</a></div>
-          <div class="links"><a href="#">Privatumo politika</a></div>
+          <div class="links"><a href="{{ route('terms') }}">Taisyklės ir sąlygos</a></div>
+          <div class="links"><a href="{{ route('privacy') }}">Privatumo politika</a></div>
         </div>
         <div class="column is-2">
           <div class="footerTxt">Kontaktai</div>
@@ -194,6 +195,9 @@
         <div class="column is-auto">
         </div>
       </div>
+    </div>
+    <div class="footext">
+      2018 © Realpro.lt, UAB "Emiras", įmonės kodas 304836394, Tel. nr. +370 612 66 668
     </div>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.slim.min.js'></script>
     <script>
