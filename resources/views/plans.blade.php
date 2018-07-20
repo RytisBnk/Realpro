@@ -176,16 +176,16 @@
         </div>
         <div class="column is-2">
           <div class="footerTxt">Apie Mus</div>
-          <div class="links"><a href="#">Paslaugos</a></div>
-          <div class="links"><a href="#">Kaip tai veikia</a></div>
-          <div class="links"><a href="#">Kainos</a></div>
-          <div class="links"><a href="#">DUK</a></div>
-          <div class="links"><a href="#">Užsisakyti</a></div>
+          <div class="links"><a href="http://realpro.lt/#paslaugos" class='footerLinks'>Paslaugos</a></div>
+          <div class="links"><a href="http://realpro.lt/#apie" class='footerLinks'>Kaip tai veikia</a></div>
+          <div class="links"><a href="http://realpro.lt/#kainos" class='footerLinks'>Kainos</a></div>
+          <div class="links"><a href="http://realpro.lt/#duk" class='footerLinks'>DUK</a></div>
+          <div class="links"><a href="{{ route('plans') }}">Užsisakyti</a></div>
         </div>
         <div class="column is-2">
           <div class="footerTxt">Klientams</div>
-          <div class="links"><a href="#">Taisyklės ir sąlygos</a></div>
-          <div class="links"><a href="#">Privatumo politika</a></div>
+          <div class="links"><a href="{{ route('terms') }}">Taisyklės ir sąlygos</a></div>
+          <div class="links"><a href="{{ route('privacy') }}">Privatumo politika</a></div>
         </div>
         <div class="column is-2">
           <div class="footerTxt">Kontaktai</div>
@@ -195,6 +195,9 @@
         <div class="column is-auto">
         </div>
       </div>
+    </div>
+    <div class="footext">
+      2018 © Realpro.lt, UAB "Emiras", įmonės kodas 304836394, Tel. nr. +370 612 66 668
     </div>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.slim.min.js'></script>
     <script>
