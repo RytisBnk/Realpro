@@ -263,7 +263,7 @@
         </div>
         <div class="column" style="flex: 1;">
           <div style="color: #0b0146; font-size: 40px; padding-bottom: 20px;">Apie Mus</div>
-          <div class="bottom">Pagrindinis skirtumas tarp Realta.lt ir visų kitų Lietuvoje veikiančių NT agentūrų yra kaina ir klientų aptarnavimas. Kadangi mes dirbame internetu, mūsų įmonė neturi didelių išlaidų, todėl mūsų darbo sąnaudos yra žymiai mažesnės, tai reiškia, kad mes galime dirbti efektyviau, ekologiškiau ir ekonomiškiau. Antra, mūsų klientai gali patys nuspręsti, kiek gali sumokėti ir kokias paslaugas gauti pardavimo procese. Nes mes sujungiam kuo daugiau pardavėjų, pirkėjų ir paslaugų tiekėjų vienoje vietoje.</div>
+          <div class="bottom">Pagrindinis skirtumas tarp Realpro.lt ir visų kitų Lietuvoje veikiančių NT agentūrų yra kaina ir klientų aptarnavimas. Kadangi mes dirbame internetu, mūsų įmonė neturi didelių išlaidų, todėl mūsų darbo sąnaudos yra žymiai mažesnės, tai reiškia, kad mes galime dirbti efektyviau, ekologiškiau ir ekonomiškiau. Antra, mūsų klientai gali patys nuspręsti, kiek gali sumokėti ir kokias paslaugas gauti pardavimo procese. Nes mes sujungiam kuo daugiau pardavėjų, pirkėjų ir paslaugų tiekėjų vienoje vietoje.</div>
         </div>
       </div>
     </div>
