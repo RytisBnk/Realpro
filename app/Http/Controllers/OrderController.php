@@ -46,25 +46,35 @@ class OrderController extends Controller
           'gamybos'
     ];
 
+    private $planai = [
+        1 => 'Optimalus',
+        2 => 'Populiariausias',
+        3 => 'Praktiškiausias',
+        4 => 'Ypatingas',
+        5 => 'Komercinis'
+    ];
+
     private $planuKainos = [
         'Optimalus' => 99,
         'Populiariausias' => 199,
-        'Praktiškiausias' => 299
+        'Praktiškiausias' => 299,
+        'Ypatingas' => 399,
+        'Komercinis' => 399
     ];
 
-    public function storeSelectedPlan(Request $request)
+    public function storeSelectedPlan($planID)
     {
-        session(['selectedPlan' => $request->input('plan'),
+        session(['selectedPlan' => $this->planai[$planID],
                 'redirectRoute' => 'checkout']);
         if (!Auth::check())
         {
-            return route('register');
+            return redirect()->route('register');
         }
         else if (Order::where('user_id', Auth::id())->count() > 0)
         {
-            return route('order.list');
+            return redirect()->route('order.list');
         }
-        else return route('checkout');
+        else return redirect()->route('checkout');
     }
 
     public function create()

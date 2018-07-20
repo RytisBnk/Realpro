@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <title>NT</title>
+    <title>RealPro</title>
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,700" rel="stylesheet">
     <!-- Add the slick-theme.css if you want default styling -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
@@ -167,8 +167,7 @@
           </div>
         </div>
         </div>
-      <div style="margin-top: 40px;" id="select_plan"><a class="button3 btn" data-ripple href="#" id="select_plan" onClick="redirect()">Rinktis paslaugų paketą</a></div>
-
+      <div style="margin-top: 40px;" id="select_plan"><a class="button3 btn" data-ripple href="{{ route('plans') }}" id="select_plan">Daugiau planų</a></div>
     </div>
     <div class="container-2" id='duk'>
       <div style="color: #0b0146; font-size: 40px; padding-bottom: 20px;">Dažniausiai užduodami klausimai</div>
@@ -274,8 +273,8 @@
         </div>
         <div class="column is-2">
           <div class="footerTxt">Klientams</div>
-          <div class="links"><a href="#">Taisyklės ir sąlygos</a></div>
-          <div class="links"><a href="#">Privatumo politika</a></div>
+          <div class="links"><a href="{{ route('terms') }}">Taisyklės ir sąlygos</a></div>
+          <div class="links"><a href="{{ route('privacy') }}">Privatumo politika</a></div>
         </div>
         <div class="column is-2">
           <div class="footerTxt">Kontaktai</div>
