@@ -3938,4 +3938,52 @@ input[type="file"], [type="file"].lower {
   padding: 0px 0px 0px 25px;
   font-size: 15px; }
 
+#slideout {
+  position: fixed;
+  top: 50%;
+  left: 0;
+  transition-duration: 0.3s; }
+
+.slideout {
+  background-color: #3f73d5;
+  color: #fff;
+  height: 150px;
+  width: 30px;
+  writing-mode: tb-rl;
+  padding: 10px;
+  padding-left: 5px;
+  display: flex;
+  justify-content: center;
+  font-size: 18px; }
+
+#slideout_inner {
+  padding-left: 10px;
+  position: fixed;
+  width: 250px;
+  height: 170px;
+  top: 50%;
+  left: -261px;
+  transition-duration: 0.3s;
+  background-color: #3f73d5;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-right: 1px solid #fff; }
+
+#slideout:hover, #slideout:focus {
+  left: 261px; }
+
+#slideout:hover #slideout_inner {
+  left: 0; }
+
+.icon-phone {
+  color: #fff;
+  font-size: 18px;
+  margin-bottom: 10px;
+  writing-mode: tb-rl; }
+
+.telNr a {
+  color: #fff; }
+
 /*# sourceMappingURL=scss.css.map */

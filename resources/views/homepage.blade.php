@@ -9,10 +9,18 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
 <!-- Add the slick-theme.css if you want default styling -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
+<link rel="stylesheet" href="css/fontello.css">
     <link rel="stylesheet" href="css/scss.css">
 
   </head>
   <body class="has-navbar-fixed-top">
+    <div id="slideout">
+  <div class='slideout'><i class='icon-phone'></i>SUSISIEKTI</div>
+  <div id="slideout_inner">
+    <span class='telNr'>Turite klausimų? Klauskite!<br><br>
+    <a href="tel:+37061266668">Tel. nr. <strong>+370 612 66 668</strong></a></span>
+  </div>
+</div>
       <nav class="navbar is-fixed-top my-navbar">
     <div class="navbar-brand">
       <div class="navbar-burger burger" data-target="my-navbar-menu">
@@ -265,11 +273,11 @@
         </div>
         <div class="column is-2">
           <div class="footerTxt">Apie Mus</div>
-          <div class="links"><a href="#">Paslaugos</a></div>
-          <div class="links"><a href="#">Kaip tai veikia</a></div>
-          <div class="links"><a href="#">Kainos</a></div>
-          <div class="links"><a href="#">DUK</a></div>
-          <div class="links"><a href="#">Užsisakyti</a></div>
+          <div class="links"><a href="#paslaugos" class='footerLinks'>Paslaugos</a></div>
+          <div class="links"><a href="#apie" class='footerLinks'>Kaip tai veikia</a></div>
+          <div class="links"><a href="#kainos" class='footerLinks'>Kainos</a></div>
+          <div class="links"><a href="#duk" class='footerLinks'>DUK</a></div>
+          <div class="links"><a href="{{ route('plans') }}">Užsisakyti</a></div>
         </div>
         <div class="column is-2">
           <div class="footerTxt">Klientams</div>
@@ -305,7 +313,7 @@
 
         $.post(url, data, function(response){
             window.location.href = response;
-        });                
+        });
     }
 </script>
 
