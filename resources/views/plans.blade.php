@@ -118,7 +118,7 @@
             <td><i class="icon-ok-circled"></td>
           </tr>
           <tr>
-            <td class='leftAlign'>Pardavimo ženklasant pastato</td>
+            <td class='leftAlign'>Pardavimo ženklas ant pastato</td>
             <td><i class="icon-cancel-circled"></td>
             <td><i class="icon-cancel-circled"></td>
             <td><i class="icon-ok-circled"></td>
