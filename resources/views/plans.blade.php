@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,500" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
     <link rel="stylesheet" href="css/fontello.css">
     <link rel="stylesheet" href="css/scss.css">
     <title>Planai | RealPro</title>
@@ -42,7 +43,7 @@
     </div>
   </div>
 </nav>
-    <h1 style='padding-top: 40px;'>Detalūs planai</h1>
+    <h1 style='padding-top: 40px;'>DETALŪS PLANAI</h1>
     <h4>Išsirinkite sau tinkamiausią planą:</h4>
 
     <div class='container'>
@@ -51,11 +52,11 @@
         <thead>
           <tr>
             <th style='border-bottom: 0;'></th>
-            <th class='optimalus'>OPTIMALUS<br>Planas<br>99&euro;</th>
-            <th class='popular'>POPULIARIAUSIAS<br>Planas<br>199&euro;</th>
-            <th class='praktik'>PRAKTIŠKIAUSIAS<br>Planas<br>299&euro;</th>
-            <th class='ypatingas'>YPATINGAS<br>Planas<br>399&euro;</th>
-            <th class='komercinis'>KOMERCINIS<br>Planas<br>399&euro;</th>
+            <th class='optimalus'><span class='name'>OPTIMALUS</span><br>Planas<br>99&euro;</th>
+            <th class='popular'><span class='name'>POPULIARIAUSIAS</span><br>Planas<br>199&euro;</th>
+            <th class='praktik'><span class='name'>PRAKTIŠKIAUSIAS</span><br>Planas<br>299&euro;</th>
+            <th class='ypatingas'><span class='name'>YPATINGAS</span><br>Planas<br>399&euro;</th>
+            <th class='komercinis'><span class='name'>KOMERCINIS</span><br>Planas<br>399&euro;</th>
           </tr>
         </thead>
         <tbody>

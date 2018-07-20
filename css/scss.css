@@ -3852,41 +3852,55 @@ input[type="file"], [type="file"].lower {
 .plans {
   background-color: #f7f7f7; }
   .plans .search-table-outter {
-    overflow-x: scroll; }
+    overflow-x: scroll;
+    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.3); }
   .plans h1, .plans h4 {
+    font-family: 'Roboto Condensed', sans-serif;
     text-align: center;
-    padding: 20px 0; }
+    padding: 20px 0;
+    letter-spacing: 2px;
+    color: #525252; }
   .plans table {
     overflow-y: scroll;
     border-collapse: collapse;
-    border-spacing: 0;
-    -webkit-box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.3);
-    -moz-box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.3);
-    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.3); }
+    border-spacing: 0; }
     .plans table thead tr th {
-      padding: 20px 0;
+      font-family: 'Roboto Condensed', sans-serif;
+      padding: 20px 5px;
+      padding-top: 30px;
       text-align: center;
-      line-height: 2; }
+      line-height: 2;
+      color: #3f73d5; }
     .plans table td {
       text-align: center;
       padding: 20px 0; }
+    .plans table .name {
+      padding-top: 30px;
+      font-size: 18px;
+      color: #3f73d5;
+      text-shadow: 0 0 1px #3f73d5; }
     .plans table .optimalus {
-      border-bottom: 5px solid #00d195; }
+      border-bottom: 5px solid #00d195;
+      box-shadow: 0 4px 8px -4px #00d195; }
     .plans table .popular {
-      border-bottom: 5px solid #127a07; }
+      border-bottom: 5px solid #127a07;
+      box-shadow: 0 4px 8px -4px #127a07; }
     .plans table .praktik {
-      border-bottom: 5px solid #010ec1; }
+      border-bottom: 5px solid #010ec1;
+      box-shadow: 0 4px 8px -4px #010ec1; }
     .plans table .ypatingas {
-      border-bottom: 5px solid #9900bc; }
+      border-bottom: 5px solid #9900bc;
+      box-shadow: 0 4px 8px -4px #9900bc; }
     .plans table .komercinis {
-      border-bottom: 5px solid black; }
+      border-bottom: 5px solid black;
+      box-shadow: 0 4px 8px -4px black; }
     .plans table .pasirinkti {
       border: 0;
       font-size: 15px;
       padding: 10px 20px;
       background-color: #3f73d5;
       color: #fff;
-      border-radius: 15px;
+      border-radius: 50px;
       cursor: pointer;
       -webkit-box-shadow: 0px 3px 8px 3px rgba(0, 0, 0, 0.2);
       -moz-box-shadow: 0px 3px 8px 3px rgba(0, 0, 0, 0.2);
