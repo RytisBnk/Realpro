@@ -70,13 +70,21 @@ var speed = 700;
         if($(id).length) scrollToID(id, speed);
         return false;
     });
+    var isAnimating = false;
 $('.questionNumberIcon').click(function () {
+  if (isAnimating) {
+          return;
+      }
+      isAnimating = true;
 $('.questionNumberIcon').removeClass('active');
 $(this).addClass('active');
 var target = $(this).attr('name');
 $('.box[style*="display: block"]').fadeOut(300, function () {
   $("#"+target).fadeIn(300);
 });
+    setTimeout(function() {
+        isAnimating = false;
+    }, 1000);
 });
 $(document).on("mousedown", "[data-ripple]", function(e) {
 
