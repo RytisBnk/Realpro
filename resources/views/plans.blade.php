@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,500" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
     <link rel="stylesheet" href="css/fontello.css">
@@ -200,47 +200,6 @@
       2018 © Realpro.lt, UAB "Emiras", įmonės kodas 304836394, Tel. nr. +370 612 66 668
     </div>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.slim.min.js'></script>
-    <script>
-    $(document).on("mousedown", "[data-ripple]", function(e) {
-
-    var $self = $(this);
-
-    if($self.is(".btn-disabled")) {
-      return;
-    }
-    if($self.closest("[data-ripple]")) {
-      e.stopPropagation();
-    }
-
-    var initPos = $self.css("position"),
-        offs = $self.offset(),
-        x = e.pageX - offs.left,
-        y = e.pageY - offs.top,
-        dia = Math.min(this.offsetHeight, this.offsetWidth, 100), // start diameter
-        $ripple = $('<div/>', {class : "ripple",appendTo : $self });
-
-    if(!initPos || initPos==="static") {
-      $self.css({position:"relative"});
-    }
-
-    $('<div/>', {
-      class : "rippleWave",
-      css : {
-        background: $self.data("ripple"),
-        width: dia,
-        height: dia,
-        left: x - (dia/2),
-        top: y - (dia/2),
-      },
-      appendTo : $ripple,
-      one : {
-        animationend : function(){
-          $ripple.remove();
-        }
-      }
-    });
-
-    });
-  </script>
+  <script src='js.js'></script>
   </body>
 </html>

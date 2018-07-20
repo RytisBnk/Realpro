@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <link href="https://fonts.googleapis.com/css?family=Raleway:400,500" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="css/scss.css">
 <title>Sąlygos | RealPro</title>
@@ -92,5 +92,6 @@
 <div class="footext">
   2018 © Realpro.lt, UAB "Emiras", įmonės kodas 304836394, Tel. nr. +370 612 66 668
 </div>
+  <script src='js.js'></script>
 </body>
 </html>
