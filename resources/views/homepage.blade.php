@@ -60,7 +60,7 @@
       <span class="header">Parduok savo būstą<br>
       be gailesčio</span>
       <div class="label2">Už kiek norite parduoti?</div>
-      <input type="text" id='sum' style="min-width: 350px;" placeholder="Įveskite sumą">
+      <input type="number" id='sum' style="min-width: 350px;" placeholder="Įveskite sumą">
       <div style="margin-top: 20px;"><a id='calculate' class="button2" data-ripple href="#">Skaičiuoti</a></div>
       <div class="columns is-mobile">
         <div class="column auto"></div>
