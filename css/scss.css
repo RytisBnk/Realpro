@@ -3789,10 +3789,10 @@ hr {
 .button4 {
   margin: 40px 0;
   border: 2px solid #3f73d5;
-  color: #070343;
+  color: #3f73d5;
   background-color: transparent;
   padding: 15px 50px;
-  font-size: 16px;
+  font-size: 20px;
   cursor: pointer;
   letter-spacing: 1px;
   transition: 0.5s ease-in-out;
@@ -3985,5 +3985,13 @@ input[type="file"], [type="file"].lower {
 
 .telNr a {
   color: #fff; }
+
+@media screen and (max-width: 684px) {
+  .breakable {
+    min-width: 100% !important; }
+
+  .column .field {
+    display: flex;
+    justify-content: center; } }
 
 /*# sourceMappingURL=scss.css.map */

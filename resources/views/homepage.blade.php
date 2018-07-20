@@ -21,39 +21,40 @@
     <a href="tel:+37061266668">Tel. nr. <strong>+370 612 66 668</strong></a></span>
   </div>
 </div>
-      <nav class="navbar is-fixed-top my-navbar">
-    <div class="navbar-brand">
-      <div class="navbar-burger burger" data-target="my-navbar-menu">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-    </div>
-    <div id="my-navbar-menu" class="navbar-menu">
-      <div class="navbar-start">
-        <div class="navbar-item" style="margin-right: -80px;"><a href="#paslaugos" style='z-index: 999999;' class='nav-item' data-ripple="rgba(0,0,0, 0.3)">Paslaugos</a>
-        </div>
-        <div class="navbar-item" style="margin-right: -120px;"><a class='nav-item' style='z-index: 999999;' data-ripple="rgba(0,0,0, 0.3)" href="#kainos">Kainos</a>
-        </div>
-      </div>
-      <div class="my-navbar-center">
-        <div class="navbar-item"><a href='#'><img src="img/logo.png" alt="Realpro NT agentura" style="padding-top: 20px; width: 150px;"></a>
-        </div>
-      </div>
-      <div class="navbar-end">
-        <div class="navbar-item" style="margin-left: -80px;"><a class='nav-item'  data-ripple="rgba(0,0,0, 0.3)" href="#duk">DUK</a>
-        </div>
-        <div class="navbar-item" style="margin-left: -20px;"><a class='nav-item'  data-ripple="rgba(0,0,0, 0.3)" href="#apie">Apie Mus</a>
-        </div>
-        @guest
-        <div class="navbar-item" style="margin-right: -60px;"><a data-ripple="rgba(0,0,0, 0.3)" class="button" href="{{ route('login') }}" id="login">Prisijungti</a>
-        @else
-        <div class="navbar-item" style="margin-right: -60px;"><a data-ripple="rgba(0,0,0, 0.3)" class="button" href="{{ route('order.list') }}" id="orders">Užsakymai</a>
-        @endguest
-        </div>
-      </div>
-    </div>
-  </nav>
+<nav class="navbar is-fixed-top my-navbar">
+<div class="navbar-brand">
+<div class="navbar-burger burger" data-target="my-navbar-menu">
+  <span></span>
+  <span></span>
+  <span></span>
+</div>
+</div>
+<div id="my-navbar-menu" class="navbar-menu">
+<div class="navbar-start">
+  <div class="navbar-item" style="margin-right: -80px;"><a href="#paslaugos" style='z-index: 999999;' class='nav-item' data-ripple="rgba(0,0,0, 0.3)">Paslaugos</a>
+  </div>
+  <div class="navbar-item" style="margin-right: -120px;"><a class='nav-item' style='z-index: 999999;' data-ripple="rgba(0,0,0, 0.3)" href="#kainos">Kainos</a>
+  </div>
+</div>
+<div class="my-navbar-center">
+  <div class="navbar-item"><a href='http://realpro.lt/'><img src="img/logo.png" alt="Realpro NT agentura" style="padding-top: 20px; width: 150px;"></a>
+  </div>
+</div>
+<div class="navbar-end">
+  <div class="navbar-item" style="margin-left: -80px;"><a class='nav-item'  data-ripple="rgba(0,0,0, 0.3)" href="#duk">DUK</a>
+  </div>
+  <div class="navbar-item" style="margin-left: -20px;"><a class='nav-item'  data-ripple="rgba(0,0,0, 0.3)" href="#apie">Apie Mus</a>
+  </div>
+  @guest
+  <div class="navbar-item" style="margin-right: -60px;"><a data-ripple="rgba(0,0,0, 0.3)" class="button" href="{{ route('login') }}" id="login">Prisijungti</a>
+  </div>
+  @else
+  <div class="navbar-item" style="margin-right: -60px;"><a data-ripple="rgba(0,0,0, 0.3)" class="button" href="{{ route('order.list') }}" id="orders">Užsakymai</a>
+  </div>
+  @endguest
+  </div>
+</div>
+</nav>
 
     <div class="after-nav">
       <span class="header">Parduok savo būstą<br>

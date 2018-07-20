@@ -536,10 +536,10 @@ hr {
 .button4 {
   margin: 40px 0;
   border: 2px solid $default-blue;
-  color: #070343;
+  color: $default-blue;
   background-color: transparent;
   padding: 15px 50px;
-  font-size: 16px;
+  font-size: 20px;
   cursor: pointer;
   letter-spacing: 1px;
   transition: 0.5s ease-in-out;
@@ -737,5 +737,14 @@ transition: 0.5s linear;
 .telNr {
   a {
     color: #fff;
+  }
+}
+@media screen and (max-width: 684px) {
+  .breakable {
+    min-width: 100% !important;
+  }
+  .column .field {
+    display: flex;
+    justify-content: center;
   }
 }
