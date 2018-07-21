@@ -18,7 +18,7 @@
   <div class='slideout'><i class='icon-phone'></i>SUSISIEKTI</div>
   <div id="slideout_inner">
     <span class='telNr'>Turite klausimų? Klauskite!<br><br>
-    <a href="tel:+37061266668">Tel. nr. <strong>+370 612 66 668</strong></a></span>
+  Tel. nr. <a href="tel:+37061266668"><strong>+370 612 66 668</strong></a></span>
   </div>
 </div>
 <nav class="navbar is-fixed-top my-navbar">
@@ -60,19 +60,17 @@
       <span class="header">Parduok savo būstą<br>
       be gailesčio</span>
       <div class="label2">Už kiek norite parduoti?</div>
-      <input type="text" id='sum' style="min-width: 350px;" placeholder="Įveskite sumą">
+      <input type="text" id='sum' placeholder="Įveskite sumą">
       <div style="margin-top: 20px;"><a id='calculate' class="button2" data-ripple href="#">Skaičiuoti</a></div>
-      <div class="columns is-mobile">
-        <div class="column auto"></div>
+      <div class="columns is-mobile is-multiline is-centered">
             <div class="column is-narrow" style="margin-left: -10px;">
               <div class="label2">NT brokeris paimtų 3 %</div>
               <input type="text" id='broker' class="lower working" readonly>
             </div>
             <div class="column is-narrow">
               <div class="label2">Mūsų paslaugos kaina</div>
-              <input type="text" id='ourPrice' class="lower working" readonly>
+              <input type="text" id='ourPrice' class="lower second working" readonly>
             </div>
-            <div class="column auto"></div>
   </div>
     </div>
     <div class="container-2" id="paslaugos">
@@ -99,7 +97,7 @@
         <div class="column is-narrow is-three-quarters-mobile">
           <div class="card">
             <div class="head2">
-              <div class="header-text" style='padding-left: 75px;'><img src='img/2icon.png' alt='Paslaugos pirkejams' class="icon2">Pirkėjams</div>
+              <div class="header-text2"><img src='img/2icon.png' alt='Paslaugos pirkejams' class="icon2">Pirkėjams</div>
             </div>
             <div class="cardText" style="padding-top: 30px; padding-right: 90px;">- Nemokama NT eksperto konsultacija</div>
             <div class="cardText">- Teisinė konsultacija</div>
@@ -112,7 +110,7 @@
         <div class="column is-narrow is-three-quarters-mobile">
           <div class="card">
             <div class="head3">
-              <div class="header-text" style='padding-left: 50px;'><img src='img/3icon.png' alt='Kitos paslaugos' class="icon">Kitos paslaugos</div>
+              <div class="header-text3"><img src='img/3icon.png' alt='Kitos paslaugos' class="icon">Kitos paslaugos</div>
             </div>
             <div class="cardText" style="padding-top: 30px; ">- Išsamus objektų vertinimas</div>
             <div class="cardText">- Teisinė konsultacija</div>
@@ -134,7 +132,7 @@
 
         <div class="column is-narrow is-half-mobile">
           <div class="product">
-            <div class="top" style='padding: 0 40px;'>Optimalus</div>
+            <div class="top smallerMobile" style='padding: 0 40px;'>Optimalus</div>
             <div class="price">99 &euro;</div>
             <div class="cardText2" style="padding-top: 30px;">- Nemokamas NT</div>
             <div class="cardText2">objekto įvertinimas</div>
@@ -163,7 +161,7 @@
         </div>
         <div class="column is-narrow is-half-mobile">
           <div class="product">
-            <div class="top" style='padding: 0 18px;'>Praktiškiausias</div>
+            <div class="top smallerMobile" style='padding: 0 18px;'>Praktiškiausias</div>
             <div class="price">299 &euro;</div>
             <div class="cardText2" style="padding-top: 30px;">- Visos 'Populiariausio'</div>
             <div class="cardText2">plano paslaugos</div>
@@ -302,6 +300,7 @@
   <script src='js.js'>
 </script>
 <script>
+$('body').on('touchstart', function(event){});
     function redirect(){
         var selectedPlan = document.getElementsByClassName("activep")[0].getElementsByClassName("top")[0].innerHTML;
         var data = { plan: selectedPlan, _token: '{{csrf_token()}}' };
