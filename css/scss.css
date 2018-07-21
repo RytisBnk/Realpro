@@ -3354,7 +3354,9 @@ body {
   width: 100%;
   height: 100vh;
   overflow-x: hidden;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch; }
 
 .button, .button2, .button3 {
   text-decoration: none;
@@ -3531,6 +3533,9 @@ input, .lower {
   background-color: #e0e0e0;
   padding: 40px 40px; }
 
+@media screen and (max-width: 1089px) {
+  .container-3 {
+    padding-left: 60px; } }
 .footerTxt {
   color: #525252;
   font-weight: 500;
@@ -3947,7 +3952,8 @@ input[type="file"], [type="file"].lower {
   position: fixed;
   top: 50%;
   left: 0;
-  transition-duration: 0.3s; }
+  transition-duration: 0.3s;
+  z-index: 99999999999; }
 
 .slideout {
   background-color: #3f73d5;
@@ -3959,7 +3965,8 @@ input[type="file"], [type="file"].lower {
   padding-left: 5px;
   display: flex;
   justify-content: center;
-  font-size: 18px; }
+  font-size: 18px;
+  z-index: 99999999999; }
 
 #slideout_inner {
   padding-left: 10px;
@@ -3974,7 +3981,8 @@ input[type="file"], [type="file"].lower {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-right: 1px solid #fff; }
+  border-right: 1px solid #fff;
+  z-index: 99999999999; }
 
 #slideout:hover, #slideout:focus {
   left: 261px; }
@@ -3998,5 +4006,22 @@ input[type="file"], [type="file"].lower {
   .column .field {
     display: flex;
     justify-content: center; } }
+@media screen and (max-width: 700px) {
+  .slideout {
+    height: 100px;
+    width: 15px;
+    padding-right: 5px;
+    font-size: 14px; }
+
+  #slideout_inner {
+    width: 200px;
+    height: 120px;
+    left: -211px; }
+
+  #slideout:hover, #slideout:focus {
+    left: 211px; }
+
+  .icon-phone {
+    font-size: 14px; } }
 
 /*# sourceMappingURL=scss.css.map */

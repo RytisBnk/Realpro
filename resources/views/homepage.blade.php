@@ -66,11 +66,11 @@
         <div class="column auto"></div>
             <div class="column is-narrow" style="margin-left: -10px;">
               <div class="label2">NT brokeris paimtų 3 %</div>
-              <input type="text" id='broker' class="lower working">
+              <input type="text" id='broker' class="lower working" readonly>
             </div>
             <div class="column is-narrow">
               <div class="label2">Mūsų paslaugos kaina</div>
-              <input type="text" id='ourPrice' class="lower working">
+              <input type="text" id='ourPrice' class="lower working" readonly>
             </div>
             <div class="column auto"></div>
   </div>
