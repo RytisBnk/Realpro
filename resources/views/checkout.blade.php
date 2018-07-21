@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no">
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,500" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
     <title>Užsakymas | RealPro</title>
@@ -11,15 +11,48 @@
 	 	    var uploadUri = "{{ route('upload') }}";
     </script>
   </head>
-  <body>
-    <a href='#'><img src='img/logo.png' class='logo'></a>
+  <body class='has-navbar-fixed-top'>
+    <nav class="navbar is-fixed-top my-navbar">
+  <div class="navbar-brand">
+    <div class="navbar-burger burger" data-target="my-navbar-menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+  <div id="my-navbar-menu" class="navbar-menu">
+    <div class="navbar-start">
+      <div class="navbar-item" style="margin-right: -80px;"><a href="http://realpro.lt/#paslaugos" style='z-index: 999999;' class='nav-item' data-ripple="rgba(0,0,0, 0.3)">Paslaugos</a>
+      </div>
+      <div class="navbar-item" style="margin-right: -120px;"><a class='nav-item' style='z-index: 999999;' data-ripple="rgba(0,0,0, 0.3)" href="http://realpro.lt/#kainos">Kainos</a>
+      </div>
+    </div>
+    <div class="my-navbar-center">
+      <div class="navbar-item"><a href='http://realpro.lt/'><img src="img/logo.png" alt="Realpro NT agentura" style="padding-top: 20px; width: 150px;"></a>
+      </div>
+    </div>
+    <div class="navbar-end">
+      <div class="navbar-item" style="margin-left: -80px;"><a class='nav-item'  data-ripple="rgba(0,0,0, 0.3)" href="http://realpro.lt/#duk">DUK</a>
+      </div>
+      <div class="navbar-item" style="margin-left: -20px;"><a class='nav-item'  data-ripple="rgba(0,0,0, 0.3)" href="http://realpro.lt/#apie">Apie Mus</a>
+      </div>
+      @guest
+      <div class="navbar-item" style="margin-right: -60px;"><a data-ripple="rgba(0,0,0, 0.3)" class="button" href="{{ route('login') }}" id="login">Prisijungti</a>
+      </div>
+      @else
+      <div class="navbar-item" style="margin-right: -60px;"><a data-ripple="rgba(0,0,0, 0.3)" class="button" href="{{ route('order.list') }}" id="orders">Užsakymai</a>
+      </div>
+      @endguest
+      </div>
+    </div>
+</nav>
     <div class='afterLogo'>
     <h2>Užsakymas</h2>
     <form method="POST" action="{{ route('order.store') }}">
     @csrf
     @if (session('selectedPlan') !== null)
     <h3>Pasirinktas planas: <span style='color: rgb(63,	115, 213);'><?php echo session('selectedPlan'); ?></span> <a href="{{ route('plans') }}" class='change'>Keisti</a></h3>
-    @else 
+    @else
     <h3>Planas nepasirinktas <span style='color: rgb(63,	115, 213);'><?php echo session('selectedPlan'); ?></span> <a href="{{ route('plans') }}" class='change'>Pasirinkti</a></h3>
     @endif
       <h4>Pasirinkite NT objekto tipą bei pasiūlymo būdą:</h4>
@@ -181,7 +214,7 @@
 <div class='field leftAlign' id='sildymas'>
 <label class="label">Šildymas</label>
 <div class='columns is-multiline'>
-  <div class='column'>
+  <div class='column breakable'>
 <div class='field'>
   <input class="is-checkradio is-block is-success" id="centrinisSildymas" type="checkbox" name="centrinis">
   <label for="centrinisSildymas">Centrinis</label>
@@ -195,7 +228,7 @@
   <label for="dujinis">Dujinis</label>
 </div>
 </div>
-<div class='column'>
+<div class='column breakable'>
   <div class='field'>
     <input class="is-checkradio is-block is-success" id="elektra" type="checkbox" name="elektra">
     <label for="elektra">Elektra</label>
@@ -209,7 +242,7 @@
     <label for="kietasKuras">Kietu kuru</label>
   </div>
 </div>
-<div class='column'>
+<div class='column breakable'>
   <div class='field'>
     <input class="is-checkradio is-block is-success" id="skystasKuras" type="checkbox" name="skystasKuras">
     <label for="skystasKuras">Skystu kuru</label>
@@ -224,7 +257,7 @@
 <div class='field leftAlign' id='paskirtis'>
 <label class="label">Paskirtis</label>
 <div class='columns is-multiline'>
-  <div class='column'>
+  <div class='column breakable'>
 <div class='field'>
   <input class="is-checkradio is-block is-success" id="namuValda" type="checkbox" name="namu_valda">
   <label for="namuValda">Namų valda</label>
@@ -242,7 +275,7 @@
   <label for="kitas">Kita</label>
 </div>
 </div>
-<div class='column'>
+<div class='column breakable'>
   <div class='field'>
     <input class="is-checkradio is-block is-success" id="daugiabucioStatyba" type="checkbox" name="daugiabuciu_statyba">
     <label for="daugiabucioStatyba">Daugiabučių statyba</label>
@@ -303,7 +336,7 @@
     <label for="kita_kom">Kita</label>
   </div>
 </div>
-<div class='column'>
+<div class='column breakable'>
   <div class='field'>
     <input class="is-checkradio is-block is-success" id="viesbuciu" type="checkbox" name="viesbuciu">
     <label for="viesbuciu">Viešbučių</label>

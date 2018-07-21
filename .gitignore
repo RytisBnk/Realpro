@@ -20,3 +20,5 @@ Homestead.json
 .rocketeer/
 *.scssc
 *.sassc
+*.scssc
+css/scss.css.map

@@ -65,7 +65,7 @@ var speed = 700;
     if($(hash).length) scrollToID(hash, speed);
 
     // scroll to div on nav click
-    $('.nav-item').click(function (e) {
+    $('.nav-item, .footerLinks').click(function (e) {
         var id = $(this).attr('href');
         if($(id).length) scrollToID(id, speed);
         return false;

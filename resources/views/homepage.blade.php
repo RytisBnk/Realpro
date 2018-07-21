@@ -2,50 +2,59 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <title>RealPro</title>
+    <meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Lietuvos NT ekspertai: RealPro. Kaina nuo 99&euro;</title>
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,700" rel="stylesheet">
     <!-- Add the slick-theme.css if you want default styling -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
 <!-- Add the slick-theme.css if you want default styling -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
+<link rel="stylesheet" href="css/fontello.css">
     <link rel="stylesheet" href="css/scss.css">
 
   </head>
   <body class="has-navbar-fixed-top">
-      <nav class="navbar is-fixed-top my-navbar">
-    <div class="navbar-brand">
-      <div class="navbar-burger burger" data-target="my-navbar-menu">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-    </div>
-    <div id="my-navbar-menu" class="navbar-menu">
-      <div class="navbar-start">
-        <div class="navbar-item" style="margin-right: -80px;"><a href="#paslaugos" style='z-index: 999999;' class='nav-item' data-ripple="rgba(0,0,0, 0.3)">Paslaugos</a>
-        </div>
-        <div class="navbar-item" style="margin-right: -120px;"><a class='nav-item' style='z-index: 999999;' data-ripple="rgba(0,0,0, 0.3)" href="#kainos">Kainos</a>
-        </div>
-      </div>
-      <div class="my-navbar-center">
-        <div class="navbar-item"><a href='#'><img src="img/logo.png" alt="Realpro NT agentura" style="padding-top: 20px; width: 150px;"></a>
-        </div>
-      </div>
-      <div class="navbar-end">
-        <div class="navbar-item" style="margin-left: -80px;"><a class='nav-item'  data-ripple="rgba(0,0,0, 0.3)" href="#duk">DUK</a>
-        </div>
-        <div class="navbar-item" style="margin-left: -20px;"><a class='nav-item'  data-ripple="rgba(0,0,0, 0.3)" href="#apie">Apie Mus</a>
-        </div>
-        @guest
-        <div class="navbar-item" style="margin-right: -60px;"><a data-ripple="rgba(0,0,0, 0.3)" class="button" href="{{ route('login') }}" id="login">Prisijungti</a>
-        @else
-        <div class="navbar-item" style="margin-right: -60px;"><a data-ripple="rgba(0,0,0, 0.3)" class="button" href="{{ route('order.list') }}" id="orders">Užsakymai</a>
-        @endguest
-        </div>
-      </div>
-    </div>
-  </nav>
+    <div id="slideout">
+  <div class='slideout'><i class='icon-phone'></i>SUSISIEKTI</div>
+  <div id="slideout_inner">
+    <span class='telNr'>Turite klausimų? Klauskite!<br><br>
+    <a href="tel:+37061266668">Tel. nr. <strong>+370 612 66 668</strong></a></span>
+  </div>
+</div>
+<nav class="navbar is-fixed-top my-navbar">
+<div class="navbar-brand">
+<div class="navbar-burger burger" data-target="my-navbar-menu">
+  <span></span>
+  <span></span>
+  <span></span>
+</div>
+</div>
+<div id="my-navbar-menu" class="navbar-menu">
+<div class="navbar-start">
+  <div class="navbar-item" style="margin-right: -80px;"><a href="#paslaugos" style='z-index: 999999;' class='nav-item' data-ripple="rgba(0,0,0, 0.3)">Paslaugos</a>
+  </div>
+  <div class="navbar-item" style="margin-right: -120px;"><a class='nav-item' style='z-index: 999999;' data-ripple="rgba(0,0,0, 0.3)" href="#kainos">Kainos</a>
+  </div>
+</div>
+<div class="my-navbar-center">
+  <div class="navbar-item"><a href='http://realpro.lt/'><img src="img/logo.png" alt="Realpro NT agentura" style="padding-top: 20px; width: 150px;"></a>
+  </div>
+</div>
+<div class="navbar-end">
+  <div class="navbar-item" style="margin-left: -80px;"><a class='nav-item'  data-ripple="rgba(0,0,0, 0.3)" href="#duk">DUK</a>
+  </div>
+  <div class="navbar-item" style="margin-left: -20px;"><a class='nav-item'  data-ripple="rgba(0,0,0, 0.3)" href="#apie">Apie Mus</a>
+  </div>
+  @guest
+  <div class="navbar-item" style="margin-right: -60px;"><a data-ripple="rgba(0,0,0, 0.3)" class="button" href="{{ route('login') }}" id="login">Prisijungti</a>
+  </div>
+  @else
+  <div class="navbar-item" style="margin-right: -60px;"><a data-ripple="rgba(0,0,0, 0.3)" class="button" href="{{ route('order.list') }}" id="orders">Užsakymai</a>
+  </div>
+  @endguest
+  </div>
+</div>
+</nav>
 
     <div class="after-nav">
       <span class="header">Parduok savo būstą<br>
@@ -57,11 +66,11 @@
         <div class="column auto"></div>
             <div class="column is-narrow" style="margin-left: -10px;">
               <div class="label2">NT brokeris paimtų 3 %</div>
-              <input type="text" id='broker' class="lower working">
+              <input type="text" id='broker' class="lower working" readonly>
             </div>
             <div class="column is-narrow">
               <div class="label2">Mūsų paslaugos kaina</div>
-              <input type="text" id='ourPrice' class="lower working">
+              <input type="text" id='ourPrice' class="lower working" readonly>
             </div>
             <div class="column auto"></div>
   </div>
@@ -254,7 +263,7 @@
         </div>
         <div class="column" style="flex: 1;">
           <div style="color: #0b0146; font-size: 40px; padding-bottom: 20px;">Apie Mus</div>
-          <div class="bottom">Pagrindinis skirtumas tarp Realta.lt ir visų kitų Lietuvoje veikiančių NT agentūrų yra kaina ir klientų aptarnavimas. Kadangi mes dirbame internetu, mūsų įmonė neturi didelių išlaidų, todėl mūsų darbo sąnaudos yra žymiai mažesnės, tai reiškia, kad mes galime dirbti efektyviau, ekologiškiau ir ekonomiškiau. Antra, mūsų klientai gali patys nuspręsti, kiek gali sumokėti ir kokias paslaugas gauti pardavimo procese. Nes mes sujungiam kuo daugiau pardavėjų, pirkėjų ir paslaugų tiekėjų vienoje vietoje.</div>
+          <div class="bottom">Lorem ipsum - tai fiktyvus tekstas naudojamas spaudos ir grafinio dizaino pasaulyje jau nuo XVI a. pradžios. Lorem Ipsum tapo standartiniu fiktyviu tekstu, kai nežinomas spaustuvininkas atsitiktine tvarka išdėliojo raides atspaudų prese ir tokiu būdu sukūrė raidžių egzempliorių. Šis tekstas išliko beveik nepasikeitęs ne tik penkis amžius, bet ir įžengė i kopiuterinio grafinio dizaino laikus. Jis išpopuliarėjo XX a. šeštajame dešimtmetyje, kai buvo išleisti Letraset lapai su Lorem Ipsum ištraukomis, o vėliau -leidybinė sistema AldusPageMaker, kurioje buvo ir Lorem Ipsum versija.</div>
         </div>
       </div>
     </div>
@@ -265,11 +274,11 @@
         </div>
         <div class="column is-2">
           <div class="footerTxt">Apie Mus</div>
-          <div class="links"><a href="#">Paslaugos</a></div>
-          <div class="links"><a href="#">Kaip tai veikia</a></div>
-          <div class="links"><a href="#">Kainos</a></div>
-          <div class="links"><a href="#">DUK</a></div>
-          <div class="links"><a href="#">Užsisakyti</a></div>
+          <div class="links"><a href="#paslaugos" class='footerLinks'>Paslaugos</a></div>
+          <div class="links"><a href="#apie" class='footerLinks'>Kaip tai veikia</a></div>
+          <div class="links"><a href="#kainos" class='footerLinks'>Kainos</a></div>
+          <div class="links"><a href="#duk" class='footerLinks'>DUK</a></div>
+          <div class="links"><a href="{{ route('plans') }}">Užsisakyti</a></div>
         </div>
         <div class="column is-2">
           <div class="footerTxt">Klientams</div>
@@ -305,7 +314,7 @@
 
         $.post(url, data, function(response){
             window.location.href = response;
-        });                
+        });
     }
 </script>
 
