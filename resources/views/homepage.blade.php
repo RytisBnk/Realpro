@@ -79,7 +79,7 @@
     <div class="after-nav">
       <span class="header">Parduok savo būstą<br>
       be gailesčio</span>
-      <div class="label2">Už kiek norite parduoti?</div>
+      <div class="label2">Už kiek norite parduoti NT?</div>
       <input type="number" min='0' id='sum' placeholder="Įveskite sumą">
       <div class='error1'>Neįvedėte sumos</div>
       <div style="margin-top: 20px;"><a id='calculate' class="button2" data-ripple href="#">Skaičiuoti</a></div>
