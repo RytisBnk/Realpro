@@ -22,3 +22,8 @@ Homestead.json
 *.sassc
 *.scssc
 css/scss.css.map
+*.map
+*.scssc
+css/scss.css.map
+*.scssc
+.DS_Store

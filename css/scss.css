@@ -1,4 +1,4 @@
-@media screen and (min-width: 1088px) {
+@media screen and (min-width: 1133px) {
   .my-navbar {
     display: block !important; }
 
@@ -3409,12 +3409,21 @@ input, .lower {
   border-radius: 6px;
   width: 27%; }
 
+#sum {
+  min-width: 350px; }
+
 .lower {
   width: 100%; }
 
 @media (max-width: 460px) {
   .lower {
-    max-width: 150px; } }
+    max-width: 150px; }
+
+  .lower.second {
+    margin-left: -10px; }
+
+  #sum {
+    min-width: 300px; } }
 .container-2 {
   padding: 60px 0;
   text-align: center; }
@@ -3452,6 +3461,26 @@ input, .lower {
   padding-left: 60px;
   padding-top: 10px; }
 
+.header-text2 {
+  padding-left: 75px;
+  padding-top: 10px; }
+
+.header-text3 {
+  padding-left: 50px;
+  padding-top: 10px; }
+
+@media (max-width: 460px) {
+  .head1, .head2, .head3 {
+    font-size: 20px; }
+
+  .header-text {
+    padding-left: 30px; }
+
+  .header-text2 {
+    padding-left: 40px; }
+
+  .header-text3 {
+    padding-left: 30px; } }
 .cardText, .cardText2 {
   padding: 10px;
   padding-left: 20px;
@@ -3481,6 +3510,9 @@ input, .lower {
   font-size: 25px;
   text-align: center; }
 
+@media screen and (max-width: 460px) {
+  .smallerMobile {
+    font-size: 22px; } }
 .price {
   padding: 30px 0;
   color: #0b0146;
@@ -3715,7 +3747,8 @@ input.show, .show.lower {
   .slide {
     transform: scale(1.2);
     color: #0a0236;
-    text-shadow: none; }
+    text-shadow: none;
+    font-size: 12px; }
 
   .current .name {
     color: #0a0236; }
@@ -3918,6 +3951,29 @@ input[type="file"], [type="file"].lower {
       transition: 0.5s linear; }
     .plans table .pasirinkti:hover {
       background-color: #3063b5; }
+    .plans table .rowOnMobile {
+      display: none; }
+    @media screen and (max-width: 1024px) {
+      .plans table .rowOnMobile {
+        display: table-row;
+        background-color: #f5f5f5; }
+      .plans table .leftAlign, .plans table .thOnMobile, .plans table .tdOnMobile {
+        display: none; } }
+    @media screen and (max-width: 863px) {
+      .plans table .name {
+        font-size: 12px;
+        white-space: pre-wrap;
+        /* CSS3 */
+        white-space: -moz-pre-wrap;
+        /* Firefox */
+        white-space: -pre-wrap;
+        /* Opera <7 */
+        white-space: -o-pre-wrap;
+        /* Opera 7 */
+        word-wrap: break-word;
+        /* IE */ }
+      .plans table tfoot tr td {
+        font-size: 12px; } }
   .plans .icon-ok-circled {
     color: #00cc1e;
     text-shadow: 1px 1px 7px rgba(8, 206, 38, 0.6);
@@ -3984,10 +4040,10 @@ input[type="file"], [type="file"].lower {
   border-right: 1px solid #fff;
   z-index: 99999999999; }
 
-#slideout:hover, #slideout:focus {
+#slideout:hover, #slideout:focus, #slideout:active {
   left: 261px; }
 
-#slideout:hover #slideout_inner {
+#slideout:hover #slideout_inner, #slideout:focus #slideout_inner, #slideout:active #slideout_inner {
   left: 0; }
 
 .icon-phone {
