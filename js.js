@@ -126,7 +126,7 @@ $('<div/>', {
 });
 
 });
-$('#calculate').click(function (e) {
+$('#calculate').on('click touchstart', function (e) {
   e.preventDefault();
 var val = $('#sum').val();
 if(!val.length) {
@@ -136,13 +136,8 @@ else {
   $('.error1').fadeOut(300);
 var percent = parseFloat(val*0.030).toFixed(2);
 var parsed = parseFloat(val);
-$('#broker').val(percent).addClass("show");
-if (!parsed.length) {
-$('#ourPrice').val('0').addClass("show");
-}
-else {
-$('#ourPrice').val('99').addClass("show");
-}
+$('#broker').val(percent+' €').addClass("show");
+$('#ourPrice').val('99 €').addClass("show");
 return false;
 }
 });
@@ -161,7 +156,7 @@ $("#sum").keydown(function (e) {
             e.preventDefault();
         }
     });
-    
+
 $( ".product" ).click(function() {
 $(".product").removeClass('activep');
 $(this).addClass('activep');

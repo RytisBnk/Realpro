@@ -79,8 +79,8 @@
     <div class="after-nav">
       <span class="header">Parduok savo būstą<br>
       be gailesčio</span>
-      <div class="label2">Už kiek norite parduoti?</div>
-      <input type="text" id='sum' placeholder="Įveskite sumą">
+      <div class="label2">Už kiek norite parduoti NT?</div>
+      <input type="number" min='0' id='sum' placeholder="Įveskite sumą">
       <div class='error1'>Neįvedėte sumos</div>
       <div style="margin-top: 20px;"><a id='calculate' class="button2" data-ripple href="#">Skaičiuoti</a></div>
       <div class="columns is-mobile is-multiline is-centered">
@@ -167,8 +167,8 @@
         </div>
         <div class="column is-narrow is-half-mobile">
           <div class="product activep" style='padding-top: 0;'>
-            <div class='triangle'><span>Super!</span></div>
-            <div class="top">Populiariausias</div>
+            <div class='triangle'><span>Value!</span></div>
+            <div class="top popularPlan smallerMobile">Populiariausias</div>
             <div class="price">199 &euro;</div>
             <div class="cardText2" style="padding-top: 30px;">- Visos 'Optimalaus'</div>
             <div class="cardText2">plano paslaugos</div>
@@ -241,7 +241,7 @@
       <div class="text3">Reikia gyvos konsultacijos?</div>
       <div style="margin-top: 50px;"><a class="button2" data-ripple href="#">Susisiekti</a></div>
     </div>
-    <div class='container-2' style='text-align: center; background-color: #fbfbfb; padding-bottom: 100px;'>
+    <div class='container-2' id='atsiliepimai' style='text-align: center; background-color: #fbfbfb; padding-bottom: 100px;'>
       <div style="color: #0b0146; font-size: 40px; padding-bottom:50px;">Atsiliepimai</div>
       <div class='slider'>
         <div class='slide'><img src='img/stars.png' class='stars' alt='Reitingas'>"Puikiai dirbanti profesionalų komanda.<br>Padėjo greitai parduoti butą už rinkos kainą."
