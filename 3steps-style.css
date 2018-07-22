@@ -1,0 +1,57 @@
+body
+{
+  font-family: 'Raleway';
+  line-height: 1.65;
+}
+
+#numbers
+{
+  border-radius: 50%;
+  width: 55px;
+  height: 55px;
+  background-color: #0b0146;
+  line-height: 28px;
+  color: white;
+  font-size: 30px;
+  text-align: center;
+}
+
+.icons
+{
+  text-align: center;
+  padding: 0;
+}
+
+p
+{
+  text-align: justify;
+}
+
+  @media screen and (max-width: 768px) {
+    #small {
+      font-size: 35px;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    #small {
+      font-size: 0px;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    #large {
+      font-size: 0px;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    #large {
+      font-size: 110px;
+    }
+  }
+
+h4
+{
+  padding-top: 16px;
+}
