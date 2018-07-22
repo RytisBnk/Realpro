@@ -4079,5 +4079,39 @@ input[type="file"], [type="file"].lower {
 
   .icon-phone {
     font-size: 14px; } }
+.apieMus {
+  padding: 70px 0;
+  font-family: 'Raleway', sans-serif;
+  line-height: 1.7; }
+  .apieMus #numbers {
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+    background-color: #0b0146;
+    color: white;
+    font-size: 30px;
+    text-align: center; }
+  .apieMus .icons {
+    text-align: center;
+    padding: 0; }
+  .apieMus p {
+    text-align: justify; }
+  @media screen and (max-width: 768px) {
+    .apieMus #large {
+      font-size: 0px; } }
+  @media screen and (min-width: 768px) {
+    .apieMus #large {
+      font-size: 110px; } }
+  .apieMus h4 {
+    padding-top: 10px; }
+  .apieMus i {
+    color: #3f73d5; }
+  .apieMus .icon-calendar-check-o {
+    padding-top: 50px !important; }
+  .apieMus .steps3 {
+    color: #0b0146;
+    font-size: 40px;
+    padding-bottom: 50px;
+    text-align: center; }
 
 /*# sourceMappingURL=scss.css.map */

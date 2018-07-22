@@ -254,16 +254,45 @@
         </div>
       </div>
     </div>
-    <div class="container-2" id='apie'>
-      <div class="columns is-centered">
-        <div class="column is-5" style="display: flex; align-items: center;">
-          <div class="foto"></div>
+    <div class="apieMus" id='apie'>
+      <section class="section" style="padding-left: 8%; padding-right: 8%;">
+
+      <div class='steps3'>Kaip tai veikia?</div>
+
+      <!-- pirmas -->
+      <div class="columns">
+        <div class="column is-8">
+          <div class="column is-narrow" id="numbers" style="float: left; margin-right: 12px;">1</div>
+          <h4 class="title is-size-5">Pasirinkite planą</h4>
+
+          <p>Išsirinkite Jūsų norus patenkinantį planą ir užregistruokite savo nekilnojamą turtą Realpro.lt sistemoje. Mūsų agentas susisieks su Jumis per artimiausias kelias valandas.</p>
         </div>
-        <div class="column" style="flex: 1;">
-          <div style="color: #0b0146; font-size: 40px; padding-bottom: 20px;">Apie Mus</div>
-          <div class="bottom">Lorem ipsum - tai fiktyvus tekstas naudojamas spaudos ir grafinio dizaino pasaulyje jau nuo XVI a. pradžios. Lorem Ipsum tapo standartiniu fiktyviu tekstu, kai nežinomas spaustuvininkas atsitiktine tvarka išdėliojo raides atspaudų prese ir tokiu būdu sukūrė raidžių egzempliorių. Šis tekstas išliko beveik nepasikeitęs ne tik penkis amžius, bet ir įžengė i kopiuterinio grafinio dizaino laikus. Jis išpopuliarėjo XX a. šeštajame dešimtmetyje, kai buvo išleisti Letraset lapai su Lorem Ipsum ištraukomis, o vėliau -leidybinė sistema AldusPageMaker, kurioje buvo ir Lorem Ipsum versija.</div>
+        <div class="column icons" id="large"><i class="icon-chart-pie"></i>
         </div>
       </div>
+      <!-- antras -->
+      <div class="columns">
+        <div class="column is-4 icons" id="large" style='margin-top: 20px;'><i class="icon-calendar-check-o"></i>
+        </div>
+        <div class="column">
+          <div class="column is-narrow" id="numbers" style="float: right; margin-left: 12px;">2</div>
+
+          <h4 class="title is-size-5" align="right">Informacijos patvirtinimas</h4>
+          <p>Agentas sutikrina visą Jūsų objekto suvestą informaciją bei pagal Jūsų pasirinktą planą paruošia visą proceso grafiką, kurį pristato privačiai Jums nurodytais kontaktais. Per ateinančias 24-48 val., Jūsų nekilnojamojo turto prekyba atsiras daugiau nei 300 tūkst. naujo būsto beieškančių asmenų akiratyje, skelbimų portaluose kaip Aruodas, DomoPlius ir kiti.</p>
+        </div>
+      </div>
+      <!-- trecias -->
+      <div class="columns">
+        <div class="column is-8">
+          <div class="column is-narrow" id="numbers" style="float: left; margin-right: 12px;">3</div>
+          <h4 class="title is-size-5">Stebėkite progresą</h4>
+
+          <p>Atsipalaiduokite ir mėgaukitės. Mūsų profesonalių agentų komanda viskuo pasirūpins, paruoš visus dokumentus, suras geriausius pirkėjus ar nuomininkus bei pateiks visas ataskaitas Jums privačiai. Suderinsime palankiausią Jūsų atžvilgiu kainą!</p>
+        </div>
+        <div class="column icons" id="large"><i class="icon-ok-circled"></i>
+        </div>
+      </div>
+      </section>
     </div>
     <div class="container-3">
       <div class="columns is-desktop">

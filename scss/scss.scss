@@ -844,3 +844,56 @@ transition: 0.5s linear;
     font-size: 14px;
   }
 }
+.apieMus {
+  padding: 70px 0;
+    font-family: 'Raleway', sans-serif;
+    line-height: 1.7;
+  #numbers
+  {
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+    background-color: #0b0146;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .icons
+  {
+    text-align: center;
+    padding: 0;
+  }
+
+  p
+  {
+    text-align: justify;
+  }
+
+    @media screen and (max-width: 768px) {
+      #large {
+        font-size: 0px;
+      }
+    }
+
+    @media screen and (min-width: 768px) {
+      #large {
+        font-size: 110px;
+      }
+    }
+
+  h4
+  {
+    padding-top: 10px;
+  }
+  i {
+    color: $default-blue;
+  }
+  .icon-calendar-check-o {
+    padding-top: 50px !important;
+  }
+  .steps3 {
+    color: #0b0146; font-size: 40px; padding-bottom:50px;
+    text-align: center;
+  }
+}
