@@ -126,7 +126,7 @@ $('<div/>', {
 });
 
 });
-$('#calculate').click(function (e) {
+$('#calculate').on('click touchstart', function (e) {
   e.preventDefault();
 var val = $('#sum').val();
 if(!val.length) {
@@ -161,7 +161,7 @@ $("#sum").keydown(function (e) {
             e.preventDefault();
         }
     });
-    
+
 $( ".product" ).click(function() {
 $(".product").removeClass('activep');
 $(this).addClass('activep');

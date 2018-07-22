@@ -153,6 +153,10 @@ input {
   padding: 60px 0;
   text-align: center;
 }
+.columns {
+  margin-right: 0;
+  margin-left: 0;
+}
 .par {
   padding: 7px;
   color: #525252;
@@ -241,9 +245,12 @@ box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.24);
   font-size: 25px;
   text-align: center;
 }
+.popularPlan {
+  font-size: 30px;
+}
 @media screen and (max-width: 460px) {
 .smallerMobile {
-  font-size: 22px;
+  font-size: 20px;
 }
 }
 .price {
@@ -280,6 +287,9 @@ box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.24);
 .text3 {
   font-size: 40px;
   color: #fff;
+}
+#atsiliepimai {
+  overflow-x: hidden;
 }
 .foto {
   margin-top: 60px;
