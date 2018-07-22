@@ -126,25 +126,42 @@ $('<div/>', {
 });
 
 });
-$('#calculate').click(function () {
+$('#calculate').click(function (e) {
+  e.preventDefault();
 var val = $('#sum').val();
+if(!val.length) {
+  $('.error1').fadeIn(300);
+}
+else {
+  $('.error1').fadeOut(300);
 var percent = parseFloat(val*0.030).toFixed(2);
 var parsed = parseFloat(val);
 $('#broker').val(percent).addClass("show");
-if (parsed <= 35000) {
-$('#ourPrice').val('99').addClass("show");
-}
-else if (parsed > 35000 && parsed <= 55000) {
-$('#ourPrice').val('199').addClass("show");
-}
-else if (parsed > 55000) {
-$('#ourPrice').val('299').addClass("show");
-}
-else {
+if (!parsed.length) {
 $('#ourPrice').val('0').addClass("show");
 }
+else {
+$('#ourPrice').val('99').addClass("show");
+}
 return false;
+}
 });
+$("#sum").keydown(function (e) {
+        // Allow: backspace, delete, tab, escape, enter and .
+        if ($.inArray(e.keyCode, [46, 8, 9, 27, 13, 110]) !== -1 ||
+             // Allow: Ctrl+A, Command+A
+            (e.keyCode === 65 && (e.ctrlKey === true || e.metaKey === true)) ||
+             // Allow: home, end, left, right, down, up
+            (e.keyCode >= 35 && e.keyCode <= 40)) {
+                 // let it happen, don't do anything
+                 return;
+        }
+        // Ensure that it is a number and stop the keypress
+        if ((e.shiftKey || (e.keyCode < 48 || e.keyCode > 57)) && (e.keyCode < 96 || e.keyCode > 105)) {
+            e.preventDefault();
+        }
+    });
+    
 $( ".product" ).click(function() {
 $(".product").removeClass('activep');
 $(this).addClass('activep');

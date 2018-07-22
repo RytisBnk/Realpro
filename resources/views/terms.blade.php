@@ -1,15 +1,34 @@
 ﻿<!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="lt" dir="ltr">
 <head>
+  <title>TAISYKLĖS IR SĄLYGOS | RealPro. Susipažinkite su Mūsų darbo atlikimo sąlygomis, kad nekiltų nesusipratimų</title>
+  <meta name="description" content="Internetiniai nekilnojamo turto brokeriai. Minimalaus plano kaina TIK 99eur! Parduosime Jūsų nekilnojamą turtą geriausia kaina! Surasime Jums tik geriausius nuomininkus! Jokių paslėptų mokęsčių! Jokių papildomų išlaidų! ">
+  <meta name="keywords" content="nekilnojamas turtas,agentas,NT,brokeris,
+  namai,parduoti,butai,namai,brokeriai,komersinis,prekyba,sklypas,pigiausia,99eur">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <link href="https://fonts.googleapis.com/css?family=Raleway:400,500" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="css/scss.css">
-<title>Sąlygos | RealPro</title>
 </head>
 
 <body class='has-navbar-fixed-top terms'>
+  <!-- Load Facebook SDK for JavaScript -->
+  <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js#xfbml=1&version=v2.12&autoLogAppEvents=1';
+  fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
 
+  <!-- Your customer chat code -->
+  <div class="fb-customerchat"
+  attribution=install_email
+  page_id="270623553670577"
+  logged_in_greeting="Sveiki, kaip galime padėti Jums?"
+  logged_out_greeting="Sveiki, kaip galime padėti Jums?">
+  </div>
   <nav class="navbar is-fixed-top my-navbar">
 <div class="navbar-brand">
   <div class="navbar-burger burger" data-target="my-navbar-menu">

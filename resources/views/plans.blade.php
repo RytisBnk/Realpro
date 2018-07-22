@@ -1,15 +1,35 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="lt" dir="ltr">
   <head>
+    <title>Planai | RealPro - Kaina nuo 99eur. Geriausias pasirinkimas</title>
+    <meta name="description" content="Minimalus plano mokęstis tik 99eur! Parduokite savo nekilnojamą turtą nesukdami galvos, palikite viską Realpro agentams. Geriausia kokybė per tiksliausią laiko tarpą!. ">
+    <meta name="keywords" content="nekilnojamas turtas,agentas,NT,brokeris,
+    namai,parduoti,butai,namai,brokeriai,komersinis,prekyba,sklypas,pigiausia,99eur,planai">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,500" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
     <link rel="stylesheet" href="css/fontello.css">
     <link rel="stylesheet" href="css/scss.css">
-    <title>Planai | RealPro</title>
   </head>
   <body class='plans has-navbar-fixed-top'>
+    <!-- Load Facebook SDK for JavaScript -->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js#xfbml=1&version=v2.12&autoLogAppEvents=1';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<!-- Your customer chat code -->
+<div class="fb-customerchat"
+  attribution=install_email
+  page_id="270623553670577"
+  logged_in_greeting="Sveiki, kaip galime padėti Jums?"
+  logged_out_greeting="Sveiki, kaip galime padėti Jums?">
+</div>
     <nav class="navbar is-fixed-top my-navbar">
   <div class="navbar-brand">
     <div class="navbar-burger burger" data-target="my-navbar-menu">
@@ -192,6 +212,14 @@
             <td><i class="icon-cancel-circled"></td>
             <td><i class="icon-ok-circled"></td>
             <td><i class="icon-ok-circled"></td>
+          </tr>
+          <tr>
+            <td class='leftAlign'>Laikotarpis</td>
+            <td>3 mėn.</td>
+            <td>6 mėn.</td>
+            <td>6 mėn.</td>
+            <td>9 mėn.</td>
+            <td>Individualiai</td>
           </tr>
         </tbody>
         <tfoot>

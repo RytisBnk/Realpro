@@ -1,6 +1,9 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="lt" dir="ltr">
   <head>
+    <meta name="description" content="Internetiniai nekilnojamo turto brokeriai. Minimalaus plano kaina TIK 99eur! Parduosime Jūsų nekilnojamą turtą geriausia kaina! Surasime Jums tik geriausius nuomininkus! Jokių paslėptų mokęsčių! Jokių papildomų išlaidų! ">
+    <meta name="keywords" content="nekilnojamas turtas,agentas,NT,brokeris,
+    namai,parduoti,butai,namai,brokeriai,komersinis,prekyba,sklypas,pigiausia,99eur">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no">
     <title>Lietuvos NT ekspertai: RealPro. Kaina nuo 99&euro;</title>
@@ -14,6 +17,23 @@
 
   </head>
   <body class="has-navbar-fixed-top">
+    <!-- Load Facebook SDK for JavaScript -->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js#xfbml=1&version=v2.12&autoLogAppEvents=1';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<!-- Your customer chat code -->
+<div class="fb-customerchat"
+  attribution=install_email
+  page_id="270623553670577"
+  logged_in_greeting="Sveiki, kaip galime padėti Jums?"
+  logged_out_greeting="Sveiki, kaip galime padėti Jums?">
+</div>
     <div id="slideout">
   <div class='slideout'><i class='icon-phone'></i>SUSISIEKTI</div>
   <div id="slideout_inner">
@@ -61,6 +81,7 @@
       be gailesčio</span>
       <div class="label2">Už kiek norite parduoti?</div>
       <input type="text" id='sum' placeholder="Įveskite sumą">
+      <div class='error1'>Neįvedėte sumos</div>
       <div style="margin-top: 20px;"><a id='calculate' class="button2" data-ripple href="#">Skaičiuoti</a></div>
       <div class="columns is-mobile is-multiline is-centered">
             <div class="column is-narrow" style="margin-left: -10px;">
@@ -176,6 +197,75 @@
         </div>
       <div style="margin-top: 40px;" id="select_plan"><a class="button3 btn" data-ripple href="{{ route('plans') }}" id="select_plan">Daugiau planų</a></div>
     </div>
+    <div class="apieMus" id='apie'>
+      <section class="section" style="padding-left: 8%; padding-right: 8%;">
+
+      <div class='steps3'>Kaip tai veikia?</div>
+
+      <!-- pirmas -->
+      <div class="columns">
+        <div class="column is-8">
+          <div class="column is-narrow" id="numbers" style="float: left; margin-right: 12px;">1</div>
+          <h4 class="title is-size-5">Pasirinkite planą</h4>
+
+          <p>Išsirinkite Jūsų norus patenkinantį planą ir užregistruokite savo nekilnojamą turtą Realpro.lt sistemoje. Mūsų agentas susisieks su Jumis per artimiausias kelias valandas.</p>
+        </div>
+        <div class="column icons" id="large"><i class="icon-chart-pie"></i>
+        </div>
+      </div>
+      <!-- antras -->
+      <div class="columns">
+        <div class="column is-4 icons" id="large" style='margin-top: 20px;'><i class="icon-calendar-check-o"></i>
+        </div>
+        <div class="column">
+          <div class="column is-narrow" id="numbers" style="float: right; margin-left: 12px;">2</div>
+
+          <h4 class="title is-size-5" align="right">Informacijos patvirtinimas</h4>
+          <p>Agentas sutikrina visą Jūsų objekto suvestą informaciją bei pagal Jūsų pasirinktą planą paruošia visą proceso grafiką, kurį pristato privačiai Jums nurodytais kontaktais. Per ateinančias 24-48 val., Jūsų nekilnojamojo turto prekyba atsiras daugiau nei 300 tūkst. naujo būsto beieškančių asmenų akiratyje, skelbimų portaluose kaip Aruodas, DomoPlius ir kiti.</p>
+        </div>
+      </div>
+      <!-- trecias -->
+      <div class="columns">
+        <div class="column is-8">
+          <div class="column is-narrow" id="numbers" style="float: left; margin-right: 12px;">3</div>
+          <h4 class="title is-size-5">Stebėkite progresą</h4>
+
+          <p>Atsipalaiduokite ir mėgaukitės. Mūsų profesonalių agentų komanda viskuo pasirūpins, paruoš visus dokumentus, suras geriausius pirkėjus ar nuomininkus bei pateiks visas ataskaitas Jums privačiai. Suderinsime palankiausią Jūsų atžvilgiu kainą!</p>
+        </div>
+        <div class="column icons" id="large"><i class="icon-ok-circled"></i>
+        </div>
+      </div>
+      </section>
+    </div>
+    <div class="after-nav3">
+      <div class="text3">Reikia gyvos konsultacijos?</div>
+      <div style="margin-top: 50px;"><a class="button2" data-ripple href="#">Susisiekti</a></div>
+    </div>
+    <div class='container-2' style='text-align: center; background-color: #fbfbfb; padding-bottom: 100px;'>
+      <div style="color: #0b0146; font-size: 40px; padding-bottom:50px;">Atsiliepimai</div>
+      <div class='slider'>
+        <div class='slide'><img src='img/stars.png' class='stars' alt='Reitingas'>"Puikiai dirbanti profesionalų komanda.<br>Padėjo greitai parduoti butą už rinkos kainą."
+          <div class='name'>Jonas Boružis</div>
+          <div class='realpro'>Realpro.lt Klientas</div>
+        </div>
+        <div class='slide'><img src='img/stars.png' class='stars' alt='Reitingas'>"Ačiū už puikų darbą!<br>Greitai ir kokybiškai pardavė namą."
+          <div class='name'>Justina Mikėnaitė</div>
+          <div class='realpro'>Realpro.lt Klientas</div>
+        </div>
+        <div class='slide'><img src='img/stars.png' class='stars' alt='Reitingas'>"Puikus pavyzdys kaip reikia dirbti.<br>Padėjo nupirkti puikų butą už geriausią kainą."
+          <div class='name'>Saulius</div>
+          <div class='realpro'>Realpro.lt Klientas</div>
+        </div>
+        <div class='slide'><img src='img/stars.png' class='stars' alt='Reitingas'>"Labai sklandžiai pardavė butą.<br>Ačiū!"
+          <div class='name'>Martynas</div>
+          <div class='realpro'>Realpro.lt Klientas</div>
+        </div>
+        <div class='slide'><img src='img/stars.png' class='stars' alt='Reitingas'>"Padėjo greitai parduoti butą už rinkos kainą"
+          <div class='name'>Artūras</div>
+          <div class='realpro'>Realpro.lt Klientas</div>
+        </div>
+      </div>
+    </div>
     <div class="container-2" id='duk'>
       <div style="color: #0b0146; font-size: 40px; padding-bottom: 20px;">Dažniausiai užduodami klausimai</div>
       <div class="par">Jums rūpimi klausimai apie mūsų paslaugas ir kainų skirtumus tarp eilinės NT agentūros.</div>
@@ -225,75 +315,6 @@
                P.S Mūsų praktika rodo, kad žmonėms labiau patinka kai apžiūrą praveda buto/namo savininkas, nes jie suteikia detaliausią informaciją.</div>
             </div>
   </div>
-    <div class="after-nav3">
-      <div class="text3">Reikia gyvos konsultacijos?</div>
-      <div style="margin-top: 50px;"><a class="button2" data-ripple href="#">Susisiekti</a></div>
-    </div>
-    <div class='container-2' style='text-align: center; background-color: #fbfbfb; padding-bottom: 100px;'>
-      <div style="color: #0b0146; font-size: 40px; padding-bottom:50px;">Atsiliepimai</div>
-      <div class='slider'>
-        <div class='slide'><img src='img/stars.png' class='stars' alt='Reitingas'>"Puikiai dirbanti profesionalų komanda.<br>Padėjo greitai parduoti butą už rinkos kainą."
-          <div class='name'>Jonas Boružis</div>
-          <div class='realpro'>Realpro.lt Klientas</div>
-        </div>
-        <div class='slide'><img src='img/stars.png' class='stars' alt='Reitingas'>"Ačiū už puikų darbą!<br>Greitai ir kokybiškai pardavė namą."
-          <div class='name'>Justina Mikėnaitė</div>
-          <div class='realpro'>Realpro.lt Klientas</div>
-        </div>
-        <div class='slide'><img src='img/stars.png' class='stars' alt='Reitingas'>"Puikus pavyzdys kaip reikia dirbti.<br>Padėjo nupirkti puikų butą už geriausią kainą."
-          <div class='name'>Saulius</div>
-          <div class='realpro'>Realpro.lt Klientas</div>
-        </div>
-        <div class='slide'><img src='img/stars.png' class='stars' alt='Reitingas'>"Labai sklandžiai pardavė butą.<br>Ačiū!"
-          <div class='name'>Martynas</div>
-          <div class='realpro'>Realpro.lt Klientas</div>
-        </div>
-        <div class='slide'><img src='img/stars.png' class='stars' alt='Reitingas'>"Padėjo greitai parduoti butą už rinkos kainą"
-          <div class='name'>Artūras</div>
-          <div class='realpro'>Realpro.lt Klientas</div>
-        </div>
-      </div>
-    </div>
-    <div class="apieMus" id='apie'>
-      <section class="section" style="padding-left: 8%; padding-right: 8%;">
-
-      <div class='steps3'>Kaip tai veikia?</div>
-
-      <!-- pirmas -->
-      <div class="columns">
-        <div class="column is-8">
-          <div class="column is-narrow" id="numbers" style="float: left; margin-right: 12px;">1</div>
-          <h4 class="title is-size-5">Pasirinkite planą</h4>
-
-          <p>Išsirinkite Jūsų norus patenkinantį planą ir užregistruokite savo nekilnojamą turtą Realpro.lt sistemoje. Mūsų agentas susisieks su Jumis per artimiausias kelias valandas.</p>
-        </div>
-        <div class="column icons" id="large"><i class="icon-chart-pie"></i>
-        </div>
-      </div>
-      <!-- antras -->
-      <div class="columns">
-        <div class="column is-4 icons" id="large" style='margin-top: 20px;'><i class="icon-calendar-check-o"></i>
-        </div>
-        <div class="column">
-          <div class="column is-narrow" id="numbers" style="float: right; margin-left: 12px;">2</div>
-
-          <h4 class="title is-size-5" align="right">Informacijos patvirtinimas</h4>
-          <p>Agentas sutikrina visą Jūsų objekto suvestą informaciją bei pagal Jūsų pasirinktą planą paruošia visą proceso grafiką, kurį pristato privačiai Jums nurodytais kontaktais. Per ateinančias 24-48 val., Jūsų nekilnojamojo turto prekyba atsiras daugiau nei 300 tūkst. naujo būsto beieškančių asmenų akiratyje, skelbimų portaluose kaip Aruodas, DomoPlius ir kiti.</p>
-        </div>
-      </div>
-      <!-- trecias -->
-      <div class="columns">
-        <div class="column is-8">
-          <div class="column is-narrow" id="numbers" style="float: left; margin-right: 12px;">3</div>
-          <h4 class="title is-size-5">Stebėkite progresą</h4>
-
-          <p>Atsipalaiduokite ir mėgaukitės. Mūsų profesonalių agentų komanda viskuo pasirūpins, paruoš visus dokumentus, suras geriausius pirkėjus ar nuomininkus bei pateiks visas ataskaitas Jums privačiai. Suderinsime palankiausią Jūsų atžvilgiu kainą!</p>
-        </div>
-        <div class="column icons" id="large"><i class="icon-ok-circled"></i>
-        </div>
-      </div>
-      </section>
-    </div>
     <div class="container-3">
       <div class="columns is-desktop">
         <div class="column is-3" style="padding-top: 40px; justify-content: center;">
