@@ -3342,9 +3342,6 @@ a.navbar-item,
   border-color: #fff !important;
   background-color: #fff !important; }
 
-html, body {
-  overflow-x: hidden; }
-
 body {
   position: relative;
   font-family: 'Raleway', sans-serif;
@@ -4113,5 +4110,11 @@ input[type="file"], [type="file"].lower {
     font-size: 40px;
     padding-bottom: 50px;
     text-align: center; }
+
+.error1 {
+  padding: 6px 0;
+  text-align: center;
+  color: red;
+  display: none; }
 
 /*# sourceMappingURL=scss.css.map */

@@ -10,9 +10,8 @@
 
     <title>
         @isset($title)
-            {{ $title }} |
+            {{ $title }}
         @endisset
-        {{ config('app.name') }}
     </title>
 
     <!-- Scripts -->

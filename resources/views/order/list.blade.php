@@ -1,4 +1,4 @@
-@extends('layouts.app', ['title' => 'Jūsų užsakymai'])
+@extends('layouts.app', ['title' => 'Jūsų esami užsakymai | RealPro. Kurkite naujus ar stebėkite savo užsąkymų būsenas realiu laiku! Sužinokite naujienas iškart kai tik jos atsiranda!'])
 @section('assets')
     <style>
     .image {

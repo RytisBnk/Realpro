@@ -1,4 +1,4 @@
-@extends('layouts.app', ['title' => 'Prisijungimas'])
+@extends('layouts.app', ['title' => 'Prisijungti prie Sistemos | RealPro. Planai nuo 99 eur. Prisijunkite prie sistemos, kad matytumėta savo paslaugas!'])
 
 @section('content')
 <div class="container">

@@ -63,9 +63,6 @@ border-bottom-width: 4px !important;
 @import "../bulma/sass/elements/table";
 @import "../bulma/sass/elements/bulma-checkradio";
 $default-blue: rgb(63,	115,	213);
-html, body {
-  overflow-x: hidden;
-}
 body {
   position: relative;
   font-family: 'Raleway', sans-serif;
@@ -896,4 +893,10 @@ transition: 0.5s linear;
     color: #0b0146; font-size: 40px; padding-bottom:50px;
     text-align: center;
   }
+}
+.error1 {
+  padding: 6px 0;
+  text-align: center;
+  color: red;
+  display: none;
 }
