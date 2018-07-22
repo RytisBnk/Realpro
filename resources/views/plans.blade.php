@@ -52,7 +52,7 @@
       <table class='table is-bordered is-fullwidth'>
         <thead>
           <tr>
-            <th style='border-bottom: 0;'></th>
+            <th style='border-bottom: 0;' class='thOnMobile'></th>
             <th class='optimalus'><span class='name'>OPTIMALUS</span><br>Planas<br>99&euro;</th>
             <th class='popular'><span class='name'>POPULIARIAUSIAS</span><br>Planas<br>199&euro;</th>
             <th class='praktik'><span class='name'>PRAKTIŠKIAUSIAS</span><br>Planas<br>299&euro;</th>
@@ -61,6 +61,9 @@
           </tr>
         </thead>
         <tbody>
+          <tr class='rowOnMobile'>
+        <td align="center" colspan="5">Nemokamas NT objekto įvertinimas</td>
+          </tr>
           <tr>
             <td class='leftAlign'>Nemokamas NT objekto įvertinimas</td>
             <td><i class="icon-ok-circled"></td>
@@ -68,6 +71,9 @@
             <td><i class="icon-ok-circled"></td>
             <td><i class="icon-ok-circled"></td>
             <td><i class="icon-ok-circled"></td>
+          </tr>
+          <tr class='rowOnMobile'>
+        <td align="center" colspan="5">Pardavimo progresas ir derybos</td>
           </tr>
           <tr>
             <td class='leftAlign'>Pardavimo progresas ir derybos</td>
@@ -77,6 +83,9 @@
             <td><i class="icon-ok-circled"></td>
             <td><i class="icon-ok-circled"></td>
           </tr>
+          <tr class='rowOnMobile'>
+        <td align="center" colspan="5">Jūsų NT rodomas tūkstančiams pirkėjų</td>
+          </tr>
           <tr>
             <td class='leftAlign'>Jūsų NT rodomas tūkstančiams pirkėjų</td>
             <td><i class="icon-ok-circled"></td>
@@ -84,6 +93,9 @@
             <td><i class="icon-ok-circled"></td>
             <td><i class="icon-ok-circled"></td>
             <td><i class="icon-ok-circled"></td>
+          </tr>
+          <tr class='rowOnMobile'>
+        <td align="center" colspan="5">Savaitinės atąskaitos esant poreikiui</td>
           </tr>
           <tr>
             <td class='leftAlign'>Savaitinės atąskaitos esant poreikiui</td>
@@ -93,6 +105,9 @@
             <td><i class="icon-ok-circled"></td>
             <td><i class="icon-ok-circled"></td>
           </tr>
+          <tr class='rowOnMobile'>
+        <td align="center" colspan="5">Profesionalaus fotografo nuotraukos</td>
+          </tr>
           <tr>
             <td class='leftAlign'>Profesionalaus fotografo nuotraukos</td>
             <td><i class="icon-cancel-circled"></td>
@@ -100,6 +115,9 @@
             <td><i class="icon-ok-circled"></td>
             <td><i class="icon-ok-circled"></td>
             <td><i class="icon-ok-circled"></td>
+          </tr>
+          <tr class='rowOnMobile'>
+        <td align="center" colspan="5">Detalus 2D aukšto planas</td>
           </tr>
           <tr>
             <td class='leftAlign'>Detalus 2D aukšto planas</td>
@@ -109,6 +127,9 @@
             <td><i class="icon-ok-circled"></td>
             <td><i class="icon-ok-circled"></td>
           </tr>
+          <tr class='rowOnMobile'>
+        <td align="center" colspan="5">Iškelti/išryškinti NT skelbimai</td>
+          </tr>
           <tr>
             <td class='leftAlign'>Iškelti/išryškinti NT skelbimai</td>
             <td><i class="icon-cancel-circled"></td>
@@ -116,6 +137,9 @@
             <td><i class="icon-ok-circled"></td>
             <td><i class="icon-ok-circled"></td>
             <td><i class="icon-ok-circled"></td>
+          </tr>
+          <tr class='rowOnMobile'>
+        <td align="center" colspan="5">Pardavimo ženklas ant pastato</td>
           </tr>
           <tr>
             <td class='leftAlign'>Pardavimo ženklas ant pastato</td>
@@ -125,6 +149,9 @@
             <td><i class="icon-ok-circled"></td>
             <td><i class="icon-ok-circled"></td>
           </tr>
+          <tr class='rowOnMobile'>
+        <td align="center" colspan="5">Premium skelbimai portaluose</td>
+          </tr>
           <tr>
             <td class='leftAlign'>Premium skelbimai portaluose</td>
             <td><i class="icon-cancel-circled"></td>
@@ -132,6 +159,9 @@
             <td><i class="icon-ok-circled"></td>
             <td><i class="icon-ok-circled"></td>
             <td><i class="icon-ok-circled"></td>
+          </tr>
+          <tr class='rowOnMobile'>
+        <td align="center" colspan="5">Pilnas NT objekto aprašymas</td>
           </tr>
           <tr>
             <td class='leftAlign'>Pilnas NT objekto aprašymas</td>
@@ -141,6 +171,9 @@
             <td><i class="icon-ok-circled"></td>
             <td><i class="icon-ok-circled"></td>
           </tr>
+          <tr class='rowOnMobile'>
+        <td align="center" colspan="5">Patalpos aprodymas pirkėjams</td>
+          </tr>
           <tr>
             <td class='leftAlign'>Patalpos aprodymas pirkėjams</td>
             <td><i class="icon-cancel-circled"></td>
@@ -148,6 +181,9 @@
             <td><i class="icon-cancel-circled"></td>
             <td><i class="icon-ok-circled"></td>
             <td><i class="icon-ok-circled"></td>
+          </tr>
+          <tr class='rowOnMobile'>
+        <td align="center" colspan="5">3D šablono paruošimas</td>
           </tr>
           <tr>
             <td class='leftAlign'>3D šablono paruošimas</td>
@@ -159,7 +195,7 @@
           </tr>
         </tbody>
         <tfoot>
-          <td></td>
+          <td class='tdOnMobile'></td>
           <td><a href="{{ route('plan', ['planID' => 1]) }}"><button type='button' class='pasirinkti' data-ripple>PASIRINKTI</button></a></td>
           <td><a href="{{ route('plan', ['planID' => 2]) }}"><button type='button' class='pasirinkti' data-ripple>PASIRINKTI</button></a></td>
           <td><a href="{{ route('plan', ['planID' => 3]) }}"><button type='button' class='pasirinkti' data-ripple>PASIRINKTI</button></a></td>
