@@ -781,6 +781,7 @@ transition: 0.5s linear;
    display: flex;
    justify-content: center;
    font-size: 18px;
+   z-index: 99999999999;
 }
 #slideout_inner {
   padding-left: 10px;
@@ -796,6 +797,7 @@ transition: 0.5s linear;
   justify-content: center;
   align-items: center;
   border-right: 1px solid #fff;
+  z-index: 99999999999;
 }
 #slideout:hover, #slideout:focus, #slideout:active {
   left: 261px;
@@ -835,11 +837,8 @@ transition: 0.5s linear;
     height: 120px;
     left: -211px;
   }
-  #slideout:hover, #slideout:focus, #slideout:active {
+  #slideout:hover, #slideout:focus {
     left: 211px;
-  }
-  #slideout:hover #slideout_inner, #slideout:focus #slideout_inner, #slideout:active #slideout_inner {
-    left: 0;
   }
   .icon-phone {
     font-size: 14px;

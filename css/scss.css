@@ -4021,7 +4021,8 @@ input[type="file"], [type="file"].lower {
   padding-left: 5px;
   display: flex;
   justify-content: center;
-  font-size: 18px; }
+  font-size: 18px;
+  z-index: 99999999999; }
 
 #slideout_inner {
   padding-left: 10px;
@@ -4036,7 +4037,8 @@ input[type="file"], [type="file"].lower {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-right: 1px solid #fff; }
+  border-right: 1px solid #fff;
+  z-index: 99999999999; }
 
 #slideout:hover, #slideout:focus, #slideout:active {
   left: 261px; }
@@ -4072,11 +4074,8 @@ input[type="file"], [type="file"].lower {
     height: 120px;
     left: -211px; }
 
-  #slideout:hover, #slideout:focus, #slideout:active {
+  #slideout:hover, #slideout:focus {
     left: 211px; }
-
-  #slideout:hover #slideout_inner, #slideout:focus #slideout_inner, #slideout:active #slideout_inner {
-    left: 0; }
 
   .icon-phone {
     font-size: 14px; } }
