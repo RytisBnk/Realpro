@@ -550,6 +550,11 @@ top:15px;}
   margin: 0 auto;
   max-width: 600px;
 }
+.sutinku {
+  width: auto;
+  line-height: inherit;
+  height: 13px;
+}
 .input {
   display: block;
   margin: 0 auto;
@@ -618,7 +623,7 @@ input[type="file"] {
 #percent3 { position:absolute; display:inline-block; top:3px; left:48%; color: #fff; }
 
 .ajax {
-  margin-top: -370px;
+  margin-top: -410px;
 }
 .ajax-hidden {
   visibility: hidden;

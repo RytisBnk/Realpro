@@ -412,7 +412,11 @@
   <input type='number' class='input' name='kaina' required>
 </div>
 </div>
-<button type='submit' class='button4'>Užsisakyti</button>
+<label class="checkbox">
+<input type="checkbox" class='sutinku' required>
+Sutinku su <a href="https://realpro.lt/terms" target='_blank'>sąlygomis ir taisyklėmis.</a>
+</label>
+<div><button type='submit' class='button4'>UŽSISAKYTI</button></div>
 </div>
 </form>
 <div class='ajax'>

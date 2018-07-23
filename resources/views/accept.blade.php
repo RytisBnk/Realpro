@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="lt" dir="ltr">
 <head>
-  <title>PRIVATUMO POLITIKA | RealPro. Mes visada saugome mūsų klientų privatumą. Suteikiame konfidencialumą bei anoniškumą!</title>
+  <title>Ačiū! Jūsų užsakymas priimtas. Realpro.lt</title>
   <meta name="description" content="Internetiniai nekilnojamo turto brokeriai. Minimalaus plano kaina TIK 99eur! Parduosime Jūsų nekilnojamą turtą geriausia kaina! Surasime Jums tik geriausius nuomininkus! Jokių paslėptų mokęsčių! Jokių papildomų išlaidų! ">
   <meta name="keywords" content="nekilnojamas turtas,agentas,NT,brokeris,
   namai,parduoti,butai,namai,brokeriai,komersinis,prekyba,sklypas,pigiausia,99eur">
