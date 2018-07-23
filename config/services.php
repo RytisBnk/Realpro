@@ -14,6 +14,8 @@ return [
     |
     */
 
+
+
     'mailgun' => [
         'domain' => env('MAILGUN_DOMAIN'),
         'secret' => env('MAILGUN_SECRET'),
@@ -35,4 +37,13 @@ return [
         'secret' => env('STRIPE_SECRET'),
     ],
 
+    'paysera' => [
+        'project_id' => 0,
+        'password' => 'to_be_filled', 
+        'accepturl' => 'http://realpro.test/accept',
+        'cancelurl' => 'http://realpro.test/cancel',
+        'callbackurl' => 'http://realpro.test/callback',
+        'version' => 1.6,
+        'test' => 1,
+    ],
 ];

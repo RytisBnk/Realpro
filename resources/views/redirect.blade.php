@@ -1,6 +1,6 @@
 <?php
  
- require_once('WebToPay.php');
+require_once(base_path().'/payment/WebToPay.php');
   
  function get_self_url() {
      $s = substr(strtolower($_SERVER['SERVER_PROTOCOL']), 0,

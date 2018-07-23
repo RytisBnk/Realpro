@@ -32,6 +32,9 @@ Route::get('/cancel', function(){
     return view('cancel');
 });
 
+Route::get('/redirect', 'PayseraController@redirect')->name('redirect');
+Route::get('/callback', 'PayseraController@callback')->name('callback');
+
 // ordering routes
 Route::middleware(['auth'])->group(function(){
     Route::get('/checkout', 'OrderController@create')->name('checkout');
