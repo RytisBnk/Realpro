@@ -178,8 +178,9 @@ class OrderController extends Controller
         $user->name = $request->input('vardas');
         $user->tel_nr = $request->input('tel');
         $user->gimimo_data = $request->input('gimimas');
-        $user->save();
+        
 
+        $order->save();
         return redirect()->route('index'); // TO be changed to actual checkout page
     }
 
