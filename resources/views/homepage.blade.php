@@ -350,7 +350,42 @@
   <script src='js.js'>
 </script>
 <script>
-$('body').on('touchstart', function(event){});
+$(document).on('ready', function () {
+$('.slider').slick({
+  infinite: true,
+  arrows: false,
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  autoplay: true,
+  adaptiveHeight: true,
+  responsive: [{
+
+    breakpoint: 1081,
+    settings: {
+      slidesToShow: 2,
+      infinite: true
+    }
+
+  },
+  {
+
+    breakpoint: 788,
+    settings: "unslick" // destroys slick
+
+  }]
+});
+var currentSlide = $('.slider').slick('slickCurrentSlide')+1;
+$('.slick-slide[data-slick-index="'+currentSlide+'"]').children().children().addClass('current');
+$('.slick-slide[data-slick-index="'+currentSlide+'"]').children().children().children().css('filter', 'blur(0)');
+$('.slider').on('afterChange', function(event, slick, currentSlide){
+var currentSlide = $('.slider').slick('slickCurrentSlide')+1;
+$('.slick-slide').children().children().children().css('filter', 'blur(3px)');
+$('.slick-slide[data-slick-index="'+currentSlide+'"]').children().children().children().css('filter', 'blur(0)');
+$('.slick-slide').children().children().removeClass('current');
+$('.slick-slide[data-slick-index="'+currentSlide+'"]').children().children().addClass('current');
+});
+
+});
     function redirect(){
         var selectedPlan = document.getElementsByClassName("activep")[0].getElementsByClassName("top")[0].innerHTML;
         var data = { plan: selectedPlan, _token: '{{csrf_token()}}' };
