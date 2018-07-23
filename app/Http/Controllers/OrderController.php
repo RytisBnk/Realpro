@@ -174,7 +174,7 @@ class OrderController extends Controller
         $order->planas = session('selectedPlan');
 
         
-        $order->apmoketa = false;
+        $order->busena = 'neapmoketa';
         $order->save();
         $order->order_number = 100000 + $order->id;
         $order->save();

@@ -15,7 +15,7 @@ class AddOrderNumber extends Migration
     {
         Schema::table('orders', function (Blueprint $table) {
             $table->string('order_number', 6)->nullable();
-            $table->boolean('apmoketa')->default(0);
+            $table->string('busena', 20)->nullable();
         });
     }
 
@@ -27,7 +27,7 @@ class AddOrderNumber extends Migration
     public function down()
     {
         Schema::table('orders', function (Blueprint $table) {
-            $table->dropColumn('apmoketa');
+            $table->dropColumn('busena');
             $table->dropColumn('order_number');
         });
     }
