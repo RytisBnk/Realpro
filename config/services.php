@@ -38,8 +38,8 @@ return [
     ],
 
     'paysera' => [
-        'project_id' => 0,
-        'password' => 'to_be_filled', 
+        'project_id' => 119538,
+        'password' => '007cab554f24f1d6f1decc14e1ccb05e', 
         'accepturl' => 'http://realpro.test/accept',
         'cancelurl' => 'http://realpro.test/cancel',
         'callbackurl' => 'http://realpro.test/callback',
