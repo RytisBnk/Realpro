@@ -184,6 +184,7 @@ class OrderController extends Controller
         $user->save();
 
         session(['orderId' => $order->order_number]);
+        session(['price' => $this->planuKainos[$order->planas] * 100]);
         return redirect()->route('redirect');
     }
 

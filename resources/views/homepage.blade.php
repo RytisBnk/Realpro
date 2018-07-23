@@ -4,6 +4,7 @@
     <meta name="description" content="Internetiniai nekilnojamo turto brokeriai. Minimalaus plano kaina TIK 99eur! Parduosime Jūsų nekilnojamą turtą geriausia kaina! Surasime Jums tik geriausius nuomininkus! Jokių paslėptų mokęsčių! Jokių papildomų išlaidų! ">
     <meta name="keywords" content="nekilnojamas turtas,agentas,NT,brokeris,
     namai,parduoti,butai,namai,brokeriai,komersinis,prekyba,sklypas,pigiausia,99eur">
+    <meta name="verify-paysera" content="138aff64c31a47ce864635baaaa228e1">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no">
     <title>Lietuvos NT ekspertai: RealPro. Kaina nuo 99&euro;</title>

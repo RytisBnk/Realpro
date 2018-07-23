@@ -21,6 +21,7 @@ class PayseraController extends Controller
             'version' => $config['version'],
             'test' => $config['test'],
             'p_email' => User::find(Auth::id())->email,
+            'amount' => session('price'),
         ];
 
         $httpQuery = http_build_query($params);
