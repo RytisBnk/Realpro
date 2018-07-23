@@ -127,6 +127,9 @@ input {
   border-radius: 6px;
   width: 27%;
 }
+.is-checkradio[type="checkbox"]+.smaller {
+  font-size: 11px;
+}
 #sum {
   min-width: 350px;
 }
