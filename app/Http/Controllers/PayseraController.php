@@ -42,7 +42,7 @@ class PayseraController extends Controller
             $params = array();
             parse_str(base64_decode(strtr($request->data, array('-' => '+', '_' => '/'))), $params);
             $order = Order::find($params['orderId'] - 100000);
-            $order->apmoketa = true;
+            $order->apmoketa = 1;
             $order->save();
 
             return response('OK', 200);

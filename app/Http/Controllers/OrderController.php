@@ -173,8 +173,10 @@ class OrderController extends Controller
         $order = $this->getOrderInformation($request, $order);
         $order->planas = session('selectedPlan');
 
-        $order->order_number = 100000 + $order->id;
+        
         $order->apmoketa = false;
+        $order->save();
+        $order->order_number = 100000 + $order->id;
         $order->save();
 
         $user = User::find(Auth::id());
