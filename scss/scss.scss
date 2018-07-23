@@ -36,20 +36,22 @@
 .table.is-bordered tr:last-child th {
 border-bottom-width: 4px !important;
 }
-@media screen and (max-width: 1087px) {
+@media screen and (max-width: 1133px) {
   .navbar-menu .navbar-item {
     width: 100%;
     display: inline-block;
     text-align: center;
     margin: 0 !important;
     overflow: hidden;
+    padding-left: 0;
+    padding-right: 0;
 }
   .navbar-menu {
   overflow-x: hidden !important;
 }
 
 }
-@media screen and (min-width: 1087px) {
+@media screen and (min-width: 1133px) {
   .navbar-menu {
     height: 80px;
   }
@@ -64,17 +66,13 @@ border-bottom-width: 4px !important;
 @import "../bulma/sass/elements/bulma-checkradio";
 $default-blue: rgb(63,	115,	213);
 body {
-  position: relative;
   font-family: 'Raleway', sans-serif;
   margin: 0;
   padding: 0;
   padding-top: 3.25rem;
   width: 100%;
-  height: 100vh;
   overflow-x:hidden;
   box-sizing: border-box;
-  overflow-y: scroll;
-  -webkit-overflow-scrolling: touch;
 }
 .button {
   text-decoration: none;
@@ -806,10 +804,10 @@ transition: 0.5s linear;
   border-right: 1px solid #fff;
   z-index: 99999999999;
 }
-#slideout:hover, #slideout:focus, #slideout:active {
+#slideout:hover {
   left: 261px;
 }
-#slideout:hover #slideout_inner, #slideout:focus #slideout_inner, #slideout:active #slideout_inner {
+#slideout:hover #slideout_inner {
   left: 0;
 }
 .icon-phone {
@@ -844,7 +842,7 @@ transition: 0.5s linear;
     height: 120px;
     left: -211px;
   }
-  #slideout:hover, #slideout:focus {
+  #slideout:hover{
     left: 211px;
   }
   .icon-phone {

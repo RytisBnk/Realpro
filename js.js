@@ -161,6 +161,10 @@ $( ".product" ).click(function() {
 $(".product").removeClass('activep');
 $(this).addClass('activep');
 });
+$('#susisiekti').on('click', function (e) {
+  e.preventDefault();
+  FB.CustomerChat.showDialog();
+});
 })
 function scrollToID(id, speed) {
     var offSet = 50;

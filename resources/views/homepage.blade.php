@@ -239,7 +239,7 @@
     </div>
     <div class="after-nav3">
       <div class="text3">Reikia gyvos konsultacijos?</div>
-      <div style="margin-top: 50px;"><a class="button2" data-ripple href="#">Susisiekti</a></div>
+      <div style="margin-top: 50px;"><a class="button2" id='susisiekti' data-ripple href="#">Susisiekti</a></div>
     </div>
     <div class='container-2' id='atsiliepimai' style='text-align: center; background-color: #fbfbfb; padding-bottom: 100px;'>
       <div style="color: #0b0146; font-size: 40px; padding-bottom:50px;">Atsiliepimai</div>
