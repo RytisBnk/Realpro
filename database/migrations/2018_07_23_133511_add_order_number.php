@@ -14,7 +14,7 @@ class AddOrderNumber extends Migration
     public function up()
     {
         Schema::table('orders', function (Blueprint $table) {
-            $table->string('order_number', 6);
+            $table->string('order_number', 6)->nullable();
             $table->boolean('apmoketa')->default(0);
         });
     }
