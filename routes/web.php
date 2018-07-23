@@ -25,6 +25,15 @@ Route::get('/plans', function(){
 Route::get('/terms', function(){
     return view('terms');
 });
+Route::get('/accept', function(){
+    return view('accept');
+});
+Route::get('/cancel', function(){
+    return view('cancel');
+});
+
+Route::get('/redirect', 'PayseraController@redirect')->name('redirect');
+Route::get('/callback', 'PayseraController@callback')->name('callback');
 
 // ordering routes
 Route::middleware(['auth'])->group(function(){

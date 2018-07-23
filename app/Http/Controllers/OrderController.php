@@ -172,6 +172,9 @@ class OrderController extends Controller
         $order->user_id = Auth::id();
         $order = $this->getOrderInformation($request, $order);
         $order->planas = session('selectedPlan');
+
+        $order->order_number = 100000 + $order->id;
+        $order->apmoketa = false;
         $order->save();
 
         $user = User::find(Auth::id());
@@ -180,7 +183,8 @@ class OrderController extends Controller
         $user->gimimo_data = $request->input('gimimas');
         $user->save();
 
-        return redirect()->route('index'); // TO be changed to actual checkout page
+        session(['orderId' => $order->order_number]);
+        return redirect()->route('redirect');
     }
 
     public function update(FormValidationRequest $request, $id)

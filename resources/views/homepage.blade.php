@@ -57,7 +57,7 @@
   </div>
 </div>
 <div class="my-navbar-center">
-  <div class="navbar-item"><a href='http://realpro.lt/'><img src="img/logo.png" alt="Realpro NT agentura" style="padding-top: 20px; width: 150px;"></a>
+  <div class="navbar-item"><a href='https://realpro.lt/'><img src="img/logo.png" alt="Realpro NT agentura" style="padding-top: 20px; width: 150px;"></a>
   </div>
 </div>
 <div class="navbar-end">
@@ -239,7 +239,7 @@
     </div>
     <div class="after-nav3">
       <div class="text3">Reikia gyvos konsultacijos?</div>
-      <div style="margin-top: 50px;"><a class="button2" data-ripple href="#">Susisiekti</a></div>
+      <div style="margin-top: 50px;"><a class="button2" id='susisiekti' data-ripple href="#">Susisiekti</a></div>
     </div>
     <div class='container-2' id='atsiliepimai' style='text-align: center; background-color: #fbfbfb; padding-bottom: 100px;'>
       <div style="color: #0b0146; font-size: 40px; padding-bottom:50px;">Atsiliepimai</div>
