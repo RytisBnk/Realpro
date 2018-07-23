@@ -25,6 +25,12 @@ Route::get('/plans', function(){
 Route::get('/terms', function(){
     return view('terms');
 });
+Route::get('/accept', function(){
+    return view('accept');
+});
+Route::get('/cancel', function(){
+    return view('cancel');
+});
 
 // ordering routes
 Route::middleware(['auth'])->group(function(){
