@@ -13,8 +13,8 @@ class PayseraController extends Controller
     {
         $config = config('services.paysera');
         $params = [
-            'project_id' => $config['project_id'],
-            'order_id' => session('orderId'),
+            'projectid' => $config['projectid'],
+            'orderid' => session('orderId'),
             'accepturl' => $config['accepturl'],
             'cancelurl' => $config['cancelurl'],
             'callbackurl' => $config['callbackurl'],
