@@ -40,9 +40,9 @@ return [
     'paysera' => [
         'project_id' => 119538,
         'password' => '007cab554f24f1d6f1decc14e1ccb05e', 
-        'accepturl' => 'http://realpro.test/accept',
-        'cancelurl' => 'http://realpro.test/cancel',
-        'callbackurl' => 'http://realpro.test/callback',
+        'accepturl' => 'http://realpro.lt/accept',
+        'cancelurl' => 'http://realpro.lt/cancel',
+        'callbackurl' => 'http://realpro.lt/callback',
         'version' => 1.6,
         'test' => 1,
     ],
