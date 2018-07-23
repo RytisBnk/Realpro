@@ -38,7 +38,7 @@ return [
     ],
 
     'paysera' => [
-        'project_id' => 119538,
+        'projectid' => 119538,
         'password' => '007cab554f24f1d6f1decc14e1ccb05e', 
         'accepturl' => 'http://realpro.lt/accept',
         'cancelurl' => 'http://realpro.lt/cancel',
