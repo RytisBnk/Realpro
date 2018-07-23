@@ -100,32 +100,32 @@
 <div class="field">
   <label class="label">Pilnas vardas</label>
   <div class="control">
-    <input class="input" type="text" placeholder="Vardas" name='vardas'>
+    <input class="input" type="text" placeholder="Vardas" name='vardas' required>
   </div>
 </div>
 <div class="field">
   <label class="label">Tel. nr.</label>
   <div class="control">
-    <input class="input" type="tel" placeholder="Tel. nr." name='tel'>
+    <input class="input" type="tel" placeholder="Tel. nr." name='tel' required>
   </div>
 </div>
 <div class="field">
   <label class="label">Gimimo data</label>
   <div class="control">
-    <input class="input" type="date" placeholder="Pvz. 1990-10-07" name='gimimas'>
+    <input class="input" type="date" placeholder="Pvz. 1990-10-07" name='gimimas' required>
   </div>
 </div>
 <hr>
   <div class='field'>
   <label class="label">Pilnas objekto adresas</label>
   <div class="control">
-    <input class="input" type="text" placeholder="Pvz. Vilniaus g. 20-55, Vilnius, Lietuva" name='adresas'>
+    <input class="input" type="text" placeholder="Pvz. Vilniaus g. 20-55, Vilnius, Lietuva" name='adresas' required>
   </div>
 </div>
 <div class='field' id='plotas'>
 <label class="label">Plotas, m<sup>2</sup></label>
 <div class="control">
-  <input class="input" type="number" placeholder="Plotas" name='plotas'>
+  <input class="input" type="number" placeholder="Plotas" name='plotas' required>
 </div>
 </div>
 <div class='field' id='kambariu_skaicius'>
@@ -238,7 +238,7 @@
 </div>
 <div class='field'>
   <input class="is-checkradio is-block is-success" id="centrinisKol" type="checkbox" name="centrinisKol">
-  <label for="centrinisKol">Centrinis Kolektorius</label>
+  <label for="centrinisKol" class='smaller'>Centrinis Kolektorius</label>
 </div>
 <div class='field'>
   <input class="is-checkradio is-block is-success" id="dujinis" type="checkbox" name="dujinis">
@@ -256,7 +256,7 @@
   </div>
   <div class='field'>
     <input class="is-checkradio is-block is-success" id="kietasKuras" type="checkbox" name="kietasKuras">
-    <label for="kietasKuras">Kietu kuru</label>
+    <label for="kietasKuras" class='smaller'>Kietu kuru</label>
   </div>
 </div>
 <div class='column breakable'>
@@ -281,7 +281,7 @@
 </div>
 <div class='field'>
   <input class="is-checkradio is-block is-success" id="sklypasSoduose" type="checkbox" name="sklypas_soduose">
-  <label for="sklypasSoduose">Sklypas soduose</label>
+  <label for="sklypasSoduose" class='smaller'>Sklypas soduose</label>
 </div>
 <div class='field'>
   <input class="is-checkradio is-block is-success" id="sandeliavimo" type="checkbox" name="sandeliavimo">
@@ -295,7 +295,7 @@
 <div class='column breakable'>
   <div class='field'>
     <input class="is-checkradio is-block is-success" id="daugiabucioStatyba" type="checkbox" name="daugiabuciu_statyba">
-    <label for="daugiabucioStatyba">Daugiabučių statyba</label>
+    <label for="daugiabucioStatyba" class='smaller'>Daugiabučių statyba</label>
   </div>
   <div class='field'>
     <input class="is-checkradio is-block is-success" id="miskoUkio" type="checkbox" name="misko_ukio">
@@ -360,7 +360,7 @@
   </div>
   <div class='field'>
     <input class="is-checkradio is-block is-success" id="gamybos" type="checkbox" name="gamybos">
-    <label for="gamybos" style='font-size: 12px;'>Gamybos ir pramonės</label>
+    <label for="gamybos" class='smaller'>Gamybos ir pramonės</label>
   </div>
 </div>
 </div>
@@ -409,7 +409,7 @@
 <div class='field'>
 <label class="label" id='kaina'>Kaina, &euro;</label>
 <div class="control">
-  <input type='number' class='input' name='kaina'>
+  <input type='number' class='input' name='kaina' required>
 </div>
 </div>
 <button type='submit' class='button4'>Užsisakyti</button>
