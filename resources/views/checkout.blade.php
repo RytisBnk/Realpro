@@ -39,19 +39,19 @@
   </div>
   <div id="my-navbar-menu" class="navbar-menu">
     <div class="navbar-start">
-      <div class="navbar-item" style="margin-right: -80px;"><a href="http://realpro.lt/#paslaugos" style='z-index: 999999;' class='nav-item' data-ripple="rgba(0,0,0, 0.3)">Paslaugos</a>
+      <div class="navbar-item" style="margin-right: -80px;"><a href="https://realpro.lt/#paslaugos" style='z-index: 999999;' class='nav-item' data-ripple="rgba(0,0,0, 0.3)">Paslaugos</a>
       </div>
-      <div class="navbar-item" style="margin-right: -120px;"><a class='nav-item' style='z-index: 999999;' data-ripple="rgba(0,0,0, 0.3)" href="http://realpro.lt/#kainos">Kainos</a>
+      <div class="navbar-item" style="margin-right: -120px;"><a class='nav-item' style='z-index: 999999;' data-ripple="rgba(0,0,0, 0.3)" href="https://realpro.lt/#kainos">Kainos</a>
       </div>
     </div>
     <div class="my-navbar-center">
-      <div class="navbar-item"><a href='http://realpro.lt/'><img src="img/logo.png" alt="Realpro NT agentura" style="padding-top: 20px; width: 150px;"></a>
+      <div class="navbar-item"><a href='https://realpro.lt/'><img src="img/logo.png" alt="Realpro NT agentura" style="padding-top: 20px; width: 150px;"></a>
       </div>
     </div>
     <div class="navbar-end">
-      <div class="navbar-item" style="margin-left: -80px;"><a class='nav-item'  data-ripple="rgba(0,0,0, 0.3)" href="http://realpro.lt/#duk">DUK</a>
+      <div class="navbar-item" style="margin-left: -80px;"><a class='nav-item'  data-ripple="rgba(0,0,0, 0.3)" href="https://realpro.lt/#duk">DUK</a>
       </div>
-      <div class="navbar-item" style="margin-left: -20px;"><a class='nav-item'  data-ripple="rgba(0,0,0, 0.3)" href="http://realpro.lt/#apie">Apie Mus</a>
+      <div class="navbar-item" style="margin-left: -20px;"><a class='nav-item'  data-ripple="rgba(0,0,0, 0.3)" href="https://realpro.lt/#apie">Apie Mus</a>
       </div>
       @guest
       <div class="navbar-item" style="margin-right: -60px;"><a data-ripple="rgba(0,0,0, 0.3)" class="button" href="{{ route('login') }}" id="login">Prisijungti</a>
@@ -412,7 +412,11 @@
   <input type='number' class='input' name='kaina' required>
 </div>
 </div>
-<button type='submit' class='button4'>Užsisakyti</button>
+<label class="checkbox">
+<input type="checkbox" class='sutinku' required>
+Sutinku su <a href="https://realpro.lt/terms" target='_blank'>sąlygomis ir taisyklėmis.</a>
+</label>
+<div><button type='submit' class='button4'>UŽSISAKYTI</button></div>
 </div>
 </form>
 <div class='ajax'>

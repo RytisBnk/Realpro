@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="lt" dir="ltr">
 <head>
-  <title>PRIVATUMO POLITIKA | RealPro. Mes visada saugome mūsų klientų privatumą. Suteikiame konfidencialumą bei anoniškumą!</title>
+  <title>Atšaukėte užsakymą. Realpro.lt</title>
   <meta name="description" content="Internetiniai nekilnojamo turto brokeriai. Minimalaus plano kaina TIK 99eur! Parduosime Jūsų nekilnojamą turtą geriausia kaina! Surasime Jums tik geriausius nuomininkus! Jokių paslėptų mokęsčių! Jokių papildomų išlaidų! ">
   <meta name="keywords" content="nekilnojamas turtas,agentas,NT,brokeris,
   namai,parduoti,butai,namai,brokeriai,komersinis,prekyba,sklypas,pigiausia,99eur">
@@ -39,19 +39,19 @@
 </div>
 <div id="my-navbar-menu" class="navbar-menu">
   <div class="navbar-start">
-    <div class="navbar-item" style="margin-right: -80px;"><a href="http://realpro.lt/#paslaugos" style='z-index: 999999;' class='nav-item' data-ripple="rgba(0,0,0, 0.3)">Paslaugos</a>
+    <div class="navbar-item" style="margin-right: -80px;"><a href="https://realpro.lt/#paslaugos" style='z-index: 999999;' class='nav-item' data-ripple="rgba(0,0,0, 0.3)">Paslaugos</a>
     </div>
-    <div class="navbar-item" style="margin-right: -120px;"><a class='nav-item' style='z-index: 999999;' data-ripple="rgba(0,0,0, 0.3)" href="http://realpro.lt/#kainos">Kainos</a>
+    <div class="navbar-item" style="margin-right: -120px;"><a class='nav-item' style='z-index: 999999;' data-ripple="rgba(0,0,0, 0.3)" href="https://realpro.lt/#kainos">Kainos</a>
     </div>
   </div>
   <div class="my-navbar-center">
-    <div class="navbar-item"><a href='http://realpro.lt/'><img src="img/logo.png" alt="Realpro NT agentura" style="padding-top: 20px; width: 150px;"></a>
+    <div class="navbar-item"><a href='https://realpro.lt/'><img src="img/logo.png" alt="Realpro NT agentura" style="padding-top: 20px; width: 150px;"></a>
     </div>
   </div>
   <div class="navbar-end">
-    <div class="navbar-item" style="margin-left: -80px;"><a class='nav-item'  data-ripple="rgba(0,0,0, 0.3)" href="http://realpro.lt/#duk">DUK</a>
+    <div class="navbar-item" style="margin-left: -80px;"><a class='nav-item'  data-ripple="rgba(0,0,0, 0.3)" href="https://realpro.lt/#duk">DUK</a>
     </div>
-    <div class="navbar-item" style="margin-left: -20px;"><a class='nav-item'  data-ripple="rgba(0,0,0, 0.3)" href="http://realpro.lt/#apie">Apie Mus</a>
+    <div class="navbar-item" style="margin-left: -20px;"><a class='nav-item'  data-ripple="rgba(0,0,0, 0.3)" href="https://realpro.lt/#apie">Apie Mus</a>
     </div>
     @guest
     <div class="navbar-item" style="margin-right: -60px;"><a data-ripple="rgba(0,0,0, 0.3)" class="button" href="{{ route('login') }}" id="login">Prisijungti</a>
@@ -73,10 +73,10 @@
     </div>
     <div class="column is-2">
       <div class="footerTxt">Apie Mus</div>
-      <div class="links"><a href="http://realpro.lt/#paslaugos" class='footerLinks'>Paslaugos</a></div>
-      <div class="links"><a href="http://realpro.lt/#apie" class='footerLinks'>Kaip tai veikia</a></div>
-      <div class="links"><a href="http://realpro.lt/#kainos" class='footerLinks'>Kainos</a></div>
-      <div class="links"><a href="http://realpro.lt/#duk" class='footerLinks'>DUK</a></div>
+      <div class="links"><a href="https://realpro.lt/#paslaugos" class='footerLinks'>Paslaugos</a></div>
+      <div class="links"><a href="https://realpro.lt/#apie" class='footerLinks'>Kaip tai veikia</a></div>
+      <div class="links"><a href="https://realpro.lt/#kainos" class='footerLinks'>Kainos</a></div>
+      <div class="links"><a href="https://realpro.lt/#duk" class='footerLinks'>DUK</a></div>
       <div class="links"><a href="{{ route('plans') }}">Užsisakyti</a></div>
     </div>
     <div class="column is-2">
