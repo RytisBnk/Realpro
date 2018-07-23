@@ -57,7 +57,7 @@
   </div>
 </div>
 <div class="my-navbar-center">
-  <div class="navbar-item"><a href='http://realpro.lt/'><img src="img/logo.png" alt="Realpro NT agentura" style="padding-top: 20px; width: 150px;"></a>
+  <div class="navbar-item"><a href='https://realpro.lt/'><img src="img/logo.png" alt="Realpro NT agentura" style="padding-top: 20px; width: 150px;"></a>
   </div>
 </div>
 <div class="navbar-end">
