@@ -13,14 +13,15 @@ class PayseraController extends Controller
     {
         $config = config('services.paysera');
         $params = [
-            'project_id' => $config['project_id'],
-            'order_id' => session('orderId'),
+            'projectid' => $config['projectid'],
+            'orderid' => session('orderId'),
             'accepturl' => $config['accepturl'],
             'cancelurl' => $config['cancelurl'],
             'callbackurl' => $config['callbackurl'],
             'version' => $config['version'],
             'test' => $config['test'],
             'p_email' => User::find(Auth::id())->email,
+            'amount' => session('price'),
         ];
 
         $httpQuery = http_build_query($params);
@@ -40,8 +41,8 @@ class PayseraController extends Controller
         {
             $params = array();
             parse_str(base64_decode(strtr($request->data, array('-' => '+', '_' => '/'))), $params);
-            $order = Order::find($params['orderId'] - 100000);
-            $order->apmoketa = true;
+            $order = Order::find($params['orderid'] - 100000);
+            $order->busena = 'apmoketa';
             $order->save();
 
             return response('OK', 200);

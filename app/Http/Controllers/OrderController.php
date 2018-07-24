@@ -173,8 +173,10 @@ class OrderController extends Controller
         $order = $this->getOrderInformation($request, $order);
         $order->planas = session('selectedPlan');
 
+        
+        $order->busena = 'neapmoketa';
+        $order->save();
         $order->order_number = 100000 + $order->id;
-        $order->apmoketa = false;
         $order->save();
 
         $user = User::find(Auth::id());
@@ -184,6 +186,7 @@ class OrderController extends Controller
         $user->save();
 
         session(['orderId' => $order->order_number]);
+        session(['price' => $this->planuKainos[$order->planas] * 100]);
         return redirect()->route('redirect');
     }
 
