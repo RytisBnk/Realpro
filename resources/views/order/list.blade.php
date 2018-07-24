@@ -31,17 +31,15 @@
   </tr>
 </thead>
 <tbody>
-  @if (!empty($orders))
-  @foreach ($orders as $order)
+  @if (isset($order))
   <tr>
     <th scope="row">1</th>
     <td>{{ ucwords($user->name) }}</td>
     <td>{{ ucfirst($order->nuosavybes_tipas) }}</td>
     <td>{{ $order->adresas }}</td>
     <td>{{ ucfirst($order->pardavimo_tipas) }}</td>
-    <td>{{ $order->planas }} ({{ $prices[$order->id] }}&euro;)</td>
+    <td>{{ $order->planas }} ({{ $price }}&euro;)</td>
   </tr>
-  @endforeach
   @endif
 </tbody>
 </table>

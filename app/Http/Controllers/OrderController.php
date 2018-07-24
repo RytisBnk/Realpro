@@ -103,25 +103,22 @@ class OrderController extends Controller
 
     public function showAll()
     {
-        $orders = Order::where('user_id', Auth::id())->get();
+        $orders = Order::where('user_id', Auth::id())->orderBy('id', 'desc')->get();
         if ($orders->count() > 0)
         {
             $user = User::find(Auth::id());
             $images = Image::where('user_id', Auth::id())->get();
-            $prices = array();
-            foreach ($orders as $order)
-            {
-                $prices[$order->id] = $this->planuKainos[$order->planas];
-            }
+            $order = $orders->first();
+            $price = $this->planuKainos[$order->planas];
             foreach($images as $image)
             {
                 $image->filename = str_replace('files/', '', $image->filename);
             }
             return view('order.list', array(
-                'orders' => $orders,
+                'order' => $$order,
                 'user' => $user,
                 'images' => $images,
-                'prices' => $prices
+                'price' => $price
             ));
         }
         else 
