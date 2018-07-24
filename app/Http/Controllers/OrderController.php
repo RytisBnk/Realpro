@@ -115,7 +115,7 @@ class OrderController extends Controller
                 $image->filename = str_replace('files/', '', $image->filename);
             }
             return view('order.list', array(
-                'order' => $$order,
+                'order' => $order,
                 'user' => $user,
                 'images' => $images,
                 'price' => $price
