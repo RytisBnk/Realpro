@@ -207,7 +207,7 @@ class OrderController extends Controller
 
         session(['orderId' => $order->order_number]);
         session(['price' => $this->planuKainos[$order->planas] * 100]);
-        return redirect()->route('order.list');
+        return redirect()->route('redirect');
     }
 
     public function update(Request $request, $id)
