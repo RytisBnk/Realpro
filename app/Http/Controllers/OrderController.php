@@ -66,18 +66,19 @@ class OrderController extends Controller
         $orders = Order::where('user_id', Auth::id())->get();
         if ($orders->count() > 0)
         {
-            echo 'test1';
             $order = $orders->first();
-            if ($planID > array_search($order->planas, $this->planai) && $order->busena == 'apmoketas')
+            if ($planID > array_search($order->planas, $this->planai) && $order->busena == 'apmoketa')
             {
                 $price = ($this->planuKainos[$this->planai[$planID]] - $this->planuKainos[$this->planai[$order->planas]]) * 100;
                 session(['price' => $price, 'orderId' => $order->order_number]);
+                $order->planas = $this->planai[$planID];
+                $order->busena = 'atnaujinama';
+                $order->save();
                 return redirect()->route('redirect');
             }
         }
         else 
         {
-            echo 'test2';
             session(['selectedPlan' => $this->planai[$planID],
                 'redirectRoute' => 'checkout']);
             if (!Auth::check())
