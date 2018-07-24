@@ -70,10 +70,13 @@ class OrderController extends Controller
             if ($planID > array_search($order->planas, $this->planai) && $order->busena == 'apmoketa')
             {
                 $price = ($this->planuKainos[$this->planai[$planID]] - $this->planuKainos[$order->planas]) * 100;
-                session(['price' => $price, 'orderId' => $order->order_number]);
-                $order->planas = $this->planai[$planID];
-                $order->busena = 'atnaujinama';
-                $order->save();
+                $newOrder = $order->replicate();
+                $newOrder->planas = $this->planai[$planID];
+                $newOrder->busena = 'atnaujinama';
+                $newOrder->save();
+                $newOrder->order_number = 100000 + $newOrder->id;
+                $newOrder->save();
+                session(['price' => $price, 'orderId' => $newOrder->order_number]);
                 return redirect()->route('redirect');
             }
         }
