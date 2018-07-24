@@ -66,6 +66,7 @@ class OrderController extends Controller
         $orders = Order::where('user_id', Auth::id())->get();
         if ($orders->count() > 0)
         {
+            echo 'test1';
             $order = $orders->first();
             if ($planID > array_search($order->planas, $this->planai) && $order->busena == 'apmoketas')
             {
@@ -76,6 +77,7 @@ class OrderController extends Controller
         }
         else 
         {
+            echo 'test2';
             session(['selectedPlan' => $this->planai[$planID],
                 'redirectRoute' => 'checkout']);
             if (!Auth::check())
