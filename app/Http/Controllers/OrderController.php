@@ -66,7 +66,7 @@ class OrderController extends Controller
         $orders = Order::where('user_id', Auth::id())->get();
         if ($orders->count() > 0)
         {
-            $order->first();
+            $order = $orders->first();
             if ($planID > array_search($order->planas, $this->planai) && $order->busena == 'apmoketas')
             {
                 $price = ($this->planuKainos[$this->planai[$planID]] - $this->planuKainos[$this->planai[$order->planas]]) * 100;
