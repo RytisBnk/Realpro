@@ -6,7 +6,6 @@ use Illuminate\Http\Request;
 use App\Order;
 use App\User;
 use Auth;
-use App\Http\Requests\FormValidationRequest;
 use App\Image;
 use Symfony\Component\HttpFoundation\File\UploadedFile;
 
@@ -114,7 +113,7 @@ class OrderController extends Controller
         return view('order.edit', array('order' => Order::find($id)));
     }
 
-    private function getCheckboxesInfo(FormValidationRequest $request, Order $order)
+    private function getCheckboxesInfo(Request $request, Order $order)
     {
         foreach ($this->sildymoTipai as $value)
         {
@@ -141,7 +140,7 @@ class OrderController extends Controller
         return $order;
     }
 
-    private function getOrderInformation(FormValidationRequest $request, Order $order)
+    private function getOrderInformation(Request $request, Order $order)
     {
         $order->nuosavybes_tipas = $request->input('nuosavybes_tipas');
         $order->pardavimo_tipas = $request->input('pardavimo_tipas');
@@ -166,14 +165,14 @@ class OrderController extends Controller
         return $order;
     }
 
-    public function store(FormValidationRequest $request)
+    public function store(Request $request)
     {
         $order = new Order;
         $order->user_id = Auth::id();
         $order = $this->getOrderInformation($request, $order);
         $order->planas = session('selectedPlan');
 
-        
+
         $order->busena = 'neapmoketa';
         $order->save();
         $order->order_number = 100000 + $order->id;
@@ -190,7 +189,7 @@ class OrderController extends Controller
         return redirect()->route('redirect');
     }
 
-    public function update(FormValidationRequest $request, $id)
+    public function update(Request $request, $id)
     {
         $order = Order::find($id);
 
