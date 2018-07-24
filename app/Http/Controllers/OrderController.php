@@ -69,7 +69,7 @@ class OrderController extends Controller
             $order = $orders->first();
             if ($planID > array_search($order->planas, $this->planai) && $order->busena == 'apmoketa')
             {
-                $price = ($this->planuKainos[$this->planai[$planID]] - $this->planuKainos[$this->planai[$order->planas]]) * 100;
+                $price = ($this->planuKainos[$this->planai[$planID]] - $this->planuKainos[$order->planas]) * 100;
                 session(['price' => $price, 'orderId' => $order->order_number]);
                 $order->planas = $this->planai[$planID];
                 $order->busena = 'atnaujinama';
