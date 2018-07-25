@@ -14,15 +14,17 @@
         @endisset
     </title>
 
-    <!-- Scripts -->
+    <!-- Scripts and styles -->
+    @if (env('APP_ENV') == 'production')
     <script src="{{ asset('js/app.js', true) }}" defer></script>
-
+    <link href="{{ asset('css/app.css', true) }}" rel="stylesheet">
+    @else 
+    <script src="{{ asset('js/app.js') }}" defer></script>
+    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    @endif
     <!-- Fonts -->
     <link rel="dns-prefetch" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,600" rel="stylesheet" type="text/css">
-
-    <!-- Styles -->
-    <link href="{{ asset('css/app.css', true) }}" rel="stylesheet">
     @yield('assets')
 </head>
 <body>
