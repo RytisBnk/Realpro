@@ -36,8 +36,8 @@ class PayseraController extends Controller
     {
         $sign = config('services.paysera.password');
         $data = $request->data;
-        $ssl = $request->ssl;
-        if (md5($data . $sign) == $ssl)
+        $ss1 = $request->ss1;
+        if (md5($data . $sign) == $ss1)
         {
             $params = array();
             parse_str(base64_decode(strtr($request->data, array('-' => '+', '_' => '/'))), $params);
