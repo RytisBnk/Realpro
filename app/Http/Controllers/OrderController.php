@@ -63,17 +63,37 @@ class OrderController extends Controller
 
     public function storeSelectedPlan($planID)
     {
-        session(['selectedPlan' => $this->planai[$planID],
+        $orders = Order::where('user_id', Auth::id())->get();
+        if ($orders->count() > 0)
+        {
+            $order = $orders->first();
+            if ($planID > array_search($order->planas, $this->planai) && $order->busena == 'apmoketa')
+            {
+                $price = ($this->planuKainos[$this->planai[$planID]] - $this->planuKainos[$order->planas]) * 100;
+                $newOrder = $order->replicate();
+                $newOrder->planas = $this->planai[$planID];
+                $newOrder->busena = 'atnaujinama';
+                $newOrder->save();
+                $newOrder->order_number = 100000 + $newOrder->id;
+                $newOrder->save();
+                session(['price' => $price, 'orderId' => $newOrder->order_number]);
+                return redirect()->route('redirect');
+            }
+        }
+        else 
+        {
+            session(['selectedPlan' => $this->planai[$planID],
                 'redirectRoute' => 'checkout']);
-        if (!Auth::check())
-        {
-            return redirect()->route('register');
-        }
-        else if (Order::where('user_id', Auth::id())->count() > 0)
-        {
-            return redirect()->route('order.list');
-        }
-        else return redirect()->route('checkout');
+            if (!Auth::check())
+            {
+                return redirect()->route('register');
+            }
+            else if (Order::where('user_id', Auth::id())->count() > 0)
+            {
+                return redirect()->route('order.list');
+            }
+            else return redirect()->route('checkout');
+        }    
     }
 
     public function create()
@@ -83,24 +103,28 @@ class OrderController extends Controller
 
     public function showAll()
     {
-        $orders = Order::where('user_id', Auth::id())->get();
-        $user = User::find(Auth::id());
-        $images = Image::where('user_id', Auth::id())->get();
-        $prices = array();
-        foreach ($orders as $order)
+        $orders = Order::where('user_id', Auth::id())->orderBy('id', 'desc')->get();
+        if ($orders->count() > 0)
         {
-            $prices[$order->id] = $this->planuKainos[$order->planas];
+            $user = User::find(Auth::id());
+            $images = Image::where('user_id', Auth::id())->get();
+            $order = $orders->first();
+            $price = $this->planuKainos[$order->planas];
+            foreach($images as $image)
+            {
+                $image->filename = str_replace('files/', '', $image->filename);
+            }
+            return view('order.list', array(
+                'order' => $order,
+                'user' => $user,
+                'images' => $images,
+                'price' => $price
+            ));
         }
-        foreach($images as $image)
+        else 
         {
-            $image->filename = str_replace('files/', '', $image->filename);
+            return redirect()->route('plans');
         }
-        return view('order.list', array(
-            'orders' => $orders,
-            'user' => $user,
-            'images' => $images,
-            'prices' => $prices
-        ));
     }
 
     public function show($id)
