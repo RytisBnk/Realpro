@@ -391,6 +391,7 @@
   <script src='js.js'>
 </script>
 <script>
+    $('body').on('touchstart', function(event){});
     function redirect(){
         var selectedPlan = document.getElementsByClassName("activep")[0].getElementsByClassName("top")[0].innerHTML;
         var data = { plan: selectedPlan, _token: '{{csrf_token()}}' };
