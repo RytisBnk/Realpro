@@ -1,6 +1,11 @@
 <!DOCTYPE html>
-<html lang="lt" dir="ltr">
+<html lang="lt" dir="ltr" prefix="og: http://ogp.me/ns#">
   <head>
+    <meta property="og:title" content="Planai | RealPro - Kaina nuo 99eur. Geriausias pasirinkimas" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://realpro.lt/plans" />
+    <meta property="og:image" content="" />
+    <meta property="og:description" content="Minimalus plano mokęstis tik 99eur! Parduokite savo nekilnojamą turtą nesukdami galvos, palikite viską Realpro agentams. Geriausia kokybė per tiksliausią laiko tarpą!. " />
     <title>Planai | RealPro - Kaina nuo 99eur. Geriausias pasirinkimas</title>
     <meta name="description" content="Minimalus plano mokęstis tik 99eur! Parduokite savo nekilnojamą turtą nesukdami galvos, palikite viską Realpro agentams. Geriausia kokybė per tiksliausią laiko tarpą!. ">
     <meta name="keywords" content="nekilnojamas turtas,agentas,NT,brokeris,
