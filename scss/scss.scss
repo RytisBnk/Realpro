@@ -857,6 +857,22 @@ transition: 0.5s linear;
     font-size: 14px;
   }
 }
+@media (min-width: 567px) and (max-width: 758px) {
+  .popularPlan {
+    padding-top: 20px;
+    padding-right : 40px;
+  }
+}
+@media screen and (max-width: 566px) {
+  .popularPlan {
+    font-size: 5vw;
+    display: block;
+    margin: 0 auto;
+    padding-top: 20px;
+    padding-right: 17px;
+
+  }
+}
 .apieMus {
   padding: 70px 0;
     font-family: 'Raleway', sans-serif;

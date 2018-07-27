@@ -82,7 +82,7 @@
             <th class='popular'><span class='name'>POPULIARIAUSIAS</span><br>Planas<br>199&euro;</th>
             <th class='praktik'><span class='name'>PRAKTIŠKIAUSIAS</span><br>Planas<br>299&euro;</th>
             <th class='ypatingas'><span class='name'>YPATINGAS</span><br>Planas<br>399&euro;</th>
-            <th class='komercinis'><span class='name'>KOMERCINIS</span><br>Planas<br>399&euro;</th>
+            <th class='komercinis'><span class='name'>KOMERCINIS</span><br>Planas<br>Individuali</th>
           </tr>
         </thead>
         <tbody>
@@ -233,7 +233,7 @@
           <td><a href="{{ route('plan', ['planID' => 2]) }}"><button type='button' class='pasirinkti' data-ripple>PASIRINKTI</button></a></td>
           <td><a href="{{ route('plan', ['planID' => 3]) }}"><button type='button' class='pasirinkti' data-ripple>PASIRINKTI</button></a></td>
           <td><a href="{{ route('plan', ['planID' => 4]) }}"><button type='button' class='pasirinkti' data-ripple>PASIRINKTI</button></a></td>
-          <td><a href="{{ route('plan', ['planID' => 5]) }}"><button type='button' class='pasirinkti' data-ripple>PASIRINKTI</button></a></td>
+          <td><a href="#"><button type='button' id='komercinisUzsisakyti' class='pasirinkti' data-ripple>PASIRINKTI</button></a></td>
         </tfoot>
       </table>
     </div>
