@@ -50,7 +50,6 @@ class SendOrderInvoice implements ShouldQueue
         $invoice->setFrom(array("Seller Name","Sample Company Name","128 AA Juanita Ave","Glendora , CA 91740"));
         $invoice->setTo(array("Purchaser Name","Sample Company Name","128 AA Juanita Ave","Glendora , CA 91740"));
 
-        
-        Mail::to($user->email)->send(new OrderCompleted($this->filepath));
+        Mail::to($this->user->email)->send(new OrderCompleted($this->filepath));
     }
 }
