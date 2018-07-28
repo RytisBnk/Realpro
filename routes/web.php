@@ -58,3 +58,5 @@ Route::get('/terms', function(){
 Route::get('/privacy', function(){
     return view('privacy');
 })->name('privacy');
+
+Route::get('/invoicetest', 'InvoiceTestController@createInvoice')->name('invoice.test');
