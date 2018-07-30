@@ -22,7 +22,7 @@ class InvoiceTestController extends Controller
 
         $invoice = new phpinvoice('A4', '$', 'lt');
         /* Header Settings */
-        //$invoice->setLogo("images/sample1.jpg");   //logo image path
+        $invoice->setLogo(base_path('img/logo.png'));   //logo image path
         $invoice->setColor("#007fff");      // pdf color scheme
         $invoice->setType("Pardavimo sąskaita");    // Invoice Type
         $invoice->setReference("INV-55033645");   // Reference
@@ -31,6 +31,7 @@ class InvoiceTestController extends Controller
         $invoice->setDue(date('M dS ,Y',strtotime('+3 months')));    // Due Date
         $invoice->setFrom(array("ąčęėįšųū","Sample ąčęę Name","128 AA Juanita Ave","Glendora , CA 91740"));
         $invoice->setTo(array("Purchaser Name","Sample Company Name","128 AA Juanita Ave","Glendora , CA 91740"));
+        
         /* Adding Items in table */
         $invoice->addItem("čęėąį","2.4GHz/1GB/160GB/SMP-DVD/VB",6,0,580,0,3480);
         $invoice->addItem("PDC-E5300","2.6GHz/1GB/320GB/SMP-DVD/FDD/VB",4,0,645,0,2580);
@@ -49,6 +50,7 @@ class InvoiceTestController extends Controller
         /* Set footer note */
         $invoice->setFooternote("My Company Name Here");
         /* Render */
+        $invoice->setFooterImage(base_path('img/logo.png'));
         $invoice->render('example1.pdf','I'); 
   /* I => Display on browser, D => Force Download, F => local path save, S => return document path */
     }

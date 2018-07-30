@@ -8,6 +8,7 @@
 *******************************************************************************/
 namespace App\InvoicePdf;
 define('FPDF_VERSION','1.81');
+use Exception;
 
 class FPDF
 {

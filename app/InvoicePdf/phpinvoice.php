@@ -8,6 +8,7 @@
 *******************************************************************************/
 namespace App\InvoicePdf;
 require_once('inc/__autoload.php');
+use Exception;
 
 class phpinvoice extends FPDF_rotation  {
 
@@ -356,7 +357,7 @@ class phpinvoice extends FPDF_rotation  {
                 {
                     //Precalculate height
                     $calculateHeight = new phpinvoice;
-                    $calculateHeight->addPage();
+                    $calculateHeight->AddPage();
                     $calculateHeight->setXY(0,0);
                     $calculateHeight->SetFont($this->font,'',7);
                     $calculateHeight->MultiCell($this->firstColumnWidth,3,iconv("UTF-8", "cp1257",$item['description']),0,'L',1);
@@ -624,17 +625,16 @@ class phpinvoice extends FPDF_rotation  {
     }
 
     public function Header() {
-
-        if(isset($this->logo) and !empty($this->logo)) {
-            $this->Image($this->logo,$this->margins['l'],$this->margins['t'],$this->dimensions[0],$this->dimensions[1]);
-        }
-
         //Title
         $this->SetTextColor(0,0,0);
         $this->SetFont($this->font,'B',20);
         $this->Cell(0,5,iconv("UTF-8", "cp1257",$this->lithuanian_strtoupper($this->title)),0,1,'R');
         $this->SetFont($this->font,'',9);
         $this->Ln(5);
+
+        if(isset($this->logo) and !empty($this->logo)) {
+            $this->Image($this->logo,$this->margins['l'],$this->GetY(),$this->dimensions[0],$this->dimensions[1]);
+        }
 
         $lineheight = 5;
         //Calculate position of strings
@@ -697,17 +697,18 @@ class phpinvoice extends FPDF_rotation  {
             $this->SetDrawColor($this->color[0],$this->color[1],$this->color[2]);
             $this->SetFont($this->font,'b',10);
             $width = ($this->document['w']-$this->margins['l']-$this->margins['r'])/2;
+            if ($this->from == null) return;
             if(isset($this->flipflop)) {
                 $to   				= $this->lang['to'];
                 $from 				= $this->lang['from'];
                 $this->lang['to'] 	= $from;
                 $this->lang['from'] = $to;
-                $to 				= $this->to;
-                $from 				= $this->from;
-                $this->to 			= $from;
-                $this->from 		= $to;
+                $to1 = $this->to;
+                $from1 = $this->from;
+                $this->to = $from1;
+                $this->from = $to1;
             }
-
+             
             if($this->display_tofrom === true) {
                 $this->Cell($width,$lineheight,iconv('UTF-8', 'cp1257',$this->lithuanian_strtoupper($this->lang['from'])),0,0,'L');
                 $this->Cell(0,$lineheight,iconv('UTF-8', 'cp1257',$this->lithuanian_strtoupper($this->lang['to'])),0,0,'L');
@@ -725,7 +726,7 @@ class phpinvoice extends FPDF_rotation  {
                 $this->SetFont($this->font,'',8);
                 $this->SetTextColor(100,100,100);
                 $this->Ln(7);
-                for($i=1; $i<max(count($this->from),count($this->to)); $i++) {
+                for($i=1; $i<max(count($this->to),count($this->from)); $i++) {
                     $this->Cell($width,$lineheight,iconv("UTF-8", "cp1257",$this->from[$i]),0,0,'L');
                     $this->Cell(0,$lineheight,iconv("UTF-8", "cp1257",$this->to[$i]),0,0,'L');
                     $this->Ln(5);
