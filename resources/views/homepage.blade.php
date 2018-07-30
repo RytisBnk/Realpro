@@ -1,7 +1,12 @@
 <!DOCTYPE html>
-<html lang="lt" dir="ltr">
+<html lang="lt" dir="ltr" prefix="og: http://ogp.me/ns#">
   <head>
-    <meta name="description" content="Internetiniai nekilnojamo turto brokeriai. Minimalaus plano kaina TIK 99eur! Parduosime Jūsų nekilnojamą turtą geriausia kaina! Surasime Jums tik geriausius nuomininkus! Jokių paslėptų mokęsčių! Jokių papildomų išlaidų! ">
+    <meta property="og:title" content="Lietuvos NT ekspertai: RealPro. Kaina nuo 99&euro;" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://realpro.lt" />
+    <meta property="og:image" content="https://realpro.lt/img/fb.png" />
+    <meta property="og:description" content="Internetiniai nekilnojamo turto brokeriai. Minimalaus plano kaina TIK 99eur! Parduosime Jūsų nekilnojamą turtą geriausia kaina! Surasime Jums tik geriausius nuomininkus! Jokių paslėptų mokęsčių! Jokių papildomų išlaidų!" />
+    <meta name="description" content="Internetiniai nekilnojamo turto brokeriai. Minimalaus plano kaina TIK 99eur! Parduosime Jūsų nekilnojamą turtą geriausia kaina! Surasime Jums tik geriausius nuomininkus! Jokių paslėptų mokęsčių! Jokių papildomų išlaidų!">
     <meta name="keywords" content="nekilnojamas turtas,agentas,NT,brokeris,
     namai,parduoti,butai,namai,brokeriai,komersinis,prekyba,sklypas,pigiausia,99eur">
     <meta name="verify-paysera" content="138aff64c31a47ce864635baaaa228e1">
@@ -386,6 +391,7 @@
   <script src='js.js'>
 </script>
 <script>
+    $('body').on('touchstart', function(event){});
     function redirect(){
         var selectedPlan = document.getElementsByClassName("activep")[0].getElementsByClassName("top")[0].innerHTML;
         var data = { plan: selectedPlan, _token: '{{csrf_token()}}' };
