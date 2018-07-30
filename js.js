@@ -128,7 +128,7 @@ $( ".product" ).click(function() {
 $(".product").removeClass('activep');
 $(this).addClass('activep');
 });
-$('#susisiekti').on('click', function (e) {
+$('#susisiekti, #komercinisUzsisakyti').on('click', function (e) {
   e.preventDefault();
   FB.CustomerChat.showDialog();
 });
