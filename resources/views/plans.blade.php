@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="lt" dir="ltr" prefix="og: http://ogp.me/ns#">
   <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-123099861-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-123099861-1');
+</script>
     <meta property="og:title" content="Planai | RealPro - Kaina nuo 99eur. Geriausias pasirinkimas" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://realpro.lt/plans" />
@@ -270,5 +279,8 @@
     </div>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.slim.min.js'></script>
   <script src='js.js'></script>
+  <script type="text/javascript" id="cookieinfo"
+  	src="//cookieinfoscript.com/js/cookieinfo.min.js">
+  </script>
   </body>
 </html>
