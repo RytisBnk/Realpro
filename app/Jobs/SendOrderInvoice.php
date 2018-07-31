@@ -40,6 +40,8 @@ class SendOrderInvoice implements ShouldQueue
     public function handle()
     {
         $order = Order::find($this->order_number - 100000);
+        $order->busena = 'apmoketa';
+        $order->save();
         $user = User::find($order->user_id);
         $filepath = storage_path("app/invoices/sąskaita_" . $order->order_number . '.pdf');
         $basePrice = $this->price / (float) 121 * 100;
