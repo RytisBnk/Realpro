@@ -182,7 +182,7 @@
         </div>
         <div class="column is-narrow is-half-mobile">
           <div class="product activep" style='padding-top: 0;'>
-            <div class='triangle'><span>Value!</span></div>
+            <div class='triangle'><span>Value!</span></div><br>
             <div class="top popularPlan smallerMobile">Populiariausias</div>
             <div class="price">199 &euro;</div>
             <div class="cardText2" style="padding-top: 30px;">- Visos 'Optimalaus'</div>
