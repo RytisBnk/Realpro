@@ -47,7 +47,7 @@ Route::middleware(['auth'])->group(function(){
     Route::put('/order/update', 'OrderController@update');
     Route::delete('/order/delete', 'OrderController@destroy');
 
-    Route::get('/invoicetest', 'InvoiceTestController@createInvoice')->name('invoice.test');
+    //Route::get('/invoicetest', 'InvoiceTestController@createInvoice')->name('invoice.test');
 });
 
 Route::post('/upload', ['as' => 'upload', 'uses' => 'ImageController@upload']);
