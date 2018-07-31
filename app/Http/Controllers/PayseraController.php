@@ -7,6 +7,8 @@ use Auth;
 use App\User;
 use App\Order;
 
+Use App\Jobs\SendOrderInvoice;
+
 class PayseraController extends Controller
 {
     public function redirect()
@@ -41,9 +43,7 @@ class PayseraController extends Controller
         {
             $params = array();
             parse_str(base64_decode(strtr($request->data, array('-' => '+', '_' => '/'))), $params);
-            $order = Order::find($params['orderid'] - 100000);
-            $order->busena = 'apmoketa';
-            $order->save();
+            SendOrderInvoice::dispatch($params['orderid'], $params['amount'] / 100);
 
             return response('OK', 200);
         }

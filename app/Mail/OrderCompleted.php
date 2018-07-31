@@ -12,14 +12,18 @@ class OrderCompleted extends Mailable
     use Queueable, SerializesModels;
 
     protected $pdfPath;
+    public $subject;
+    protected $recipientName;
     /**
      * Create a new message instance.
      *
      * @return void
      */
-    public function __construct($path)
+    public function __construct($path, $subject, $recipientName)
     {
         $this->pdfPath = $path;
+        $this->subject = $subject;
+        $this->recipientName = $recipientName;
     }
 
     /**
@@ -29,6 +33,8 @@ class OrderCompleted extends Mailable
      */
     public function build()
     {
-        return $this->view('emails.invoice')->attach($this->pdfPath);
+        return $this->view('emails.invoice', array('recipientName' => $this->recipientName))
+        ->subject($this->subject)
+        ->attach($this->pdfPath);
     }
 }

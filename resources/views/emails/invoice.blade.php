@@ -1,5 +1,10 @@
-<?php
+<!DOCTYPE html>
 
-echo 'Ačiū kad naudojatės RealPro paslaugomis.\n';
-echo '\n';
-echo 'Jūsų sąskaita faktūra prisegta prie šio laiško.';
+<p>Sveiki, {{ $recipientName }},</p>
+</br>
+<p>ačiū kad naudojatės RealPro paslaugomis. Su jumis netrukus susisieks mūsų atstovas.</p>
+</br>
+<p>Prisegame sąskaita faktūra.</p>
+</br>
+<p>Pagarbiai, RealPro komanda.</p>
+

@@ -327,7 +327,7 @@ class phpinvoice extends FPDF_rotation  {
 
     public function addParagraph($paragraph) {
         $paragraph = $this->br2nl($paragraph);
-        $paragraph = mb_convert_encoding($paragraph, "HTML-ENTITIES", 'UTF-8');
+        $paragraph = iconv('UTF-8', 'cp1257', $paragraph);
         $this->addText[] = array('paragraph',$paragraph);
     }
 
@@ -402,7 +402,7 @@ class phpinvoice extends FPDF_rotation  {
                 {
                     $this->Cell($this->columnSpacing,$cHeight,'',0,0,'L',0);
                     if(isset($item['vat'])) {
-                        $this->Cell($width_other,$cHeight,iconv('UTF-8', 'windows-1252', $item['vat']),0,0,'C',1);
+                        $this->Cell($width_other,$cHeight,iconv('UTF-8', 'cp1257', $item['vat']),0,0,'C',1);
                     }
                     else
                     {
@@ -413,9 +413,9 @@ class phpinvoice extends FPDF_rotation  {
                 $this->Cell($this->columnSpacing,$cHeight,'',0,0,'L',0);
 
                 if($this->curreny_direction == "left") {
-                    $this->Cell($width_other,$cHeight,iconv('UTF-8', 'windows-1252', $this->currency.' '.number_format($item['price'],2,$this->referenceformat[0],$this->referenceformat[1])),0,0,'C',1);
+                    $this->Cell($width_other,$cHeight,iconv('UTF-8', 'cp1257', $this->currency.' '.number_format($item['price'],2,$this->referenceformat[0],$this->referenceformat[1])),0,0,'C',1);
                 }else{
-                    $this->Cell($width_other,$cHeight,iconv('UTF-8', 'windows-1252', number_format($item['price'],2,$this->referenceformat[0],$this->referenceformat[1]).' '.$this->currency),0,0,'C',1);
+                    $this->Cell($width_other,$cHeight,iconv('UTF-8', 'cp1257', number_format($item['price'],2,$this->referenceformat[0],$this->referenceformat[1]).' '.$this->currency),0,0,'C',1);
                 }
 
                 if(isset($this->discountField) and $this->hide_discount == 0)
@@ -423,7 +423,7 @@ class phpinvoice extends FPDF_rotation  {
                     $this->Cell($this->columnSpacing,$cHeight,'',0,0,'L',0);
                     if(isset($item['discount']))
                     {
-                        $this->Cell($width_other,$cHeight,iconv('UTF-8', 'windows-1252',$item['discount']),0,0,'C',1);
+                        $this->Cell($width_other,$cHeight,iconv('UTF-8', 'cp1257',$item['discount']),0,0,'C',1);
                     }
                     else
                     {
@@ -433,9 +433,9 @@ class phpinvoice extends FPDF_rotation  {
                 $this->Cell($this->columnSpacing,$cHeight,'',0,0,'L',0);
 
                 if($this->curreny_direction == "left") {
-                    $this->Cell($width_other,$cHeight,iconv('UTF-8', 'windows-1252', $this->currency.' '.number_format($item['total'],2,$this->referenceformat[0],$this->referenceformat[1])),0,0,'C',1);
+                    $this->Cell($width_other,$cHeight,iconv('UTF-8', 'cp1257', $this->currency.' '.number_format($item['total'],2,$this->referenceformat[0],$this->referenceformat[1])),0,0,'C',1);
                 }else{
-                    $this->Cell($width_other,$cHeight,iconv('UTF-8', 'windows-1252', number_format($item['total'],2,$this->referenceformat[0],$this->referenceformat[1]).' '.$this->currency),0,0,'C',1);
+                    $this->Cell($width_other,$cHeight,iconv('UTF-8', 'cp1257', number_format($item['total'],2,$this->referenceformat[0],$this->referenceformat[1]).' '.$this->currency),0,0,'C',1);
                 }
 
                 $this->Ln();
@@ -468,7 +468,7 @@ class phpinvoice extends FPDF_rotation  {
                 }
                 $this->SetFont($this->font,'b',8);
                 $this->Cell(1,$cellHeight,'',0,0,'L',1);
-                $this->Cell($width_other-1,$cellHeight,iconv('UTF-8', 'windows-1252',$total['name']),0,0,'L',1);
+                $this->Cell($width_other-1,$cellHeight,iconv('UTF-8', 'cp1257',$total['name']),0,0,'L',1);
                 $this->Cell($this->columnSpacing,$cellHeight,'',0,0,'L',0);
                 $this->SetFont($this->font,'b',8);
                 $this->SetFillColor($bgcolor,$bgcolor,$bgcolor);
@@ -479,7 +479,7 @@ class phpinvoice extends FPDF_rotation  {
                     $this->SetTextColor(255,255,255);
                     $this->SetFillColor($total['colored'][0],$total['colored'][1],$total['colored'][2]);
                 }
-                $this->Cell($width_other,$cellHeight,iconv('UTF-8', 'windows-1252',$total['value']),0,0,'C',1);
+                $this->Cell($width_other,$cellHeight,iconv('UTF-8', 'cp1257',$total['value']),0,0,'C',1);
                 $this->Ln();
                 $this->Ln($this->columnSpacing);
             }
@@ -491,7 +491,7 @@ class phpinvoice extends FPDF_rotation  {
 
         //Badge
         if($this->badge) {
-            $badge = ' '.$this->lithuanian_strtoupper($this->badge).' ';
+            $badge = ' '.iconv('UTF-8', 'cp1257',$this->lithuanian_strtoupper($this->badge)).' ';
             $resetX = $this->getX();
             $resetY = $this->getY();
             $this->setXY($badgeX,$badgeY+15);
@@ -776,7 +776,7 @@ class phpinvoice extends FPDF_rotation  {
         $this->SetTextColor(50,50,50);
 
         $this->Cell(0,10,iconv("UTF-8", "cp1257",$this->WriteHTML($this->footernote)),0,0,'L');
-        $this->Cell(0,10,$this->lang['page'].' '.$this->PageNo().' '.$this->lang['page_of'].' {nb}',0,0,'R');
+        $this->Cell(0,10,$this->lang['page'].' '.$this->PageNo().' '.iconv('UTF-8', 'cp1257', $this->lang['page_of']).' {nb}',0,0,'R');
     }
 
     private function lithuanian_strtoupper($string){

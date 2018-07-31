@@ -46,6 +46,8 @@ Route::middleware(['auth'])->group(function(){
     Route::post('/order', 'OrderController@store')->name('order.store');
     Route::put('/order/update', 'OrderController@update');
     Route::delete('/order/delete', 'OrderController@destroy');
+
+    Route::get('/invoicetest', 'InvoiceTestController@createInvoice')->name('invoice.test');
 });
 
 Route::post('/upload', ['as' => 'upload', 'uses' => 'ImageController@upload']);
@@ -58,5 +60,3 @@ Route::get('/terms', function(){
 Route::get('/privacy', function(){
     return view('privacy');
 })->name('privacy');
-
-Route::get('/invoicetest', 'InvoiceTestController@createInvoice')->name('invoice.test');
