@@ -15,7 +15,7 @@
     </title>
 
     <!-- Scripts and styles -->
-    @if (env('APP_ENV') == 'production')
+    @if (env('APP_ENV') == 'production' || env('APP_ENV') == 'testing')
     <script src="{{ asset('js/app.js', true) }}" defer></script>
     <link href="{{ asset('css/app.css', true) }}" rel="stylesheet">
     @else 
@@ -32,7 +32,11 @@
         <nav class="navbar navbar-expand-md navbar-light navbar-laravel">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
-                    <img src='../img/logo.png' style='width: 100px;'>
+                @if (env('APP_ENV') == 'testing' || env('APP_ENV') == 'production')
+                <img src="{{ asset('img/logo.png', true) }}" style='width: 100px;'>
+                @else
+                <img src="{{ asset('img/logo.png', true) }}" style='width: 100px;'>
+                @endif
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
