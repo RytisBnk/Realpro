@@ -15,7 +15,7 @@
     </title>
 
     <!-- Scripts and styles -->
-    @if (env('APP_ENV') == 'production')
+    @if (env('APP_ENV') == 'production' || env('APP_ENV') == 'testing')
     <script src="{{ asset('js/app.js', true) }}" defer></script>
     <link href="{{ asset('css/app.css', true) }}" rel="stylesheet">
     @else 
