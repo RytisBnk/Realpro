@@ -12,6 +12,15 @@
 </script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://realpro.lt/img/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://realpro.lt/img/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://realpro.lt/img/favicon-16x16.png">
+<link rel="manifest" href="https://realpro.lt/img/site.webmanifest">
+<link rel="mask-icon" href="https://realpro.lt/img/safari-pinned-tab.svg" color="#5bbad5">
+<link rel="shortcut icon" href="https://realpro.lt/img/favicon.ico">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="msapplication-config" content="https://realpro.lt/img/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,500" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
     <title>Užsakymas | RealPro</title>
