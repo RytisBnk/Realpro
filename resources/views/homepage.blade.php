@@ -14,6 +14,7 @@
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://realpro.lt" />
     <meta property="og:image" content="https://realpro.lt/img/fb.png" />
+
     <meta property="og:description" content="Internetiniai nekilnojamo turto brokeriai. Minimalaus plano kaina TIK 99eur! Parduosime Jūsų nekilnojamą turtą geriausia kaina! Surasime Jums tik geriausius nuomininkus! Jokių paslėptų mokęsčių! Jokių papildomų išlaidų!" />
     <meta name="description" content="Internetiniai nekilnojamo turto brokeriai. Minimalaus plano kaina TIK 99eur! Parduosime Jūsų nekilnojamą turtą geriausia kaina! Surasime Jums tik geriausius nuomininkus! Jokių paslėptų mokęsčių! Jokių papildomų išlaidų!">
     <meta name="keywords" content="nekilnojamas turtas,agentas,NT,brokeris,
@@ -22,6 +23,15 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no">
     <title>Lietuvos NT ekspertai: RealPro. Kaina nuo 99&euro;</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="https://realpro.lt/img/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://realpro.lt/img/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://realpro.lt/img/favicon-16x16.png">
+<link rel="manifest" href="https://realpro.lt/img/site.webmanifest">
+<link rel="mask-icon" href="https://realpro.lt/img/safari-pinned-tab.svg" color="#5bbad5">
+<link rel="shortcut icon" href="https://realpro.lt/img/favicon.ico">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="msapplication-config" content="https://realpro.lt/img/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,700" rel="stylesheet">
     <!-- Add the slick-theme.css if you want default styling -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
