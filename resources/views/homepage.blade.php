@@ -14,9 +14,8 @@
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://realpro.lt" />
     <meta property="og:image" content="https://realpro.lt/img/fb.png" />
-
-    <meta property="og:description" content="Internetiniai nekilnojamo turto brokeriai. Minimalaus plano kaina TIK 99eur! Parduosime Jūsų nekilnojamą turtą geriausia kaina! Surasime Jums tik geriausius nuomininkus! Jokių paslėptų mokęsčių! Jokių papildomų išlaidų!" />
-    <meta name="description" content="Internetiniai nekilnojamo turto brokeriai. Minimalaus plano kaina TIK 99eur! Parduosime Jūsų nekilnojamą turtą geriausia kaina! Surasime Jums tik geriausius nuomininkus! Jokių paslėptų mokęsčių! Jokių papildomų išlaidų!">
+    <meta property="og:description" content="Internetiniai nekilnojamo turto brokeriai. Minimalaus plano kaina TIK 99eur! Parduosime Jūsų nekilnojamą turtą geriausia kaina! Jokių paslėptų mokęsčių!" />
+    <meta name="description" content="Internetiniai nekilnojamo turto brokeriai. Minimalaus plano kaina TIK 99eur! Parduosime Jūsų nekilnojamą turtą geriausia kaina! Jokių paslėptų mokęsčių!">
     <meta name="keywords" content="nekilnojamas turtas,agentas,NT,brokeris,
     namai,parduoti,butai,namai,brokeriai,komersinis,prekyba,sklypas,pigiausia,99eur">
     <meta name="verify-paysera" content="138aff64c31a47ce864635baaaa228e1">
@@ -427,7 +426,7 @@
     }
 </script>
 <script type="text/javascript" id="cookieinfo"
-	src="//cookieinfoscript.com/js/cookieinfo.min.js">
+	src="cookies.min.js">
 </script>
   </body>
 </html>
