@@ -104,7 +104,7 @@
         </thead>
         <tbody>
           <tr class='rowOnMobile'>
-        <td align="center" colspan="5">Nemokamas NT objekto įvertinimas</td>
+        <td align="center" colspan="4">Nemokamas NT objekto įvertinimas</td>
           </tr>
           <tr>
             <td class='leftAlign'>Nemokamas NT objekto įvertinimas</td>
@@ -114,7 +114,7 @@
             <td><i class="icon-ok-circled"></td>
           </tr>
           <tr class='rowOnMobile'>
-        <td align="center" colspan="5">Pardavimo progresas ir derybos</td>
+        <td align="center" colspan="4">Pardavimo progresas ir derybos</td>
           </tr>
           <tr>
             <td class='leftAlign'>Pardavimo progresas ir derybos</td>
@@ -124,7 +124,7 @@
             <td><i class="icon-ok-circled"></td>
           </tr>
           <tr class='rowOnMobile'>
-        <td align="center" colspan="5">Jūsų NT rodomas tūkstančiams pirkėjų</td>
+        <td align="center" colspan="4">Jūsų NT rodomas tūkstančiams pirkėjų</td>
           </tr>
           <tr>
             <td class='leftAlign'>Jūsų NT rodomas tūkstančiams pirkėjų</td>
@@ -134,7 +134,7 @@
             <td><i class="icon-ok-circled"></td>
           </tr>
           <tr class='rowOnMobile'>
-        <td align="center" colspan="5">Savaitinės atąskaitos esant poreikiui</td>
+        <td align="center" colspan="4">Savaitinės atąskaitos esant poreikiui</td>
           </tr>
           <tr>
             <td class='leftAlign'>Savaitinės atąskaitos esant poreikiui</td>
@@ -144,7 +144,7 @@
             <td><i class="icon-ok-circled"></td>
           </tr>
           <tr class='rowOnMobile'>
-        <td align="center" colspan="5">Profesionalaus fotografo nuotraukos</td>
+        <td align="center" colspan="4">Profesionalaus fotografo nuotraukos</td>
           </tr>
           <tr>
             <td class='leftAlign'>Profesionalaus fotografo nuotraukos</td>
@@ -154,7 +154,7 @@
             <td><i class="icon-ok-circled"></td>
           </tr>
           <tr class='rowOnMobile'>
-        <td align="center" colspan="5">Detalus 2D aukšto planas</td>
+        <td align="center" colspan="4">Detalus 2D aukšto planas</td>
           </tr>
           <tr>
             <td class='leftAlign'>Detalus 2D aukšto planas</td>
@@ -164,7 +164,7 @@
             <td><i class="icon-ok-circled"></td>
           </tr>
           <tr class='rowOnMobile'>
-        <td align="center" colspan="5">Pardavimo ženklas ant pastato</td>
+        <td align="center" colspan="4">Pardavimo ženklas ant pastato</td>
           </tr>
           <tr>
             <td class='leftAlign'>Pardavimo ženklas ant pastato</td>
@@ -172,10 +172,9 @@
             <td><i class="icon-cancel-circled"></td>
             <td><i class="icon-ok-circled"></td>
             <td><i class="icon-ok-circled"></td>
-            <td><i class="icon-ok-circled"></td>
           </tr>
           <tr class='rowOnMobile'>
-        <td align="center" colspan="5">Pilnas NT objekto aprašymas</td>
+        <td align="center" colspan="4">Pilnas NT objekto aprašymas</td>
           </tr>
           <tr>
             <td class='leftAlign'>Pilnas NT objekto aprašymas</td>
@@ -183,10 +182,9 @@
             <td><i class="icon-cancel-circled"></td>
             <td><i class="icon-ok-circled"></td>
             <td><i class="icon-ok-circled"></td>
-            <td><i class="icon-ok-circled"></td>
           </tr>
           <tr class='rowOnMobile'>
-        <td align="center" colspan="5">Patalpos aprodymas pirkėjams</td>
+        <td align="center" colspan="4">Patalpos aprodymas pirkėjams</td>
           </tr>
           <tr>
             <td class='leftAlign'>Patalpos aprodymas pirkėjams</td>
@@ -194,10 +192,9 @@
             <td><i class="icon-cancel-circled"></td>
             <td><i class="icon-cancel-circled"></td>
             <td><i class="icon-ok-circled"></td>
-            <td><i class="icon-ok-circled"></td>
           </tr>
           <tr class='rowOnMobile'>
-        <td align="center" colspan="5">3D šablono paruošimas</td>
+        <td align="center" colspan="4">3D šablono paruošimas</td>
           </tr>
           <tr>
             <td class='leftAlign'>3D šablono paruošimas</td>
@@ -205,7 +202,9 @@
             <td><i class="icon-cancel-circled"></td>
             <td><i class="icon-cancel-circled"></td>
             <td><i class="icon-ok-circled"></td>
-            <td><i class="icon-ok-circled"></td>
+          </tr>
+          <tr class='rowOnMobile'>
+        <td align="center" colspan="4">Laikotarpis</td>
           </tr>
           <tr>
             <td class='leftAlign'>Laikotarpis</td>
@@ -213,7 +212,6 @@
             <td>6 mėn.</td>
             <td>6 mėn.</td>
             <td>9 mėn.</td>
-            <td>Individualiai</td>
           </tr>
         </tbody>
         <tfoot>
@@ -222,7 +220,6 @@
           <td><a href="{{ route('plan', ['planID' => 2]) }}"><button type='button' class='pasirinkti' data-ripple>PASIRINKTI</button></a></td>
           <td><a href="{{ route('plan', ['planID' => 3]) }}"><button type='button' class='pasirinkti' data-ripple>PASIRINKTI</button></a></td>
           <td><a href="{{ route('plan', ['planID' => 4]) }}"><button type='button' class='pasirinkti' data-ripple>PASIRINKTI</button></a></td>
-          <td><a href="#"><button type='button' id='komercinisUzsisakyti' class='pasirinkti' data-ripple>PASIRINKTI</button></a></td>
         </tfoot>
       </table>
     </div>
