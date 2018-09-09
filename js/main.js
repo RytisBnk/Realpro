@@ -57,7 +57,7 @@ jQuery(function ($) {
      Header Appear On Scroll
      ====================================== */
 
-
+    /*
     $(window).on('scroll', function () {
         if ($(this).scrollTop() > 70) { // Set position from top to add class
             $('header').addClass('sticky header-appear');
@@ -67,7 +67,7 @@ jQuery(function ($) {
             $('header').removeClass('sticky header-appear');
             $('.left-logo .navbar-brand').removeClass("display_none");
         }
-    });
+    });*/
 
     // fixing bottom nav to top on scrolliing
     var $fixednav = $(".bottom-nav .navbar-fixed-top");

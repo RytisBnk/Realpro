@@ -6,11 +6,12 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1"/>
     <meta name="author" content="Theme Industry">
     <!-- description -->
-    <meta name="description" content="boltex">
+    <meta name="description" content="Internetiniai nekilnojamo turto brokeriai. Minimalaus plano kaina TIK 99eur! Parduosime Jūsų nekilnojamą turtą geriausia kaina! Jokių paslėptų mokęsčių!">
     <!-- keywords -->
-    <meta name="keywords" content="">
+    <meta name="keywords" content="nekilnojamas turtas,agentas,NT,brokeris,
+    namai,parduoti,butai,namai,brokeriai,komersinis,prekyba,sklypas,pigiausia,99eur">
     <!-- title -->
-    <title>Boltex - One Page Parallax</title>
+    <title>Lietuvos NT ekspertai: RealPro. Kaina nuo 99&euro;</title>
     <!-- favicon -->
     <link rel="icon" href="images/fav-icon.ico">
     <!-- animation -->
@@ -50,15 +51,15 @@
 </div>
 
 <!-- start header -->
-<header>
+<header class="sticky header-appear">
     <!-- start navigation -->
-    <nav class="nav-white-text navbar navbar-default bootsnav navbar-fixed-top nav-white header-light bg-transparent nav_line">
+    <nav class="navbar navbar-default bootsnav navbar-fixed-top nav-white header-light bg-transparent nav_line">
         <div class="container nav-header-container">
             <div class="row">
                 <div class="col-md-2 col-xs-5">
-                    <a href="#home" title="Logo" class="logo scroll"><img src="images/logo-blue-black.png"
-                                                                          class="logo-dark" alt="boltex"><img
-                            src="images/logo-blue-white.png" alt="boltex" class="logo-light default"></a>
+                    <a href="#home" title="Logo" class="logo scroll"><img src="img/logo.png"
+                                                                          class="logo-dark" alt="realpro"><img
+                            src="img/logo.png" alt="realpro" class="logo-light default"></a>
                 </div>
                 <!-- end logo -->
                 <div class="col-md-7 col-xs-2 width-auto pull-right accordion-menu xs-no-padding-right hidden-sm hidden-xs">
@@ -66,29 +67,20 @@
                         <ul id="accordion" class="nav navbar-nav navbar-left no-margin alt-font text-normal"
                             data-in="fadeIn" data-out="fadeOut">
                             <!-- start menu item -->
-                            <li class="active">
-                                <a href="#home" class="scroll">Home</a>
+                            <li>
+                                <a href="#feature" class="scroll">Kaip tai veikia</a>
                             </li>
                             <li>
-                                <a href="#feature" class="scroll">Features</a>
+                                <a href="#about" class="scroll">Apie mus</a>
                             </li>
                             <li>
-                                <a href="#about" class="scroll">About</a>
+                                <a href="shop.html">Mūsų objektai</a>
                             </li>
                             <li>
-                                <a href="#team" class="scroll">Team</a>
+                                <a href="#price" class="scroll">Kainoraštis</a>
                             </li>
                             <li>
-                                <a href="#work" class="scroll">Work</a>
-                            </li>
-                            <li>
-                                <a href="#blog" class="scroll">Blog</a>
-                            </li>
-                            <li>
-                                <a href="shop.html">Shop</a>
-                            </li>
-                            <li>
-                                <a href="#contact" class="scroll">Contact</a>
+                                <a href="#contact" class="scroll">Kontaktai</a>
                             </li>
                         </ul>
                     </div>
@@ -108,7 +100,7 @@
                 </div>
                 <div class="sidebar_menu">
                     <nav class="pushmenu pushmenu-right">
-                        <a class="push-logo" href="#."><img src="images/logo-blue-white.png" alt="logo"></a>
+                        <a class="push-logo" href="#."><img src="img/logo.png" alt="logo"></a>
                         <div class="medium-icon side-nav-social-icon list-inline">
                             <a class="facebook-bg-hvr" href="#."><i class="fa fa-facebook" aria-hidden="true"></i></a>
 
@@ -173,7 +165,7 @@
                     data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8=""
                     data-param9="" data-param10="" data-description="">
                     <!-- MAIN IMAGE -->
-                    <img src="images/17ba0-maintenance-bg.jpg" alt="image" data-bgposition="center center"
+                    <img src="img/top-image.jpg" alt="image" data-bgposition="center center"
                          data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="off" class="rev-slidebg"
                          data-no-retina>
                     <!-- LAYERS -->
@@ -223,7 +215,7 @@
                          data-paddingleft="[0,0,0,0]"
 
                          style="z-index: 6; white-space: nowrap; font-size: 120px; line-height: 120px; font-weight: 700; color: #ffffff; letter-spacing: 0px;font-family:Raleway;">
-                        <div id="js-rotating">Parallax,Website</div>
+                        <div id="js-rotating">Parduok savo būstą,Lengvai ir greitai</div>
                     </div>
 
                     <!-- LAYER NR. 3 -->
@@ -248,7 +240,7 @@
                          data-paddingleft="[0,0,0,0]"
 
                          style="z-index: 7; white-space: nowrap; font-size: 35px; line-height: 35px; font-weight: 400; color: #ffffff; letter-spacing: 0px;font-family:Raleway;">
-                        Creative One Page
+                        Patikima ekspertų pagalba perkant, parduodant ir nuomojant nekilnojamą turtą.
                     </div>
 
                     <!-- LAYER NR. 4 -->
@@ -273,7 +265,7 @@
                          data-paddingleft="[0,0,0,0]"
 
                          style="z-index: 8; white-space: nowrap; font-size: 20px; line-height: 22px; font-weight: 400; color: #ffffff; letter-spacing: 0px;font-family:Raleway;">
-                        <a href="#." class="btn btn-rounded btn-blue btn-hvr-white btn-large">Get Started Now</a></div>
+                        <a href="#." class="btn btn-rounded btn-blue btn-hvr-white btn-large">Sužinoti plačiau</a></div>
                 </li>
             </ul>
             <div class="tp-bannertimer tp-bottom" style="visibility: hidden !important;"></div>
@@ -284,14 +276,14 @@
 <!-- slider end -->
 
 <!-- start feature -->
-<section id="feature" class="how-it-work text-center bg-light-gray no-transition">
+<section id="feature" class="how-it-work text-center bg-light-gray no-transition test2">
     <div class="container">
         <div class="row">
             <div class="col-lg-9 text-center center-col last-paragraph-no-margin">
                 <div class="sec-title margin-100px-bottom">
                     <div class="text-large text-red margin-10px-bottom font-weight-400 text-blue">All You Need To Know</div>
                     <h3 class="text-capitalize alt-font text-extra-dark-gray font-weight-300">
-                        Our Features</h3>
+                        Kaip tai veikia?</h3>
                     <p class="width-75 margin-lr-auto md-width-90 xs-width-100 xs-margin-30px-bottom">Excepteur sint
                         occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
                         laborum. Perspiciatis unde omnis iste natus error sit.</p>
@@ -302,12 +294,12 @@
         <div class="how-one-container">
             <!--how it work Box-->
             <div class="col-md-4 col-sm-6 col-xs-12">
-                <div class="how-box-one inner-box xs-margin-100px-bottom">
+                <div class="how-box-one inner-box xs-margin-150px-bottom feature-fix">
                     <div class="icon-box bg-blue">
                         <i class="fa fa-calendar-check-o" aria-hidden="true"></i>
                     </div>
                     <div class="text-large text-extra-dark-gray margin-20px-bottom">Plaining</div>
-                    <p>Capitalise on low hanging fruit to identify a ballpark value added activity.
+                    <p>Išsirenkate jūsų poreikius atitinkatį planą ir užpildote anketą.
                     </p>
                 </div>
             </div>
@@ -319,19 +311,20 @@
                         <i class="fa fa-group" aria-hidden="true"></i>
                     </div>
                     <div class="text-large text-extra-dark-gray margin-20px-bottom">Designing</div>
-                    <p>Capitalise on low hanging fruit to identify a ballpark value added activity.
+                    <p>Po patvirtinimo, pagal jūsų pasirinktą planą, mes už jus atliekame administracinius darbus. 
                     </p>
                 </div>
             </div>
 
             <!--how it work Box-->
             <div class="col-md-4 col-sm-12 col-xs-12">
-                <div class="how-box-one inner-box">
+                <div class="how-box-one inner-box feature-fix">
                     <div class="icon-box bg-blue">
                         <i class="fa fa-comments-o" aria-hidden="true"></i>
                     </div>
                     <div class="text-large text-extra-dark-gray margin-20px-bottom">Development</div>
-                    <p>Capitalise on low hanging fruit to identify a ballpark value added activity.
+                    <p>Gaunate besidominčių asmenų kontaktus.
+
                     </p>
                 </div>
             </div>
@@ -341,6 +334,37 @@
 </section>
 <!--end feature -->
 
+<!-- clients -->
+<section class="no-transition bg-very-light-gray test">
+    <h2 class="display-none" aria-hidden="true">boltex</h2>
+    <div class="container">
+        <div class="row">
+            <div class="owl-carousel owl-theme owl-client">
+                <div class="client item">
+                    <img src="images/client-one.png" alt="image">
+                </div>
+                <div class="client item">
+                    <img src="images/client-two.png" alt="image">
+                </div>
+                <div class="client item">
+                    <img src="images/client-three.png" alt="image">
+                </div>
+                <div class="client item">
+                    <img src="images/client-one.png" alt="image">
+                </div>
+                <div class="client item">
+                    <img src="images/client-two.png" alt="image">
+                </div>
+                <div class="client item">
+                    <img src="images/client-three.png" alt="image">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- clients end -->
+
+
 <!-- start about -->
 <section id="about" class="no-padding">
 
@@ -349,7 +373,7 @@
             <div class="row">
                 <div class="col-md-6 no-padding">
                     <div class="about-image hover-effect">
-                        <img alt="" src="images/split-img1.jpg" class="equalheight">
+                        <img alt="" src="img/about-left.jpg" class="equalheight">
                     </div>
                 </div>
                 <div class="col-md-6 sm-padding-50px-tb">
@@ -357,7 +381,7 @@
                         <div class="about-box">
                             <div class="text-large text-red margin-10px-bottom font-weight-400 text-blue">Service We Provide</div>
                             <h3 class="text-capitalize alt-font text-extra-dark-gray font-weight-300">
-                                Creative Designs</h3>
+                                Esame tarpininkai tarp jūsų ir pirkėjo.</h3>
                             <p>Curabitur mollis bibendum luctus. Duis suscipit vitae dui sed suscipit. Vestibulum auctor nunc vitae diam eleifend, in maximus metus sollicitudin. Quisque vitae sodales lectus. Nam porttitor justo sed mi finibus, vel tristique risus faucibus.</p>
                             <a href="#." class="btn btn-transparent-blue btn-rounded btn-large margin-20px-top">Learn More</a>
                         </div>
@@ -371,7 +395,7 @@
             <div class="row">
                 <div class="col-md-6 no-padding pull-right sm-float-none">
                     <div class="about-image hover-effect">
-                        <img alt="" src="images/split-img2.jpg" class="equalheight">
+                        <img alt="" src="img/about-right.jpg" class="equalheight">
                     </div>
                 </div>
                 <div class="col-md-6 sm-padding-50px-tb">
@@ -379,7 +403,7 @@
                         <div class="about-box">
                             <div class="text-large text-red margin-10px-bottom font-weight-400 text-blue">Service We Provide</div>
                             <h3 class="text-capitalize alt-font text-extra-dark-gray font-weight-300">
-                                SEO Marketing</h3>
+                                Vos už 99 eur plano mokęstį!</h3>
                             <p>Curabitur mollis bibendum luctus. Duis suscipit vitae dui sed suscipit. Vestibulum auctor nunc vitae diam eleifend, in maximus metus sollicitudin. Quisque vitae sodales lectus. Nam porttitor justo sed mi finibus, vel tristique risus faucibus.</p>
                             <a href="#." class="btn btn-transparent-blue btn-rounded btn-large margin-20px-top">Learn More</a>
                         </div>
@@ -391,89 +415,14 @@
 </section>
 <!-- about end -->
 
-<!-- team -->
-<section id="team" class="text-center bg-light-gray">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-9 text-center center-col last-paragraph-no-margin">
-                <div class="sec-title margin-100px-bottom">
-                    <div class="text-large text-red margin-10px-bottom font-weight-400 text-blue">Heros Behind The Company</div>
-                    <h3 class="text-capitalize alt-font text-extra-dark-gray font-weight-300">
-                        Creative Team</h3>
-                    <p class="width-75 margin-lr-auto md-width-90 xs-width-100 xs-margin-30px-bottom">Excepteur sint
-                        occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
-                        laborum. Perspiciatis unde omnis iste natus error sit.</p>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-4 col-sm-6 col-xs-12 sm-margin-30px-bottom">
-                <div class="team-box sm-margin-30px-bottom xs-margin-30px-bottom">
-                    <div class="team-image">
-                        <img src="images/team-one.jpg" alt="image">
-                    </div>
-                    <div class="team-three-tag">
-                        <div class="team-three-text display-inline float-left text-left">
-                            <h6 class="text-extra-dark-gray no-margin-bottom">Keny <span class="text-blue">Walkin</span></h6>
-                            <p class="no-margin-bottom">Comapny CEO</p>
-                        </div>
-                        <div class="team-three-social bg-blue" aria-hidden="true">
-                            <a href="#." class="facebook-text-hvr"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                            <a href="#." class="twitter-text-hvr"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                            <a href="#." class="linkedin-text-hvr"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 col-sm-6 col-xs-12 sm-margin-30px-bottom">
-                <div class="team-box sm-no-margin-bottom xs-no-margin-bottom">
-                    <div class="team-image">
-                        <img src="images/team-three.jpg" alt="image">
-                    </div>
-                    <div class="team-three-tag">
-                        <div class="team-three-text display-inline float-left text-left">
-                            <h6 class="text-extra-dark-gray no-margin-bottom">Mike <span class="text-blue">Kongel</span></h6>
-                            <p class="no-margin-bottom">Marketing Manager</p>
-                        </div>
-                        <div class="team-three-social bg-blue" aria-hidden="true">
-                            <a href="#." class="facebook-text-hvr"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                            <a href="#." class="twitter-text-hvr"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                            <a href="#." class="linkedin-text-hvr"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 col-sm-12 col-xs-12">
-                <div class="team-box sm-margin-30px-bottom xs-margin-30px-bottom">
-                    <div class="team-image">
-                        <img src="images/team-two.jpg" alt="image">
-                    </div>
-                    <div class="team-three-tag">
-                        <div class="team-three-text display-inline float-left text-left">
-                            <h6 class="text-extra-dark-gray no-margin-bottom">Alena <span class="text-blue">Mocha</span></h6>
-                            <p class="no-margin-bottom">Creative Designer</p>
-                        </div>
-                        <div class="team-three-social bg-blue" aria-hidden="true">
-                            <a href="#." class="facebook-text-hvr"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                            <a href="#." class="twitter-text-hvr"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                            <a href="#." class="linkedin-text-hvr"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- team end -->
-
 <!-- start parallax -->
-<section class="parallax no-transition bg-img1">
+<section class="parallax no-transition bg-img1" id="story-bg">
     <div class="container">
         <div class="row">
             <div class="col-xs-12 text-left sm-text-center center-col">
-                <p class="text-large text-white margin-10px-bottom font-weight-400 margin-10px-bottom">We Have An Excellent Video</p>
-                <h3 class="text-capitalize alt-font text-white margin-30px-bottom font-weight-300 sm-width-100 xs-width-100">
-                    Watch Our Story</h3>
+                <p class="text-large text-white margin-10px-bottom font-weight-400 margin-10px-bottom story-text">We Have An Excellent Video</p>
+                <h3 class="text-capitalize alt-font text-white margin-30px-bottom font-weight-300 sm-width-100 xs-width-100 story-text">
+                    Mes jums padėsime sutaupyti laiko ir pinigų.</h3>
                 <a data-fancybox="" href="https://vimeo.com/191947042" class="btn btn-rounded btn-blue btn-hvr-white btn-large"><i class="fa fa-play"></i> Try Our Team</a>
             </div>
         </div>
@@ -514,8 +463,8 @@
             <!-- gallery item -->
             <div class="col-md-3 items web sm-width-100">
                 <div class="item-img">
-                    <a href="images/workimg2.jpg" data-fancybox="images">
-                    <img src="images/workimg2.jpg" alt="image">
+                    <a href="img/bottom1.jpg" data-fancybox="images">
+                    <img src="img/bottom1.jpg" alt="image">
                     <div class="item-img-overlay valign">
                         <div class="overlay-info width-100">
                             <h6 class="margin-5px-bottom">Recent Work</h6>
@@ -529,8 +478,8 @@
             <!-- gallery item -->
             <div class="col-md-3 items web sm-width-100">
                 <div class="item-img">
-                    <a href="images/workimg3.jpg" data-fancybox="images">
-                    <img src="images/workimg3.jpg" alt="image">
+                    <a href="img/bottom2.jpg" data-fancybox="images">
+                    <img src="img/bottom2.jpg" alt="image">
                     <div class="item-img-overlay valign">
                         <div class="overlay-info width-100">
                             <h6 class="margin-5px-bottom">Recent Work</h6>
@@ -544,8 +493,8 @@
             <!-- gallery item -->
             <div class="col-md-6 items web sm-width-100">
                 <div class="item-img">
-                    <a href="images/workimg1.jpg" data-fancybox="images">
-                    <img src="images/workimg1.jpg" alt="image">
+                    <a href="img/bottom3.jpg" data-fancybox="images">
+                    <img src="img/bottom3.jpg" alt="image">
                     <div class="item-img-overlay valign">
                         <div class="overlay-info width-100">
                             <h6 class="margin-5px-bottom">Recent Work</h6>
@@ -559,8 +508,8 @@
             <!-- gallery item -->
             <div class="col-md-6 items graphic sm-width-100">
                 <div class="item-img">
-                    <a href="images/workimg6.jpg" data-fancybox="images">
-                    <img src="images/workimg6.jpg" alt="image">
+                    <a href="img/bottom4.jpg" data-fancybox="images">
+                    <img src="img/bottom4.jpg" alt="image">
                     <div class="item-img-overlay valign">
                         <div class="overlay-info width-100">
                             <h6 class="margin-5px-bottom">Recent Work</h6>
@@ -574,8 +523,8 @@
             <!-- gallery item -->
             <div class="col-md-3 items brand sm-width-100">
                 <div class="item-img">
-                    <a href="images/workimg4.jpg" data-fancybox="images">
-                    <img src="images/workimg4.jpg" alt="image">
+                    <a href="img/bottom5.jpg" data-fancybox="images">
+                    <img src="img/bottom5.jpg" alt="image">
                     <div class="item-img-overlay valign">
                         <div class="overlay-info width-100">
                             <h6 class="margin-5px-bottom">Recent Work</h6>
@@ -589,8 +538,8 @@
             <!-- gallery item -->
             <div class="col-md-3 items graphic sm-width-100">
                 <div class="item-img">
-                    <a href="images/workimg5.jpg" data-fancybox="images">
-                    <img src="images/workimg5.jpg" alt="image">
+                    <a href="img/bottom6.jpg" data-fancybox="images">
+                    <img src="img/bottom6.jpg" alt="image">
                     <div class="item-img-overlay valign">
                         <div class="overlay-info width-100">
                             <h6 class="margin-5px-bottom">Recent Work</h6>
@@ -616,77 +565,69 @@
         <div class="row">
             <div class="col-lg-9 text-center center-col last-paragraph-no-margin">
                 <div class="sec-title margin-100px-bottom">
-                    <div class="text-large text-red margin-10px-bottom font-weight-400 text-blue">Choose The Best</div>
+                    <div class="text-large text-red margin-10px-bottom font-weight-400 text-blue">Pasirinkite jūsų poreikius atitinkantį planą.</div>
                     <h3 class="text-capitalize alt-font text-extra-dark-gray font-weight-300">
-                        Our Packages</h3>
-                    <p class="width-75 margin-lr-auto md-width-90 xs-width-100 xs-margin-30px-bottom">Excepteur sint
-                        occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
-                        laborum. Perspiciatis unde omnis iste natus error sit.</p>
+                        Mūsų planai</h3>
+                    <p class="width-75 margin-lr-auto md-width-90 xs-width-100 xs-margin-30px-bottom">Su Realpro.lt parduokite savo namą ar būtą be jokių tarpininkų ir papildomų paslėptų mokesčių. Sutaupyk daugiau nei 1500 eurų.</p>
                 </div>
             </div>
         </div>
         <div class="row">
             <div class="col-md-4 col-sm-6 col-xs-12 sm-margin-30px-bottom">
                 <div class="price-item text-left">
-                    <h6 class="alt-font font-weight-500 margin-10px-bottom">Basic</h6>
+                    <h6 class="alt-font font-weight-500 margin-10px-bottom">Optimalus</h6>
                     <div class="price-tag clearfix alt-font">
                                 <span class="price alt-font text-dark-gray">
-                                    <span class="sign">$</span>
-                                    <span class="currency">49</span>
-                                    <span class="month">/MON</span>
+                                    <span class="currency">&ensp;&ensp;99</span>
+                                    <span class="sign">&euro;</span>
                                 </span>
                         <span class="price-text text-dark-gray no-margin">It has survived not only five centuries, but also the leap into electronic.</span>
                     </div>
                     <ul class="packages">
-                        <li><i class="fa fa-check" aria-hidden="true"></i>Full access</li>
-                        <li><i class="fa fa-check" aria-hidden="true"></i>Unlimited Bandwidth</li>
-                        <li><i class="fa fa-check" aria-hidden="true"></i>Powerful Admin Panel</li>
-                        <li><i class="fa fa-check" aria-hidden="true"></i>Email Accounts</li>
-                        <li><i class="fa fa-check" aria-hidden="true"></i>8 Free Forks Every Months</li>
+                        <li><i class="fa fa-check" aria-hidden="true"></i>Nemokamas NT objekto įvertinimas</li>
+                        <li><i class="fa fa-check" aria-hidden="true"></i>Pardavimo progresas ir derybos</li>
+                        <li><i class="fa fa-check" aria-hidden="true"></i>Jūsų NT rodomas tūkstančiams pirkėjų</li>
+                        <li><i class="fa fa-check" aria-hidden="true"></i>Savaitinės atąskaitos esant poreikiui</li>
                     </ul>
-                    <a href="#." class="btn btn-blue btn-rounded width-100 btn-large">Buy Now</a>
+                    <a href="#." class="btn btn-blue btn-rounded width-100 btn-large">Užsisakykite dabar</a>
                 </div>
             </div>
             <div class="col-md-4 col-sm-6 col-xs-12 sm-margin-30px-bottom">
                 <div class="price-item center text-left">
-                    <h6 class="alt-font font-weight-500 margin-10px-bottom">Standard</h6>
+                    <h6 class="alt-font font-weight-500 margin-10px-bottom">Populiariausias</h6>
                     <div class="price-tag clearfix alt-font">
                                 <span class="price alt-font text-white">
-                                    <span class="sign">$</span>
-                                    <span class="currency">79</span>
-                                    <span class="month">/MON</span>
+                                    <span class="currency">199</span>
+                                    <span class="sign">&euro;</span>
                                 </span>
                         <span class="price-text text-white no-margin">It has survived not only five centuries, but also the leap into electronic.</span>
                     </div>
                     <ul class="packages">
-                        <li><i class="fa fa-check" aria-hidden="true"></i>Full access</li>
-                        <li><i class="fa fa-check" aria-hidden="true"></i>Unlimited Bandwidth</li>
-                        <li><i class="fa fa-check" aria-hidden="true"></i>Powerful Admin Panel</li>
-                        <li><i class="fa fa-check" aria-hidden="true"></i>Email Accounts</li>
-                        <li><i class="fa fa-check" aria-hidden="true"></i>8 Free Forks Every Months</li>
+                        <li><i class="fa fa-check" aria-hidden="true"></i>Visos 'Optimalaus' plano paslaugos</li>
+                        <li><i class="fa fa-check" aria-hidden="true"></i>Profesionalaus fotografo nuotraukos</li>
+                        <li><i class="fa fa-check" aria-hidden="true"></i>Detalus 2D aukšto planas</li>
+                        <li><i class="fa fa-check" aria-hidden="true"></i>Pilnas NT objekto aprašymas</li>
                     </ul>
-                    <a href="#." class="btn btn-white btn-rounded width-100 btn-large">Buy Now</a>
+                    <a href="#." class="btn btn-white btn-rounded width-100 btn-large">Užsisakykite dabar</a>
                 </div>
             </div>
             <div class="col-md-4 col-sm-12 col-xs-12">
                 <div class="price-item text-left">
-                    <h6 class="alt-font font-weight-500 margin-10px-bottom">Premium</h6>
+                    <h6 class="alt-font font-weight-500 margin-10px-bottom">Praktiškiausias</h6>
                     <div class="price-tag clearfix alt-font">
                                 <span class="price alt-font text-dark-gray">
-                                    <span class="sign">$</span>
-                                    <span class="currency">99</span>
-                                    <span class="month">/MON</span>
+                                    <span class="currency">299</span>
+                                    <span class="sign">&euro;</span>
                                 </span>
                         <span class="price-text text-dark-gray no-margin">It has survived not only five centuries, but also the leap into electronic.</span>
                     </div>
                     <ul class="packages">
-                        <li><i class="fa fa-check" aria-hidden="true"></i>Full access</li>
-                        <li><i class="fa fa-check" aria-hidden="true"></i>Unlimited Bandwidth</li>
-                        <li><i class="fa fa-check" aria-hidden="true"></i>Powerful Admin Panel</li>
-                        <li><i class="fa fa-check" aria-hidden="true"></i>Email Accounts</li>
-                        <li><i class="fa fa-check" aria-hidden="true"></i>8 Free Forks Every Months</li>
+                        <li><i class="fa fa-check" aria-hidden="true"></i>Visos 'Populiariausio' plano paslaugos</li>
+                        <li><i class="fa fa-check" aria-hidden="true"></i>Iškelti/išryškinti NT skelbimai</li>
+                        <li><i class="fa fa-check" aria-hidden="true"></i>Pardavimo ženklas ant pastato</li>
+                        <li><i class="fa fa-check" aria-hidden="true"></i>Premium skelbimai portaluose</li>
                     </ul>
-                    <a href="#." class="btn btn-blue btn-rounded width-100 btn-large">Buy Now</a>
+                    <a href="#." class="btn btn-blue btn-rounded width-100 btn-large">Užsisakykite dabar</a>
                 </div>
             </div>
         </div>
@@ -713,7 +654,7 @@
                 </div>
                 <div class="col-md-6 no-padding">
                     <div class="about-image hover-effect">
-                        <img alt="" src="images/split-img3.jpg" class="equalheight">
+                        <img alt="" src="img/blog.jpg" class="equalheight">
                     </div>
                 </div>
             </div>
@@ -721,36 +662,6 @@
     </div>
 </section>
 <!-- end blog -->
-
-<!-- clients -->
-<section class="no-transition bg-very-light-gray">
-    <h2 class="display-none" aria-hidden="true">boltex</h2>
-    <div class="container">
-        <div class="row">
-            <div class="owl-carousel owl-theme owl-client">
-                <div class="client item">
-                    <img src="images/client-one.png" alt="image">
-                </div>
-                <div class="client item">
-                    <img src="images/client-two.png" alt="image">
-                </div>
-                <div class="client item">
-                    <img src="images/client-three.png" alt="image">
-                </div>
-                <div class="client item">
-                    <img src="images/client-one.png" alt="image">
-                </div>
-                <div class="client item">
-                    <img src="images/client-two.png" alt="image">
-                </div>
-                <div class="client item">
-                    <img src="images/client-three.png" alt="image">
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- clients end -->
 
 <!-- testimonials -->
 <section class="testimonial-two no-padding-top bg-very-light-gray">
