@@ -50,15 +50,15 @@
 </div>
 
 <!-- start header -->
-<header>
+<header class="sticky header-appear">
     <!-- start navigation -->
-    <nav class="nav-white-text navbar navbar-default bootsnav navbar-fixed-top nav-white header-light bg-transparent nav_line">
+    <nav class="navbar navbar-default bootsnav navbar-fixed-top nav-white header-light bg-transparent nav_line">
         <div class="container nav-header-container">
             <div class="row">
                 <div class="col-md-2 col-xs-5">
-                    <a href="#home" title="Logo" class="logo scroll"><img src="images/logo-blue-black.png"
-                                                                          class="logo-dark" alt="boltex"><img
-                            src="images/logo-blue-white.png" alt="boltex" class="logo-light default"></a>
+                    <a href="#home" title="Logo" class="logo scroll"><img src="img/logo.png"
+                                                                          class="logo-dark" alt="realpro"><img
+                            src="img/logo.png" alt="realpro" class="logo-light default"></a>
                 </div>
                 <!-- end logo -->
                 <div class="col-md-7 col-xs-2 width-auto pull-right accordion-menu xs-no-padding-right hidden-sm hidden-xs">
@@ -67,37 +67,21 @@
                             data-in="fadeIn" data-out="fadeOut">
                             <!-- start menu item -->
                             <li>
-                                <a href="index.html#home">Home</a>
+                                <a href="#feature" class="scroll">Kaip tai veikia</a>
                             </li>
                             <li>
-                                <a href="index.html#feature">Features</a>
+                                <a href="#about" class="scroll">Apie mus</a>
                             </li>
                             <li>
-                                <a href="index.html#about">About</a>
+                                <a href="#">Mūsų objektai</a>
                             </li>
                             <li>
-                                <a href="index.html#team">Team</a>
+                                <a href="#price" class="scroll">Kainoraštis</a>
                             </li>
                             <li>
-                                <a href="index.html#work">Work</a>
-                            </li>
-                            <li>
-                                <a href="blog-left.html">Blog</a>
-                            </li>
-                            <li>
-                                <a href="shop.html">Shop</a>
-                            </li>
-                            <li>
-                                <a href="index.html#contact">Contact</a>
+                                <a href="{{ route('contact') }}">Kontaktai</a>
                             </li>
                         </ul>
-                    </div>
-                </div>
-                <div class="col-md-2 col-xs-5 width-auto sm-width-15 xs-width-20 no-padding">
-                    <div class="header-social-icon sm-display-none" aria-hidden="true">
-                        <a href="#." class="facebook-bg-hvr"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                        <a href="#." class="twitter-bg-hvr"><i class="fa fa-twitter"></i></a>
-                        <a href="#." class="linkedin-bg-hvr"><i class="fa fa-linkedin"></i></a>
                     </div>
                 </div>
                 <!--side nav -->
@@ -108,7 +92,7 @@
                 </div>
                 <div class="sidebar_menu">
                     <nav class="pushmenu pushmenu-right">
-                        <a class="push-logo" href="#."><img src="images/logo-blue-white.png" alt="logo"></a>
+                        <a class="push-logo" href="#."><img src="img/logo.png" alt="logo"></a>
                         <div class="medium-icon side-nav-social-icon list-inline">
                             <a class="facebook-bg-hvr" href="#."><i class="fa fa-facebook" aria-hidden="true"></i></a>
 
@@ -118,32 +102,24 @@
                         </div>
                         <ul class="push_nav centered">
                             <li class="clearfix">
-                                <a href="index.html#home"><span>01.</span>Home</a>
+                                <a href="#feature" class="scroll"> <span>01.</span>Kaip tai veikia</a>
 
                             </li>
                             <li class="clearfix">
-                                <a href="index.html#feature"><span>02.</span>Features</a>
+                                <a href="#about" class="scroll"> <span>02.</span>Apie mus</a>
 
                             </li>
                             <li class="clearfix">
-                                <a href="index.html#about"><span>03.</span>About</a>
-
-                            </li>
-                            <li class="clearfix">
-                                <a href="index.html#work"><span>04.</span>Work</a>
+                                <a href="#" class="scroll"> <span>03.</span>Mūsų objektai</a>
 
                             </li>
 
                             <li class="clearfix">
-                                <a href="index.html#price"><span>05.</span>Pricing</a>
+                                <a href="#price" class="scroll"> <span>04.</span>Kainoraštis</a>
 
                             </li>
                             <li class="clearfix">
-                                <a href="#."><span>06.</span>Blog</a>
-
-                            </li>
-                            <li class="clearfix">
-                                <a href="index.html#contact"><span>07.</span>Contact</a>
+                                <a href="{{ route('contact') }}" class="scroll"> <span>05.</span>Kontaktai</a>
 
                             </li>
 
