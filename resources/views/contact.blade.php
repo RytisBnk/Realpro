@@ -67,16 +67,16 @@
                             data-in="fadeIn" data-out="fadeOut">
                             <!-- start menu item -->
                             <li>
-                                <a href="#feature" class="scroll">Kaip tai veikia</a>
+                            <a href="{{ route('index') }}#feature">Kaip tai veikia</a>
                             </li>
                             <li>
-                                <a href="#about" class="scroll">Apie mus</a>
+                                <a href="{{ route('index') }}#about">Apie mus</a>
                             </li>
                             <li>
                                 <a href="#">Mūsų objektai</a>
                             </li>
                             <li>
-                                <a href="#price" class="scroll">Kainoraštis</a>
+                                <a href="{{ route('index') }}#price">Kainoraštis</a>
                             </li>
                             <li>
                                 <a href="{{ route('contact') }}">Kontaktai</a>
