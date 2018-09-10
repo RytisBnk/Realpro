@@ -14,6 +14,9 @@
 Route::get('/', function () {
     return view('homepage-new');
 })->name('index');
+Route::get('/contact', function(){
+    return view('contact');
+})->name('contact');
 
 Auth::routes();
 

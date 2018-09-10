@@ -74,22 +74,15 @@
                                 <a href="#about" class="scroll">Apie mus</a>
                             </li>
                             <li>
-                                <a href="shop.html">Mūsų objektai</a>
+                                <a href="#">Mūsų objektai</a>
                             </li>
                             <li>
                                 <a href="#price" class="scroll">Kainoraštis</a>
                             </li>
                             <li>
-                                <a href="#contact" class="scroll">Kontaktai</a>
+                                <a href="{{ route('contact') }}">Kontaktai</a>
                             </li>
                         </ul>
-                    </div>
-                </div>
-                <div class="col-md-2 col-xs-5 width-auto sm-width-15 xs-width-20 no-padding">
-                    <div class="header-social-icon sm-display-none" aria-hidden="true">
-                        <a href="#." class="facebook-bg-hvr"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                        <a href="#." class="twitter-bg-hvr"><i class="fa fa-twitter"></i></a>
-                        <a href="#." class="linkedin-bg-hvr"><i class="fa fa-linkedin"></i></a>
                     </div>
                 </div>
                 <!--side nav -->
@@ -110,32 +103,24 @@
                         </div>
                         <ul class="push_nav centered">
                             <li class="clearfix">
-                                <a href="#home" class="scroll"><span>01.</span>Home</a>
+                                <a href="#feature" class="scroll"> <span>01.</span>Kaip tai veikia</a>
 
                             </li>
                             <li class="clearfix">
-                                <a href="#feature" class="scroll"> <span>02.</span>Features</a>
+                                <a href="#about" class="scroll"> <span>02.</span>Apie mus</a>
 
                             </li>
                             <li class="clearfix">
-                                <a href="#about" class="scroll"> <span>03.</span>About</a>
-
-                            </li>
-                            <li class="clearfix">
-                                <a href="#work" class="scroll"> <span>04.</span>Work</a>
+                                <a href="#" class="scroll"> <span>03.</span>Mūsų objektai</a>
 
                             </li>
 
                             <li class="clearfix">
-                                <a href="#price" class="scroll"> <span>05.</span>Pricing</a>
+                                <a href="#price" class="scroll"> <span>04.</span>Kainoraštis</a>
 
                             </li>
                             <li class="clearfix">
-                                <a href="#blog" class="scroll"> <span>06.</span>Blog</a>
-
-                            </li>
-                            <li class="clearfix">
-                                <a href="#contact" class="scroll"> <span>07.</span>Contact</a>
+                                <a href="{{ route('contact') }}" class="scroll"> <span>05.</span>Kontaktai</a>
 
                             </li>
 
