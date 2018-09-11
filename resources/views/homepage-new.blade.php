@@ -22,6 +22,8 @@
     <link rel="stylesheet" href="css/font-awesome.min.css"/>
     <!-- magnific popup -->
     <link rel="stylesheet" href="css/magnific-popup.min.css"/>
+    <!-- cube Portfolio -->
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css"/>
     <!-- revolution slider -->
     <link rel="stylesheet" href="revolution/css/settings.css"/>
     <!-- owl carousel -->
