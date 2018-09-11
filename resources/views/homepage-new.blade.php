@@ -324,7 +324,7 @@
             <div class="row">
                 <div class="col-md-6 no-padding">
                     <div class="about-image hover-effect">
-                        <img alt="" src="img/tarpininkai.jpg" class="equalheight">
+                        <img alt="" src="img/Tarpininkai.jpg" class="equalheight">
                     </div>
                 </div>
                 <div class="col-md-6 sm-padding-50px-tb">
