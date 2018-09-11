@@ -22,8 +22,6 @@
     <link rel="stylesheet" href="css/font-awesome.min.css"/>
     <!-- magnific popup -->
     <link rel="stylesheet" href="css/magnific-popup.min.css"/>
-    <!-- cube Portfolio -->
-    <link rel="stylesheet" href="css/jquery.fancybox.min.css"/>
     <!-- revolution slider -->
     <link rel="stylesheet" href="revolution/css/settings.css"/>
     <!-- owl carousel -->
@@ -54,7 +52,7 @@
 <header class="sticky header-appear">
     <!-- start navigation -->
     <nav class="navbar navbar-default bootsnav navbar-fixed-top nav-white header-light bg-transparent nav_line">
-        <div class="container nav-header-container">
+        <div class="container nav-header-container nav-row">
             <div class="row">
                 <div class="col-md-2 col-xs-5">
                     <a href="#home" title="Logo" class="logo scroll"><img src="img/logo.png"
@@ -86,7 +84,7 @@
                     </div>
                 </div>
                 <!--side nav -->
-                <div id="menu_bars" class="right menu_bars">
+                <div id="menu_bars" class="right menu_bars side-menu">
                     <span class="t1"></span>
                     <span class="t2"></span>
                     <span class="t3"></span>
@@ -250,7 +248,7 @@
                          data-paddingleft="[0,0,0,0]"
 
                          style="z-index: 8; white-space: nowrap; font-size: 20px; line-height: 22px; font-weight: 400; color: #ffffff; letter-spacing: 0px;font-family:Raleway;">
-                        <a href="#." class="btn btn-rounded btn-blue btn-hvr-white btn-large">Sužinoti plačiau</a></div>
+                        <a href="#." class="btn btn-rounded btn-blue btn-hvr-white btn-large" id="btn-more-info">Sužinoti plačiau</a></div>
                 </li>
             </ul>
             <div class="tp-bannertimer tp-bottom" style="visibility: hidden !important;"></div>
@@ -261,12 +259,11 @@
 <!-- slider end -->
 
 <!-- start feature -->
-<section id="feature" class="how-it-work text-center bg-light-gray no-transition test2">
+<section id="feature" class="how-it-work text-center bg-light-gray no-transition">
     <div class="container">
         <div class="row">
             <div class="col-lg-9 text-center center-col last-paragraph-no-margin">
                 <div class="sec-title margin-100px-bottom">
-                    <div class="text-large text-red margin-10px-bottom font-weight-400 text-blue">All You Need To Know</div>
                     <h3 class="text-capitalize alt-font text-extra-dark-gray font-weight-300">
                         Kaip tai veikia?</h3>
                     <p class="width-75 margin-lr-auto md-width-90 xs-width-100 xs-margin-30px-bottom">Excepteur sint
@@ -319,37 +316,6 @@
 </section>
 <!--end feature -->
 
-<!-- clients -->
-<section class="no-transition bg-very-light-gray test">
-    <h2 class="display-none" aria-hidden="true">boltex</h2>
-    <div class="container">
-        <div class="row">
-            <div class="owl-carousel owl-theme owl-client">
-                <div class="client item">
-                    <img src="images/client-one.png" alt="image">
-                </div>
-                <div class="client item">
-                    <img src="images/client-two.png" alt="image">
-                </div>
-                <div class="client item">
-                    <img src="images/client-three.png" alt="image">
-                </div>
-                <div class="client item">
-                    <img src="images/client-one.png" alt="image">
-                </div>
-                <div class="client item">
-                    <img src="images/client-two.png" alt="image">
-                </div>
-                <div class="client item">
-                    <img src="images/client-three.png" alt="image">
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- clients end -->
-
-
 <!-- start about -->
 <section id="about" class="no-padding">
 
@@ -364,11 +330,9 @@
                 <div class="col-md-6 sm-padding-50px-tb">
                     <div class="split-box text-center center-block equalheight">
                         <div class="about-box">
-                            <div class="text-large text-red margin-10px-bottom font-weight-400 text-blue">Service We Provide</div>
                             <h3 class="text-capitalize alt-font text-extra-dark-gray font-weight-300">
                                 Esame tarpininkai tarp jūsų ir pirkėjo.</h3>
                             <p>Curabitur mollis bibendum luctus. Duis suscipit vitae dui sed suscipit. Vestibulum auctor nunc vitae diam eleifend, in maximus metus sollicitudin. Quisque vitae sodales lectus. Nam porttitor justo sed mi finibus, vel tristique risus faucibus.</p>
-                            <a href="#." class="btn btn-transparent-blue btn-rounded btn-large margin-20px-top">Learn More</a>
                         </div>
                     </div>
                 </div>
@@ -386,11 +350,9 @@
                 <div class="col-md-6 sm-padding-50px-tb">
                     <div class="split-box text-center center-block equalheight">
                         <div class="about-box">
-                            <div class="text-large text-red margin-10px-bottom font-weight-400 text-blue">Service We Provide</div>
                             <h3 class="text-capitalize alt-font text-extra-dark-gray font-weight-300">
                                 Vos už 99 eur plano mokęstį!</h3>
                             <p>Curabitur mollis bibendum luctus. Duis suscipit vitae dui sed suscipit. Vestibulum auctor nunc vitae diam eleifend, in maximus metus sollicitudin. Quisque vitae sodales lectus. Nam porttitor justo sed mi finibus, vel tristique risus faucibus.</p>
-                            <a href="#." class="btn btn-transparent-blue btn-rounded btn-large margin-20px-top">Learn More</a>
                         </div>
                     </div>
                 </div>
@@ -405,144 +367,14 @@
     <div class="container">
         <div class="row">
             <div class="col-xs-12 text-left sm-text-center center-col">
-                <p class="text-large text-white margin-10px-bottom font-weight-400 margin-10px-bottom story-text">We Have An Excellent Video</p>
                 <h3 class="text-capitalize alt-font text-white margin-30px-bottom font-weight-300 sm-width-100 xs-width-100 story-text">
                     Mes jums padėsime sutaupyti laiko ir pinigų.</h3>
-                <a data-fancybox="" href="https://vimeo.com/191947042" class="btn btn-rounded btn-blue btn-hvr-white btn-large"><i class="fa fa-play"></i> Try Our Team</a>
+                <a data-fancybox="" href="https://vimeo.com/191947042" class="btn btn-rounded btn-blue btn-hvr-white btn-large"><i class="fa fa-play"></i> Žiūrėti video</a>
             </div>
         </div>
     </div>
 </section>
 <!-- end parallax -->
-
-<!-- start work -->
-<section id="work" class="portfolio no-transition no-padding-bottom">
-
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-9 text-center center-col last-paragraph-no-margin">
-                <div class="sec-title margin-50px-bottom">
-                    <div class="text-large text-red margin-10px-bottom font-weight-400 text-blue">Portfolio Designs</div>
-                    <h3 class="text-capitalize alt-font text-extra-dark-gray font-weight-300">
-                        Recent Work</h3>
-                    <p class="width-75 margin-lr-auto md-width-90 xs-width-100 xs-margin-30px-bottom">Excepteur sint
-                        occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
-                        laborum. Perspiciatis unde omnis iste natus error sit.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="row">
-        <!-- filter links -->
-        <div class="filtering col-sm-12 text-center margin-50px-bottom">
-            <span data-filter="*" class="active">All</span>
-            <span data-filter=".brand">Brand</span>
-            <span data-filter=".web">Design</span>
-            <span data-filter=".graphic">Graphic</span>
-        </div>
-
-        <div class="clearfix"></div>
-        <!-- gallery -->
-        <div class="gallery text-center">
-
-            <!-- gallery item -->
-            <div class="col-md-3 items web sm-width-100">
-                <div class="item-img">
-                    <a href="img/bottom1.jpg" data-fancybox="images">
-                    <img src="img/bottom1.jpg" alt="image">
-                    <div class="item-img-overlay valign">
-                        <div class="overlay-info width-100">
-                            <h6 class="margin-5px-bottom">Recent Work</h6>
-                            <p>See Our Amazing Work</p>
-                        </div>
-                    </div>
-                    </a>
-                </div>
-            </div>
-
-            <!-- gallery item -->
-            <div class="col-md-3 items web sm-width-100">
-                <div class="item-img">
-                    <a href="img/bottom2.jpg" data-fancybox="images">
-                    <img src="img/bottom2.jpg" alt="image">
-                    <div class="item-img-overlay valign">
-                        <div class="overlay-info width-100">
-                            <h6 class="margin-5px-bottom">Recent Work</h6>
-                            <p>See Our Amazing Work</p>
-                        </div>
-                    </div>
-                    </a>
-                </div>
-            </div>
-
-            <!-- gallery item -->
-            <div class="col-md-6 items web sm-width-100">
-                <div class="item-img">
-                    <a href="img/bottom3.jpg" data-fancybox="images">
-                    <img src="img/bottom3.jpg" alt="image">
-                    <div class="item-img-overlay valign">
-                        <div class="overlay-info width-100">
-                            <h6 class="margin-5px-bottom">Recent Work</h6>
-                            <p>See Our Amazing Work</p>
-                        </div>
-                    </div>
-                    </a>
-                </div>
-            </div>
-
-            <!-- gallery item -->
-            <div class="col-md-6 items graphic sm-width-100">
-                <div class="item-img">
-                    <a href="img/bottom4.jpg" data-fancybox="images">
-                    <img src="img/bottom4.jpg" alt="image">
-                    <div class="item-img-overlay valign">
-                        <div class="overlay-info width-100">
-                            <h6 class="margin-5px-bottom">Recent Work</h6>
-                            <p>See Our Amazing Work</p>
-                        </div>
-                    </div>
-                    </a>
-                </div>
-            </div>
-
-            <!-- gallery item -->
-            <div class="col-md-3 items brand sm-width-100">
-                <div class="item-img">
-                    <a href="img/bottom5.jpg" data-fancybox="images">
-                    <img src="img/bottom5.jpg" alt="image">
-                    <div class="item-img-overlay valign">
-                        <div class="overlay-info width-100">
-                            <h6 class="margin-5px-bottom">Recent Work</h6>
-                            <p>See Our Amazing Work</p>
-                        </div>
-                    </div>
-                    </a>
-                </div>
-            </div>
-
-            <!-- gallery item -->
-            <div class="col-md-3 items graphic sm-width-100">
-                <div class="item-img">
-                    <a href="img/bottom6.jpg" data-fancybox="images">
-                    <img src="img/bottom6.jpg" alt="image">
-                    <div class="item-img-overlay valign">
-                        <div class="overlay-info width-100">
-                            <h6 class="margin-5px-bottom">Recent Work</h6>
-                            <p>See Our Amazing Work</p>
-                        </div>
-                    </div>
-                    </a>
-                </div>
-            </div>
-
-        </div>
-
-            <div class="clear-fix"></div>
-
-
-    </div>
-</section>
-<!-- end work -->
 
 <!-- start price -->
 <section id="price">
@@ -620,33 +452,6 @@
     </div>
 </section>
 <!-- start price -->
-
-<!-- start blog -->
-<section id="blog" class="no-padding">
-    <div class="half-section">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-6 sm-padding-50px-tb">
-                    <div class="split-box text-center center-block equalheight">
-                        <div class="about-box">
-                            <div class="text-large text-red margin-10px-bottom font-weight-400 text-blue">Our Latest News</div>
-                            <h3 class="text-capitalize alt-font text-extra-dark-gray font-weight-300">
-                                Marketing Blog</h3>
-                            <p>Curabitur mollis bibendum luctus. Duis suscipit vitae dui sed suscipit. Vestibulum auctor nunc vitae diam eleifend, in maximus metus sollicitudin. Quisque vitae sodales lectus. Nam porttitor justo sed mi finibus, vel tristique risus faucibus.</p>
-                            <a href="#." class="btn btn-transparent-blue btn-rounded btn-large margin-20px-top">Learn More</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 no-padding">
-                    <div class="about-image hover-effect">
-                        <img alt="" src="img/blog.jpg" class="equalheight">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- end blog -->
 
 <!-- testimonials -->
 <section class="testimonial-two no-padding-top bg-very-light-gray">
@@ -752,17 +557,6 @@
 </section>
 <!-- testimonials end -->
 
-<!-- map -->
-<section class="no-padding">
-    <h2 class="display-none no-padding no-margin" aria-hidden="true">Finza</h2>
-    <div class="row">
-        <div class="map-horizontal">
-            <div class="map" id="map"></div>
-        </div>
-    </div>
-</section>
-<!-- map end -->
-
 <!-- contact-->
 <section id="contact" class="btn-version">
     <div class="get-quote-section xs-text-center">
@@ -772,7 +566,7 @@
                 <div class="col-md-6">
                     <div class="sec-title margin-50px-bottom">
                         <h3 class="text-capitalize alt-font text-extra-dark-gray font-weight-300">
-                            Lets Get In Touch</h3>
+                            Susisiekite su mumis</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum
                             illum ratione atque praesentium
                             laudantium quaerat laborum consecteturLorem ipsum dolor sit amet, consectetur adipisicing
@@ -781,21 +575,11 @@
                     <div class="row margin-15px-bottom">
                         <div class="col-sm-1 no-padding">
                             <div class="contact-icon text-blue">
-                                <i class="fa fa-map-marker" aria-hidden="true"></i>
-                            </div>
-                        </div>
-                        <div class="col-sm-11">
-                            <p class="text-small">San Francisco, CA 560 Bush St & 20th Ave,<br> Apt 5 San Francisco, 230909</p>
-                        </div>
-                    </div>
-                    <div class="row margin-15px-bottom">
-                        <div class="col-sm-1 no-padding">
-                            <div class="contact-icon text-blue">
                                 <i class="fa fa-phone" aria-hidden="true"></i>
                             </div>
                         </div>
                         <div class="col-sm-11">
-                            <p class="text-small">+01 2323 7328 322<br>+01 2323 7328 322</p>
+                            <p class="text-small">+370 6126 6668</p>
                         </div>
                     </div>
                     <div class="row margin-15px-bottom">
@@ -805,7 +589,17 @@
                             </div>
                         </div>
                         <div class="col-sm-11 xs-margin-50px-bottom">
-                            <p class="text-small">email@demo.com<br>www.demo.com</p>
+                            <p class="text-small">info@realpro.lt</p>
+                        </div>
+                    </div>
+                    <div class="row margin-15px-bottom">
+                        <div class="col-sm-1 no-padding">
+                            <div class="contact-icon text-blue">
+                                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div class="col-sm-11">
+                            <p class="text-small">Rekvizitai čia</p>
                         </div>
                     </div>
                 </div>
@@ -816,28 +610,27 @@
                             <div class="row">
                                 <div class="col-sm-12">
                                     <div class="form-group">
-                                        <input type="text" class="form_inputs" name="name" placeholder="Name">
+                                        <input type="text" class="form_inputs" name="name" placeholder="Vardas">
                                     </div>
                                 </div>
                                 <div class="col-sm-6">
                                     <div class="form-group">
-                                        <input type="text" class="form_inputs" name="email" placeholder="Email">
+                                        <input type="text" class="form_inputs" name="email" placeholder="El. Paštas">
                                     </div>
                                 </div>
                                 <div class="col-sm-6">
                                     <div class="form-group">
-                                        <input type="text" class="form_inputs" name="phone no" placeholder="Phone">
+                                        <input type="text" class="form_inputs" name="phone no" placeholder="Telefonas">
                                     </div>
                                 </div>
                             </div>
                             <div class="col-sm-12 no-padding">
                                 <div class="form-group">
                                 <textarea name="message" id="message" class="form_inputs form_inputs_two" rows="6"
-                                          cols="25" placeholder="Type Your Message"></textarea>
+                                          cols="25" placeholder="Jūsų žinutė"></textarea>
                                 </div>
                                 <div class="button">
-                                    <a href="#." class="btn btn-blue btn-rounded btn-large text-extra-small width-100">Get
-                                        Started</a>
+                                    <a href="#." class="btn btn-blue btn-rounded btn-large text-extra-small width-100">Susisiekti</a>
                                 </div>
                             </div>
                         </form>
@@ -848,6 +641,36 @@
     </div>
 </section>
 <!-- contact end -->
+
+<!-- clients -->
+<section class="no-transition bg-very-light-gray test">
+    <h2 class="display-none" aria-hidden="true">Realpro</h2>
+    <div class="container">
+        <div class="row">
+            <div class="owl-carousel owl-theme owl-client">
+                <div class="client item">
+                    <img src="images/client-one.png" alt="image">
+                </div>
+                <div class="client item">
+                    <img src="images/client-two.png" alt="image">
+                </div>
+                <div class="client item">
+                    <img src="images/client-three.png" alt="image">
+                </div>
+                <div class="client item">
+                    <img src="images/client-one.png" alt="image">
+                </div>
+                <div class="client item">
+                    <img src="images/client-two.png" alt="image">
+                </div>
+                <div class="client item">
+                    <img src="images/client-three.png" alt="image">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- clients end -->
 
 <!--footer Start-->
 <footer class="bg-extra-dark-gray padding-30px-tb text-center">
@@ -906,9 +729,6 @@
 <script src="revolution/js/extensions/revolution.extension.parallax.min.js"></script>
 <script src="revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
 <script src="revolution/js/extensions/revolution.extension.video.min.js"></script>
-<!-- Google Map Api -->
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA_egfOLjahHB0IWpykRZrVFD8fN4JMgmw"></script>
-<script src="js/map.js"></script>
 <!-- setting -->
 <script src="js/main.js"></script>
 </body>

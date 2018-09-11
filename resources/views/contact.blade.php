@@ -67,7 +67,7 @@
                             data-in="fadeIn" data-out="fadeOut">
                             <!-- start menu item -->
                             <li>
-                            <a href="{{ route('index') }}#feature">Kaip tai veikia</a>
+                                <a href="{{ route('index') }}#feature">Kaip tai veikia</a>
                             </li>
                             <li>
                                 <a href="{{ route('index') }}#about">Apie mus</a>
@@ -156,9 +156,9 @@
         <div class="row">
             <div class="col-lg-9 text-center center-col last-paragraph-no-margin">
                 <div class="sec-title margin-100px-bottom">
-                    <div class="text-large text-red margin-10px-bottom font-weight-400 text-blue">Have a Question!!?</div>
+                    <div class="text-large text-red margin-10px-bottom font-weight-400 text-blue">Turite klausimų?</div>
                     <h3 class="text-capitalize alt-font text-extra-dark-gray font-weight-300">
-                        Lets Get In Touch</h3>
+                        Susisiekite su mumis</h3>
                 </div>
             </div>
         </div>
