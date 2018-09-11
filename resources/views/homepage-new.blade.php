@@ -72,10 +72,10 @@
                                 <a href="#about" class="scroll">Apie mus</a>
                             </li>
                             <li>
-                                <a href="#">Mūsų objektai</a>
+                                <a href="#price" class="scroll">Kainoraštis</a>
                             </li>
                             <li>
-                                <a href="#price" class="scroll">Kainoraštis</a>
+                                <a href="#">Mūsų objektai</a>
                             </li>
                             <li>
                                 <a href="{{ route('contact') }}">Kontaktai</a>
@@ -324,7 +324,7 @@
             <div class="row">
                 <div class="col-md-6 no-padding">
                     <div class="about-image hover-effect">
-                        <img alt="" src="img/about-left.jpg" class="equalheight">
+                        <img alt="" src="img/tarpininkai.jpg" class="equalheight">
                     </div>
                 </div>
                 <div class="col-md-6 sm-padding-50px-tb">
@@ -455,7 +455,7 @@
 
 <!-- testimonials -->
 <section class="testimonial-two no-padding-top bg-very-light-gray">
-    <div class="parallax testimonial-two-bg no-transition">
+    <div class="parallax testimonial-two-bg no-transition" id="reviews-bg">
         <div class="container">
             <div class="row">
                 <div class="col-sm-offset-4 col-sm-8 equalheight">

@@ -1,7 +1,7 @@
 
 /*-- Use For Custom Styling --*/
 #story-bg {
-    background-image: url(../img/story.jpg);
+    background-image: url(../img/video.jpg);
 }
 .test {
     padding: 50px 0px;
@@ -24,4 +24,7 @@
 #btn-more-info {
     font-size: 22px;
     padding: 20px 25px;
+}
+#reviews-bg {
+    background-image: url(../img/slider.jpg);
 }
