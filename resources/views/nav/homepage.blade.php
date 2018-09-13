@@ -1,0 +1,464 @@
+@extends('layouts.parallax') 
+@section('content')
+<!-- start slider -->
+<section id="home" class="no-padding no-transition">
+    <h1 class="display-none" aria-hidden="true">boltex</h1>
+    <h2 class="display-none" aria-hidden="true">boltex</h2>
+    <div id="rev_slider_5_1_wrapper" class="rev_slider_wrapper fullscreen-container" data-alias="boltex-4" data-source="gallery"
+        style="background:transparent;padding:0px;left: 0 !important;;">
+        <!-- START REVOLUTION SLIDER 5.4.5 fullscreen mode -->
+        <div id="rev_slider_5_1" class="rev_slider fullscreenbanner" style="display:none;" data-version="5.4.5">
+            <ul>
+                <!-- SLIDE  -->
+                <li data-index="rs-11" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"
+                    data-easein="default" data-easeout="default" data-masterspeed="300" data-rotate="0" data-saveperformance="off"
+                    data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6=""
+                    data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
+                    <!-- MAIN IMAGE -->
+                    <img src="img/top-image.jpg" alt="image" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="off"
+                        class="rev-slidebg" data-no-retina>
+                    <!-- LAYERS -->
+
+                    <!-- LAYER NR. 1 -->
+                    <div class="tp-caption   tp-resizeme rs-parallaxlevel-7" id="slide-11-layer-1" data-x="['center','center','center','center']"
+                        data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['0','0','-3','0']"
+                        data-width="none" data-height="none" data-whitespace="nowrap" data-type="image" data-responsive_offset="on"
+                        data-frames='[{"delay":0,"speed":300,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+                        data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]"
+                        data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 5;"><img src="images/1513f-transparent-square.png" alt="image" data-ww="['688px','688px','500px','374px']"
+                            data-hh="['612px','612px','445px','333px']" data-no-retina></div>
+
+                    <!-- LAYER NR. 2 -->
+                    <div class="tp-caption   tp-resizeme rs-parallaxlevel-2" id="slide-11-layer-2" data-x="['center','center','center','center']"
+                        data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']"
+                        data-fontsize="['120','100','70','70']" data-lineheight="['120','100','70','70']" data-width="none" data-height="none"
+                        data-whitespace="nowrap" data-type="text" data-responsive_offset="on" data-frames='[{"delay":0,"speed":300,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+                        data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]"
+                        data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 6; white-space: normal; font-size: 120px; line-height: 120px; font-weight: 700; color: #ffffff; letter-spacing: 0px;font-family:Raleway;">
+                        <div id="js-rotating">Parduok savo būstą,Lengvai ir greitai</div>
+                    </div>
+
+                    <!-- LAYER NR. 3 -->
+                    <div class="tp-caption   tp-resizeme rs-parallaxlevel-2" id="slide-11-layer-3" data-x="['center','center','center','center']"
+                        data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['-115','-109','-82','-71']"
+                        data-fontsize="['25','25','20','20']" data-lineheight="['35','35','30','25']" data-width="none" data-height="none"
+                        data-whitespace="nowrap" data-type="text" data-responsive_offset="on" data-frames='[{"delay":0,"speed":300,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+                        data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]"
+                        data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 7; white-space: normal; font-size: 35px; line-height: 35px; font-weight: 400; color: #ffffff; letter-spacing: 0px;font-family:Raleway;">
+                        Patikima ekspertų pagalba perkant, parduodant ir nuomojant nekilnojamą turtą.
+                    </div>
+
+                    <!-- LAYER NR. 4 -->
+                    <div class="tp-caption   tp-resizeme rs-parallaxlevel-2" id="slide-11-layer-4" data-x="['center','center','center','center']"
+                        data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['130','117','76','74']"
+                        data-fontsize="['20','20','20','18']" data-lineheight="['22','22','22','18']" data-width="none" data-height="none"
+                        data-whitespace="nowrap" data-type="text" data-responsive_offset="on" data-frames='[{"delay":0,"speed":300,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+                        data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]"
+                        data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 8; white-space: nowrap; font-size: 20px; line-height: 22px; font-weight: 400; color: #ffffff; letter-spacing: 0px;font-family:Raleway;">
+                        <a href="#." class="btn btn-rounded btn-blue btn-hvr-white btn-large" id="btn-more-info">Sužinoti plačiau</a>
+                    </div>
+                </li>
+            </ul>
+            <div class="tp-bannertimer tp-bottom" style="visibility: hidden !important;"></div>
+        </div>
+    </div>
+    <!-- END REVOLUTION SLIDER -->
+
+</section>
+<!-- slider end -->
+
+<!-- start feature -->
+<section id="feature" class="how-it-work text-center bg-light-gray no-transition">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-9 text-center center-col last-paragraph-no-margin">
+                <div class="sec-title margin-100px-bottom">
+                    <h3 class="text-capitalize alt-font text-extra-dark-gray font-weight-300">
+                        Kaip tai veikia?</h3>
+                    <p class="width-75 margin-lr-auto md-width-90 xs-width-100 xs-margin-30px-bottom">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+                        laborum. Perspiciatis unde omnis iste natus error sit.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="how-one-container">
+            <!--how it work Box-->
+            <div class="col-md-4 col-sm-6 col-xs-12">
+                <div class="how-box-one inner-box xs-margin-150px-bottom feature-fix">
+                    <div class="icon-box bg-blue">
+                        <i class="fa fa-calendar-check-o" aria-hidden="true"></i>
+                    </div>
+                    <div class="text-large text-extra-dark-gray margin-20px-bottom">Plaining</div>
+                    <p>Išsirenkate jūsų poreikius atitinkatį planą ir užpildote anketą.
+                    </p>
+                </div>
+            </div>
+
+            <!--how it work Box-->
+            <div class="col-md-4 col-sm-6 col-xs-12">
+                <div class="how-box-one inner-box sm-margin-100px-bottom xs-margin-100px-bottom">
+                    <div class="icon-box bg-blue">
+                        <i class="fa fa-group" aria-hidden="true"></i>
+                    </div>
+                    <div class="text-large text-extra-dark-gray margin-20px-bottom">Designing</div>
+                    <p>Po patvirtinimo, pagal jūsų pasirinktą planą, mes už jus atliekame administracinius darbus.
+                    </p>
+                </div>
+            </div>
+
+            <!--how it work Box-->
+            <div class="col-md-4 col-sm-12 col-xs-12">
+                <div class="how-box-one inner-box feature-fix">
+                    <div class="icon-box bg-blue">
+                        <i class="fa fa-comments-o" aria-hidden="true"></i>
+                    </div>
+                    <div class="text-large text-extra-dark-gray margin-20px-bottom">Development</div>
+                    <p>Gaunate besidominčių asmenų kontaktus.
+
+                    </p>
+                </div>
+            </div>
+
+        </div>
+        <a href="{{ route('features') }}" class="btn btn-transparent-blue btn-rounded btn-large margin-20px-top" style="margin-top: 75px;">Sužinokite daugiau</a>
+    </div>
+</section>
+<!--end feature -->
+
+<!-- start about -->
+<section id="about" class="no-padding">
+
+    <div class="half-section">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6 no-padding">
+                    <div class="about-image hover-effect">
+                        <img alt="" src="img/Tarpininkai.jpg" class="equalheight">
+                    </div>
+                </div>
+                <div class="col-md-6 sm-padding-50px-tb">
+                    <div class="split-box text-center center-block equalheight">
+                        <div class="about-box">
+                            <h3 class="text-capitalize alt-font text-extra-dark-gray font-weight-300">
+                                Esame tarpininkai tarp jūsų ir pirkėjo.</h3>
+                            <p>Curabitur mollis bibendum luctus. Duis suscipit vitae dui sed suscipit. Vestibulum auctor nunc
+                                vitae diam eleifend, in maximus metus sollicitudin. Quisque vitae sodales lectus. Nam porttitor
+                                justo sed mi finibus, vel tristique risus faucibus.</p>
+                            <a href="{{ route('about') }}" class="btn btn-transparent-blue btn-rounded btn-large margin-20px-top">Sužinokite daugiau</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="half-section">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6 no-padding pull-right sm-float-none">
+                    <div class="about-image hover-effect">
+                        <img alt="" src="img/about-right.jpg" class="equalheight">
+                    </div>
+                </div>
+                <div class="col-md-6 sm-padding-50px-tb">
+                    <div class="split-box text-center center-block equalheight">
+                        <div class="about-box">
+                            <h3 class="text-capitalize alt-font text-extra-dark-gray font-weight-300">
+                                Vos už 99 eur plano mokęstį!</h3>
+                            <p>Curabitur mollis bibendum luctus. Duis suscipit vitae dui sed suscipit. Vestibulum auctor nunc
+                                vitae diam eleifend, in maximus metus sollicitudin. Quisque vitae sodales lectus. Nam porttitor
+                                justo sed mi finibus, vel tristique risus faucibus.</p>
+                            <a href="{{ route('about') }}" class="btn btn-transparent-blue btn-rounded btn-large margin-20px-top">Sužinokite daugiau</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- about end -->
+
+<!-- start parallax -->
+<section class="parallax no-transition bg-img1" id="story-bg">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 text-left sm-text-center center-col">
+                <h1 class="text-capitalize alt-font text-white margin-30px-bottom font-weight-300 sm-width-100 xs-width-100 story-text">
+                    Mes jums padėsime sutaupyti laiko ir pinigų.</h1>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- end parallax -->
+
+<!-- start price -->
+<section id="price">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-9 text-center center-col last-paragraph-no-margin">
+                <div class="sec-title margin-100px-bottom">
+                    <div class="text-large text-red margin-10px-bottom font-weight-400 text-blue">Pasirinkite jūsų poreikius atitinkantį planą.</div>
+                    <h3 class="text-capitalize alt-font text-extra-dark-gray font-weight-300">
+                        Mūsų planai</h3>
+                    <p class="width-75 margin-lr-auto md-width-90 xs-width-100 xs-margin-30px-bottom">Su Realpro.lt parduokite savo namą ar būtą be jokių tarpininkų ir papildomų paslėptų mokesčių. Sutaupyk
+                        daugiau nei 1500 eurų.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 col-sm-6 col-xs-12 sm-margin-30px-bottom">
+                <div class="price-item text-left">
+                    <h6 class="alt-font font-weight-500 margin-10px-bottom">Optimalus</h6>
+                    <div class="price-tag clearfix alt-font">
+                        <span class="price alt-font text-dark-gray">
+                                        <span class="currency">&ensp;&ensp;99</span>
+                        <span class="sign">&euro;</span>
+                        </span>
+                        <span class="price-text text-dark-gray no-margin">It has survived not only five centuries, but also the leap into electronic.</span>
+                    </div>
+                    <ul class="packages">
+                        <li><i class="fa fa-check" aria-hidden="true"></i>Nemokamas NT objekto įvertinimas</li>
+                        <li><i class="fa fa-check" aria-hidden="true"></i>Pardavimo progresas ir derybos</li>
+                        <li><i class="fa fa-check" aria-hidden="true"></i>Jūsų NT rodomas tūkstančiams pirkėjų</li>
+                        <li><i class="fa fa-check" aria-hidden="true"></i>Savaitinės atąskaitos esant poreikiui</li>
+                    </ul>
+                    <p class="plan-triplepoint">...</p>
+                    <a href="#." class="btn btn-blue btn-rounded width-100 btn-large">Užsisakykite dabar</a>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 col-xs-12 sm-margin-30px-bottom">
+                <div class="price-item center text-left">
+                    <h6 class="alt-font font-weight-500 margin-10px-bottom">Populiariausias</h6>
+                    <div class="price-tag clearfix alt-font">
+                        <span class="price alt-font text-white">
+                                        <span class="currency">199</span>
+                        <span class="sign">&euro;</span>
+                        </span>
+                        <span class="price-text text-white no-margin">It has survived not only five centuries, but also the leap into electronic.</span>
+                    </div>
+                    <ul class="packages">
+                        <li><i class="fa fa-check" aria-hidden="true"></i>Visos 'Optimalaus' plano paslaugos</li>
+                        <li><i class="fa fa-check" aria-hidden="true"></i>Profesionalaus fotografo nuotraukos</li>
+                        <li><i class="fa fa-check" aria-hidden="true"></i>Detalus 2D aukšto planas</li>
+                        <li><i class="fa fa-check" aria-hidden="true"></i>Pilnas NT objekto aprašymas</li>
+                    </ul>
+                    <p class="plan-triplepoint">...</p>
+                    <a href="#." class="btn btn-white btn-rounded width-100 btn-large">Užsisakykite dabar</a>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-12 col-xs-12">
+                <div class="price-item text-left">
+                    <h6 class="alt-font font-weight-500 margin-10px-bottom">Praktiškiausias</h6>
+                    <div class="price-tag clearfix alt-font">
+                        <span class="price alt-font text-dark-gray">
+                                        <span class="currency">299</span>
+                        <span class="sign">&euro;</span>
+                        </span>
+                        <span class="price-text text-dark-gray no-margin">It has survived not only five centuries, but also the leap into electronic.</span>
+                    </div>
+                    <ul class="packages">
+                        <li><i class="fa fa-check" aria-hidden="true"></i>Visos 'Populiariausio' plano paslaugos</li>
+                        <li><i class="fa fa-check" aria-hidden="true"></i>Iškelti/išryškinti NT skelbimai</li>
+                        <li><i class="fa fa-check" aria-hidden="true"></i>Pardavimo ženklas ant pastato</li>
+                        <li><i class="fa fa-check" aria-hidden="true"></i>Premium skelbimai portaluose</li>
+                    </ul>
+                    <p class="plan-triplepoint">...</p>
+                    <a href="#." class="btn btn-blue btn-rounded width-100 btn-large">Užsisakykite dabar</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+<!-- start price -->
+
+<!-- testimonials -->
+<section class="testimonial-two no-padding-top bg-very-light-gray">
+    <div class="parallax testimonial-two-bg no-transition" id="reviews-bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-offset-4 col-sm-8 equalheight">
+                    <div class="testimonial-two-title">
+                        <h3 class="area-title text-capitalize alt-font text-white font-weight-300">
+                            Meet Our<br><span class="font-weight-400">Happy Client</span>
+                        </h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+
+        <div class="owl-theme owl-carousel owl-testimonial-two">
+            <div class="testimonial-two-block item">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="testimonial-client-img">
+                            <img src="images/testimonial-two-client2.jpg" alt="image">
+                        </div>
+                        <div class="testimonial-client-name">
+                            <h6 class="text-large text-blue font-weight-600 margin-5px-bottom margin-30px-top text-center">Elic York</h6>
+                            <p class="text-center">Upwork, New York</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-8">
+                        <div class="testimonial-client-says text-left margin-135px-top xs-margin-30px-top xs-text-center">
+                            <p> We have a number of different teams within our agency that specialise in different areas of business
+                                so you can be sure that you won’t receive a generic service and although we can’t boast years
+                                and years of service. you won’t receive a generic service.
+                            </p>
+                            <div class="testimonial-two-rating margin-20px-top">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-two-block item">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="testimonial-client-img">
+                            <img src="images/testimonial-two-client1.jpg" alt="image">
+                        </div>
+                        <div class="testimonial-client-name">
+                            <h6 class="text-large text-blue font-weight-600 margin-5px-bottom margin-30px-top text-center">Adward David</h6>
+                            <p class="text-center">Abacus, CEO</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-8">
+                        <div class="testimonial-client-says text-left margin-135px-top xs-margin-30px-top xs-text-center">
+                            <p> We have a number of different teams within our agency that specialise in different areas of business
+                                so you can be sure that you won’t receive a generic service and although we can’t boast years.
+                            </p>
+                            <div class="testimonial-two-rating margin-20px-top">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-two-block item">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="testimonial-client-img">
+                            <img src="images/testimonial-two-client3.jpg" alt="image">
+                        </div>
+                        <div class="testimonial-client-name">
+                            <h6 class="text-large text-blue font-weight-600 margin-5px-bottom margin-30px-top text-center">Steph Erick</h6>
+                            <p class="text-center">Enavto, Australia</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-8">
+                        <div class="testimonial-client-says text-left margin-135px-top xs-margin-30px-top xs-text-center">
+                            <p> We have a number of different teams within our agency that specialise in different areas of business
+                                so you can be sure that you won’t receive a generic service and although we can’t boast.
+                            </p>
+                            <div class="testimonial-two-rating margin-20px-top">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</section>
+<!-- testimonials end -->
+
+<!-- contact-->
+<section id="contact" class="btn-version">
+    <div class="get-quote-section xs-text-center">
+        <div class="container">
+            <div class="row clearfix">
+                <!--Form Column-->
+                <div class="col-md-6">
+                    <div class="sec-title margin-50px-bottom">
+                        <h3 class="text-capitalize alt-font text-extra-dark-gray font-weight-300">
+                            Susisiekite su mumis</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum illum ratione atque praesentium laudantium
+                            quaerat laborum consecteturLorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        </p>
+                    </div>
+                    <div class="row margin-15px-bottom">
+                        <div class="col-sm-1 no-padding">
+                            <div class="contact-icon text-blue">
+                                <i class="fa fa-phone" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div class="col-sm-11">
+                            <p class="text-small">+370 6126 6668</p>
+                        </div>
+                    </div>
+                    <div class="row margin-15px-bottom">
+                        <div class="col-sm-1 no-padding">
+                            <div class="contact-icon text-blue">
+                                <i class="fa fa-globe" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div class="col-sm-11 xs-margin-50px-bottom">
+                            <p class="text-small">info@realpro.lt</p>
+                        </div>
+                    </div>
+                    <div class="row margin-15px-bottom">
+                        <div class="col-sm-1 no-padding">
+                            <div class="contact-icon text-blue">
+                                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div class="col-sm-11">
+                            <p class="text-small">Rekvizitai čia</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-column col-md-6">
+                    <div class="contact-form">
+                        <!--Title-->
+                        <form class="form_class">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <div class="form-group">
+                                        <input type="text" class="form_inputs" name="name" placeholder="Vardas">
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <input type="text" class="form_inputs" name="email" placeholder="El. Paštas">
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <input type="text" class="form_inputs" name="phone no" placeholder="Telefonas">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 no-padding">
+                                <div class="form-group">
+                                    <textarea name="message" id="message" class="form_inputs form_inputs_two" rows="6" cols="25" placeholder="Jūsų žinutė"></textarea>
+                                </div>
+                                <div class="button">
+                                    <a href="#." class="btn btn-blue btn-rounded btn-large text-extra-small width-100">Susisiekti</a>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- contact end -->
+@endsection

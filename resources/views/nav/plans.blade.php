@@ -76,7 +76,7 @@
                                 <a href="#">Mūsų objektai</a>
                             </li>
                             <li>
-                                <a href="{{ route('index') }}#price">Kainoraštis</a>
+                                <a href="#price" class="scroll">Kainoraštis</a>
                             </li>
                             <li>
                                 <a href="{{ route('contact') }}">Kontaktai</a>
@@ -85,7 +85,7 @@
                     </div>
                 </div>
                 <!--side nav -->
-                <div id="menu_bars" class="right menu_bars">
+                <div id="menu_bars" class="right menu_bars side-menu">
                     <span class="t1"></span>
                     <span class="t2"></span>
                     <span class="t3"></span>
@@ -150,71 +150,91 @@
 </section>
 <!-- cover end-->
 
-<!-- address start -->
-<section class="no-transition">
+<!-- start price -->
+<section id="price">
     <div class="container">
         <div class="row">
             <div class="col-lg-9 text-center center-col last-paragraph-no-margin">
                 <div class="sec-title margin-100px-bottom">
-                    <div class="text-large text-red margin-10px-bottom font-weight-400 text-blue">Turite klausimų?</div>
+                    <div class="text-large text-red margin-10px-bottom font-weight-400 text-blue">Pasirinkite jūsų poreikius atitinkantį planą.</div>
                     <h3 class="text-capitalize alt-font text-extra-dark-gray font-weight-300">
-                        Susisiekite su mumis</h3>
+                        Mūsų planai</h3>
+                    <p class="width-75 margin-lr-auto md-width-90 xs-width-100 xs-margin-30px-bottom">Su Realpro.lt parduokite savo namą ar būtą be jokių tarpininkų ir papildomų paslėptų mokesčių. Sutaupyk daugiau nei 1500 eurų.</p>
                 </div>
             </div>
         </div>
         <div class="row">
-            <div class="col-sm-7">
-                <div class="map-wrapper no-transition">
-                    <div class="map-two" id="map"></div>
+            <div class="col-md-4 col-sm-6 col-xs-12 sm-margin-30px-bottom">
+                <div class="price-item text-left">
+                    <h6 class="alt-font font-weight-500 margin-10px-bottom">Optimalus</h6>
+                    <div class="price-tag clearfix alt-font">
+                                <span class="price alt-font text-dark-gray">
+                                    <span class="currency">&ensp;&ensp;99</span>
+                                    <span class="sign">&euro;</span>
+                                </span>
+                        <span class="price-text text-dark-gray no-margin">It has survived not only five centuries, but also the leap into electronic.</span>
+                    </div>
+                    <ul class="packages">
+                        <li><i class="fa fa-check" aria-hidden="true"></i>Nemokamas NT objekto įvertinimas</li>
+                        <li><i class="fa fa-check" aria-hidden="true"></i>Pardavimo progresas ir derybos</li>
+                        <li><i class="fa fa-check" aria-hidden="true"></i>Jūsų NT rodomas tūkstančiams pirkėjų</li>
+                        <li><i class="fa fa-check" aria-hidden="true"></i>Savaitinės atąskaitos esant poreikiui</li>
+                        <li><i class="fa fa-check" aria-hidden="true"></i>Savaitinės atąskaitos esant poreikiui</li>
+                        <li><i class="fa fa-check" aria-hidden="true"></i>Savaitinės atąskaitos esant poreikiui</li>
+                        <li><i class="fa fa-check" aria-hidden="true"></i>Savaitinės atąskaitos esant poreikiui</li>
+                    </ul>
+                    <a href="#." class="btn btn-blue btn-rounded width-100 btn-large">Užsisakykite dabar</a>
                 </div>
             </div>
-            <div class="col-sm-5">
-                <div class="address-block">
-                    <div class="text-small text-dark-gray font-weight-400 margin-20px-bottom">Reone Agency Worldwide</div>
-                    <h5 class="area-title text-capitalize alt-font text-blue margin-20px-bottom font-weight-400 sm-width-100 xs-width-100">
-                        Agency office, <span class="text-dark-gray">Landon</span></h5>
-                    <p class="text-medium-gray">Address: 309, New Cavendish St, EC1Y 3WK</p>
-                    <p class="text-medium-gray">0800 214 5252</p>
-                    <p><a href="#." class="text-medium-gray">polpo@reone.co.au</a></p>
-                    <p class="text-medium-gray">Mon-Fri: 9am-5pm</p>
-                    <div class="adress-icon">
-                        <a href="#." class="facebook-bg-hvr"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                        <a href="#." class="pinterest-bg-hvr"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>
-                        <a href="#." class="twitter-bg-hvr"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                        <a href="#." class="google-bg-hvr"><i class="fa fa-google" aria-hidden="true"></i></a>
-                        <a href="#." class="pinterest-bg-hvr"><i class="fa fa-dribbble" aria-hidden="true"></i></a>
-                        <a href="#." class="instagram-bg-hvr"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+            <div class="col-md-4 col-sm-6 col-xs-12 sm-margin-30px-bottom">
+                <div class="price-item center text-left">
+                    <h6 class="alt-font font-weight-500 margin-10px-bottom">Populiariausias</h6>
+                    <div class="price-tag clearfix alt-font">
+                                <span class="price alt-font text-white">
+                                    <span class="currency">199</span>
+                                    <span class="sign">&euro;</span>
+                                </span>
+                        <span class="price-text text-white no-margin">It has survived not only five centuries, but also the leap into electronic.</span>
                     </div>
+                    <ul class="packages">
+                        <li><i class="fa fa-check" aria-hidden="true"></i>Visos 'Optimalaus' plano paslaugos</li>
+                        <li><i class="fa fa-check" aria-hidden="true"></i>Profesionalaus fotografo nuotraukos</li>
+                        <li><i class="fa fa-check" aria-hidden="true"></i>Detalus 2D aukšto planas</li>
+                        <li><i class="fa fa-check" aria-hidden="true"></i>Pilnas NT objekto aprašymas</li>
+                        <li><i class="fa fa-check" aria-hidden="true"></i>Savaitinės atąskaitos esant poreikiui</li>
+                        <li><i class="fa fa-check" aria-hidden="true"></i>Savaitinės atąskaitos esant poreikiui</li>
+                        <li><i class="fa fa-check" aria-hidden="true"></i>Savaitinės atąskaitos esant poreikiui</li>
+                    </ul>
+                    <a href="#." class="btn btn-white btn-rounded width-100 btn-large">Užsisakykite dabar</a>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-12 col-xs-12">
+                <div class="price-item text-left">
+                    <h6 class="alt-font font-weight-500 margin-10px-bottom">Praktiškiausias</h6>
+                    <div class="price-tag clearfix alt-font">
+                                <span class="price alt-font text-dark-gray">
+                                    <span class="currency">299</span>
+                                    <span class="sign">&euro;</span>
+                                </span>
+                        <span class="price-text text-dark-gray no-margin">It has survived not only five centuries, but also the leap into electronic.</span>
+                    </div>
+                    <ul class="packages">
+                        <li><i class="fa fa-check" aria-hidden="true"></i>Visos 'Populiariausio' plano paslaugos</li>
+                        <li><i class="fa fa-check" aria-hidden="true"></i>Iškelti/išryškinti NT skelbimai</li>
+                        <li><i class="fa fa-check" aria-hidden="true"></i>Pardavimo ženklas ant pastato</li>
+                        <li><i class="fa fa-check" aria-hidden="true"></i>Premium skelbimai portaluose</li>
+                        <li><i class="fa fa-check" aria-hidden="true"></i>Savaitinės atąskaitos esant poreikiui</li>
+                        <li><i class="fa fa-check" aria-hidden="true"></i>Savaitinės atąskaitos esant poreikiui</li>
+                        <li><i class="fa fa-check" aria-hidden="true"></i>Savaitinės atąskaitos esant poreikiui</li>
+                    </ul>
+                    <a href="#." class="btn btn-blue btn-rounded width-100 btn-large">Užsisakykite dabar</a>
                 </div>
             </div>
         </div>
+
     </div>
 </section>
-<!-- address end -->
-
-<!-- contact start -->
-<section class="contact-page-form no-padding-top">
-    <div class="container">
-        <div class="row">
-            <div class="contact-form">
-                <form class="margin-50px-bottom">
-                    <div class="col-xs-12 no-padding">
-                        <input type="text" class="form-control margin-30px-bottom" placeholder="Your Name">
-                    </div>
-                    <div class="col-xs-12 no-padding">
-                        <input type="email" class="form-control margin-30px-bottom" placeholder="Your Email">
-                    </div>
-
-                    <div class="col-xs-12 no-padding">
-                        <textarea class="form-control margin-50px-bottom" placeholder="Your Message"></textarea>
-                    </div>
-                    <a href="#." class="btn btn-transparent-blue btn-large width-100">Get Started Now</a>
-                </form>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- contact end -->
+<!-- start price -->
 
 <!--footer Start-->
 <footer class="bg-extra-dark-gray padding-30px-tb text-center">

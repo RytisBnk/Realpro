@@ -28,3 +28,16 @@
 #reviews-bg {
     background-image: url(../img/slider.jpg);
 }
+.plan-triplepoint {
+    text-align: center;
+    margin-top: -20px;
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+#btn-features {
+    margin-top: 50px;
+    font-size: 20px;
+}
+#btn-features:hover {
+    background: #000000;
+}

@@ -12,18 +12,23 @@
 */
 
 Route::get('/', function () {
-    return view('homepage-new');
+    return view('nav.homepage');
 })->name('index');
 Route::get('/contact', function(){
-    return view('contact');
+    return view('nav.contact');
 })->name('contact');
-
+Route::get('/features', function(){
+    return view('nav.features');
+})->name('features');
+Route::get('/about', function(){
+    return view('nav.about');
+})->name('about');
+Route::get('/plans', function(){
+    return view('nav.plans');
+})->name('plans');;
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
-Route::get('/plans', function(){
-    return view('plans');
-})->name('plans');;
 
 Route::get('/terms', function(){
     return view('terms');
