@@ -55,7 +55,7 @@
                         data-whitespace="nowrap" data-type="text" data-responsive_offset="on" data-frames='[{"delay":0,"speed":300,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
                         data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]"
                         data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 8; white-space: nowrap; font-size: 20px; line-height: 22px; font-weight: 400; color: #ffffff; letter-spacing: 0px;font-family:Raleway;">
-                        <a href="#." class="btn btn-rounded btn-blue btn-hvr-white btn-large" id="btn-more-info">Sužinoti plačiau</a>
+                        <a href="{{ route('features') }}" class="btn btn-rounded btn-blue btn-hvr-white btn-large" id="btn-more-info">Sužinoti plačiau</a>
                     </div>
                 </li>
             </ul>
@@ -75,8 +75,9 @@
                 <div class="sec-title margin-100px-bottom">
                     <h3 class="text-capitalize alt-font text-extra-dark-gray font-weight-300">
                         Kaip tai veikia?</h3>
-                    <p class="width-75 margin-lr-auto md-width-90 xs-width-100 xs-margin-30px-bottom">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
-                        laborum. Perspiciatis unde omnis iste natus error sit.</p>
+                    <p class="width-75 margin-lr-auto md-width-90 xs-width-100 xs-margin-30px-bottom">
+                        Mūsų misija visuomet buvo viena. - Padėti žmonėms parduoti savo nekilnojamą turtą saugiai, greitai ir su mažiausiomis išlaidomis!
+                    </p>
                 </div>
             </div>
         </div>
@@ -84,24 +85,26 @@
         <div class="how-one-container">
             <!--how it work Box-->
             <div class="col-md-4 col-sm-6 col-xs-12">
-                <div class="how-box-one inner-box xs-margin-150px-bottom feature-fix">
+                <div class="how-box-one inner-box xs-margin-150px-bottom feature-fix" id="feature-mobile">
                     <div class="icon-box bg-blue">
                         <i class="fa fa-calendar-check-o" aria-hidden="true"></i>
                     </div>
-                    <div class="text-large text-extra-dark-gray margin-20px-bottom">Plaining</div>
-                    <p>Išsirenkate jūsų poreikius atitinkatį planą ir užpildote anketą.
+                    <div class="text-large text-extra-dark-gray margin-20px-bottom">Pasirenkate paslaugų paketą</div>
+                    <p>Išsirenkite Jūsų poreikius atitinkantį planą ir užpildykite informacinę formą. Mūsų specialistai susisieks
+                        su Jumis per ateinančias 12h ir suteiks papildomą informaciją.
                     </p>
                 </div>
             </div>
 
             <!--how it work Box-->
             <div class="col-md-4 col-sm-6 col-xs-12">
-                <div class="how-box-one inner-box sm-margin-100px-bottom xs-margin-100px-bottom">
+                <div class="how-box-one inner-box sm-margin-100px-bottom xs-margin-100px-bottom feature-fix">
                     <div class="icon-box bg-blue">
                         <i class="fa fa-group" aria-hidden="true"></i>
                     </div>
-                    <div class="text-large text-extra-dark-gray margin-20px-bottom">Designing</div>
-                    <p>Po patvirtinimo, pagal jūsų pasirinktą planą, mes už jus atliekame administracinius darbus.
+                    <div class="text-large text-extra-dark-gray margin-20px-bottom">Paslaugų aktyvavimas</div>
+                    <p>Atsižvelgiant į pasirinktą planą, mūsų eksperstai aktyvuos ir atliks visas plane paminėtas paslaugas
+                        per ateinančias 24 valandas po užsakymo įvykdymo.
                     </p>
                 </div>
             </div>
@@ -112,9 +115,10 @@
                     <div class="icon-box bg-blue">
                         <i class="fa fa-comments-o" aria-hidden="true"></i>
                     </div>
-                    <div class="text-large text-extra-dark-gray margin-20px-bottom">Development</div>
-                    <p>Gaunate besidominčių asmenų kontaktus.
-
+                    <div class="text-large text-extra-dark-gray margin-20px-bottom">Palikite tai mums</div>
+                    <p>
+                        Jūsų NT objekto informacija taps matoma šimtui tūkstančių potencialių pirkėjų, iš kurių atrinksime geriausią. Aptarnausime
+                        visas susidomėjusias užklausas ir siūsime darbų ataskaitas Jums.
                     </p>
                 </div>
             </div>
@@ -133,7 +137,7 @@
             <div class="row">
                 <div class="col-md-6 no-padding">
                     <div class="about-image hover-effect">
-                        <img alt="" src="img/Tarpininkai.jpg" class="equalheight">
+                        <img alt="" src="img/about-1-transparent.png" class="equalheight">
                     </div>
                 </div>
                 <div class="col-md-6 sm-padding-50px-tb">
@@ -141,9 +145,11 @@
                         <div class="about-box">
                             <h3 class="text-capitalize alt-font text-extra-dark-gray font-weight-300">
                                 Esame tarpininkai tarp jūsų ir pirkėjo.</h3>
-                            <p>Curabitur mollis bibendum luctus. Duis suscipit vitae dui sed suscipit. Vestibulum auctor nunc
-                                vitae diam eleifend, in maximus metus sollicitudin. Quisque vitae sodales lectus. Nam porttitor
-                                justo sed mi finibus, vel tristique risus faucibus.</p>
+                            <p>Mes esame tam, kad palengvinti Jūsų NT pardavimo procesą. Paruošime ir pateiksime Jūsų objekto
+                                skelbimus šimtui tūkstančių potencialių pirkėjų . Priimsime skambučius ir atrinksime jums
+                                geriausią pirkėją. Padėsime sutvarkyti pirkimo dokumentus. O Jums tereikės patogiai atsisėsti
+                                ir neišsigasti, kuomet sekančią dieną pirkėjas pasibels į Jūsų duris.
+                            </p>
                             <a href="{{ route('about') }}" class="btn btn-transparent-blue btn-rounded btn-large margin-20px-top">Sužinokite daugiau</a>
                         </div>
                     </div>
@@ -164,9 +170,8 @@
                         <div class="about-box">
                             <h3 class="text-capitalize alt-font text-extra-dark-gray font-weight-300">
                                 Vos už 99 eur plano mokęstį!</h3>
-                            <p>Curabitur mollis bibendum luctus. Duis suscipit vitae dui sed suscipit. Vestibulum auctor nunc
-                                vitae diam eleifend, in maximus metus sollicitudin. Quisque vitae sodales lectus. Nam porttitor
-                                justo sed mi finibus, vel tristique risus faucibus.</p>
+                            <p>Su Realpro parduokite savo namus mažiau nei už šimtą eurų, neišeinant iš namų. Sąžiningas, skaidrus
+                                ir nekeliantis rūpesčių būdas parduoti nekilnojamą turtą jau Čia!</p>
                             <a href="{{ route('about') }}" class="btn btn-transparent-blue btn-rounded btn-large margin-20px-top">Sužinokite daugiau</a>
                         </div>
                     </div>
@@ -208,12 +213,12 @@
             <div class="col-md-4 col-sm-6 col-xs-12 sm-margin-30px-bottom">
                 <div class="price-item text-left">
                     <h6 class="alt-font font-weight-500 margin-10px-bottom">Optimalus</h6>
-                    <div class="price-tag clearfix alt-font">
+                    <div class="price-tag clearfix alt-font" id="plan-populiariausias">
                         <span class="price alt-font text-dark-gray">
                                         <span class="currency">&ensp;&ensp;99</span>
                         <span class="sign">&euro;</span>
                         </span>
-                        <span class="price-text text-dark-gray no-margin">It has survived not only five centuries, but also the leap into electronic.</span>
+                        <span class="price-text text-dark-gray no-margin">Paprastas paketas tiems, kurie nori pigiai ir lengvai parduoti savo NT tik už 99€ . Gera kaina, įspūdingas greitis ir svarbiausia - JOKIŲ KOMISINIŲ UŽ PARDAVIMĄ!</span>
                     </div>
                     <ul class="packages">
                         <li><i class="fa fa-check" aria-hidden="true"></i>Nemokamas NT objekto įvertinimas</li>
@@ -233,7 +238,7 @@
                                         <span class="currency">199</span>
                         <span class="sign">&euro;</span>
                         </span>
-                        <span class="price-text text-white no-margin">It has survived not only five centuries, but also the leap into electronic.</span>
+                        <span class="price-text text-white no-margin">Pamėgtas paketas tų, kurie vertina savo laiką ir supranta, kad kiekvienas sutaupytas euras yra uždirbtas euras. Tik 199€, jokių komisinių! Geriausia! - jokie rūpesčiai dėl NT pardavimo Jūsų nebekamuos! </span>
                     </div>
                     <ul class="packages">
                         <li><i class="fa fa-check" aria-hidden="true"></i>Visos 'Optimalaus' plano paslaugos</li>
@@ -253,7 +258,8 @@
                                         <span class="currency">299</span>
                         <span class="sign">&euro;</span>
                         </span>
-                        <span class="price-text text-dark-gray no-margin">It has survived not only five centuries, but also the leap into electronic.</span>
+                        <span class="price-text text-dark-gray no-margin">Geriausias paketas nuosavų valdų savininkams, kurie tiki mūsų žodžiais:  Greitai. Saugiai. Atsakingai. Pigiai, ir palieka visą NT objekto pateikimo ir pardavimo procesą Mums vos už 299€ ir be JOKIŲ PAPILDOMŲ IŠLAIDŲ!
+                        </span>
                     </div>
                     <ul class="packages">
                         <li><i class="fa fa-check" aria-hidden="true"></i>Visos 'Populiariausio' plano paslaugos</li>
@@ -266,7 +272,9 @@
                 </div>
             </div>
         </div>
-
+        <div id="btn-plansinfo">
+            <a href="{{ route('plans') }}" class="btn btn-transparent-blue btn-rounded btn-large margin-20px-top" style="margin-top: 75px;">Sužinokite daugiau</a>
+        </div>
     </div>
 </section>
 <!-- start price -->
@@ -279,7 +287,7 @@
                 <div class="col-sm-offset-4 col-sm-8 equalheight">
                     <div class="testimonial-two-title">
                         <h3 class="area-title text-capitalize alt-font text-white font-weight-300">
-                            Meet Our<br><span class="font-weight-400">Happy Client</span>
+                            Susipažinkite su<br><span class="font-weight-400">Mūsų klientais</span>
                         </h3>
                     </div>
                 </div>
@@ -403,7 +411,7 @@
                             <p class="text-small">+370 6126 6668</p>
                         </div>
                     </div>
-                    <div class="row margin-15px-bottom">
+                    <div class="row margin-15px-bottom" id="email-display">
                         <div class="col-sm-1 no-padding">
                             <div class="contact-icon text-blue">
                                 <i class="fa fa-globe" aria-hidden="true"></i>
@@ -414,13 +422,15 @@
                         </div>
                     </div>
                     <div class="row margin-15px-bottom">
-                        <div class="col-sm-1 no-padding">
+                        <div class="col-sm-1 no-padding" id="location-icon">
                             <div class="contact-icon text-blue">
                                 <i class="fa fa-map-marker" aria-hidden="true"></i>
                             </div>
                         </div>
                         <div class="col-sm-11">
-                            <p class="text-small">Rekvizitai čia</p>
+                            <p class="text-small">UAB "Emiras"</p>
+                            <p class="text-small">Įmonės kodas: 304836394</p>
+                            <p class="text-small">Įmonės adresas: Girulių g. 10, LT-12112 Vilnius</p>
                         </div>
                     </div>
                 </div>

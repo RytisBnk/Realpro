@@ -8,7 +8,7 @@
     margin-bottom: 0;
 }
 .feature-fix {
-    height: 248px;
+    height: 290px;
 }
 .story-text {
     color: #000000;
@@ -40,4 +40,31 @@
 }
 #btn-features:hover {
     background: #000000;
+}
+#btn-plansinfo {
+    text-align: center;
+}
+#price {
+    padding-bottom: 80px;
+    padding-top: 80px;
+}
+#feature {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+@media screen and (min-width: 768px) {
+    #plan-populiariausias {
+        height: 184px;
+    }
+}
+#location-icon {
+    margin-top: 20px;
+}
+@media screen and (max-width: 767px) {
+    #feature-mobile {
+        margin-bottom: 100px;
+    }
+    #email-display {
+        height: 50px;
+    }
 }
