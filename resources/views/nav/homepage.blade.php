@@ -1,71 +1,10 @@
 @extends('layouts.parallax') 
 @section('content')
-<!-- start slider -->
-<section id="home" class="no-padding no-transition">
-    <h1 class="display-none" aria-hidden="true">boltex</h1>
-    <h2 class="display-none" aria-hidden="true">boltex</h2>
-    <div id="rev_slider_5_1_wrapper" class="rev_slider_wrapper fullscreen-container" data-alias="boltex-4" data-source="gallery"
-        style="background:transparent;padding:0px;left: 0 !important;;">
-        <!-- START REVOLUTION SLIDER 5.4.5 fullscreen mode -->
-        <div id="rev_slider_5_1" class="rev_slider fullscreenbanner" style="display:none;" data-version="5.4.5">
-            <ul>
-                <!-- SLIDE  -->
-                <li data-index="rs-11" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"
-                    data-easein="default" data-easeout="default" data-masterspeed="300" data-rotate="0" data-saveperformance="off"
-                    data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6=""
-                    data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
-                    <!-- MAIN IMAGE -->
-                    <img src="img/top-image.jpg" alt="image" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="off"
-                        class="rev-slidebg" data-no-retina>
-                    <!-- LAYERS -->
-
-                    <!-- LAYER NR. 1 -->
-                    <div class="tp-caption   tp-resizeme rs-parallaxlevel-7" id="slide-11-layer-1" data-x="['center','center','center','center']"
-                        data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['0','0','-3','0']"
-                        data-width="none" data-height="none" data-whitespace="nowrap" data-type="image" data-responsive_offset="on"
-                        data-frames='[{"delay":0,"speed":300,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
-                        data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]"
-                        data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 5;"><img src="images/1513f-transparent-square.png" alt="image" data-ww="['688px','688px','500px','374px']"
-                            data-hh="['612px','612px','445px','333px']" data-no-retina></div>
-
-                    <!-- LAYER NR. 2 -->
-                    <div class="tp-caption   tp-resizeme rs-parallaxlevel-2" id="slide-11-layer-2" data-x="['center','center','center','center']"
-                        data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']"
-                        data-fontsize="['120','100','70','70']" data-lineheight="['120','100','70','70']" data-width="none" data-height="none"
-                        data-whitespace="nowrap" data-type="text" data-responsive_offset="on" data-frames='[{"delay":0,"speed":300,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
-                        data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]"
-                        data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 6; white-space: normal; font-size: 120px; line-height: 120px; font-weight: 700; color: #ffffff; letter-spacing: 0px;font-family:Raleway;">
-                        <div id="js-rotating">Parduok savo būstą,Lengvai ir greitai</div>
-                    </div>
-
-                    <!-- LAYER NR. 3 -->
-                    <div class="tp-caption   tp-resizeme rs-parallaxlevel-2" id="slide-11-layer-3" data-x="['center','center','center','center']"
-                        data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['-115','-109','-82','-71']"
-                        data-fontsize="['25','25','20','20']" data-lineheight="['35','35','30','25']" data-width="none" data-height="none"
-                        data-whitespace="nowrap" data-type="text" data-responsive_offset="on" data-frames='[{"delay":0,"speed":300,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
-                        data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]"
-                        data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 7; white-space: normal; font-size: 35px; line-height: 35px; font-weight: 400; color: #ffffff; letter-spacing: 0px;font-family:Raleway;">
-                        Patikima ekspertų pagalba perkant, parduodant ir nuomojant nekilnojamą turtą.
-                    </div>
-
-                    <!-- LAYER NR. 4 -->
-                    <div class="tp-caption   tp-resizeme rs-parallaxlevel-2" id="slide-11-layer-4" data-x="['center','center','center','center']"
-                        data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['130','117','76','74']"
-                        data-fontsize="['20','20','20','18']" data-lineheight="['22','22','22','18']" data-width="none" data-height="none"
-                        data-whitespace="nowrap" data-type="text" data-responsive_offset="on" data-frames='[{"delay":0,"speed":300,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
-                        data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]"
-                        data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 8; white-space: nowrap; font-size: 20px; line-height: 22px; font-weight: 400; color: #ffffff; letter-spacing: 0px;font-family:Raleway;">
-                        <a href="{{ route('features') }}" class="btn btn-rounded btn-blue btn-hvr-white btn-large" id="btn-more-info">Sužinoti plačiau</a>
-                    </div>
-                </li>
-            </ul>
-            <div class="tp-bannertimer tp-bottom" style="visibility: hidden !important;"></div>
-        </div>
-    </div>
-    <!-- END REVOLUTION SLIDER -->
-
+<section id="top">
+    <h2>Patikima ekspertų pagalba perkant, parduodant ir nuomojant nekilnojamą turtą.</h2>
+    <h1>Parduok savo būstą lengvai ir greitai</h1>
+    <a href="{{ route('features') }}" class="btn btn-rounded btn-blue btn-hvr-white btn-large" id="btn-more-info">Sužinoti daugiau</a>
 </section>
-<!-- slider end -->
 
 <!-- start feature -->
 <section id="feature" class="how-it-work text-center bg-light-gray no-transition">

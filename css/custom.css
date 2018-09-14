@@ -1,5 +1,29 @@
 
 /*-- Use For Custom Styling --*/
+#top {
+    background-image: url(../img/top-image.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+#top h2 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 25px;
+    color: #FFFFFF;
+    margin-top: 50px;
+}
+#top h1 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 70px;
+    font-weight: 700;
+    color: #FFFFFF;
+    margin: 100px 0;
+}
+#btn-more-info {
+    font-size: 22px;
+    padding: 20px 25px;
+    margin-bottom: 35px;
+}
 #story-bg {
     background-image: url(../img/video.jpg);
 }
@@ -20,10 +44,6 @@
     .nav-row {
         margin-right: 0;
     }
-}
-#btn-more-info {
-    font-size: 22px;
-    padding: 20px 25px;
 }
 #reviews-bg {
     background-image: url(../img/slider.jpg);
