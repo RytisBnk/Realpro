@@ -39,8 +39,6 @@
 </head>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="90" class="side-nav">
-    <?php
-    /*
     <div id="loader">
         <div class="loader-inner">
             <div class="spinner">
@@ -48,8 +46,8 @@
                 <div class="dot2"></div>
             </div>
         </div>
-    </div>*/
-    ?>
+    </div>
+
     <!-- start header -->
     <header class="sticky header-appear">
         <!-- start navigation -->
