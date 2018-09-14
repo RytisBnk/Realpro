@@ -39,6 +39,8 @@
 </head>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="90" class="side-nav">
+    <?php
+    /*
     <div id="loader">
         <div class="loader-inner">
             <div class="spinner">
@@ -46,7 +48,8 @@
                 <div class="dot2"></div>
             </div>
         </div>
-    </div>
+    </div>*/
+    ?>
     <!-- start header -->
     <header class="sticky header-appear">
         <!-- start navigation -->
@@ -171,16 +174,6 @@
     <!-- revolution -->
     <script src="revolution/js/jquery.themepunch.tools.min.js"></script>
     <script src="revolution/js/jquery.themepunch.revolution.min.js"></script>
-    <!-- revolution extension -->
-    <script src="revolution/js/extensions/revolution.extension.actions.min.js"></script>
-    <script src="revolution/js/extensions/revolution.extension.carousel.min.js"></script>
-    <script src="revolution/js/extensions/revolution.extension.kenburn.min.js"></script>
-    <script src="revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
-    <script src="revolution/js/extensions/revolution.extension.migration.min.js"></script>
-    <script src="revolution/js/extensions/revolution.extension.navigation.min.js"></script>
-    <script src="revolution/js/extensions/revolution.extension.parallax.min.js"></script>
-    <script src="revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
-    <script src="revolution/js/extensions/revolution.extension.video.min.js"></script>
     <!-- setting -->
     <script src="js/main.js"></script>
 </body>
