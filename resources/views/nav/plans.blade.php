@@ -40,7 +40,7 @@
                         </span>
                         <span class="price-text text-dark-gray no-margin">It has survived not only five centuries, but also the leap into electronic.</span>
                     </div>
-                    <ul class="packages">
+                    <ul class="packages packages-scrollable">
                         <li><i class="fa fa-check" aria-hidden="true"></i>Nemokamas NT objekto įvertinimas</li>
                         <li><i class="fa fa-check" aria-hidden="true"></i>Pardavimo progresas ir derybos</li>
                         <li><i class="fa fa-check" aria-hidden="true"></i>Jūsų NT rodomas tūkstančiams pirkėjų</li>
@@ -49,7 +49,7 @@
                         <li><i class="fa fa-check" aria-hidden="true"></i>Savaitinės atąskaitos esant poreikiui</li>
                         <li><i class="fa fa-check" aria-hidden="true"></i>Savaitinės atąskaitos esant poreikiui</li>
                     </ul>
-                    <a href="#." class="btn btn-blue btn-rounded width-100 btn-large">Užsisakykite dabar</a>
+                    <a href="#." class="btn btn-blue btn-rounded width-100 btn-large margin-20px-t">Užsisakykite dabar</a>
                 </div>
             </div>
             <div class="col-md-4 col-sm-6 col-xs-12 sm-margin-30px-bottom">
@@ -62,7 +62,7 @@
                         </span>
                         <span class="price-text text-white no-margin">It has survived not only five centuries, but also the leap into electronic.</span>
                     </div>
-                    <ul class="packages">
+                    <ul class="packages packages-scrollable">
                         <li><i class="fa fa-check" aria-hidden="true"></i>Visos 'Optimalaus' plano paslaugos</li>
                         <li><i class="fa fa-check" aria-hidden="true"></i>Profesionalaus fotografo nuotraukos</li>
                         <li><i class="fa fa-check" aria-hidden="true"></i>Detalus 2D aukšto planas</li>
@@ -71,20 +71,20 @@
                         <li><i class="fa fa-check" aria-hidden="true"></i>Savaitinės atąskaitos esant poreikiui</li>
                         <li><i class="fa fa-check" aria-hidden="true"></i>Savaitinės atąskaitos esant poreikiui</li>
                     </ul>
-                    <a href="#." class="btn btn-white btn-rounded width-100 btn-large">Užsisakykite dabar</a>
+                    <a href="#." class="btn btn-white btn-rounded width-100 btn-large margin-20px-t">Užsisakykite dabar</a>
                 </div>
             </div>
             <div class="col-md-4 col-sm-12 col-xs-12">
                 <div class="price-item text-left">
-                    <h6 class="alt-font font-weight-500 margin-10px-bottom">Praktiškiausias</h6>
+                    <h6 class="alt-font font-weight-500 margin-10px-bottom ">Namams</h6>
                     <div class="price-tag clearfix alt-font">
                         <span class="price alt-font text-dark-gray">
                                     <span class="currency">299</span>
                         <span class="sign">&euro;</span>
                         </span>
-                        <span class="price-text text-dark-gray no-margin">It has survived not only five centuries, but also the leap into electronic.</span>
+                        <span class="price-text text-dark-gray no-margin ">It has survived not only five centuries, but also the leap into electronic.</span>
                     </div>
-                    <ul class="packages">
+                    <ul class="packages packages-scrollable">
                         <li><i class="fa fa-check" aria-hidden="true"></i>Visos 'Populiariausio' plano paslaugos</li>
                         <li><i class="fa fa-check" aria-hidden="true"></i>Iškelti/išryškinti NT skelbimai</li>
                         <li><i class="fa fa-check" aria-hidden="true"></i>Pardavimo ženklas ant pastato</li>
@@ -93,7 +93,7 @@
                         <li><i class="fa fa-check" aria-hidden="true"></i>Savaitinės atąskaitos esant poreikiui</li>
                         <li><i class="fa fa-check" aria-hidden="true"></i>Savaitinės atąskaitos esant poreikiui</li>
                     </ul>
-                    <a href="#." class="btn btn-blue btn-rounded width-100 btn-large">Užsisakykite dabar</a>
+                    <a href="#." class="btn btn-blue btn-rounded width-100 btn-large margin-20px-t">Užsisakykite dabar</a>
                 </div>
             </div>
         </div>

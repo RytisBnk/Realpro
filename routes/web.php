@@ -26,7 +26,10 @@ Route::get('/about', function(){
 Route::get('/plans', function(){
     return view('nav.plans');
 })->name('plans');;
-Auth::routes();
+Route::get('/faq', function(){
+    return view('faq');
+})->name('faq');
+// Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
@@ -44,7 +47,6 @@ Route::get('/redirect', 'PayseraController@redirect')->name('redirect');
 Route::get('/callback', 'PayseraController@callback')->name('callback');
 
 // ordering routes
-Route::middleware(['auth'])->group(function(){
     Route::get('/checkout', 'OrderController@create')->name('checkout');
 
     Route::get('/order/list', 'OrderController@showAll')->name('order.list');
@@ -56,7 +58,6 @@ Route::middleware(['auth'])->group(function(){
     Route::delete('/order/delete', 'OrderController@destroy');
 
     //Route::get('/invoicetest', 'InvoiceTestController@createInvoice')->name('invoice.test');
-});
 
 Route::post('/upload', ['as' => 'upload', 'uses' => 'ImageController@upload']);
 Route::get('/plan/{id}', 'OrderController@storeSelectedPlan')->name('plan');

@@ -39,6 +39,8 @@
 </head>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="90" class="side-nav">
+    <?php 
+    /*
     <div id="loader">
         <div class="loader-inner">
             <div class="spinner">
@@ -46,7 +48,8 @@
                 <div class="dot2"></div>
             </div>
         </div>
-    </div>
+    </div> */
+    ?>
 
     <!-- start header -->
     <header class="sticky header-appear">
@@ -58,23 +61,26 @@
                         <a href="{{ route('index') }}" title="Logo" class="logo"><img src="img/logo.png"
                                                                               class="logo-dark" alt="realpro"><img
                             src="img/logo.png" alt="realpro" class="logo-light default"></a>
+                        <div style="display: inline-block; margin-left: 20px;">
+                            +370 6126 6668
+                        </div>
                     </div>
                     <!-- end logo -->
                     <div class="col-md-7 col-xs-2 width-auto pull-right accordion-menu xs-no-padding-right hidden-sm hidden-xs">
                         <div class="navbar-collapse collapse pull-right" id="navbar-collapse-toggle-1">
-                            <ul id="accordion" class="nav navbar-nav navbar-left no-margin alt-font text-normal" data-in="fadeIn" data-out="fadeOut">
+                            <ul class="nav navbar-nav navbar-left no-margin alt-font text-normal">
                                 <!-- start menu item -->
-                                <li>
+                                <li class="top-navbar-link">
                                     <a href="{{ route('features') }}">Kaip tai veikia</a>
                                 </li>
-                                <li>
+                                <li class="top-navbar-link">
                                     <a href="{{ route('about') }}">Apie mus</a>
                                 </li>
-                                <li>
+                                <li class="top-navbar-link">
                                     <a href="{{ route('plans') }}">Kainoraštis</a>
                                 </li>
-                                <li>
-                                    <a href="{{ route('contact') }}">Kontaktai</a>
+                                <li class="top-navbar-link">
+                                    <a href="{{ route('contact') }}" id="top-left-nav-item">Kontaktai</a>
                                 </li>
                             </ul>
                         </div>
@@ -125,29 +131,67 @@
 
     @yield('content')
 
-    <!--footer Start-->
     <footer class="bg-extra-dark-gray padding-30px-tb text-center">
-        <div class="footer-widget-area">
-            <div class="container">
-                <div class="row">
-                    <div class="medium-icon social-icon-style-3 social_icon list-inline margin-20px-top">
-                        <a class="facebook text-white facebook-bg-hvr wow fadeInUp" data-wow-duration=".5s" href="http://facebook.com"><i class="fa fa-facebook"
-                                                                                                                         aria-hidden="true"></i><span></span></a>
-                        <a class="twitter text-white twitter-bg-hvr wow fadeInDown" data-wow-duration=".5s" href="#."><i class="fa fa-twitter"
-                                                                                                                         aria-hidden="true"></i><span></span></a>
-                        <a class="pinterest text-white pinterest-bg-hvr wow fadeInUp" data-wow-duration=".5s" href="#."><i class="fa fa-pinterest-p"
-                                                                                                                           aria-hidden="true"></i><span></span></a>
-                        <a class="google text-white google-bg-hvr wow fadeInDown" data-wow-duration=".5s" href="#."><i class="fa fa-google"
-                                                                                                                       aria-hidden="true"></i><span></span></a>
-                    </div>
-                </div>
-                <p class="text-white text-large margin-10px-bottom margin-20px-top">2018 © Realpro.lt</p>
-                <p class="text-light-gray margin-10px-bottom"> UAB "Emiras", įmonės kodas 304836394, Tel. nr. +370 612 66 668</p>
-            </div>
+        <div class="medium-icon social-icon-style-3 social_icon list-inline margin-20px-top">
+            <a class="facebook text-white facebook-bg-hvr wow fadeInUp" data-wow-duration=".5s" href="http://facebook.com"><i class="fa fa-facebook"
+                                                                                                                        aria-hidden="true"></i><span></span></a>
+            <a class="twitter text-white twitter-bg-hvr wow fadeInDown" data-wow-duration=".5s" href="#."><i class="fa fa-twitter"
+                                                                                                                        aria-hidden="true"></i><span></span></a>
+            <a class="pinterest text-white pinterest-bg-hvr wow fadeInUp" data-wow-duration=".5s" href="#."><i class="fa fa-pinterest-p"
+                                                                                                                        aria-hidden="true"></i><span></span></a>
+            <a class="google text-white google-bg-hvr wow fadeInDown" data-wow-duration=".5s" href="#."><i class="fa fa-google" 
+                                                                                                                        aria-hidden="true"></i><span></span></a>
         </div>
-
+        <div class="columns is-centered is-multiline">
+            <div class="column is-1"></div>
+            <div class="column">
+                <h2 class="footer-heading">Navigacija</h2>
+                <div class="footer-link">
+                    <a href="{{ route('features') }}">Kaip tai veikia</a>
+                </div>
+                <div class="footer-link">
+                    <a href="{{ route('about') }}">Apie mus</a>
+                </div>
+                <div class="footer-link">
+                    <a href="{{ route('plans') }}">Kainoraštis</a>
+                </div>
+                <div class="footer-link">
+                    <a href="{{ route('contact') }}">Kontaktai</a>
+                </div>
+            </div>
+            <div class="column">
+                <h2 class="footer-heading">Klientams</h2>
+                <div class="footer-link">
+                    <a href="{{ route('terms') }}">Taisyklės ir sąlygos</a>
+                </div>
+                <div class="footer-link">
+                    <a href="{{ route('privacy') }}">Privatumo politika</a>
+                </div>
+            </div>
+            <div class="column">
+                <h2 class="footer-heading">Kontaktai</h2>
+                <div class="footer-text">
+                    +370 6126 6668
+                </div>
+                <div class="footer-text">
+                    info@realpro.lt
+                </div>
+            </div>
+            <div class="column">
+                <h2 class="footer-heading">Rekvizitai</h2>
+                <div class="footer-text">
+                    UAB "Emiras"
+                </div>
+                <div class="footer-text">
+                    Girulių g. 10, LT-12112 Vilnius
+                </div>
+                <div class="footer-text">
+                    Įmonės kodas: 304836394
+                </div>
+            </div>
+            <div class="column is-1"></div>
+        </div>
     </footer>
-    <!-- end footer -->
 
     <!-- javascript libraries -->
     <script src="js/jquery-3.2.1.js"></script>
@@ -174,6 +218,8 @@
     <script src="revolution/js/jquery.themepunch.revolution.min.js"></script>
     <!-- setting -->
     <script src="js/main.js"></script>
+    <script src="js/tab-layout.js"></script>
+    <script src="js/question-dropdowns.js"></script>
 </body>
 
 </html>

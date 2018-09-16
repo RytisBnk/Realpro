@@ -1,9 +1,9 @@
 @extends('layouts.parallax') 
 @section('content')
 <section id="top">
-    <h2>Patikima ekspertų pagalba perkant, parduodant ir nuomojant nekilnojamą turtą.</h2>
-    <h1>Parduok savo būstą lengvai ir greitai</h1>
-    <a href="{{ route('features') }}" class="btn btn-rounded btn-blue btn-hvr-white btn-large" id="btn-more-info">Sužinoti daugiau</a>
+    <h1>Pamirškite viską, ką žinojote apie NT agentus!</h1>
+    <h2>Tikra. Skaidru. Paprasta. - 99€ ir jokių komisinių.</h2>
+    <a href="{{ route('features') }}" class="btn btn-rounded btn-blue btn-hvr-white btn-large" id="btn-more-info">Prisijungti prie revoliucijos</a>
 </section>
 
 <!-- start feature -->
@@ -28,7 +28,7 @@
                     <div class="icon-box bg-blue">
                         <i class="fa fa-calendar-check-o" aria-hidden="true"></i>
                     </div>
-                    <div class="text-large text-extra-dark-gray margin-20px-bottom">Pasirenkate paslaugų paketą</div>
+                    <div class="text-large text-extra-dark-gray margin-20px-bottom">1. Pasirenkate paslaugų paketą</div>
                     <p>Išsirenkite Jūsų poreikius atitinkantį planą ir užpildykite informacinę formą. Mūsų specialistai susisieks
                         su Jumis per ateinančias 12h ir suteiks papildomą informaciją.
                     </p>
@@ -41,7 +41,7 @@
                     <div class="icon-box bg-blue">
                         <i class="fa fa-group" aria-hidden="true"></i>
                     </div>
-                    <div class="text-large text-extra-dark-gray margin-20px-bottom">Paslaugų aktyvavimas</div>
+                    <div class="text-large text-extra-dark-gray margin-20px-bottom">2. Paslaugų aktyvavimas</div>
                     <p>Atsižvelgiant į pasirinktą planą, mūsų eksperstai aktyvuos ir atliks visas plane paminėtas paslaugas
                         per ateinančias 24 valandas po užsakymo įvykdymo.
                     </p>
@@ -54,7 +54,7 @@
                     <div class="icon-box bg-blue">
                         <i class="fa fa-comments-o" aria-hidden="true"></i>
                     </div>
-                    <div class="text-large text-extra-dark-gray margin-20px-bottom">Palikite tai mums</div>
+                    <div class="text-large text-extra-dark-gray margin-20px-bottom">3. Palikite tai mums</div>
                     <p>
                         Jūsų NT objekto informacija taps matoma šimtui tūkstančių potencialių pirkėjų, iš kurių atrinksime geriausią. Aptarnausime
                         visas susidomėjusias užklausas ir siūsime darbų ataskaitas Jums.
@@ -165,8 +165,8 @@
                         <li><i class="fa fa-check" aria-hidden="true"></i>Jūsų NT rodomas tūkstančiams pirkėjų</li>
                         <li><i class="fa fa-check" aria-hidden="true"></i>Savaitinės atąskaitos esant poreikiui</li>
                     </ul>
-                    <p class="plan-triplepoint">...</p>
-                    <a href="#." class="btn btn-blue btn-rounded width-100 btn-large">Užsisakykite dabar</a>
+                    <p class="plan-triplepoint"><a href="{{ route('plans') }}">daugiau...</a></p>
+                    <a href="{{ route('plan', 1) }}" class="btn btn-blue btn-rounded width-100 btn-large">Užsisakykite dabar</a>
                 </div>
             </div>
             <div class="col-md-4 col-sm-6 col-xs-12 sm-margin-30px-bottom">
@@ -185,13 +185,13 @@
                         <li><i class="fa fa-check" aria-hidden="true"></i>Detalus 2D aukšto planas</li>
                         <li><i class="fa fa-check" aria-hidden="true"></i>Pilnas NT objekto aprašymas</li>
                     </ul>
-                    <p class="plan-triplepoint">...</p>
-                    <a href="#." class="btn btn-white btn-rounded width-100 btn-large">Užsisakykite dabar</a>
+                    <p class="plan-triplepoint"><a href="{{ route('plans') }}" style="color: #FFFFFF;" id="middle-plan">daugiau...</a></p>
+                    <a href="{{ route('plan', 2) }}" class="btn btn-white btn-rounded width-100 btn-large">Užsisakykite dabar</a>
                 </div>
             </div>
             <div class="col-md-4 col-sm-12 col-xs-12">
                 <div class="price-item text-left">
-                    <h6 class="alt-font font-weight-500 margin-10px-bottom">Praktiškiausias</h6>
+                    <h6 class="alt-font font-weight-500 margin-10px-bottom">Namams</h6>
                     <div class="price-tag clearfix alt-font">
                         <span class="price alt-font text-dark-gray">
                                         <span class="currency">299</span>
@@ -206,8 +206,8 @@
                         <li><i class="fa fa-check" aria-hidden="true"></i>Pardavimo ženklas ant pastato</li>
                         <li><i class="fa fa-check" aria-hidden="true"></i>Premium skelbimai portaluose</li>
                     </ul>
-                    <p class="plan-triplepoint">...</p>
-                    <a href="#." class="btn btn-blue btn-rounded width-100 btn-large">Užsisakykite dabar</a>
+                    <p class="plan-triplepoint"><a href="{{ route('plans') }}">daugiau...</a></p>
+                    <a href="{{ route('plan', 3) }}" class="btn btn-blue btn-rounded width-100 btn-large">Užsisakykite dabar</a>
                 </div>
             </div>
         </div>
@@ -219,7 +219,7 @@
 <!-- start price -->
 
 <!-- testimonials -->
-<section class="testimonial-two no-padding-top bg-very-light-gray">
+<section class="testimonial-two no-padding-top reviews-bg">
     <div class="parallax testimonial-two-bg no-transition" id="reviews-bg">
         <div class="container">
             <div class="row">

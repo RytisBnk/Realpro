@@ -84,15 +84,7 @@ class OrderController extends Controller
         {
             session(['selectedPlan' => $this->planai[$planID],
                 'redirectRoute' => 'checkout']);
-            if (!Auth::check())
-            {
-                return redirect()->route('register');
-            }
-            else if (Order::where('user_id', Auth::id())->count() > 0)
-            {
-                return redirect()->route('order.list');
-            }
-            else return redirect()->route('checkout');
+            return redirect()->route('checkout');
         }    
     }
 
@@ -190,23 +182,22 @@ class OrderController extends Controller
     }
 
     public function store(Request $request)
-    {
-        $order = new Order;
-        $order->user_id = Auth::id();
-        $order = $this->getOrderInformation($request, $order);
-        $order->planas = session('selectedPlan');
-
-
-        $order->busena = 'neapmoketa';
-        $order->save();
-        $order->order_number = 100000 + $order->id;
-        $order->save();
-
-        $user = User::find(Auth::id());
+    {   
+        $user = new User;
+        $user->email = $request->input('email');
         $user->name = $request->input('vardas');
         $user->tel_nr = $request->input('tel');
         $user->gimimo_data = $request->input('gimimas');
         $user->save();
+
+        $order = new Order;
+        $order->user_id = $user->id;
+        $order = $this->getOrderInformation($request, $order);
+        $order->planas = session('selectedPlan');
+        $order->busena = 'neapmoketa';
+        $order->save();
+        $order->order_number = 100000 + $order->id;
+        $order->save();
 
         session(['orderId' => $order->order_number]);
         session(['price' => $this->planuKainos[$order->planas] * 100]);

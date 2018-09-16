@@ -22,7 +22,6 @@ class PayseraController extends Controller
             'callbackurl' => $config['callbackurl'],
             'version' => $config['version'],
             'test' => $config['test'],
-            'p_email' => User::find(Auth::id())->email,
             'amount' => session('price'),
         ];
 
