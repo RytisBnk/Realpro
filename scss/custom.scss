@@ -75,10 +75,10 @@ html, body {
 }
 #price {
     padding-bottom: 30px;
-    padding-top: 80px;
+    padding-top: 40px;
 }
 #feature {
-    padding-top: 80px;
+    padding-top: 30px;
     padding-bottom: 30px;
 }
 @media screen and (min-width: 768px) {
@@ -101,30 +101,32 @@ html, body {
     color: #3379BA;
 }
 .footer-heading {
-    color: #FFFFFF;
+    color: #19ABC5;
     font-size: 20px;
     text-align: left;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    font-weight: 600;
 }
 .footer-link {
     text-align: left;
     a {
-        color: #8C8C8C;
+        //color: #8C8C8C;
+        color: #FFFFFF;
         transition: color 1s;
+        font-weight: 600;
+        font-size: 15px;
     }
     a:hover {
-        color: #FFFFFF;
+        //color: #FFFFFF;
+        color: #19ABC5;
     }
 }
 .footer-text {
-    color: #8C8C8C;
+    color: #FFFFFF;;
     text-align: left;
-}
-@media screen and (max-width: 769px) {
-    .footer-heading, 
-    .footer-link,
-    .footer-text {
-        text-align: center;
-    }
+    font-weight: 600;
+    font-size: 15px;
 }
 @media screen and (max-width: 374px) {
     #btn-more-info {
@@ -143,11 +145,6 @@ html, body {
 }
 #top-left-nav-item {
     padding-right: 25px;
-}
-.packages-scrollable {
-    overflow-y: auto;
-    height: 200px;
-    margin-bottom: 20px;
 }
 .margin-20px-t {
     margin-top: 20px;
@@ -219,4 +216,46 @@ html, body {
 .faq-heading-subtext {
     padding: 20px 50px;
     padding-bottom: 0;
+}
+.footer-sizing {
+    padding-top: 30px;
+    height: 300px;
+}
+@media screen and (max-width: 769px) {
+    .footer-heading, 
+    .footer-link,
+    .footer-text {
+        text-align: center;
+    }
+    .footer-sizing {
+        height: 550px;;
+    }
+}
+#contact {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.packages-collapse {
+    overflow: hidden;
+    transition: max-height 0.5s ease-out;
+}
+.plan-dropdown {
+    text-align: center;
+    img {
+        width: 20px;
+        height: 20px;
+    }
+    button {
+        background: transparent;
+        border: none;
+    }
+}
+.solid-black-line-1px {
+    margin-top: 15px;
+    height: 0;
+    width: 100%;
+    border-bottom: 1px solid grey;
+}
+.flipped-180 {
+    transform: rotate(180deg);
 }

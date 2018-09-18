@@ -139,7 +139,7 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-9 text-center center-col last-paragraph-no-margin">
-                <div class="sec-title margin-100px-bottom">
+                <div class="sec-title margin-100px-bottom" style="margin-bottom: 50px;">
                     <div class="text-large text-red margin-10px-bottom font-weight-400 text-blue">Pasirinkite jūsų poreikius atitinkantį planą.</div>
                     <h3 class="text-capitalize alt-font text-extra-dark-gray font-weight-300">
                         Mūsų planai</h3>

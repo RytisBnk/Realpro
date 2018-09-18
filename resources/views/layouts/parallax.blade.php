@@ -62,7 +62,7 @@
                                                                               class="logo-dark" alt="realpro"><img
                             src="img/logo.png" alt="realpro" class="logo-light default"></a>
                         <div style="display: inline-block; margin-left: 20px;">
-                            +370 6126 6668
+                            <a href="tel:+37061266668">+370 6126 6668</a>
                         </div>
                     </div>
                     <!-- end logo -->
@@ -131,18 +131,18 @@
 
     @yield('content')
 
-    <footer class="bg-extra-dark-gray padding-30px-tb text-center">
-        <div class="medium-icon social-icon-style-3 social_icon list-inline margin-20px-top">
+    <footer class="bg-extra-dark-gray text-center footer-sizing">
+        <div class="medium-icon social-icon-style-3 social_icon list-inline" style="margin-top: -20px;">
             <a class="facebook text-white facebook-bg-hvr wow fadeInUp" data-wow-duration=".5s" href="http://facebook.com"><i class="fa fa-facebook"
                                                                                                                         aria-hidden="true"></i><span></span></a>
             <a class="twitter text-white twitter-bg-hvr wow fadeInDown" data-wow-duration=".5s" href="#."><i class="fa fa-twitter"
                                                                                                                         aria-hidden="true"></i><span></span></a>
-            <a class="pinterest text-white pinterest-bg-hvr wow fadeInUp" data-wow-duration=".5s" href="#."><i class="fa fa-pinterest-p"
-                                                                                                                        aria-hidden="true"></i><span></span></a>
             <a class="google text-white google-bg-hvr wow fadeInDown" data-wow-duration=".5s" href="#."><i class="fa fa-google" 
                                                                                                                         aria-hidden="true"></i><span></span></a>
         </div>
-        <div class="columns is-centered is-multiline">
+        <div style="border-bottom: 2px solid #FFFFFF; margin: 0 50px; margin-top: 15px;">
+        </div>
+        <div class="columns is-centered is-multiline wow fadeInUp">
             <div class="column is-1"></div>
             <div class="column">
                 <h2 class="footer-heading">Navigacija</h2>
@@ -189,7 +189,8 @@
                     Įmonės kodas: 304836394
                 </div>
             </div>
-            <div class="column is-1"></div>
+        </div>
+        <div style="border-bottom: 2px solid #FFFFFF; margin: 0 50px; margin-top: 15px;">
         </div>
     </footer>
 

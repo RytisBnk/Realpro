@@ -40,7 +40,7 @@
                         </span>
                         <span class="price-text text-dark-gray no-margin">It has survived not only five centuries, but also the leap into electronic.</span>
                     </div>
-                    <ul class="packages packages-scrollable">
+                    <ul class="packages packages-collapse" id="plan-1" style="max-height: 190px;">
                         <li><i class="fa fa-check" aria-hidden="true"></i>Nemokamas NT objekto įvertinimas</li>
                         <li><i class="fa fa-check" aria-hidden="true"></i>Pardavimo progresas ir derybos</li>
                         <li><i class="fa fa-check" aria-hidden="true"></i>Jūsų NT rodomas tūkstančiams pirkėjų</li>
@@ -49,6 +49,10 @@
                         <li><i class="fa fa-check" aria-hidden="true"></i>Savaitinės atąskaitos esant poreikiui</li>
                         <li><i class="fa fa-check" aria-hidden="true"></i>Savaitinės atąskaitos esant poreikiui</li>
                     </ul>
+                    <div class="plan-dropdown">
+                        <div class="solid-black-line-1px"></div>
+                        <button id="plan-1-btn" onclick="showPlanDropdown('plan-1', 'plan-1-btn')"><img src="img/down-arrow-02.png"></button>
+                    </div>
                     <a href="#." class="btn btn-blue btn-rounded width-100 btn-large margin-20px-t">Užsisakykite dabar</a>
                 </div>
             </div>
@@ -62,7 +66,7 @@
                         </span>
                         <span class="price-text text-white no-margin">It has survived not only five centuries, but also the leap into electronic.</span>
                     </div>
-                    <ul class="packages packages-scrollable">
+                    <ul class="packages packages-collapse" id="plan-2" style="max-height: 190px;">
                         <li><i class="fa fa-check" aria-hidden="true"></i>Visos 'Optimalaus' plano paslaugos</li>
                         <li><i class="fa fa-check" aria-hidden="true"></i>Profesionalaus fotografo nuotraukos</li>
                         <li><i class="fa fa-check" aria-hidden="true"></i>Detalus 2D aukšto planas</li>
@@ -71,6 +75,10 @@
                         <li><i class="fa fa-check" aria-hidden="true"></i>Savaitinės atąskaitos esant poreikiui</li>
                         <li><i class="fa fa-check" aria-hidden="true"></i>Savaitinės atąskaitos esant poreikiui</li>
                     </ul>
+                    <div class="plan-dropdown">
+                        <div class="solid-black-line-1px"></div>
+                        <button id="plan-2-btn" onclick="showPlanDropdown('plan-2', 'plan-2-btn')"><img src="img/down-arrow-02.png"></button>
+                    </div>
                     <a href="#." class="btn btn-white btn-rounded width-100 btn-large margin-20px-t">Užsisakykite dabar</a>
                 </div>
             </div>
@@ -84,7 +92,7 @@
                         </span>
                         <span class="price-text text-dark-gray no-margin ">It has survived not only five centuries, but also the leap into electronic.</span>
                     </div>
-                    <ul class="packages packages-scrollable">
+                    <ul class="packages packages-collapse" id="plan-3" style="max-height: 190px;">
                         <li><i class="fa fa-check" aria-hidden="true"></i>Visos 'Populiariausio' plano paslaugos</li>
                         <li><i class="fa fa-check" aria-hidden="true"></i>Iškelti/išryškinti NT skelbimai</li>
                         <li><i class="fa fa-check" aria-hidden="true"></i>Pardavimo ženklas ant pastato</li>
@@ -93,12 +101,17 @@
                         <li><i class="fa fa-check" aria-hidden="true"></i>Savaitinės atąskaitos esant poreikiui</li>
                         <li><i class="fa fa-check" aria-hidden="true"></i>Savaitinės atąskaitos esant poreikiui</li>
                     </ul>
+                    <div class="plan-dropdown">
+                        <div class="solid-black-line-1px"></div>
+                        <button id="plan-3-btn" onclick="showPlanDropdown('plan-3', 'plan-3-btn')"><img src="img/down-arrow-02.png"></button>
+                    </div>
                     <a href="#." class="btn btn-blue btn-rounded width-100 btn-large margin-20px-t">Užsisakykite dabar</a>
                 </div>
             </div>
         </div>
 
     </div>
+    <script src="js/plan-dropdown.js"></script>
 </section>
 <!-- start price -->
 @endsection
