@@ -36,6 +36,8 @@
     <link rel="stylesheet" href="css/style.css" />
     <!-- Custom Style -->
     <link rel="stylesheet" href="css/custom.css" />
+
+    @yield('style')
 </head>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="90" class="side-nav">
@@ -61,8 +63,13 @@
                         <a href="{{ route('index') }}" title="Logo" class="logo"><img src="img/logo.png"
                                                                               class="logo-dark" alt="realpro"><img
                             src="img/logo.png" alt="realpro" class="logo-light default"></a>
-                        <div style="display: inline-block; margin-left: 20px;">
+                        <div class="contact-detail">
+                            <i style="margin-left: 30px;" class="fa fa-phone"></i>
                             <a href="tel:+37061266668">+370 6126 6668</a>
+                        </div>
+                        <div class="contact-detail">
+                            <i style="margin-left: 30px;" class="fa fa-envelope"></i>
+                            <a href="mailto:info@realpro.lt">info@realpro.lt</a>
                         </div>
                     </div>
                     <!-- end logo -->
@@ -94,12 +101,14 @@
                     <div class="sidebar_menu">
                         <nav class="pushmenu pushmenu-right">
                             <a class="push-logo" href="#."><img src="img/logo.png" alt="logo"></a>
-                            <div class="medium-icon side-nav-social-icon list-inline">
+                            <div class="medium-icon side-nav-social-icon list-inline" style="padding-right: 0; margin-right: 0;">
                                 <a class="facebook-bg-hvr" href="#."><i class="fa fa-facebook" aria-hidden="true"></i></a>
 
                                 <a class="pinterest-bg-hvr" href="#."><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>
 
                                 <a class="instagram-bg-hvr" href="#."><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                                <a class="phone-icon" href="#"><i class="fa fa-phone"></i></a>
+                                <a class="email-icon" href="#"><i class="fa fa-envelope"></i></a>
                             </div>
                             <ul class="push_nav centered">
                                 <li class="clearfix">
@@ -193,7 +202,6 @@
         <div style="border-bottom: 2px solid #FFFFFF; margin: 0 50px; margin-top: 15px;">
         </div>
     </footer>
-
     <!-- javascript libraries -->
     <script src="js/jquery-3.2.1.js"></script>
     <script src="js/bootstrap.min.js"></script>
@@ -219,8 +227,7 @@
     <script src="revolution/js/jquery.themepunch.revolution.min.js"></script>
     <!-- setting -->
     <script src="js/main.js"></script>
-    <script src="js/tab-layout.js"></script>
-    <script src="js/question-dropdowns.js"></script>
+    @yield('scripts')
 </body>
 
 </html>

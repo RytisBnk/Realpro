@@ -48,17 +48,13 @@ class OrderController extends Controller
     private $planai = [
         1 => 'Optimalus',
         2 => 'Populiariausias',
-        3 => 'Praktiškiausias',
-        4 => 'Ypatingas',
-        5 => 'Komercinis'
+        3 => 'Namams',
     ];
 
     private $planuKainos = [
         'Optimalus' => 99,
         'Populiariausias' => 199,
-        'Praktiškiausias' => 299,
-        'Ypatingas' => 399,
-        'Komercinis' => 399
+        'Namams' => 299,
     ];
 
     public function storeSelectedPlan($planID)
@@ -90,7 +86,7 @@ class OrderController extends Controller
 
     public function create()
     {
-        return view('checkout');
+        return view('checkout-new');
     }
 
     public function showAll()

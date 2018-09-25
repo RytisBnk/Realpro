@@ -21,9 +21,9 @@
         <div class="row">
             <div class="col-lg-9 text-center center-col last-paragraph-no-margin">
                 <div class="sec-title margin-100px-bottom">
-                    <div class="text-large text-red margin-10px-bottom font-weight-400 text-blue">Have a Question!!?</div>
+                    <div class="text-large text-red margin-10px-bottom font-weight-400 text-blue">Turite klausimų!!?</div>
                     <h3 class="text-capitalize alt-font text-extra-dark-gray font-weight-300">
-                        Lets Get In Touch</h3>
+                        Susisiekite su mumis</h3>
                 </div>
             </div>
         </div>
@@ -35,19 +35,17 @@
             </div>
             <div class="col-sm-5">
                 <div class="address-block">
-                    <div class="text-small text-dark-gray font-weight-400 margin-20px-bottom">Reone Agency Worldwide</div>
+                    <?php //<div class="text-small text-dark-gray font-weight-400 margin-20px-bottom">Reone Agency Worldwide</div> ?>
                     <h5 class="area-title text-capitalize alt-font text-blue margin-20px-bottom font-weight-400 sm-width-100 xs-width-100">
-                        Agency office, <span class="text-dark-gray">Landon</span></h5>
-                    <p class="text-medium-gray">Address: 309, New Cavendish St, EC1Y 3WK</p>
-                    <p class="text-medium-gray">0800 214 5252</p>
-                    <p><a href="#." class="text-medium-gray">polpo@reone.co.au</a></p>
-                    <p class="text-medium-gray">Mon-Fri: 9am-5pm</p>
+                        UAB "Emiras" <?php //<span class="text-dark-gray">Landon</span> ?></h5>
+                    <p class="text-medium-gray">Adresas: Girulių g. 10, LT-12112, Vilnius</p>
+                    <p class="text-medium-gray">Įmonės kodas: 304836394</p>
+                    <p><a href="#." class="text-medium-gray">info@realpro.lt</a></p>
+                    <p class="text-medium-gray">+370 6126 6668</p>
                     <div class="adress-icon">
                         <a href="#." class="facebook-bg-hvr"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                        <a href="#." class="pinterest-bg-hvr"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>
                         <a href="#." class="twitter-bg-hvr"><i class="fa fa-twitter" aria-hidden="true"></i></a>
                         <a href="#." class="google-bg-hvr"><i class="fa fa-google" aria-hidden="true"></i></a>
-                        <a href="#." class="pinterest-bg-hvr"><i class="fa fa-dribbble" aria-hidden="true"></i></a>
                         <a href="#." class="instagram-bg-hvr"><i class="fa fa-instagram" aria-hidden="true"></i></a>
                     </div>
                 </div>
@@ -64,16 +62,16 @@
             <div class="contact-form">
                 <form class="margin-50px-bottom">
                     <div class="col-xs-12 no-padding">
-                        <input type="text" class="form-control margin-30px-bottom" placeholder="Your Name">
+                        <input type="text" class="form-control margin-30px-bottom" placeholder="Jūsų vardas">
                     </div>
                     <div class="col-xs-12 no-padding">
-                        <input type="email" class="form-control margin-30px-bottom" placeholder="Your Email">
+                        <input type="email" class="form-control margin-30px-bottom" placeholder="Jūsų El. Paštas">
                     </div>
 
                     <div class="col-xs-12 no-padding">
-                        <textarea class="form-control margin-50px-bottom" placeholder="Your Message"></textarea>
+                        <textarea class="form-control margin-50px-bottom" placeholder="Jūsų žinutė"></textarea>
                     </div>
-                    <a href="#." class="btn btn-transparent-blue btn-large width-100">Get Started Now</a>
+                    <a href="#." class="btn btn-transparent-blue btn-large width-100">Susisiekti</a>
                 </form>
             </div>
         </div>

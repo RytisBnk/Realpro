@@ -152,12 +152,12 @@
             <div class="col-md-4 col-sm-6 col-xs-12 sm-margin-30px-bottom">
                 <div class="price-item text-left">
                     <h6 class="alt-font font-weight-500 margin-10px-bottom">Optimalus</h6>
-                    <div class="price-tag clearfix alt-font" id="plan-populiariausias">
+                    <div class="price-tag clearfix alt-font" id="plan-populiariausias" style="height: 284px;">
                         <span class="price alt-font text-dark-gray">
                                         <span class="currency">&ensp;&ensp;99</span>
                         <span class="sign">&euro;</span>
                         </span>
-                        <span class="price-text text-dark-gray no-margin">Paprastas paketas tiems, kurie nori pigiai ir lengvai parduoti savo NT tik už 99€ . Gera kaina, įspūdingas greitis ir svarbiausia - JOKIŲ KOMISINIŲ UŽ PARDAVIMĄ!</span>
+                        <span class="price-text text-dark-gray no-margin">Paprastas paketas norintiems pigiai ir lengvai parduoti savo NT. Po konsultacijos su NT pardavimo ekspertu, jūsų skelbimą greitai ir efektyviai patalpinsime į visus populiariausius Lietuvos portalus, užtikrinančius greitą pardavimą. Paslaugų mokestis – vos 99€. Na ir svarbiausia, jokių papildomų komisinių! </span>
                     </div>
                     <ul class="packages">
                         <li><i class="fa fa-check" aria-hidden="true"></i>Nemokamas NT objekto įvertinimas</li>
@@ -172,12 +172,12 @@
             <div class="col-md-4 col-sm-6 col-xs-12 sm-margin-30px-bottom">
                 <div class="price-item center text-left">
                     <h6 class="alt-font font-weight-500 margin-10px-bottom">Populiariausias</h6>
-                    <div class="price-tag clearfix alt-font">
+                    <div class="price-tag clearfix alt-font" style="height: 284px;">
                         <span class="price alt-font text-white">
                                         <span class="currency">199</span>
                         <span class="sign">&euro;</span>
                         </span>
-                        <span class="price-text text-white no-margin">Pamėgtas paketas tų, kurie vertina savo laiką ir supranta, kad kiekvienas sutaupytas euras yra uždirbtas euras. Tik 199€, jokių komisinių! Geriausia! - jokie rūpesčiai dėl NT pardavimo Jūsų nebekamuos! </span>
+                        <span class="price-text text-white no-margin">Paketas gyvenantiems posakiu ,,laikas-pinigai“. Neturintiems laiko ieškoti profesionalių fotografų būsto nuotraukoms ar rašyti NT aprašymus. Kruopštus ir kokybiškas darbas greitai, vėlgi – jokių komisinių! 199€</span>
                     </div>
                     <ul class="packages">
                         <li><i class="fa fa-check" aria-hidden="true"></i>Visos 'Optimalaus' plano paslaugos</li>
@@ -197,7 +197,7 @@
                                         <span class="currency">299</span>
                         <span class="sign">&euro;</span>
                         </span>
-                        <span class="price-text text-dark-gray no-margin">Geriausias paketas nuosavų valdų savininkams, kurie tiki mūsų žodžiais:  Greitai. Saugiai. Atsakingai. Pigiai, ir palieka visą NT objekto pateikimo ir pardavimo procesą Mums vos už 299€ ir be JOKIŲ PAPILDOMŲ IŠLAIDŲ!
+                        <span class="price-text text-dark-gray no-margin">Šį planą pamatę klientai aikteli, tad mes nutarėme jį vadinti GASP.  Tai yra paketas norintiems Greitai, Aiškiai, Saugiai ir Pigiai. Mes pasirūpinsime NT objekto pateikimo ir pardavimo procesu. Į planą įeina viskas, kas yra siūloma ankstesniuose planuose, tik dar daugiau. Jūsų skelbimai internete bus iškelti/išryškinti, o prie pastato pastatysime pardavimo ženklą. Užtikrintas greitas pardavimas be jokių papildomų išlaidų!
                         </span>
                     </div>
                     <ul class="packages">

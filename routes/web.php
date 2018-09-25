@@ -11,6 +11,9 @@
 |
 */
 
+Route::get('/checkout/old', function(){
+    return view('checkout');
+});
 Route::get('/', function () {
     return view('nav.homepage');
 })->name('index');

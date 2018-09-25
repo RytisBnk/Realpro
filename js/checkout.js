@@ -35,7 +35,7 @@ $('#images').on("change",function(){
     $("#myForm").ajaxSubmit(options);
 });
 
-  $('#tipas').on('change', function () {
+  $('#property-type').on('change', function () {
     var tipas = $(this).val();
 
     if (tipas == 'namas') {
@@ -141,6 +141,23 @@ $('#images').on("change",function(){
     }
   });
 });
+  $('#aukstu_skaicius').show();
+  $('#kambariu_skaicius').show();
+  $('#aukstas').show();
+  $('#renovacija').show();
+  $('#statybos_metai').show();
+  $('#pastato_tipas').show();
+  $('#sklypas').hide();
+  $('#namo_tipas').hide();
+  $('#irengimas').show();
+  $('#sklypo_hr').show();
+  $('#sildymas').show();
+  $('#renovuotas').html('Butas renovuotas');
+  $('#paskirtis').hide();
+  $('#paskirtis_kom').hide();
+  $('#talpa').hide();
+  $('#garazo_tipas').hide();
+  $('#garazas_hr').show();
 document.addEventListener('DOMContentLoaded', function () {
 
 // Get all "navbar-burger" elements
