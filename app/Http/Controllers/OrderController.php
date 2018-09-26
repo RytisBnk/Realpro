@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Order;
 use App\User;
 use Auth;
+use Storage;
 use App\Image;
 use Symfony\Component\HttpFoundation\File\UploadedFile;
 
@@ -59,29 +60,9 @@ class OrderController extends Controller
 
     public function storeSelectedPlan($planID)
     {
-        $orders = Order::where('user_id', Auth::id())->get();
-        if ($orders->count() > 0)
-        {
-            $order = $orders->first();
-            if ($planID > array_search($order->planas, $this->planai) && $order->busena == 'apmoketa')
-            {
-                $price = ($this->planuKainos[$this->planai[$planID]] - $this->planuKainos[$order->planas]) * 100;
-                $newOrder = $order->replicate();
-                $newOrder->planas = $this->planai[$planID];
-                $newOrder->busena = 'atnaujinama';
-                $newOrder->save();
-                $newOrder->order_number = 100000 + $newOrder->id;
-                $newOrder->save();
-                session(['price' => $price, 'orderId' => $newOrder->order_number]);
-                return redirect()->route('redirect');
-            }
-        }
-        else 
-        {
-            session(['selectedPlan' => $this->planai[$planID],
+        session(['selectedPlan' => $this->planai[$planID],
                 'redirectRoute' => 'checkout']);
-            return redirect()->route('checkout');
-        }    
+        return redirect()->route('checkout');   
     }
 
     public function create()
@@ -195,9 +176,23 @@ class OrderController extends Controller
         $order->order_number = 100000 + $order->id;
         $order->save();
 
+        $identifiers = session('identifiers');
+        $imgCounter = 0;
+        foreach ($identifiers as $identifier) {
+            $images = Image::where('filename', 'LIKE', 'files/temp_'. $identifier . '%')->get();
+            foreach ($images as $image) {
+                $image->order_id = $order->id;
+                $fileExtension = substr($image->filename, -4);
+                $filename = 'files/' . $image->order_id . '_' . $imgCounter++ . $fileExtension;
+                Storage::move($image->filename, $filename);
+                $image->filename = $filename;
+                $image->save();
+            }
+        }
+
         session(['orderId' => $order->order_number]);
         session(['price' => $this->planuKainos[$order->planas] * 100]);
-        return redirect()->route('redirect');
+        //return redirect()->route('redirect');
     }
 
     public function update(Request $request, $id)

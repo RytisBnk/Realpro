@@ -14,7 +14,8 @@
     <!-- title -->
     <title>Lietuvos NT ekspertai: RealPro. Kaina nuo 99&euro;</title>
     <!-- favicon -->
-    <link rel="icon" href="images/fav-icon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://realpro.lt/img/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="https://realpro.lt/img/favicon-16x16.png">
     <!-- animation -->
     <link rel="stylesheet" href="css/animate.min.css" />
     <!-- bootstrap -->

@@ -18,15 +18,25 @@ class ImageController extends Controller
         if (isset($images))
         {
             $counter = 1;
-            foreach ($images as $file)
+            $timeOfDay = gettimeofday();
+            $identifier = date("Y-m-d") . '_' . $timeOfDay['usec'];
+            if ($request->session()->has('identifiers')) {
+                $request->session()->push('identifiers', $identifier);
+            } 
+            else {
+                $indentifiers = array();
+                $identifiers[] = $identifier;
+                session(['identifiers' => $identifiers]);
+            }
+            
+            foreach ($images as $file) 
             {
                 $extension = $file->getClientOriginalExtension();
-                $filename = Auth::id() . '_' . $counter . '.' . $extension;
+                $filename = "temp_" . $identifier . '_' . $counter . '.' . $extension;
                 $fullpath = $file->storeAs($this->storagePath, $filename);
                 $counter++;
 
                 $dbEntry = new Image;
-                $dbEntry->user_id = Auth::id();
                 $dbEntry->filename = $fullpath;
                 $dbEntry->save();
             }
