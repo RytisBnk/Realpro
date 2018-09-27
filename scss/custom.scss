@@ -554,7 +554,7 @@ html, body {
     width: 100%;
     position: absolute;
     left: 50%;
-    bottom: 380px;
+    bottom: 400px;
 }
 #image-field {
     position: absolute;
@@ -567,7 +567,7 @@ html, body {
 }
 @media screen and (max-width: 768px) {
     .ajax {
-        bottom: 360px;
+        bottom: 380px;
     }
 }
 input[type="file"] {
@@ -605,6 +605,25 @@ input[type="file"] {
     box-shadow: 0 0 0 2px rgba(50, 115, 220, .25);
     z-index: 3;
 }
-#progress3 { position:relative; background-color: #eeeeee; max-width:400px; padding: 1px; border-radius: 5000px; display: none; margin-top: 20px; }
-#bar3 { background-color: #12ce57; width:0%; height:20px; border-radius: 5000px; }
-#percent3 { position:absolute; display:inline-block; top:3px; left:48%; color: #fff; }
+#progress3 { 
+    position:relative; 
+    background-color: #eeeeee; 
+    max-width:400px; 
+    padding: 1px; 
+    border-radius: 5000px; 
+    display: none; 
+    margin-top: 20px; 
+}
+#bar3 { 
+    background-color: #12ce57; 
+    width:0%; 
+    height:20px; 
+    border-radius: 5000px; 
+}
+#percent3 { 
+    position:absolute; 
+    display:inline-block; 
+    top:3px; 
+    left:48%; 
+    color: #fff; 
+}

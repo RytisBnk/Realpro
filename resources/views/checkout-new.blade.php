@@ -2,6 +2,21 @@
 @section('content')
 
 <section id="checkout">
+    <div id="fb-root"></div>
+    <script>
+        (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js#xfbml=1&version=v2.12&autoLogAppEvents=1';
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+    </script>
+
+    <!-- Your customer chat code -->
+    <div class="fb-customerchat" attribution=install_email page_id="270623553670577" logged_in_greeting="Sveiki, kaip galime padėti Jums?"
+        logged_out_greeting="Sveiki, kaip galime padėti Jums?">
+    </div>
     <h1 id="checkout-title">Užsakymas</h1>
     @if (session('selectedPlan') !== null)
     <h2 id="checkout-plan">Pasirinktas planas:
@@ -288,7 +303,7 @@
             <label class="checkout-label">Komentaras</label>
             <textarea class="checkout-textarea" placeholder="Komentaras" name='komentaras'></textarea>
         </div>
-        <div class="checkout-field" style="margin-top: 120px;">
+        <div class="checkout-field" style="margin-top: 140px;">
             <label class="checkout-label">Kaina, &euro;</label>
             <input class="checkout-input" type="number" placeholder="Kaina" name="kaina" required>
         </div>
@@ -323,6 +338,7 @@
 @section('scripts')
 <script type="text/javascript">
     var uploadUri = "{{ route('upload') }}";
+
 </script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.form/4.2.2/jquery.form.min.js"></script>
 <script src="js/checkout.js" type="text/javascript"></script>
