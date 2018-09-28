@@ -3,6 +3,22 @@
 RealPro | Taisyklės ir sąlygos
 @endsection
 @section('content')
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js#xfbml=1&version=v2.12&autoLogAppEvents=1';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<!-- Your customer chat code -->
+<div class="fb-customerchat"
+  attribution=install_email
+  page_id="270623553670577"
+  logged_in_greeting="Sveiki, kaip galime padėti Jums?"
+  logged_out_greeting="Sveiki, kaip galime padėti Jums?">
+</div>
 <section id="terms">
     <div class="container" id="terms-container">
         <h1 id="terms-and-conditions">TAISYKLĖS IR SĄLYGOS</h1>
@@ -58,22 +74,4 @@ RealPro | Taisyklės ir sąlygos
         9.2. Visi nesutarimai, kilę dėl šių taisyklių vykdymo, sprendžiami derybų būdu. Nepavykus susitarti, ginčai sprendžiami LR įstatymų nustatyta tvarka.</p>
     </div>
 </section>
-@endsection
-@section('scripts')
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js#xfbml=1&version=v2.12&autoLogAppEvents=1';
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
-
-<!-- Your customer chat code -->
-<div class="fb-customerchat"
-  attribution=install_email
-  page_id="270623553670577"
-  logged_in_greeting="Sveiki, kaip galime padėti Jums?"
-  logged_out_greeting="Sveiki, kaip galime padėti Jums?">
-</div>
 @endsection
