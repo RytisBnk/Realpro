@@ -1,4 +1,7 @@
 @extends('layouts.parallax') 
+@section('title')
+RealPro | Dažniausiai užduodami klausimai
+@endsection
 @section('content')
 <!-- cover-->
 <section class="bg blog-cover">
@@ -149,4 +152,20 @@
 @section('scripts')
 <script src="js/tab-layout.js"></script>
 <script src="js/question-dropdowns.js"></script>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js#xfbml=1&version=v2.12&autoLogAppEvents=1';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<!-- Your customer chat code -->
+<div class="fb-customerchat"
+  attribution=install_email
+  page_id="270623553670577"
+  logged_in_greeting="Sveiki, kaip galime padėti Jums?"
+  logged_out_greeting="Sveiki, kaip galime padėti Jums?">
+</div>
 @endsection

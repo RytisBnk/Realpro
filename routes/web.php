@@ -30,15 +30,12 @@ Route::get('/plans', function(){
     return view('nav.plans');
 })->name('plans');;
 Route::get('/faq', function(){
-    return view('faq');
+    return view('information.faq');
 })->name('faq');
 // Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::get('/terms', function(){
-    return view('terms');
-});
 Route::get('/accept', function(){
     return view('paysera.accept');
 });
@@ -67,8 +64,8 @@ Route::get('/plan/{id}', 'OrderController@storeSelectedPlan')->name('plan');
 
 Route::get('/images/{filename}', 'ImageController@retrieve')->name('image.retrieve');
 Route::get('/terms', function(){
-    return view('terms');
+    return view('information.terms');
 })->name('terms');
 Route::get('/privacy', function(){
-    return view('privacy');
+    return view('information.privacy');
 })->name('privacy');

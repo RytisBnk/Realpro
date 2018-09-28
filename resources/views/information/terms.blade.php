@@ -8,7 +8,6 @@ RealPro | Taisyklės ir sąlygos
         <h1 id="terms-and-conditions">TAISYKLĖS IR SĄLYGOS</h1>
         <p class="text-paragraph">1.1. Prašome atidžiai perskaityti šias taisykles ir sąlygas (toliau – „Sąlygos“),  su jomis Pirkėjui sutikus (sutikimu skaitomas varnelės uždėjimo veiksmas paslaugų užsakymo puslapyje, atliekamas perskaičius šias RealPro.lt elektroninės sistemos paslaugų  pirkimo – pardavimo taisykles), yra abiem šalim privalomas teisinis dokumentas, kuriame apibrėžiamos Pirkėjo ir elektroninės paslaugų tiekimo sistemos (toliau vadinamos – „Paslaugos teikėju“) teisės bei pareigos, paslaugų užsakymo ir atsiskaitymo už jas sąlygos, šalių atsakomybė.<br/>
         1.2. Paslaugos teikėjas pasilieka teisę keisti, taisyti ir papildyti šias Taisykles. Paslaugos teikėjo daromi pakeitimai siejami su galiojančiais teisės aktų reikalavimais ir neprieštarauja sveikos nuovokos principams.<br/>
-        1.3. Paslaugos teikėjas neprisiima jokios rizikos ar atsakomybės ir yra nuo jos besąlygiškai atleidžiamas, jei paslaugos pirkėjas iš dalies ar visiškai nesusipažino su Taisyklėmis, nors jam tokia galimybė buvo suteikta.<br/>
         1.4. Paslaugos teikėjas turi teisę be įspėjimo apriboti paslaugos Pirkėjo naudojimąsi RealPro.lt sistemos paslaugomis arba panaikinti Pirkėjo registraciją, jeigu Pirkėjas RealPro.lt naudojasi pažeisdamas šias Taisykles, bando pakenkti RealPro.lt sistemos darbo stabilumui ir saugumui.<br/>
         1.5. Pirkti Paslaugos teikėjo elektroninėje sistemoje turi teisę žemiau išvardinti asmenys:<br/>
         1.5.1. veiksnūs fiziniai asmenys, t.y. asmenys, sulaukę pilnametystės.<br/>
@@ -58,4 +57,22 @@ RealPro | Taisyklės ir sąlygos
         9.2. Visi nesutarimai, kilę dėl šių taisyklių vykdymo, sprendžiami derybų būdu. Nepavykus susitarti, ginčai sprendžiami LR įstatymų nustatyta tvarka.</p>
     </div>
 </section>
+@endsection
+@section('scripts')
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js#xfbml=1&version=v2.12&autoLogAppEvents=1';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<!-- Your customer chat code -->
+<div class="fb-customerchat"
+  attribution=install_email
+  page_id="270623553670577"
+  logged_in_greeting="Sveiki, kaip galime padėti Jums?"
+  logged_out_greeting="Sveiki, kaip galime padėti Jums?">
+</div>
 @endsection

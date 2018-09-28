@@ -14,7 +14,7 @@
     <title>@yield('title')</title>
     <!-- favicon -->
     <link rel="icon" type="image/png" sizes="32x32" href="https://realpro.lt/img/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="https://realpro.lt/img/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://realpro.lt/img/favicon-16x16.png">
     <!-- animation -->
     <link rel="stylesheet" href="css/animate.min.css" />
     <!-- bootstrap -->
@@ -35,9 +35,7 @@
     <!-- style -->
     <link rel="stylesheet" href="css/style.css" />
     <!-- Custom Style -->
-    <link rel="stylesheet" href="css/custom.css" />
-
-    @yield('style')
+    <link rel="stylesheet" href="css/custom.css" /> @yield('style')
 </head>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="90" class="side-nav">
@@ -176,15 +174,22 @@
                 <div class="footer-link">
                     <a href="{{ route('privacy') }}">Privatumo politika</a>
                 </div>
+                <div class="footer-link">
+                    <a href="{{ route('faq') }}">DUK</a>
+                </div>
             </div>
             <div class="column">
                 <h2 class="footer-heading">Kontaktai</h2>
-                <div class="footer-text">
-                    +370 6126 6668
-                </div>
-                <div class="footer-text">
-                    info@realpro.lt
-                </div>
+                <a href="tel:+37061266668">
+                    <div class="footer-text">
+                        +370 6126 6668
+                    </div>
+                </a>
+                <a href="mailto:info@realpro.lt">
+                    <div class="footer-text">
+                        info@realpro.lt
+                    </div>
+                </a>
             </div>
             <div class="column">
                 <h2 class="footer-heading">Rekvizitai</h2>
@@ -199,7 +204,8 @@
                 </div>
             </div>
         </div>
-        <div style="border-bottom: 2px solid #FFFFFF; margin: 0 50px; margin-top: 15px;">
+        <div style="border-top: 2px solid #FFFFFF; margin: 0 50px; margin-top: 15px; padding: 30px 0; color: #FFFFFF;">
+                2018 © Realpro.lt, UAB "Emiras"
         </div>
     </footer>
     <!-- javascript libraries -->
