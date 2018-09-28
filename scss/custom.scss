@@ -257,6 +257,11 @@ html, body {
     padding-top: 30px;
     height: 335px;
 }
+@media screen and (max-width: 860px) {
+    .footer-sizing {
+        height: 345px;
+    }
+}
 @media screen and (max-width: 769px) {
     .footer-heading, 
     .footer-link,
@@ -264,7 +269,7 @@ html, body {
         text-align: center;
     }
     .footer-sizing {
-        height: 550px;;
+        height: 620px;
     }
 }
 #contact {
