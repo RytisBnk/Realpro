@@ -67,7 +67,7 @@ class OrderController extends Controller
 
     public function create()
     {
-        return view('checkout-new');
+        return view('checkout');
     }
 
     public function showAll()
