@@ -1,4 +1,7 @@
 @extends('layouts.parallax') 
+@section('title')
+RealPro | Kainoraštis
+@endsection
 @section('content')
 <!-- cover-->
 <section class="bg blog-cover">

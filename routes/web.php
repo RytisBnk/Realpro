@@ -40,10 +40,10 @@ Route::get('/terms', function(){
     return view('terms');
 });
 Route::get('/accept', function(){
-    return view('accept');
+    return view('paysera.accept');
 });
 Route::get('/cancel', function(){
-    return view('cancel');
+    return view('paysera.cancel');
 });
 
 Route::get('/redirect', 'PayseraController@redirect')->name('redirect');

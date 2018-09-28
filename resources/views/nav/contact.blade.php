@@ -1,4 +1,7 @@
 @extends('layouts.parallax') 
+@section('title')
+RealPro | Kontaktai
+@endsection
 @section('content')
 <!-- cover-->
 <section class="bg blog-cover">

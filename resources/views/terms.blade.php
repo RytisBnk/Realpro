@@ -1,5 +1,7 @@
 @extends('layouts.parallax')
-
+@section('title')
+RealPro | Taisyklės ir sąlygos
+@endsection
 @section('content')
 <section id="terms">
     <div class="container" id="terms-container">

@@ -1,4 +1,7 @@
 @extends('layouts.parallax') 
+@section('title')
+Lietuvos NT ekspertai: RealPro. Kaina nuo 99&euro;
+@endsection
 @section('content')
 <section id="top">
     <h1>Pamirškite viską, ką žinojote apie NT agentus!</h1>

@@ -1,4 +1,7 @@
 @extends('layouts.parallax') 
+@section('title')
+RealPro | Privatumo politika
+@endsection
 @section('content')
 <section id="privacy">
     <div class='container'>
