@@ -4,22 +4,12 @@ RealPro | Kaip tai veikia?
 @endsection
 @section('content')
 <!-- cover-->
-<section class="bg blog-cover">
-    <div class="container">
-        <div class="text-center sm-padding-40px-tb sm-padding-15px-lr">
-            <h5 class="text-uppercase alt-font text-white margin-20px-bottom font-weight-700">
-                Our Features</h5>
-            <p class="text-white margin-5px-bottom">We offer the most complete finance services in the country</p>
-            <div class="page_nav">
-                <span class="text-white">You are here:</span> <a href="index.html" class="text-white">Home</a> <span class="text-white"><i class="fa fa-angle-double-right"></i> 404</span>
-            </div>
-        </div>
-    </div>
+<section class="bg blog-cover" id="features-top-img">
 </section>
 <!-- cover end-->
 
 <!-- start features -->
-<section id="features" class="position-relative">
+<section id="features" class="position-relative" style="padding-top: 40px; padding-bottom: 40px;">
     <div class="container">
         <div class="row">
             <div class="col-lg-9 text-center center-col last-paragraph-no-margin" style="width: 100%;">

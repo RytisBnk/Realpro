@@ -4,17 +4,7 @@ RealPro | Kainoraštis
 @endsection
 @section('content')
 <!-- cover-->
-<section class="bg blog-cover">
-    <div class="container">
-        <div class="text-center sm-padding-40px-tb sm-padding-15px-lr">
-            <h5 class="text-uppercase alt-font text-white margin-20px-bottom font-weight-700">
-                Contact Us</h5>
-            <p class="text-white margin-5px-bottom">We offer the most complete finance services in the country</p>
-            <div class="page_nav">
-                <span class="text-white">You are here:</span> <a href="index.html" class="text-white">Home</a> <span class="text-white"><i class="fa fa-angle-double-right"></i> 404</span>
-            </div>
-        </div>
-    </div>
+<section class="bg blog-cover" id="plans-top-img">
 </section>
 <!-- cover end-->
 
@@ -48,9 +38,6 @@ RealPro | Kainoraštis
                         <li><i class="fa fa-check" aria-hidden="true"></i>Pardavimo progresas ir derybos</li>
                         <li><i class="fa fa-check" aria-hidden="true"></i>Jūsų NT rodomas tūkstančiams pirkėjų</li>
                         <li><i class="fa fa-check" aria-hidden="true"></i>Savaitinės atąskaitos esant poreikiui</li>
-                        <li><i class="fa fa-check" aria-hidden="true"></i>Savaitinės atąskaitos esant poreikiui</li>
-                        <li><i class="fa fa-check" aria-hidden="true"></i>Savaitinės atąskaitos esant poreikiui</li>
-                        <li><i class="fa fa-check" aria-hidden="true"></i>Savaitinės atąskaitos esant poreikiui</li>
                     </ul>
                     <div class="plan-dropdown">
                         <div class="solid-black-line-1px"></div>
@@ -70,13 +57,13 @@ RealPro | Kainoraštis
                         <span class="price-text text-white no-margin">Paketas gyvenantiems posakiu ,,laikas-pinigai“. Neturintiems laiko ieškoti profesionalių fotografų būsto nuotraukoms ar rašyti NT aprašymus. Kruopštus ir kokybiškas darbas greitai, vėlgi – jokių komisinių! 199€</span>
                     </div>
                     <ul class="packages packages-collapse" id="plan-2" style="max-height: 190px;">
-                        <li><i class="fa fa-check" aria-hidden="true"></i>Visos 'Optimalaus' plano paslaugos</li>
+                        <li><i class="fa fa-check" aria-hidden="true"></i>Nemokamas NT objekto įvertinimas</li>
+                        <li><i class="fa fa-check" aria-hidden="true"></i>Pardavimo progresas ir derybos</li>
+                        <li><i class="fa fa-check" aria-hidden="true"></i>Jūsų NT rodomas tūkstančiams pirkėjų</li>
+                        <li><i class="fa fa-check" aria-hidden="true"></i>Savaitinės atąskaitos esant poreikiui</li>
                         <li><i class="fa fa-check" aria-hidden="true"></i>Profesionalaus fotografo nuotraukos</li>
                         <li><i class="fa fa-check" aria-hidden="true"></i>Detalus 2D aukšto planas</li>
                         <li><i class="fa fa-check" aria-hidden="true"></i>Pilnas NT objekto aprašymas</li>
-                        <li><i class="fa fa-check" aria-hidden="true"></i>Savaitinės atąskaitos esant poreikiui</li>
-                        <li><i class="fa fa-check" aria-hidden="true"></i>Savaitinės atąskaitos esant poreikiui</li>
-                        <li><i class="fa fa-check" aria-hidden="true"></i>Savaitinės atąskaitos esant poreikiui</li>
                     </ul>
                     <div class="plan-dropdown">
                         <div class="solid-black-line-1px"></div>
@@ -97,13 +84,14 @@ RealPro | Kainoraštis
                             </span>
                     </div>
                     <ul class="packages packages-collapse" id="plan-3" style="max-height: 190px;">
-                        <li><i class="fa fa-check" aria-hidden="true"></i>Visos 'Populiariausio' plano paslaugos</li>
-                        <li><i class="fa fa-check" aria-hidden="true"></i>Iškelti/išryškinti NT skelbimai</li>
+                        <li><i class="fa fa-check" aria-hidden="true"></i>Nemokamas NT objekto įvertinimas</li>
+                        <li><i class="fa fa-check" aria-hidden="true"></i>Pardavimo progresas ir derybos</li>
+                        <li><i class="fa fa-check" aria-hidden="true"></i>Jūsų NT rodomas tūkstančiams pirkėjų</li>
+                        <li><i class="fa fa-check" aria-hidden="true"></i>Savaitinės atąskaitos esant poreikiui</li>
+                        <li><i class="fa fa-check" aria-hidden="true"></i>Profesionalaus fotografo nuotraukos</li>
+                        <li><i class="fa fa-check" aria-hidden="true"></i>Detalus 2D aukšto planas</li>
+                        <li><i class="fa fa-check" aria-hidden="true"></i>Pilnas NT objekto aprašymas</li>
                         <li><i class="fa fa-check" aria-hidden="true"></i>Pardavimo ženklas ant pastato</li>
-                        <li><i class="fa fa-check" aria-hidden="true"></i>Premium skelbimai portaluose</li>
-                        <li><i class="fa fa-check" aria-hidden="true"></i>Savaitinės atąskaitos esant poreikiui</li>
-                        <li><i class="fa fa-check" aria-hidden="true"></i>Savaitinės atąskaitos esant poreikiui</li>
-                        <li><i class="fa fa-check" aria-hidden="true"></i>Savaitinės atąskaitos esant poreikiui</li>
                     </ul>
                     <div class="plan-dropdown">
                         <div class="solid-black-line-1px"></div>

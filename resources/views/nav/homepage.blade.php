@@ -1,7 +1,7 @@
 @extends('layouts.parallax') 
-@section('title')
-Lietuvos NT ekspertai: RealPro. Kaina nuo 99&euro;
+@section('title') Lietuvos NT ekspertai: RealPro. Kaina nuo 99&euro;
 @endsection
+ 
 @section('content')
 <section id="top">
     <h1>Pamirškite viską, ką žinojote apie NT agentus!</h1>
@@ -244,18 +244,18 @@ Lietuvos NT ekspertai: RealPro. Kaina nuo 99&euro;
                 <div class="row">
                     <div class="col-sm-4">
                         <div class="testimonial-client-img">
-                            <img src="images/testimonial-two-client2.jpg" alt="image">
+                            <img src="img/reviewer_1.jpg" alt="image">
                         </div>
                         <div class="testimonial-client-name">
-                            <h6 class="text-large text-blue font-weight-600 margin-5px-bottom margin-30px-top text-center">Elic York</h6>
-                            <p class="text-center">Upwork, New York</p>
+                            <h6 class="text-large text-blue font-weight-600 margin-5px-bottom margin-30px-top text-center">Aurimas Vitkus</h6>
+                            <p class="text-center">Vilnius</p>
                         </div>
                     </div>
                     <div class="col-sm-8">
                         <div class="testimonial-client-says text-left margin-135px-top xs-margin-30px-top xs-text-center">
-                            <p> We have a number of different teams within our agency that specialise in different areas of business
-                                so you can be sure that you won’t receive a generic service and although we can’t boast years
-                                and years of service. you won’t receive a generic service.
+                            <p> Nors ir naują paslaugą teikianti kompanija, nusprendžiau išbandyti jos teikiamą paslaugą. Išbandęs
+                                tikrai nepasigailėjau. Už Savo buto pardavimą sumokėjau vos šimtą eurų, vietoj to, kad būčiau
+                                sumokėjęs brokeriui dešimteriopai daugiau. Ačiū.
                             </p>
                             <div class="testimonial-two-rating margin-20px-top">
                                 <i class="fa fa-star" aria-hidden="true"></i>
@@ -272,17 +272,17 @@ Lietuvos NT ekspertai: RealPro. Kaina nuo 99&euro;
                 <div class="row">
                     <div class="col-sm-4">
                         <div class="testimonial-client-img">
-                            <img src="images/testimonial-two-client1.jpg" alt="image">
+                            <img src="img/reviewer_2.png" alt="image">
                         </div>
                         <div class="testimonial-client-name">
-                            <h6 class="text-large text-blue font-weight-600 margin-5px-bottom margin-30px-top text-center">Adward David</h6>
-                            <p class="text-center">Abacus, CEO</p>
+                            <h6 class="text-large text-blue font-weight-600 margin-5px-bottom margin-30px-top text-center">Emilija Regenaitė</h6>
+                            <p class="text-center">Vilnius</p>
                         </div>
                     </div>
                     <div class="col-sm-8">
                         <div class="testimonial-client-says text-left margin-135px-top xs-margin-30px-top xs-text-center">
-                            <p> We have a number of different teams within our agency that specialise in different areas of business
-                                so you can be sure that you won’t receive a generic service and although we can’t boast years.
+                            <p> Realpro.lt kolektyvas padėjo konsultuodami, kaip teisingai paruošti ir pateikti savo butą pardavimui.
+                                Patarimai padidino mano skelbimų pastebimumą ir atnešė naudos!
                             </p>
                             <div class="testimonial-two-rating margin-20px-top">
                                 <i class="fa fa-star" aria-hidden="true"></i>
@@ -295,34 +295,6 @@ Lietuvos NT ekspertai: RealPro. Kaina nuo 99&euro;
                     </div>
                 </div>
             </div>
-            <div class="testimonial-two-block item">
-                <div class="row">
-                    <div class="col-sm-4">
-                        <div class="testimonial-client-img">
-                            <img src="images/testimonial-two-client3.jpg" alt="image">
-                        </div>
-                        <div class="testimonial-client-name">
-                            <h6 class="text-large text-blue font-weight-600 margin-5px-bottom margin-30px-top text-center">Steph Erick</h6>
-                            <p class="text-center">Enavto, Australia</p>
-                        </div>
-                    </div>
-                    <div class="col-sm-8">
-                        <div class="testimonial-client-says text-left margin-135px-top xs-margin-30px-top xs-text-center">
-                            <p> We have a number of different teams within our agency that specialise in different areas of business
-                                so you can be sure that you won’t receive a generic service and although we can’t boast.
-                            </p>
-                            <div class="testimonial-two-rating margin-20px-top">
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star-o" aria-hidden="true"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
         </div>
     </div>
 
@@ -338,9 +310,9 @@ Lietuvos NT ekspertai: RealPro. Kaina nuo 99&euro;
                 <div class="col-md-6">
                     <div class="sec-title margin-50px-bottom">
                         <h3 class="text-capitalize alt-font text-extra-dark-gray font-weight-300">
-                            Susisiekite su mumis</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum illum ratione atque praesentium laudantium
-                            quaerat laborum consecteturLorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            Užduokite klausimą Realpro.lt ekspertui!</h3>
+                        <p>Nežinote nuo ko pradėti parduodant namą, išnomuojant butą ar perkant žemės sklypą? Užpildykite formą
+                            žemiau su dominančiu klausimu ir mes Jums suteiksime PIRMĄ konsultaciją telefonu su NT ekspertais NEMOKAMAI!
                         </p>
                     </div>
                     <div class="row margin-15px-bottom">
@@ -414,21 +386,22 @@ Lietuvos NT ekspertai: RealPro. Kaina nuo 99&euro;
 </section>
 <!-- contact end -->
 @endsection
+ 
 @section('scripts')
 <div id="fb-root"></div>
-<script>(function(d, s, id) {
+<script>
+    (function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0];
   if (d.getElementById(id)) return;
   js = d.createElement(s); js.id = id;
   js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js#xfbml=1&version=v2.12&autoLogAppEvents=1';
   fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
+}(document, 'script', 'facebook-jssdk'));
+
+</script>
 
 <!-- Your customer chat code -->
-<div class="fb-customerchat"
-  attribution=install_email
-  page_id="270623553670577"
-  logged_in_greeting="Sveiki, kaip galime padėti Jums?"
-  logged_out_greeting="Sveiki, kaip galime padėti Jums?">
+<div class="fb-customerchat" attribution=install_email page_id="270623553670577" logged_in_greeting="Sveiki, kaip galime padėti Jums?"
+    logged_out_greeting="Sveiki, kaip galime padėti Jums?">
 </div>
 @endsection

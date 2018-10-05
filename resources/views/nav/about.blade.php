@@ -4,17 +4,7 @@ RealPro | Apie mus
 @endsection
 @section('content')
 <!-- cover-->
-<section class="bg blog-cover">
-    <div class="container">
-        <div class="text-center sm-padding-40px-tb sm-padding-15px-lr">
-            <h5 class="text-uppercase alt-font text-white margin-20px-bottom font-weight-700">
-                Our Features</h5>
-            <p class="text-white margin-5px-bottom">We offer the most complete finance services in the country</p>
-            <div class="page_nav">
-                <span class="text-white">You are here:</span> <a href="index.html" class="text-white">Home</a> <span class="text-white"><i class="fa fa-angle-double-right"></i> 404</span>
-            </div>
-        </div>
-    </div>
+<section class="bg blog-cover" id="about-top-img">
 </section>
 <!-- cover end-->
 
@@ -52,7 +42,7 @@ RealPro | Apie mus
         <div class="row">
             <div class="col-md-4 col-sm-6 col-xs-12 margin-30px-bottom">
                 <div class="services-item text-center">
-                    <i class="fa fa-bicycle" aria-hidden="true"></i>
+                    <i class="fa fa-eye" aria-hidden="true"></i>
                     <h6 class="text-extra-dark-gray margin-10px-tb alt-font font-weight-400">Vizija</h6>
                     <hr class="services-hr">
                     <p>Padėti klientams parduoti savo nekilnojamąjį turtą saugiai, greitai ir mažiausiomis išlaidomis.</p>
@@ -60,7 +50,7 @@ RealPro | Apie mus
             </div>
             <div class="col-md-4 col-sm-6 col-xs-12 margin-30px-bottom">
                 <div class="services-item text-center">
-                    <i class="fa fa-umbrella" aria-hidden="true"></i>
+                    <i class="fa fa-bullseye" aria-hidden="true"></i>
                     <h6 class="text-extra-dark-gray margin-10px-tb alt-font font-weight-400">Misija</h6>
                     <hr class="services-hr">
                     <p>Būti lyderiais tarp Lietuvoje egzistuojančių NT agentūrų teikiamų paslaugų kokybės bei kainos atžvilgiu.
@@ -69,7 +59,7 @@ RealPro | Apie mus
             </div>
             <div class="col-md-4 col-sm-6 col-xs-12 margin-30px-bottom">
                 <div class="services-item text-center">
-                    <i class="fa fa-bar-chart" aria-hidden="true"></i>
+                    <i class="fa fa-info-circle" aria-hidden="true"></i>
                     <h6 class="text-extra-dark-gray margin-10px-tb alt-font font-weight-400">Pagrindiniai principai</h6>
                     <hr class="services-hr">
                     <p>Pagrindiniai principai ir vertybės kuriomis grindžiame savo veiklą: profesionalumas savo srityje, greitas,

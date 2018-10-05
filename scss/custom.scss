@@ -666,3 +666,28 @@ input[type="file"] {
     padding-top: 75px;
     padding-bottom: 40px;
 }
+%top-images {
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 230px 0;
+}
+#about-top-img {
+    @extend %top-images;
+    background-image: url(../img/about-top.png);
+}
+#features-top-img {
+    @extend %top-images;
+    background-image: url(../img/features-top.jpg);
+}
+#contact-top-img {
+    @extend %top-images;
+    background-image: url(../img/contact-top.jpg);
+}
+#faq-top-img {
+    @extend %top-images;
+    background-image: url(../img/faq-top.jpg);
+}
+#plans-top-img {
+    @extend %top-images;
+    background-image: url(../img/plans-top.jpg);
+}

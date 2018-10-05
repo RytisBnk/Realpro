@@ -4,22 +4,12 @@ RealPro | Kontaktai
 @endsection
 @section('content')
 <!-- cover-->
-<section class="bg blog-cover">
-    <div class="container">
-        <div class="text-center sm-padding-40px-tb sm-padding-15px-lr">
-            <h5 class="text-uppercase alt-font text-white margin-20px-bottom font-weight-700">
-                Contact Us</h5>
-            <p class="text-white margin-5px-bottom">We offer the most complete finance services in the country</p>
-            <div class="page_nav">
-                <span class="text-white">You are here:</span> <a href="index.html" class="text-white">Home</a> <span class="text-white"><i class="fa fa-angle-double-right"></i> 404</span>
-            </div>
-        </div>
-    </div>
+<section class="bg blog-cover" id="contact-top-img">
 </section>
 <!-- cover end-->
 
 <!-- address start -->
-<section class="no-transition">
+<section class="no-transition" style="padding-top: 40px; padding-bottom: 40px;">
     <div class="container">
         <div class="row">
             <div class="col-lg-9 text-center center-col last-paragraph-no-margin">
@@ -33,10 +23,9 @@ RealPro | Kontaktai
         <div class="row">
             <div class="col-sm-7">
                 <div class="map-wrapper no-transition">
-                    <div class="map-two" id="map"></div>
                 </div>
             </div>
-            <div class="col-sm-5">
+            <div class="col-sm-5"">
                 <div class="address-block">
                     <?php //<div class="text-small text-dark-gray font-weight-400 margin-20px-bottom">Reone Agency Worldwide</div> ?>
                     <h5 class="area-title text-capitalize alt-font text-blue margin-20px-bottom font-weight-400 sm-width-100 xs-width-100">
@@ -59,16 +48,16 @@ RealPro | Kontaktai
 <!-- address end -->
 
 <!-- contact start -->
-<section class="contact-page-form no-padding-top">
+<section class="contact-page-form no-padding-top" style="padding-bottom: 40px;">
     <div class="container">
         <div class="row">
-            <div class="contact-form">
+            <div class="contact-form" style="padding: 0 20px;">
                 <form class="margin-50px-bottom">
                     <div class="col-xs-12 no-padding">
-                        <input type="text" class="form-control margin-30px-bottom" placeholder="Jūsų vardas">
+                        <input type="text" class="form-control margin-30px-bottom" placeholder="Jūsų vardas" required>
                     </div>
                     <div class="col-xs-12 no-padding">
-                        <input type="email" class="form-control margin-30px-bottom" placeholder="Jūsų El. Paštas">
+                        <input type="email" class="form-control margin-30px-bottom" placeholder="Jūsų El. Paštas" required>
                     </div>
 
                     <div class="col-xs-12 no-padding">

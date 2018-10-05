@@ -4,17 +4,7 @@ RealPro | Dažniausiai užduodami klausimai
 @endsection
 @section('content')
 <!-- cover-->
-<section class="bg blog-cover">
-    <div class="container">
-        <div class="text-center sm-padding-40px-tb sm-padding-15px-lr">
-            <h5 class="text-uppercase alt-font text-white margin-20px-bottom font-weight-700">
-                Our Features</h5>
-            <p class="text-white margin-5px-bottom">We offer the most complete finance services in the country</p>
-            <div class="page_nav">
-                <span class="text-white">You are here:</span> <a href="index.html" class="text-white">Home</a> <span class="text-white"><i class="fa fa-angle-double-right"></i> 404</span>
-            </div>
-        </div>
-    </div>
+<section class="bg blog-cover" id="faq-top-img">
 </section>
 <!-- cover end-->
 
@@ -37,35 +27,35 @@ RealPro | Dažniausiai užduodami klausimai
 
     <div class="tab-content" id="category_1">
         <div class="faq-item">
-            <button class="faq-question"><span class="faq-num">1</span>. KODEL PAS JUS CHEBRA TAIP PAPIGIAI?</button>
+            <button class="faq-question"><span class="faq-num">1</span>. Lorem ipsum dolor sit amet?</button>
             <div class="faq-answer">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
             </div>
         </div>
         <div class="faq-item">
-            <button class="faq-question"><span class="faq-num">1</span>. Kodel pas jus chebra taip papigiai?</button>
+            <button class="faq-question"><span class="faq-num">1</span>. Lorem ipsum dolor sit amet?</button>
             <div class="faq-answer">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
             </div>
         </div>
         <div class="faq-item">
-            <button class="faq-question"><span class="faq-num">1</span>. Kodel pas jus chebra taip papigiai?</button>
+            <button class="faq-question"><span class="faq-num">1</span>. Lorem ipsum dolor sit amet?</button>
             <div class="faq-answer">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
             </div>
         </div>
         <div class="faq-item">
-            <button class="faq-question"><span class="faq-num">1</span>. Kodel pas jus chebra taip papigiai?</button>
+            <button class="faq-question"><span class="faq-num">1</span>. Lorem ipsum dolor sit amet?</button>
             <div class="faq-answer">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
             </div>
         </div>
         <div class="faq-item">
-            <button class="faq-question"><span class="faq-num">1</span>. Kodel pas jus chebra taip papigiai?</button>
+            <button class="faq-question"><span class="faq-num">1</span>. Lorem ipsum dolor sit amet?</button>
             <div class="faq-answer">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
@@ -74,35 +64,35 @@ RealPro | Dažniausiai užduodami klausimai
     </div>
     <div class="tab-content" id="category_2">
         <div class="faq-item">
-            <button class="faq-question"><span class="faq-num">1</span>. Kodel pas jus chebra taip papigiai?</button>
+            <button class="faq-question"><span class="faq-num">1</span>. Lorem ipsum dolor sit amet?</button>
             <div class="faq-answer">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
             </div>
         </div>
         <div class="faq-item">
-            <button class="faq-question"><span class="faq-num">1</span>. Kodel pas jus chebra taip papigiai?</button>
+            <button class="faq-question"><span class="faq-num">1</span>. Lorem ipsum dolor sit amet?</button>
             <div class="faq-answer">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
             </div>
         </div>
         <div class="faq-item">
-            <button class="faq-question"><span class="faq-num">1</span>. Kodel pas jus chebra taip papigiai?</button>
+            <button class="faq-question"><span class="faq-num">1</span>. Lorem ipsum dolor sit amet?</button>
             <div class="faq-answer">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
             </div>
         </div>
         <div class="faq-item">
-            <button class="faq-question"><span class="faq-num">1</span>. Kodel pas jus chebra taip papigiai?</button>
+            <button class="faq-question"><span class="faq-num">1</span>. Lorem ipsum dolor sit amet?</button>
             <div class="faq-answer">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
             </div>
         </div>
         <div class="faq-item">
-            <button class="faq-question"><span class="faq-num">1</span>. Kodel pas jus chebra taip papigiai?</button>
+            <button class="faq-question"><span class="faq-num">1</span>. Lorem ipsum dolor sit amet?</button>
             <div class="faq-answer">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
@@ -111,35 +101,35 @@ RealPro | Dažniausiai užduodami klausimai
     </div>
     <div class="tab-content" id="category_3">
         <div class="faq-item">
-            <button class="faq-question"><span class="faq-num">1</span>. Kodel pas jus chebra taip papigiai?</button>
+            <button class="faq-question"><span class="faq-num">1</span>. Lorem ipsum dolor sit amet?</button>
             <div class="faq-answer">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
             </div>
         </div>
         <div class="faq-item">
-            <button class="faq-question"><span class="faq-num">1</span>. Kodel pas jus chebra taip papigiai?</button>
+            <button class="faq-question"><span class="faq-num">1</span>. Lorem ipsum dolor sit amet?</button>
             <div class="faq-answer">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
             </div>
         </div>
         <div class="faq-item">
-            <button class="faq-question"><span class="faq-num">1</span>. Kodel pas jus chebra taip papigiai?</button>
+            <button class="faq-question"><span class="faq-num">1</span>. Lorem ipsum dolor sit amet?</button>
             <div class="faq-answer">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
             </div>
         </div>
         <div class="faq-item">
-            <button class="faq-question"><span class="faq-num">1</span>. Kodel pas jus chebra taip papigiai?</button>
+            <button class="faq-question"><span class="faq-num">1</span>. Lorem ipsum dolor sit amet?</button>
             <div class="faq-answer">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
             </div>
         </div>
         <div class="faq-item">
-            <button class="faq-question"><span class="faq-num">1</span>. Kodel pas jus chebra taip papigiai?</button>
+            <button class="faq-question"><span class="faq-num">1</span>. Lorem ipsum dolor sit amet?</button>
             <div class="faq-answer">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
