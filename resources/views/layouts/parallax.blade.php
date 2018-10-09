@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js" lang="en">
+<html lang="lt" dir="ltr" prefix="og: http://ogp.me/ns#">
 
 <head>
     <meta charset="utf-8">
@@ -11,6 +11,12 @@
 
         gtag('config', 'UA-123099861-1');
     </script>
+    <meta property="og:title" content="Lietuvos NT ekspertai: RealPro. Kaina nuo 99&euro;" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="http://realpro.lt" />
+    <meta property="og:image" content="http://realpro.lt/img/fb.png" />
+    <meta property="og:description" content="Internetiniai nekilnojamo turto brokeriai. Minimalaus plano kaina TIK 99eur! Parduosime Jūsų nekilnojamą turtą geriausia kaina! Jokių paslėptų mokęsčių!" />
+    <meta name="description" content="Internetiniai nekilnojamo turto brokeriai. Minimalaus plano kaina TIK 99eur! Parduosime Jūsų nekilnojamą turtą geriausia kaina! Jokių paslėptų mokęsčių!">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no">
     <!-- description -->
@@ -226,14 +232,10 @@
     </footer>
     <!-- javascript libraries -->
     <script src="js/jquery-3.2.1.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.appear.min.js"></script>
     <!-- owl carousel -->
     <script src="js/owl.carousel.min.js"></script>
     <!-- magnific popup -->
     <script src="js/jquery.magnific-popup.min.js"></script>
-    <!-- fancybox -->
-    <script src="js/jquery.fancybox.min.js"></script>
     <!-- wow -->
     <script src="js/wow.js"></script>
     <!-- parallax -->
@@ -244,9 +246,6 @@
     <script src="js/morphext.min.js"></script>
     <!-- text-rotate -->
     <script src="js/isotope.pkgd.min.js"></script>
-    <!-- revolution -->
-    <script src="revolution/js/jquery.themepunch.tools.min.js"></script>
-    <script src="revolution/js/jquery.themepunch.revolution.min.js"></script>
     <!-- setting -->
     <script src="js/main.js"></script>
     @yield('scripts')

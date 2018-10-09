@@ -17,12 +17,10 @@ RealPro | Dažniausiai užduodami klausimai
     <p class="faq-heading-subtext">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
         aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 
-    <div class="columns tab" style="margin: 30px 15px;">
-        <div class="column is-narrow" style="width: 48px;"></div>
+    <div class="columns tab" style="margin-bottom: 30px;">
         <div class="column tab-column"><button class="tab-link" onclick="openCategory(event, 'category_1')" id="default-tab">Category 1</button></div>
         <div class="column tab-column"><button class="tab-link" onclick="openCategory(event, 'category_2')">Category 2</button></div>
         <div class="column tab-column"><button class="tab-link" onclick="openCategory(event, 'category_3')">Category 3</button></div>
-        <div class="column is-narrow" style="width: 48px;"></div>
     </div>
 
     <div class="tab-content" id="category_1">
