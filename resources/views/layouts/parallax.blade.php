@@ -248,6 +248,17 @@
     <script src="js/isotope.pkgd.min.js"></script>
     <!-- setting -->
     <script src="js/main.js"></script>
+    <script async>(function(s,u,m,o,j,v){j=u.createElement(m);v=u.getElementsByTagName(m)[0];j.async=1;j.src=o;j.dataset.sumoSiteId='3ef0467a930a18db7009500b7370191e1ded994ea4f651af7b00b1a7a0458396';v.parentNode.insertBefore(j,v)})(window,document,'script','//load.sumo.com/');</script>
+    <script>
+        (function(h,o,t,j,a,r){
+            h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+            h._hjSettings={hjid:1070397,hjsv:6};
+            a=o.getElementsByTagName('head')[0];
+            r=o.createElement('script');r.async=1;
+            r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+            a.appendChild(r);
+        })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+    </script>
     @yield('scripts')
 </body>
 
