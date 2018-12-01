@@ -48,7 +48,7 @@ RealPro | Kontaktai
 <!-- address end -->
 
 <!-- contact start -->
-<section class="contact-page-form no-padding-top" style="padding-bottom: 40px;">
+<section class="contact-page-form" style="padding-bottom: 40px; padding-top: 40px;">
     <div class="container">
         <div class="row">
             <div class="contact-form" style="padding: 0 20px;">
